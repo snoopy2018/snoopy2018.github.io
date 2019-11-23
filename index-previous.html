@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+
+Topic: Website of AI Card Player
+
+Author: Juergen Ehret
+
+I've used a skeleton that I've build during the MDN web docs assessment
+``Fundamental layout comprehension''
+(https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension).
+
+The website I've started with is stored at ~/Programming/WebDesign/Sandbox/assessment.
+
+State of mind on November 3, 2019.
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Checked in Opera/Chrome browser (see Developer tools -> Audits). Recommended by Google Lighthouse -->
+
+  <meta name="Description" content="AI Card Player is a computer vision app that analyses images. The app represents an artificial intelligent assistant or player who has knowledge about a card game.">
+
+  <title>AI Card Player</title>
+
+  <!-- Reset CSS styles first (highly recommended (e.g., ``Learning Responsive Web Design by Clarissa Peterson)-->
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+
+  <!-- My style sheets -->
+  <!-- <link href="styles/default.css" rel="stylesheet" type="text/css"> -->
+  <link href="styles/develop.css" rel="stylesheet" type="text/css">
+
+
+  <script defer src="scripts/main.js"></script> <!-- include file here (recommended by MDN web docs) with `defer' or `async'`-->
+
+</head>
+
+<div id="fullPage">
+  <body>
+
+    <header role="banner">
+      <h1>AI Card Player (Hallo Jürgen!)</h1>
+
+      <!-- BEGIN Navigation -->
+      <nav role="navigation">
+        <ul>
+          <li><a href="#about" >About</a></li>
+          <li><a href="#previews" >Previews</a></li>
+          <li><a href="#guides" >Guides</a></li>
+          <li><a href="#downloads" >Downloads</a></li>
+        </ul>
+      </nav>
+      <!-- END Navigation -->
+    </header>
+
+    <article>
+      <section>
+        <!-- About -->
+        <a id="about" >
+          <h2>Introducing the Artificial Intelligent Card Player</h2>
+        </a>
+        <p>Practice your rational reasoning and take it to the next level. <em>AI Card Player</em> is a computer vision app that assists you to learn and master SET, a card game of visual perception (app runs on an iPhone). It analyses images from camera or file, identifies card features (color, shape, shading, and number), visualizes game rules, and gives you hints when you need them. The app represents an artificial intelligent player or assistant who knows in a group of cards <em>all</em> triplets that form a set.</p>
+
+        <p>Either point your phone’s camera at a group of cards or load a recorded card scene, the app’s intuitive user interface and visual concepts make the game and the brain exercise more fun.</p>
+
+        <p>You'll find at this webpage <a href="#previews">Previews</a> that demonstrate the app's core features, <a href="#guides">Guides</a> that show usage and best practices, and in section <a href="#downloads">Downloads</a> you may download recorded card scenes if you don't have cards at hand.
+
+          <p> DEBUG ONLY  Begin of test paragraph.</p>
+
+          <p>This is a paragraph that visualizes <span class="testing">a line length of approximately</span> 36 to 66 characters. Bringhurst recommends that a line shall be closer to 36 than to 66 characters long (\cite{Bringhurst:2013}, p.167). I've read in web design books that a breakpoint at 36 em is reasonable, which confirms Bringhurst's statement.</p>
+
+          <p>Sample text by Peterson:2014, p. 284. I'm confused about the number of characters. Does white space count as a cahracter? If so, the above sample is  correct, otherwise the folowing.</p>
+
+          <p>These stories are true. Although I have left <span class="testing">the strict line of historical</span> truth in many places, the animals in this book were all real characters.</p>
+
+          <p> DEBUG ONLY End of test paragraph.</p>
+
+        <section>
+          <a id="previews" ><h2>Previews</h2></a>
+          <p>The following previews demonstrate core features of the app. The animation of yellow disks represent user's fingertip tapping or dragging elements on screen (taps that close a view are not shown).</p>
+
+          <video preload="auto" controls width="375px">
+            <source src="media/videos/AppPreviewOne.mp4"
+            type="video/mp4">
+            <!-- fallback for browsers that don't support video tag -->
+            Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4">MP4 video.</a>
+          </video>
+          <p><b class="lead">Set or no set?</b> A user wants to know whether three cards form a set according to SET rules.</p>
+
+          <video preload="auto" controls width="375px">
+            <source src="media/videos/AppPreviewTwo.mp4"
+            type="video/mp4">
+            <!-- fallback for browsers that don't support video tag -->
+            Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewTwo.mp4">MP4 video.</a>
+          </video>
+
+          <p><b class="lead">Need a hint?</b> In this scenario the user loads a video, which shows a scene of twelve cards that form six different sets. You may not see any of those sets, or do not find the last one after you've found all the others. In such cases, the app is able to give you a hint which is based on the cards you've selected, the sets in the scene, the sets you've already found,  and how many times you've checked different combinations after you've requested your last hint.</p>
+
+          <video preload="auto" controls width="375px">
+            <source src="media/videos/AppPreviewThree.mp4"
+            type="video/mp4">
+            <!-- fallback for browsers that don't support video tag -->
+            Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewThree.mp4">MP4 video.</a>
+          </video>
+
+          <p><b class="lead">Show all sets.</b>The app finds <em>all</em> sets in a group of recognized cards. How does the sets look like?<br>
+
+            <b class="lead">Color cast?</b> It's essential for the app to recognize all cards correctly. One obstacle might be a color cast in the images caused by certain lighting conditions (e.g., light from the blue sky). The app can adapt to those conditions but needs a little help from you. It needs a color sample from a card background. That's all. This video demonstrates how to do it. In order to initiate this feature you need tap at the phone's screen longer than 0.5 seconds. You can also use this feature to measure and see the color composition, for instance, of the card background under different lighting conditions.<br>
+
+            <b class="lead">Ready for a challenge?</b> The last part of this video shows a scene of 27 cards. Do you find all 36 sets?</p>
+
+          </section>
+
+          <section>
+            <a id="guides"><h2>Guides</h2></a>
+            <h3>Demonstration of Use Cases</h3>
+            <p>The following video clips demonstrate common use cases that you may encounter.</p>
+            <ul>
+              <li>Load a recorded card scene from your Photos library.</li>
+              <li>Capture a group of cards with the camera and learn features of a card.</li>
+              <li>Select three cards and check whether or not they form a set.</li>
+              <li>Browse through sets found by you or the app.</li>
+              <li>Solve a color cast in an image with a light source color filter.</li>
+            </ul>
+
+            <video preload="auto" controls width="375px" poster="media/images/guidesIdentifyCardFeaturesPoster.png">
+              <source src="media/videos/guidesIdentifyCardFeatures.mp4"
+              type="video/mp4">
+              <!-- fallback for browsers that don't support video tag -->
+              Your browser does not support HTML5 video. Get the video <a href="tbd">MP4 video.</a>
+            </video>
+            <a>A tap on a recognized card reveals its features (color, shape, shading, and number).</a>
+
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Hold your camera parallel to the card surface, otherwise shapes become distorted and therefore hard to recognize.</li>
+              <li>Keep your camera as steady as possible. Sudden movements blur images, which makes it very difficult or impossible to classify card features.</li>
+              <li>Use proper lighting for your scene, because in the dark objects become less distinguishable.</li>
+              <li>If you observe an extreme color cast in your image, use the app's filter that adapts to the light source's color.
+              </ul>
+              <p>Always keep in mind that your phone doesn’t experience the same image as you perceive by your eye-brain system. Please be patient if the app doesn't recognize all cards correctly. A little adjustment, for instance, a slightly different angle between phone and card surface, may yield already to better results. Use the colored marker, which the app draws on each card it recognizes, as a first indicator whether or not a card gets seen by the app.</p>
+            </section>
+
+            <section>
+              <a id="downloads"> <h2>Downloads</h2></a>
+              <p>As of this writing (November 2019), Firefox is surprisingly the only browser that allows to copy a video file from the web to an iPhone. Thus, if you like to have a video on your iPhone from the collection below, we need to ask you to use Firefox. The copy procedure is as follows:
+                <ol>
+                  <li>On your iPhone, point the Firefox browser window to the video collection of card scenes below.</li>
+                  <li>Tap on icon (longer than 0.5 s) of card scene you're interested in.</li>
+                  <li>From pop-up menu choose "Download Link".</li>
+                  <li>From pop-up  menu choose "Download Now". By default, Firefox is going to store the video in a folder called "Downloads".</li>
+                  <li>Either click in Firefox immediately on "Downloads", or open Files app (part of iOS) and navigate to video.</li>
+                  <li>Select video (in Files tap "Share" icon after you've selected video) then choose from menu "Save Video". Both will add a copy of the video to your Photos library.</li>
+                  <li>Done.</li>
+                </ol>
+              </p>
+
+              <img src="media/images/cardScene12Cards6sets.png" alt="Scene of 12 cards and 6 sets.">
+              <p><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >12 Cards and 6 Sets</a> (format MPG-4, duration 0.2 s, size 2.4 MB)</p>
+            </section>
+          </article>
+
+          <footer role="copyright, disclaimer">
+            <p>Copyright &copy; 2019 Jürgen Ehret. All ights reserved. </p>
+            <!--
+            <p>Please send us your <a href="tbd">feedback</a>. <em>[The safest way is to provide a link to a form, don't show your email address.]</em></p>
+          -->
+          <p>SET is a registered trademark of Cannei LLC licensed by Set Enterprises, Inc.</p>
+          <p>iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
+          <!-- Legal https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html -->
+        </footer>
+      </div>
+    </body>
+    </html>

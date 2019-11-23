@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- This statement/expression is not clear.  -->
+
+  <meta name="Description" content="AI Card Player is a computer vision app that analyses images. The app represents an artificial intelligent assistant or player who has knowledge about a card game.">
+
+  <title>AI Card Player</title>
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Reset CSS styles first (highly recommended (e.g., ``Learning Responsive Web Design by Clarissa Peterson)-->
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+
+  <!-- My style sheets -->
+  <!-- <link href="styles/default.css" rel="stylesheet" type="text/css"> -->
+  <link href="styles/ai-card-player.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+  <nav role="navigation">
+    <!--Navigation-->
+    <div class="topnav" id="myTopnav">
+      <a href="#contact">Contact</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#bestPractices">Best Practices</a>
+      <a href="#previews">Previews</a>
+      <a href="">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <main role="main">
+    <section>
+      <!--AI Card Player Content-->
+
+      <h2 id="introducing">Introducing the Artificial Intelligent Card Player</h2>
+      <p>Practice your rational reasoning and take it to the next level. <em>AI Card Player</em> is a computer vision app running on iPhone devices. It helps you to learn and master SET, a card game of visual perception. The app analyses images captured by camera or from file, identifies color, shape, shading, and number of cards, visualizes game rules, and provides hints for finding a set. Turn your phone into a companion of an fascinating and fun card game.</p>
+
+      <p>This is a paragraph that visualizes <span class="marker">a line length of approximately</span> 36 to 66 characters. Bringhurst recommends that a line shall be closer to 36 than to 66 characters long (\cite{Bringhurst:2013}, p.167). I've read in web design books that a breakpoint at 36 em is reasonable, which confirms Bringhurst's statement.</p>
+
+      <h2 id="previews">Previews</h2>
+      <p>The previews demonstrate main features of the app. The animation of yellow disks represent user's fingertip tapping or dragging elements on screen (for simplicity's sake, taps that close a view are not shown).</p>
+
+      <div class="row">
+        <div class="column">
+          <div class="video-container">
+            <div class="video-frame">
+              <video class="simple-border" preload="none" controls src="media/videos/AppPreviewCardFeatures.mp4"
+              type="video/mp4" width="375px" poster="media/images/AppPreviewCardFeaturesPoster@2x.png">
+              <!-- fallback for browsers that don't support video tag -->
+              Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+              </video>
+            </div> <!-- video-frame  -->
+
+            <p><b class="lead">Explore card features.</b> Get to know color, shape, shading, and number of cards by tapping on it.</p>
+          </div> <!-- video-container  -->
+
+          <div class="video-container">
+            <div class="video-frame">
+              <video class="simple-border" preload="none" controls src="media/videos/AppPreviewOne.mp4"
+              type="video/mp4" width="375px" poster="media/images/AppPreviewOnePoster@2x.png">
+              <!-- fallback for browsers that don't support video tag -->
+              Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+            </video>
+            </div> <!-- video-frame  -->
+            <p><b class="lead">Set or no set?</b> You may want to know whether or not three cards you've selected form a set. And if they don't form a set, you may want to know why not.</p>
+
+            <p>This is a paragraph that visualizes <span class="marker">a line length of approximately</span> 36 to 66 characters.
+            </div> <!-- video-container  -->
+          </div> <!-- column  -->
+        </div> <!-- row  -->
+
+        <div class="row">
+          <div class="column">
+
+          <div class="video-container">
+              <div class="video-frame">
+                <video class="simple-border" preload="none" controls src="media/videos/AppPreviewTwo.mp4"
+                type="video/mp4" width="375px" poster="media/images/AppPreviewTwoPoster@2x.png">
+                <!-- fallback for browsers that don't support video tag -->
+                Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+              </video>
+            </div> <!-- video-frame  -->
+
+            <p><b class="lead">Do you need a hint?</b> The app provides hints whenever you need little help to find a set. The clue is based on the sets in the scene, cards you've selected, sets you've already found, and the level of details needed. The level of detail increases after you've tried different card combinations that didn't form a set. At level four (last level), the app shows you all four card features of the set in question.</p>
+          </div> <!-- video-container  -->
+
+
+            <div class="video-container">
+              <div class="video-frame">
+                <video class="simple-border" preload="none" controls src="media/videos/AppPreviewThree1of3.mp4"
+                type="video/mp4" width="375px" poster="media/images/AppPreviewThree1of3Poster@2x.png">
+                <!-- fallback for browsers that don't support video tag -->
+                Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+                </video>
+              </div> <!-- video-frame  -->
+
+              <p><b class="lead">Explore all sets.</b> In a group of of recognized cards, the app finds <em>all</em> sets. You may want to explore all those sets, or know which of the cards form a set.</p>
+            </div> <!-- video-container  -->
+
+          </div> <!-- column  -->
+        </div> <!-- row  -->
+
+        <div class="row">
+          <div class="column">
+            <div class="video-container">
+              <div class="video-frame">
+                <video class="simple-border" preload="none" controls src="media/videos/AppPreviewThree2of3.mp4"
+                type="video/mp4" width="375px" poster="media/images/AppPreviewThree2of3Poster@2x.png">
+                <!-- fallback for browsers that don't support video tag -->
+                Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+                </video>
+              </div> <!-- video-frame  -->
+
+              <p><b class="lead">Color cast?</b> It's essential for the app to recognize all cards correctly. One obstacle might be a color cast in an image caused by certain lighting conditions (e.g., light from blue sky). The app can adapt to those conditions with your help. Tap with your fingertip on your phone's screen, a rectangle will appear (tap must be longer than 0.5 seconds). Drag its center to any card background. The app will mark cards that it recognizes with either a red, green, or purple dot. You may also use this feature to measure color of a colored object in an image, which you may perceive as white (monitor displays red, green, and blue (RGB color) averages of the sample area).</p>
+            </div> <!-- video-container  -->
+
+            <div class="video-container">
+              <div class="video-frame">
+                <video class="simple-border" preload="none" controls src="media/videos/AppPreviewThree3of3.mp4"
+                type="video/mp4" width="375px" poster="media/images/AppPreviewThree3of3Poster@2x.png">
+                <!-- fallback for browsers that don't support video tag -->
+                Your browser does not support HTML5 video. Get the video <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+                </video>
+              </div> <!-- video-frame  -->
+
+              <p><b class="lead">Ready for a challenge?</b> As you gain more experience you may want to challenge yourself, or simply explore different card scenes.</p>
+            </div> <!-- video-container  -->
+          </div> <!-- column  -->
+
+        </div> <!-- row  -->
+
+        <h2 id="bestPractices">Best Practices</h2>
+        [ <em>You may want to add to each of the items a symbol or image that visualizes the words (fun and probably more memorable).</em> ]
+
+        <ul>
+          <li>Hold your camera parallel to the card surface, otherwise shapes become distorted and therefore hard to recognize.</li>
+          <li>Keep your camera as steady as possible. Sudden movements blur images, which makes it very difficult or impossible to classify card features.</li>
+
+          <li>Use proper lighting for your scene, because in the dark objects become less distinguishable.</li>
+
+          <li>If you observe an extreme color cast in your image, use the app's filter that adapts to the light source's color. </li>
+
+          <li>Please be patient if the app doesn't recognize all cards correctly. A little adjustment, for instance, a slightly different angle between phone and card surface, may yield already to better results.</li>
+
+          <li>Use the colored marker, which the app draws on each card it recognizes, as first indicator whether or not a card gets seen by the app.</li>
+
+          <li>Keep in mind that your phone doesn't experience objects as we perceive them by our eye-brain system.</li>
+        </ul>
+
+
+        <h2 id="downloads">Downloads</h2>
+        <p>As of this writing (November 2019, iOS 12.4.3), Firefox is surprisingly the only browser that allows you to download a video from the web and save it to Photos library on your iPhone. Thus, if you like to have a video on your iPhone from the collection below, we need to ask you to use Firefox. The download and copy procedure is as follows:
+          <ol>
+            <li>On your iPhone, direct Firefox browser window to video collection of card scenes below.</li>
+            <li>Tap (longer than 0.5 s) on image or download button of card scene you're interested in.</li>
+            <li>Choose from menu <em>Download Link</em>.</li>
+            <li>Choose from menu <em>Download Now</em>. By default, Firefox is going to store the video in a folder called <em>Downloads</em>.</li>
+            <li>Either click immediately on <em>Downloads</em>, or select <em>Settings </em> &rarr; <em>Your Library</em> &rarr; <em>Downloads</em> &rarr;</li>
+            <li>Select video then choose from menu <em>Save Video</em>. Firefox will add a copy of the video to your Photos library.</li>
+            <li>Done.</li>
+          </ol>
+        </p>
+
+        <p>Alternatively, if you have access to an Apple desktop or laptop computer, use your favorite browser and download any video from the list below; after download, open the video on your computer, for instance with QuickTime Player, select <em>File</em> &rarr; <em>Share</em>, and share it with your iPhone. Done. </p>
+
+        <p>All videos are in MPG-4 format and approximately 2.5 MB in size (duration 0.3 seconds, only a few frames).</p>
+
+        <div class="downloads-grid-container">
+          <div class="card">
+            <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+              <img src="media/images/sample1.png" alt="Sample Three" width=100px></a>
+              <p>99 Cards / 36 Sets</p>
+
+              <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+            </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample2.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample3.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample3.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample1.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample2.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample2ColorCast.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample1.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+        <div class="card">
+          <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" >
+          <img src="media/images/sample2.png" alt="Sample Three" width=100px></a>
+          <p>99 Cards / 36 Sets</p>
+
+          <button><a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" ><i class="fa fa-download"></i> Download Video</a></button>
+        </div>
+
+      </div> <!-- downloads-grid-container  -->
+
+
+        <h2 id="contact">Contact</h2>
+        <p>Fire up <a href='hello.php' target="_blank">Hello World!</a> (in server scripting language PHP).</p>
+
+
+      </section>
+    </main>
+
+    <footer>
+      <!--Footer-->
+      <p>Copyright &copy; 2019 Jürgen Ehret. All ights reserved. </p>
+      <p>SET is a registered trademark of Cannei LLC licensed by Set Enterprises, Inc.</p>
+      <p>iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
+
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <!-- Legal https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html -->
+    </footer>
+
+    <!-- javascript goes here  -->
+    <script src="scripts/main.js"></script>
+
+  </body>
+  </html>

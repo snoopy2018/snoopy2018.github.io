@@ -1,0 +1,170 @@
+/* General ----------------------------------- */
+
+*, *:after, *.before { /* whole website */
+  box-sizing: border-box;
+}
+
+html {
+  font-family:  PT Sans, Helvetica, Arial, sans-serif;
+  /*font-size: 17px;*/
+  line-height: 1.5;
+  letter-spacing: normal; /* -0.022em;  at some Apple websites */
+}
+
+body {
+    /* --> BEGIN for construction period only */
+    background-image: url(/media/images/underConstruction.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    /* <-- END for construction period only */
+
+    background-color: #fff;
+    color: #333;
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  footer {
+    font-size: 0.7em;
+    border-top: 1px solid #ccc;
+  }
+
+/*
+  img {
+      max-width: 100%;
+      display: block;
+  }
+*/
+
+  /* NOTE
+  The class anchor solves the problem that the link posistion dissappears behind the sticky navigation bar.
+
+  The solution suggested by pixelflips has the disadvantage that it chages the typography of the document. The anchor section (e.g., "Getting Started") gets pushed downwards which is not nice. (pixelflips. 2012. Anchor Links with a Fixed Header. https://pixelflips.com/blog/anchor-links-with-a-fixed-header)
+
+  The current soultion is from the following source:
+  Fixed page header overlaps in-page anchors. 2009. https://stackoverflow.com/questions/484719/should-i-make-html-anchors-with-name-or-id
+
+  Issue: padding-top is a fixed value and may in a responsive design not work properly (e.g., navigation bar bigger than 50px). Is there a way how you can calculate the actual heoght of the nvigation bar?
+
+  State of mind on November 3, 2019.
+  */
+/*
+    .anchor {
+      padding-top: 5em;
+    }
+*/
+/*  NOTE
+the solution above doesn't work in other than Firefox browser.
+
+The solution below works in ``IE8+, Firefox 3+, Opera 9.25+, Safari 3+, Chrome''
+
+Source: Nicolas Gallagher. Jump links and viewport positioning. http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/
+
+State of mind on November 4, 2019.
+*/
+  OLD.anchor::before {
+    display: block;
+    content: "";
+    height: 2em; /* choose value: 2em, static; it doesn't work when navigation splits into two or more lines (title partially ro totally hindden). State of mind on November 5, 2019.*/
+    margin: -2em 0 0; /* value must be -<height> */
+  }
+
+  /* Navigation */
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    /*border: 1px solid orange;*/
+    padding: 0.5em;
+    list-style: none; /* removes bullets */
+    margin: 0;
+    /*background-color: orange; */
+  }
+
+  nav ul li a {
+    display: block;
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 0.5em; */
+    padding: 0.5 1em;
+    margin: 0em;
+  }
+
+  /* Items in inside the flexbox */
+  nav li {
+    margin: 0 1em;
+  }
+
+  /* This item pushes all other items to the right because its margin is set to auto (i.e., moves extra space to the right of this item). */
+  li.logo {
+    margin-right: auto;
+  }
+
+  /* Container for app icon and title text */
+  li div {
+    display: flex;
+    flex-flow: row nowrap; /* same as default */
+    align-items: center;
+    /* background: red; */
+  }
+
+  li div a {
+    padding: 0.5em;
+  }
+
+  nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+
+  .appicon {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+
+  OLDnav {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    padding: .5em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+  }
+
+  OLDnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap; /* makes item wrap around when viewport gets narrower */
+    justify-content: space-around; /* in my opinion space-around looks best,
+    althugh solution would require space-between  */
+  }
+
+  OLDnav a {
+    color: #000;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+  }
+
+/*  .videoPreview {
+    float: left;
+    margin: 0.7em;
+  }
+*/

@@ -1,0 +1,245 @@
+/* General ----------------------------------- */
+
+*, *:after, *.before { /* whole website */
+  box-sizing: border-box;
+}
+
+/* TYPOGRAPHY ----------------------------------- */
+body {
+  font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. */
+}
+
+/* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
+p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* h_(i-1) = h_(i) * 1.125, i = 1..6, h1 = 2em */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 1em 0;
+}
+
+.lead {
+  color: #000;
+  letter-spacing: 0em;
+}
+
+/* ???  ----------------------------------- */
+body {
+  /* --> BEGIN for construction period only */
+  /*
+  background-image: url("../media/images/underConstruction.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  */
+  /* <-- END for construction period only */
+  max-width: 63em; /* value adopted from "Leraning Responsive Web Design" by Clarissa Peterson, p.131. */
+  margin: auto; /* needed to center web page */
+  /*overflow-x: hidden;*/
+}
+
+footer, header, nav, main, section {
+    display: block;
+}
+
+header, section, footer {
+  margin: 15px auto; /* Recommended for <article> by  Peterson, p. 285 */
+  width: 94%; /* Recommended for <article> by  Peterson, p. 285 */
+}
+
+footer {
+  font-size: 0.618em; /* 1 / 1.618 (Golden Ratio), assume p: 1em */
+}
+
+img, video {
+  max-width: 100%; /* don't scale larger than orignal size. */
+}
+
+
+a {
+  color: #0070c9;; /* Apple Developer HIG site: link color #0070c9 */
+}
+
+.section-content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+.section-content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+*/
+
+.section-content {
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+/* 12 columns grid */
+.column {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+/*    z-index: 1; */
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+}
+
+.row {
+  position: relative;
+  /* *zoom: 1; */ /* Clarify: what's this? */
+  margin: 0 -1em;
+}
+
+
+.large-6 {
+  width: 50%;
+}
+
+.large-9 {
+  width: 75%;
+}
+
+.small-12 {
+  width: 100%;
+}
+
+.video-container-device-iphonex .device-iphonex-container {
+  margin-bottom: 0;
+}
+
+.video-container-device-iphonex {
+  margin-bottom: 3em;
+}
+
+.device-iphonex-container {
+  position: relative;
+  width: 330px;
+  height: 672px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.device-iphonex-image-full {
+  width: 287px;
+  height: 633px;
+  top: -13px !important;
+  left: 0px !important;
+}
+
+
+/* Development ----------------------------------- */
+
+.testing {
+  background-color: orange;
+}
+
+header, section, footer{
+  border: 1px solid #ccc; /* for development only */
+}
+
+/* MEDIA QUERIES (LAST) ----------------------------------- */
+
+@media only screen and (max-width: 735px) {
+  .section-content .row {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .aicp-content {
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+    max-width: 692px;
+  }
+}
+/*
+@media only screen and (max-width: 1068px) {
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px
+    }
+}
+*/
+
+@media only screen and (max-width: 735px) {
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%
+    }
+    ,small-12 {
+      width: 100%;
+    }
+}
+
+
+/*@media only screen and (min-width: 500px) {*/
+/* Found at: https://www.newventuresoftware.com/blog/pixel-density-and-resolution-tool-for-css-media-queries
+@media
+    (min-resolution: 96dpi),
+    (min-resolution: 1dppx),
+    (-webkit-min-device-pixel-ratio: 1),
+    (min--moz-device-pixel-ratio: 1) {
+*/
+
+/*
+@media
+    (-webkit-device-pixel-ratio: 1) {
+  .videoContainer video {
+    border: 2px solid red;
+  }
+}
+*/
+
+/* https://stackoverflow.com/questions/43662552/getting-columns-to-wrap-in-css-grid */
+/*
+.previewContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+*/

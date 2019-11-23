@@ -1,0 +1,76 @@
+ExifTool Version Number         : 11.76
+File Name                       : AppPreviewOne.mp4
+Directory                       : .
+File Size                       : 20 MB
+File Modification Date/Time     : 2019:11:18 20:32:26-08:00
+File Access Date/Time           : 2019:11:19 11:39:50-08:00
+File Inode Change Date/Time     : 2019:11:19 10:56:46-08:00
+File Permissions                : rw-r--r--
+File Type                       : MP4
+File Type Extension             : mp4
+MIME Type                       : video/mp4
+Major Brand                     : MP4 v2 [ISO 14496-14]
+Minor Version                   : 0.0.1
+Compatible Brands               : mp41, mp42, isom
+Movie Header Version            : 0
+Create Date                     : 2019:10:19 18:37:34
+Modify Date                     : 2019:10:19 18:37:41
+Time Scale                      : 30000
+Duration                        : 28.23 s
+Preferred Rate                  : 1
+Preferred Volume                : 100.00%
+Preview Time                    : 0 s
+Preview Duration                : 0 s
+Poster Time                     : 0 s
+Selection Time                  : 0 s
+Selection Duration              : 0 s
+Current Time                    : 0 s
+Next Track ID                   : 3
+Track Header Version            : 0
+Track Create Date               : 2019:10:19 18:37:34
+Track Modify Date               : 2019:10:19 18:37:41
+Track ID                        : 1
+Track Duration                  : 28.23 s
+Track Layer                     : 0
+Track Volume                    : 100.00%
+Balance                         : 0
+Audio Format                    : mp4a
+Audio Channels                  : 2
+Audio Bits Per Sample           : 16
+Audio Sample Rate               : 48000
+Matrix Structure                : 1 0 0 0 1 0 0 0 1
+Image Width                     : 750
+Image Height                    : 1334
+Media Header Version            : 0
+Media Create Date               : 2019:10:19 18:37:34
+Media Modify Date               : 2019:10:19 18:37:41
+Media Time Scale                : 30000
+Media Duration                  : 28.23 s
+Media Language Code             : und
+Handler Type                    : Video Track
+Handler Description             : Core Media Video
+Graphics Mode                   : srcCopy
+Op Color                        : 0 0 0
+Compressor ID                   : avc1
+Source Image Width              : 750
+Source Image Height             : 1334
+X Resolution                    : 72
+Y Resolution                    : 72
+Bit Depth                       : 24
+Color Representation            : nclx 1 1 1
+Video Field Order               : Progressive; 0
+Pixel Aspect Ratio              : 1:1
+Video Frame Rate                : 30
+Clip File Name                  : AppPreviewOne
+Keywords                        : <err>
+Unknown Thumbnail               : (Binary data 170547 bytes, use -b option to extract)
+Title                           : AppPreviewOne
+Movie Data Size                 : 20800850
+Movie Data Offset               : 189291
+XMP Toolkit                     : Image::ExifTool 10.37
+Description                     : A new description
+Author                          : Pippi Langstrumpf
+Image Size                      : 750x1334
+Megapixels                      : 1.0
+Avg Bitrate                     : 5.89 Mbps
+Rotation                        : 0

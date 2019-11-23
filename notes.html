@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+    code {
+      white-space: pre-wrap;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>Web Design</h1>
+
+  <h2>URL Confusion</h2>
+  <p>Use relative URLs.</p>
+  <blockquote>
+    <p>For CSS style sheets, the base URL is that of the style sheet, not that of the source document.
+      For example, suppose the following rule:</p>
+      <code>body { background: url(&quot;yellow&quot;) }</code>
+      <p>   is located in a style sheet designated by the URI:</p>
+      <code><a href="http://www.example.org/style/basic.css">http://www.example.org/style/basic.css</a></code>
+      <p>   The background of the source document&#39;s BODY will be tiled with whatever image is described by the resource designated by the URI</p>
+      <code><a href="http://www.example.org/style/yellow">http://www.example.org/style/yellow</a></code>
+
+      <p>(W3C Recommendation. <a href="https://www.w3.org/TR/CSS21/syndata.html#uri">Syntax and basic data types</a>. Accessed November 15, 2019)</p>
+    </blockquote>
+
+    <h2>Do It Later</h2>
+    <ul>
+      <li><b>&lt a &gt</b> Color? Change color after visited. Remove underline.</li>
+
+    </ul>
+
+  <h2>Simple and Cool</h2>
+  <ul>
+    <li><b>"Find" in Atom.</b> The colors are well chosen and it's fun to find and/or replace stuff. In comparison, Xcode takes a more conventional, traditional approach.</li>
+
+    <li><b>Add Snippets in Atom.</b> It's quite easy to add snippets (if you have figured it out once). I added a snippet ('prefix': 'jecl') that inserts &lt!-- sample text --&gt to HTML and /* sample text */ to CSS source  (file ~/.atom/snippets.cson). Xcode has a similar good feature.</li>
+
+    <li>The templates of w3.css (<a href="#reading-notes-w3css">read my notes</a>).</li>
+
+  </ul>
+
+  <h2>Reading Notes</h2>
+  <p>While reading web resources, I've found the following examples, comments, etc. interesting and worth to keep in mind. You may want to use the typesetting of my LaTex documents as a reference.</p>
+
+  <h3>Notes refer to <em>Don't Make Me Think</em> by Steve Krug</h3>
+  <ul>
+    <li>Check white space before and after headlines. The headline shall be closer to the text it refers to. (example p. 40)</li>
+  </ul>
+
+  <h3>Notes refer to <em>w3schools.com</em></h3>
+  <ul>
+    <li>"Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout." (<a href="https://www.w3schools.com/css/css_units.asp">CSS Units</a>) I believe it's best practice to use px for image sizes.</li>
+
+    <li>Pick and choose CSS styles from <a href="https://www.w3schools.com/w3css/4/w3.css">W3 CSS</a>. I believe it's an excellent reference without any license issues.</li>
+
+    <li id="reading-notes-w3css">Impressive (to me) templates powered by w3.css. If you look at the source code, it's clean, uncomplicated, and well documented. The pages don't appeal to me because of its source code, but of beautiful arranged images. It's impressive how the websites respond to different devices sizes--they look always impressive to me. I probably should go with one of those or a combination. Don't re-invent the wheel my son.
+      <ul>
+        <li><a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">Band Template</a></li>
+
+        <li><a href="https://www.w3schools.com/w3css/tryw3css_templates_architect.htm">Architect Template</a></li>
+
+        <li>And Blog Template, Fashion Blog Template, CV Template, Startup Template, etc. Or is <a href="https://www.w3schools.com/w3css/tryw3css_templates_app_launch.htm">App Launch Template</a> a good fit for Card Player? Explore <a href="https://www.w3schools.com/css/css_rwd_templates.asp">all</a> of them!</li>
+          </ul>
+        </li>
+
+    <li>Icons you can only dream of: <a href="https://www.w3schools.com/icons/icons_reference.asp">Icon Reference</a></li>
+
+    <li>Media query max- or min-.
+      <code>
+        @media only screen and (max-width: 600px) {
+          /*  If the browser window is 'max-width' or smaller then...  */
+          .text-block {
+            font-size: 1.2em;
+          }
+        }
+
+        @media only screen and (min-width: 600px) {
+          /*  If the browser window is 'min-width' or greater then...  */
+          .text-block {
+            font-size: 1.0em;
+          }
+        }
+      </code>
+    </li>
+    <li>Use percentage for column width, but px for viewport size in media query.
+      <code>
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+          /*  If the browser window is 'max-width' or smaller then...  */
+          [class*="col-"] {
+            width: 100%;
+          }
+        }
+      </code>
+    </li>
+    <li> Typical breakpoints for various of devices.
+      <code>
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {...}
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {...}
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {...}
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {...}
+      </code>
+    </li>
+    <li>Hide elements.
+      <code>
+        /* If the screen size is 600px wide or less, hide the element */
+        @media only screen and (max-width: 600px) {
+          div.example {
+            display: none;
+          }
+        }
+      </code>
+    </li>
+    <li>Use the max-width property. Image scales down as it has to, but up only to its max width. Same for videos.
+      <code>
+        img, video {
+          max-width: 100%;
+          height: auto;
+        }
+      </code>
+    </li>
+    <li>"You can use the media query min-device-width, instead of min-width, which checks the device width, instead of the browser width. Then the image will not change when you resize the browser window:'' (w3schools, RWD Images)
+      <code>
+        /* For devices smaller than 400px: */
+        body {
+          background-image: url('img_smallflower.jpg');
+        }
+
+        /* For devices 400px and larger: */
+        @media only screen and (min-device-width: 400px) {
+          body {
+            background-image: url('img_flowers.jpg');
+          }
+        }
+      </code>
+    </li>
+    <li>"The &lt picture &gt element works similar to the &lt video &gt and &lt audio &gt elements. You set up different sources, and the first source that fits the preferences is the one being used:" (w3schools, RWD Images)
+      <code>
+        &ltpicture&gt
+          &ltsource srcset="img_smallflower.jpg" media="(max-width: 400px)">
+          &ltsource srcset="img_flowers.jpg"&gt
+          &ltimg src="img_flowers.jpg" alt="Flowers"&gt &lt!-- fallback --&gt
+        &lt/picture&gt
+      </code> </li>
+
+    <li>"The value of the max-width property overrides width." (<a href="https://www.w3schools.com/css/css_dimension.asp">CSS Height/Width</a>); visit also <a href="https://www.w3schools.com/css/css_max-width.asp">CSS Max-width</a>. The code below let content of div.ex2 shrink when browser window gets smaller than 500px wide, and does not scale anymore at 400px or less.
+      <code>
+        div.ex2 {
+          max-width:500px;
+          min-width:400px;
+          margin: auto;
+          border: 3px solid #73AD21;
+        }
+      </code>
+      </li>
+
+    <li>"The solution that works in all browsers, is to set a default font-size in percent for the &lt body &gt element:" (<a href="https://www.w3schools.com/css/css_font.asp">CSS Fonts</a>)
+      <code>
+        body { font-size: 100%; }
+        h1 { font-size: 2.5em; }
+        p { font-size: 0.875em; }
+      </code>
+
+    </li>
+  </ul>
+
+</body>
+  </html>
