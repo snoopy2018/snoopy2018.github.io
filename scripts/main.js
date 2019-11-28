@@ -32,13 +32,76 @@ return height;
 */
 
 /* Source based on: w3.com, How To, Responsive Topnav
-Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
+Toggle between adding and removing the "responsive" class to topnav when the user clicks on icon.
+
+  NOTE: This method gets only called when viewport width is 600px or less (as of November 26, 2019).
 */
-function myFunction() {
+function toggleMenuBar() {
+  // Toggle class: topnav <- -> topnav.responsive
+  // Toggle at the same time symbol: "hamburger <- -> "cross"
+  // NOTE: I don't like the name 'responsive' too much. It's confusing in my
+  // opinion.
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var hamburgerSymbol = document.getElementById("hamburgerSymbol");
+  var crossSymbol = document.getElementById("crossSymbol");
+  if (x.className === "topnav") { // menu does not show
     x.className += " responsive";
-  } else {
+    hamburgerSymbol.style.display = "none";
+    crossSymbol.style.display = "block";
+  } else { // menu shows
     x.className = "topnav";
+    hamburgerSymbol.style.display = "block";
+    crossSymbol.style.display = "none";
   }
+}
+
+/*
+function toggle() {// Get the DOM reference
+  var hamburgerSymbol = document.getElementById("hamburgerSymbol");
+  if (hamburgerSymbol.style.display === "none") {
+    hamburgerSymbol.style.display = "block";
+  } else {
+    hamburgerSymbol.style.display = "none";
+  }
+
+  var crossSymbol = document.getElementById("crossSymbol");
+
+  if (crossSymbol.style.display === "none" ) {
+    crossSymbol.style.display = "block";
+  } else {
+    crossSymbol.style.display = "none";
+  }
+}
+*/
+
+/*
+function drawFrame() {
+  var x = document.getElementById("navItem");
+
+    x.style.border = "1px solid black";
+
+}
+*/
+
+function create() {
+  var btnObject = document.getElementById('showMe');
+/*
+  var object =  '<img src = "media/images/anImage.png" style="width:100%;" >';
+  var object =  '<svg width="100" height="40"><circle cx="20" cy="20" r="10" stroke="green" stroke-width="4" fill="yellow" ></svg>';
+
+  var object = 'email address';
+*/
+  var object =  '<img src="media/images/drawing.svg" width="291px" height="20px" style="vertical-align:middle"/>';
+  /*var object = 'here we go'; */
+  /*var img = new Image();*/
+  /*
+  btnObject.innerHTML = "john@example.com";
+  btnObject.style.color = '#000';
+  btnObject.style.fontFamily = 'Courier'
+  */
+  /*
+  img.src = 'media/images/anImage.png';
+  btnObject.apppendChild(img);
+  */
+  btnObject.innerHTML  = object;
 }
