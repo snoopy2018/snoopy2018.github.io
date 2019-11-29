@@ -17,8 +17,35 @@
   <!-- My style sheets -->
   <link href="styles/ai-card-player.css" rel="stylesheet" type="text/css">
 
+  <svg display="none">
+    <symbol  viewBox="0 0 120 120" id="downloadIconSVG">
+      <!-- COPY of SVG code (media/images/downloadPlain.svg) from here...  -->
+      <rect
+         ry="3.672466"
+         rx="3.7748015"
+         y="13.528272"
+         x="47.533138"
+         height="40.844975"
+         width="24.933723"
+         id="rect96"
+         style="fill-opacity:1;stroke:#000000;stroke-width:0.249244;stroke-linecap:round;paint-order:stroke fill markers" />
+      <path
+         d="m 11.913262,78.355313 c 14.750191,0.01309 17.710246,0.01969 30.755054,0.02128 1.790334,2.18e-4 11.615481,14.340141 17.414217,14.21177 6.410778,-0.141921 14.395553,-14.288922 16.34292,-14.28912 15.674265,-0.0016 16.515324,-0.0527 30.468977,-0.06467 2.59759,0.06037 3.81598,1.164554 3.81067,3.822665 l -0.0453,22.696662 c -0.003,1.61609 -1.1678,2.91712 -2.61838,2.91712 H 11.913262 c -1.450581,0 -2.6183782,-1.30103 -2.6183782,-2.91712 V 81.272443 c 0,-1.61609 1.1677972,-2.91713 2.6183782,-2.91713 z"
+         style="fill-opacity:1;stroke:#000000;stroke-width:0.276372;stroke-linecap:round;paint-order:stroke fill markers"
+         id="rect98" />
+      <path
+         d="M 54.618374,77.866464 41.627405,66.485825 29.995931,55.057311 c -1.83268,-2.014456 -1.056952,-5.856469 2.556752,-5.869874 l 27.733525,0.07106 h 27.024981 c 3.553841,0.01624 4.898182,3.517193 2.2803,6.002471 L 77.186593,66.485828 65.409948,77.866465 c -4.96511,4.467935 -5.622611,4.473407 -10.791574,-1e-6 z"
+         style="fill-opacity:1;fill-rule:evenodd;stroke-width:0.357505"
+         id="path1024" />
+         <!-- ...to here.  -->
+  </symbol>
+  </svg>
+
 </head>
 <body>
+
+
+
 
   <nav>
     <!--Navigation-->
@@ -29,7 +56,7 @@
         <li><a href="#downloads">Downloads</a></li>
         <li> <a href="#contact">Contact Us</a></li>
       </ul>
-      <a href="javascript:void(0);" class="icon" onclick="toggleMenuBar();"><i id="hamburgerSymbol" class="fa fa-bars"></i> <i><img id="crossSymbol" src="media/images/cross.svg" alt="Cross Symbol" style="display: none; width: 1em;"></i>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenuBar();"><i id="hamburgerSymbol" class="hamburgerIcon"></i> <i id="crossSymbol" class="crossIcon"></i>
       </a>
     </div>
   </nav>
@@ -65,7 +92,7 @@
 
       <!-- <p style="font-size:1em"><img src="media/images/appLogo.png" id="appLogo" alt="App logo" width="100"> This is a paragraph that visualizes <span class="marker">a line length of approximately</span> 36 to 66 characters. Bringhurst recommends that a line shall be closer to 36 than to 66 characters long (\cite{Bringhurst:2013}, p.167). I've read in web design books that a breakpoint at 36 em is reasonable, which confirms Bringhurst's statement.</p>  -->
 
-      <p><img src="media/images/appLogo.png" id="appLogo" alt="App logo" width="100"> Practice your rational reasoning and take it to the next level. <em>AI Card Player</em> is a computer vision app that runs on iPhone devices. It helps you to learn and master SET, a card game of visual perception. It analyses images captured by camera or from file, identifies color, shape, shading, and number of cards, visualizes game rules, and provides hints for finding a set. The app turns your phone into a companion of an fascinating and fun card game.</p>
+      <p><img src="media/images/appLogo.png" id="appLogo" alt="App logo" width="100"> Practice your rational reasoning and take it to the next level. AI Card Player is a computer vision app that runs on iPhone devices and helps you to learn and master the card game SET. Card Player analyses images from camera or file, identifies color, shape, shading, and number of cards, visualizes game rules, and provides hints for finding sets. The app turns your iPhone into a companion of a fascinating and fun card game.</p>
 
       <h2 id="previews">Previews</h2>
       <p>The following previews demonstrate main features of the app. The animation of yellow disks represent user's fingertip tapping or dragging elements on screen (for simplicity's sake, taps that close a view are not shown).</p>
@@ -103,7 +130,7 @@
               </video>
             </div> <!-- video-frame  -->
 
-            <p><b class="lead">Get to know your cards.</b> Tap on a card and the app displays color, shape, shading, and number of that card.</p>
+            <p><b class="lead">Get to know your cards.</b> Tap on a card and the app visualizes its color, shape, shading, and number.</p>
           </div> <!-- video-container  -->
 
           <div class="video-container">
@@ -132,20 +159,19 @@
               </video>
             </div> <!-- video-frame  -->
 
-            <p><b class="lead">Need a hint?</b> The app provides hints whenever you need help to find a set. The clue is based on the sets in a scene, cards you've selected, and the sets you've already found. A hint has four detail levels. At level one it shows color, shape, shading, or number of the three cards that form a set. The level increases after you've tried different card combinations that didn't form a set. At level four, you'll see color, shape, shading, and number of all three cards, or in other words, all you need to identify the set.</p>
+            <p><b class="lead">Need a hint?</b> Card Player gives you hints whenever you need them. A hint is based on sets in the scene, cards you've selected, and the sets you've already found. It has four detail levels. At level one it shows either color, shape, shading, or number of the three cards that form a set. The level increases after you've tried different card combinations that didn't form a set. At level four, you'll see all four features (color, shape, shading, and number) of the three cards, or in other words, the set is fully disclosed.</p>
           </div> <!-- video-container  -->
 
-
-            <div class="video-container">
-              <div class="video-frame">
-                <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree1of3.mp4" width="375" poster="media/images/AppPreviewThree1of3Poster@2x.png">
+          <div class="video-container">
+            <div class="video-frame">
+              <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree1of3.mp4" width="375" poster="media/images/AppPreviewThree1of3Poster@2x.png">
                 <!-- fallback for browsers that don't support video tag -->
                 Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewThree1of3.mp4"> MP4 video.</a>
-                </video>
-              </div> <!-- video-frame  -->
+              </video>
+            </div> <!-- video-frame  -->
 
-              <p><b class="lead">Explore all sets.</b> The app finds <em>all</em> possible sets in a group of recognized cards. If there are sets in a scene, tap on the number of sets (top right corner) and get to know them.</p>
-            </div> <!-- video-container  -->
+            <p><b class="lead">Explore all sets.</b> The app finds <em>all</em> possible sets in a group of recognized cards. If there are sets in a scene, tap on the number of sets (top right corner) and get to know them.</p>
+          </div> <!-- video-container  -->
 
           </div> <!-- column  -->
         </div> <!-- row  -->
@@ -160,11 +186,11 @@
                 </video>
               </div> <!-- video-frame  -->
 
-              <p><b class="lead">Color cast?</b> It's very important that the app recognizes all cards. One obstacle might be a color cast caused by certain lighting conditions (e.g., blue sky). The app can adapt to those conditions if you tell it the card background color.</p>
+              <p><b class="lead">Color cast?</b> The app needs to recognize all cards precisely. One obstacle might be a color cast caused by lighting conditions (e.g., blue sky or artificial light). However, the app can adapt to those conditions if you show it a card background.</p>
 
-              <p>Tap (longer than 0.5 seconds) with your fingertip on the phone's screen. A rectangle with the sample area in the center will appear. Drag the sample area to any card background. The app will mark cards that it recognizes with either a red, green, or purple dot.</p>
+              <p>Tap (longer than 0.5 seconds) with your fingertip on the phone's screen. A rectangle with a sample area in the center will appear. Drag it to any card background. The app will analyze its color and then mark recognized cards with either a red, green, or purple dot.</p>
 
-              <p>You may use this feature to measure color of colored objects in an image, which you may perceive as white. The sample monitor displays red, green, and blue (RGB) colors of the sample area (arithmetic means).</p>
+              <p>You may use this feature to measure the color composition of any object in an image. The sample monitor displays red, green, and blue (RGB) colors of the sample area (arithmetic means).</p>
             </div> <!-- video-container  -->
 
             <div class="video-container">
@@ -175,7 +201,7 @@
                 </video>
               </div> <!-- video-frame  -->
 
-              <p><b class="lead">Ready for a challenge?</b> As you gain more experience with the game and our app, you may want to challenge yourself, create and explore other card scenes, or ask questions from a more mathematical point of view (e.g., how many sets are possible in a group of N cards? Find a scene of six cards that contains ten sets.). What experiment would you like to do?</p> <!-- answer: (N * N - 1 * 1) / 3, N greater 3 (proof ?) --> <!-- Start here: https://en.wikipedia.org/wiki/Set_(card_game) then Mathematics Workbook
+              <p><b class="lead">Ready for a challenge?</b> As you gain more experience with the game and our app, you may want to challenge yourself, create and explore other card scenes, or ask questions from a more mathematical point of view. For example, how many sets are possible in a group of N cards? Find a scene of six cards that contains ten sets (is this even possible?). What experiments would you like to do?</p> <!-- answer: (N * N - 1 * 1) / 3, N greater 3 (proof ?) --> <!-- Start here: https://en.wikipedia.org/wiki/Set_(card_game) then Mathematics Workbook
 How to use SET® in the classroom
 https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
   -->
@@ -185,7 +211,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
         </div> <!-- row  -->
 
         <h2 id="bestPractices">Best Practices</h2>
-        <p>The app needs good quality images as input for best results. The following guidelines helped us during development to achieve high card recognition rates, and we hope they will help you to have the best experience with our app.</p>
+        <p>The app needs good quality images as input for best results. The following guidelines helped us during development to achieve high card recognition rates, and we hope they will help you to have the best experience with Card Player.</p>
 
         <!-- <p>[ <em>You may want to add to each of the items a symbol or image that visualizes the words (fun and probably more memorable).</em> ]
         </p>  -->
@@ -196,36 +222,36 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
 
           <li>Use proper lighting for your scene. Dark objects are less distinguishable.</li>
 
-          <li>Avoid specular highlights. A game card has a reflective surface and acts similar to a mirror. If you observe a specular highlight on card images (area without texture), try to move your camera until the bright spot is outside of the card image. Another option is to block direct light to prevent specular reflection and use only diffuse reflected light, for example, from a  wall or ceiling. (Taking a photograph of reflective surfaces can be challenging task in photography.)</li>
+          <li>If you observe an extreme color cast, use the app's color cast filter that adapts to the light source's color. </li>
 
-          <li>If you observe an extreme color cast, use the app's color filter that adapts to the light source's color. </li>
+          <li>Avoid specular highlights. A game card has a reflective surface, similar to a mirror. If you observe a specular highlight on card images (area without texture), try to move the camera until all cards are outside the spotlight. Or block direct light, if possible, to prevent specular reflection and use only diffuse reflected light, for example, from a  wall or ceiling.</li>
 
-          <li>Please be patient if the app doesn't recognize all cards. Little adjustments, for instance, a slightly different angle between phone and card surface, may yield already to better results.</li>
+          <li>Please be patient if the app doesn't recognize all cards. Little adjustments, for instance, a slightly different angle between phone and card surface, may already yield to better results.</li>
 
-          <li>Use the colored markers, which the app draws on each card it recognizes, as a first indicator whether cards get identified correctly.</li>
+          <li>Use the colored markers, which the app draws on each recognized card, as a first indicator whether cards get identified correctly.</li>
 
           <li>Always keep in mind that your phone doesn't see objects as you perceive them by your eye-brain system.</li>
         </ul>
 
 
         <h2 id="downloads">Downloads</h2>
-        <p>The video collection of card scenes below will help you to get started in case you don't have a deck of cards at hand. Feel free to download them to your iPhone.</p>
+        <p>The video collection below consists of card scenes you can download to your iPhone and start to play with, in case you don't have a deck of cards at hand.</p>
 
-        <p>As of this writing (November 2019, iOS 12.4.3), Firefox is surprisingly the only browser that allows you to download and save a video on your iPhone. Thus we need to ask you to use Firefox for this procedure: </p>
+        <p>As of this writing (November 2019, iOS 12.4.3), Firefox is surprisingly the only browser that allows to download and save a video on your iPhone. Thus we need to ask you to use Firefox for this procedure: </p>
         <ol>
-          <li>In Firefox on your iPhone, select any of the videos below.</li>
-          <li>Tap (longer than 0.5 s) on download symbol.</li>
-          <li>Choose from menu <em>Download Link</em>.</li>
-          <li>Choose from menu <em>Download Now</em>. By default, Firefox is going to store the video in folder <em>Downloads</em>.</li>
-          <li>Either tap immediately on <em>Downloads</em>, or navigate to folder by <em>Settings </em> &rarr; <em>Your Library</em> &rarr; <em>Downloads</em>.</li>
-          <li>Select video, then choose from menu <em>Save Video</em>. Firefox will add a copy to your Photos library.</li>
+          <li>On your iPhone, navigate in Firefox to any of the videos below.</li>
+          <li>Tap (longer than 0.5 s) on <span class="itemToSelect">Download Video</span> button.</li>
+          <li>Select <span class="itemToSelect">Download Link</span>.</li>
+          <li>Select <span class="itemToSelect">Download Now</span>. By default, Firefox is going to store the video in folder <span class="itemToSelect">Downloads</span>.</li>
+          <li>Either tap immediately on <span class="itemToSelect">Downloads</span>, or navigate to that folder: select <span class="itemToSelect">Settings </span> &gt; <span class="itemToSelect">Your Library</span> &gt; <span class="itemToSelect">Downloads</span>.</li>
+          <li>Choose video, then select <span class="itemToSelect">Save Video</span>. Firefox will add a copy to your Photos library.</li>
           <li>Done.</li>
         </ol>
 
 
-        <p>Alternatively, if you have access to an Apple desktop or laptop computer, use your favorite browser and click on any of the <em>Download Video</em> buttons below, it will start off the download process; after downloading, open video (e.g., with QuickTime Player) and share it with your iPhone (<em>File</em> &rarr; <em>Share</em>).</p>
+        <p>Alternatively, if you have access to an Apple desktop or laptop computer, use your favorite browser and click on any of the <span class="itemToSelect">Download Video</span> buttons below, it will start off the download process; after downloading, open video, for example, with QuickTime Player and share it with your iPhone (in QuickTime Player choose <span class="itemToSelect">File</span> &gt; <span class="itemToSelect">Share</span>).</p>
 
-        <p>All videos have MPG-4 format and a file sizes of approximately 1 MB (duration about 0.2 seconds; length is sufficient because app analyses each video frame).</p>
+        <p>All videos have MPG-4 format and a file sizes of approximately 1 MB (duration about 0.2 seconds).</p>
 
         <div class="downloads-grid-container">
           <div class="card">
@@ -233,7 +259,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene12Cards6setsPoster.jpg" alt="Sample 12 cards 6 sets" width=375></a>
               <p>12 Cards / 6 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
               </div><!-- card  -->
 
           <div class="card">
@@ -241,7 +267,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene12Cards5setsPoster.jpg" alt="Sample 12 cards 5 sets" width=375></a>
               <p>12 Cards / 5 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene12Cards5sets.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene12Cards5sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -249,7 +275,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene7Cards1setPoster.jpg" alt="Sample 7 cards 1 set" width=375></a>
               <p>7 Cards / 1 Set</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene7Cards1set.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene7Cards1set.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -257,7 +283,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene10Cards1setPoster.jpg" alt="Sample 12 cards 5 sets" width=375></a>
               <p>10 Cards / 1 Set</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene10Cards1set.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene10Cards1set.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -265,7 +291,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene9Cards4setsPoster.jpg" alt="Sample 9 cards 4 sets" width=375></a>
               <p>9 Cards / 4 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene9Cards4sets.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene9Cards4sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -273,7 +299,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene9Cards3setsPoster.jpg" alt="Sample 9 cards 3 sets" width=375></a>
               <p>9 Cards / 3 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene9Cards3sets.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene9Cards3sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -281,7 +307,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene12Cards6setsTwoPoster.jpg" alt="Sample 12 cards 6 sets" width=375></a>
               <p>12 Cards / 6 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene12Cards6setsTwo.mp4" type="video/mp4" download><i class="fa fa-download"></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene12Cards6setsTwo.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
 
@@ -290,7 +316,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
       <h2 id="contact">Contact Us</h2>
       <p>We look forward to reading your questions and comments. Please send us your thoughts by email:</p>
       <div class="centerText">
-        <div class="show-me-button" onclick = "create()" ><span id="showMe"><i class="fa fa-envelope"></i> Show Me</span></div> <noscript><span class="redBoldText">&nbsp;JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise the <em>Show Me</em> button won't work.</noscript>
+        <div class="open-me-button" onclick = "create()" ><span id="openMe"><i class="fa fa-envelope"></i> Open Me</span></div> <noscript><span class="redBoldText">&nbsp;JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise the <span class="itemToSelect">Open Me</span> button won't work.</noscript>
       </div>
 
       </section>
@@ -299,7 +325,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
     <footer>
       <!--Footer-->
       <p>SET is a registered trademark of Cannei LLC licensed by Set Enterprises, Inc. iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
-      <p>&copy; 2019 Jürgen Ehret. All rights reserved. </p>
+      <p>Copyright &copy; 2019 Jürgen Ehret. All rights reserved. </p>
       <p>
 
       <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>  -->

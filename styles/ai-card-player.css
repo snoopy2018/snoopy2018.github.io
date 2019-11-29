@@ -231,6 +231,35 @@ a {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+.hamburgerIcon {
+  display: inline-block; /* will alternate with crossIcon */
+  width: 1.1em;
+  height: 1.1em;
+  background: url(../media/images/hamburgerPlain.svg);
+  background-size: contain;
+}
+
+.crossIcon {
+  display: none; /* will alternate with hamburgerIcon */
+  width: 1.1em;
+  height: 1.1em;
+  background: url(../media/images/crossPlain.svg);
+  background-size: contain;
+}
+
+.downloadIcon > svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  bottom: -0.1em; /* adjustment to position rleative to text (I don't know how to fix this positioning thing without this "bottom" hack at the moment. State of mind on November 29, 2019.) */
+  fill: #0070c9; /* same color as link element (I don't know how to fix this color thing without this "fill" hack at the moment. It would be nicer to inherit color from the a element, but I guess my HTML/CSS architecture with this inline svg hack doesn't allow it.  State of mind on November 29, 2019.) */
+}
+
+.itemToSelect {
+  color: #777;
+  font-weight: 500;
+}
 
 #appLogo {
   float:left;
@@ -240,7 +269,7 @@ a {
   margin-bottom: 1em;
 }
 
-.show-me-button {
+.open-me-button {
   display: inline-block; /* sizes butto to size of content (thank yoy stackoverflow "Make button width fit to the text") */
   border: none;
   padding: 0.3em 1em;

@@ -84,7 +84,7 @@ function drawFrame() {
 */
 
 function create() {
-  var btnObject = document.getElementById('showMe');
+  var btnObject = document.getElementById('openMe');
 /*
   var object =  '<img src = "media/images/anImage.png" style="width:100%;" >';
   var object =  '<svg width="100" height="40"><circle cx="20" cy="20" r="10" stroke="green" stroke-width="4" fill="yellow" ></svg>';
