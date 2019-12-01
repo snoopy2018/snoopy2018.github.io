@@ -192,9 +192,9 @@ a {
  text-align: center;
  padding: 1em 1em;
  text-decoration: none;
- font-size: 1.1em;
+ font-size: 1.2em;
  font-variant: small-caps;
- font-weight: 500;
+ font-weight: lighter;
 }
 
 /* Change the color of links on hover */
