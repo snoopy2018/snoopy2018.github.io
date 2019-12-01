@@ -23,16 +23,17 @@ body {
   /* max-width: 100%; */ /* Apple HGI webpage */
   min-width: 20em; /* approximately 320px; e.g., Apple HGI webpage */
   overflow-x: hidden; /* Apple HGI webpage */
-
+/*
   background-image: url(../media/images/underConstruction.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center 3em;;
+*/
 }
 
 /* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
 p {
   font-size: 1em;
-  line-height: 1.4;
+/*   line-height: 1.4; */ /* or 1.5 as htnl? */
   max-width: 44em; /* I feel text need to be limited to a certain width. 44em seems to be a good starting point. Note to center the text with margin: auto;
   top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
   margin: 0.5em auto;
@@ -251,14 +252,22 @@ a {
   background-size: contain;
 }
 
-.downloadIcon > svg {
+.inlineSVGIcon > svg {
   display: inline-block;
   width: 1em;
   height: 1em;
   position: relative;
-  bottom: -0.1em; /* adjustment to position rleative to text (I don't know how to fix this positioning thing without this "bottom" hack at the moment. State of mind on November 29, 2019.) */
   fill: #0070c9; /* same color as link element (I don't know how to fix this color thing without this "fill" hack at the moment. It would be nicer to inherit color from the a element, but I guess my HTML/CSS architecture with this inline svg hack doesn't allow it.  State of mind on November 29, 2019.) */
 }
+
+.envelopeIcon > svg { /* specific for envelope icon */
+    bottom: -0.12em; /* adjustment to position rleative to text (I don't know how to fix this positioning thing without this "bottom" hack at the moment. State of mind on November 29, 2019.) */
+}
+
+.downloadIcon > svg { /* specific for envelope icon */
+    bottom: -0.12em; /* adjustment to position rleative to text (I don't know how to fix this positioning thing without this "bottom" hack at the moment. State of mind on November 29, 2019.) */
+}
+
 
 .itemToSelect {
   /* color: #777; */

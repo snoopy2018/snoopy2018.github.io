@@ -11,42 +11,32 @@
   <!-- Reset CSS styles first (highly recommended (e.g., ``Learning Responsive Web Design by Clarissa Peterson)-->
   <link href="styles/normalize.css" rel="stylesheet" type="text/css">
 
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <!-- My style sheets -->
   <link href="styles/ai-card-player.css" rel="stylesheet" type="text/css">
 
   <svg display="none">
     <symbol  viewBox="0 0 120 120" id="downloadIconSVG">
-      <!-- COPY of SVG code (media/images/downloadPlain.svg) from here...  -->
-      <rect
-         ry="3.672466"
-         rx="3.7748015"
-         y="13.528272"
-         x="47.533138"
-         height="40.844975"
-         width="24.933723"
-         id="rect96"
-         style="fill-opacity:1;stroke:#000000;stroke-width:0.249244;stroke-linecap:round;paint-order:stroke fill markers" />
-      <path
-         d="m 11.913262,78.355313 c 14.750191,0.01309 17.710246,0.01969 30.755054,0.02128 1.790334,2.18e-4 11.615481,14.340141 17.414217,14.21177 6.410778,-0.141921 14.395553,-14.288922 16.34292,-14.28912 15.674265,-0.0016 16.515324,-0.0527 30.468977,-0.06467 2.59759,0.06037 3.81598,1.164554 3.81067,3.822665 l -0.0453,22.696662 c -0.003,1.61609 -1.1678,2.91712 -2.61838,2.91712 H 11.913262 c -1.450581,0 -2.6183782,-1.30103 -2.6183782,-2.91712 V 81.272443 c 0,-1.61609 1.1677972,-2.91713 2.6183782,-2.91713 z"
-         style="fill-opacity:1;stroke:#000000;stroke-width:0.276372;stroke-linecap:round;paint-order:stroke fill markers"
-         id="rect98" />
-      <path
-         d="M 54.618374,77.866464 41.627405,66.485825 29.995931,55.057311 c -1.83268,-2.014456 -1.056952,-5.856469 2.556752,-5.869874 l 27.733525,0.07106 h 27.024981 c 3.553841,0.01624 4.898182,3.517193 2.2803,6.002471 L 77.186593,66.485828 65.409948,77.866465 c -4.96511,4.467935 -5.622611,4.473407 -10.791574,-1e-6 z"
-         style="fill-opacity:1;fill-rule:evenodd;stroke-width:0.357505"
-         id="path1024" />
+      <!-- COPY of SVG code (media/images/downloadOpti.svg) from here...  -->
+      <g>
+       <rect x="47.533" y="13.528" width="24.934" height="40.845" rx="3.7748" ry="3.6725" stroke="#000" stroke-linecap="round" stroke-width=".24924" style="paint-order:stroke fill markers"/>
+       <path d="m11.913 78.355c14.75 0.01309 17.71 0.01969 30.755 0.02128 1.7903 2.18e-4 11.615 14.34 17.414 14.212 6.4108-0.14192 14.396-14.289 16.343-14.289 15.674-0.0016 16.515-0.0527 30.469-0.06467 2.5976 0.06037 3.816 1.1646 3.8107 3.8227l-0.0453 22.697c-3e-3 1.6161-1.1678 2.9171-2.6184 2.9171h-96.128c-1.4506 0-2.6184-1.301-2.6184-2.9171v-23.481c0-1.6161 1.1678-2.9171 2.6184-2.9171z" stroke="#000" stroke-linecap="round" stroke-width=".27637" style="paint-order:stroke fill markers"/>
+       <path d="m54.618 77.866-12.991-11.381-11.631-11.429c-1.8327-2.0145-1.057-5.8565 2.5568-5.8699l27.734 0.07106h27.025c3.5538 0.01624 4.8982 3.5172 2.2803 6.0025l-12.405 11.225-11.777 11.381c-4.9651 4.4679-5.6226 4.4734-10.792-1e-6z" fill-rule="evenodd" stroke-width=".3575"/>
+      </g>
          <!-- ...to here.  -->
-  </symbol>
-  </svg>
+       </symbol>
+  </svg> <!-- downloadIconSVG  -->
+
+  <svg display="none">
+    <symbol  viewBox="0 0 140 120" id="envelopeIconSVG">
+      <!-- COPY of SVG code (media/images/envelopeOpti.svg) from here...  -->
+      <path d="m11.428 117.97c-4.1076-0.97016-7.0028-3.778-7.9212-7.5946-0.28512-1.4427-0.48195-8.1065-0.49864-32.393l-0.020904-30.425 2.9976 2.7939c1.6487 1.5367 8.7768 6.7441 15.84 11.572 7.0636 4.828 17.332 11.984 22.819 15.902 15.966 11.401 21.814 13.65 29.968 11.526 4.6742-1.2175 9.7497-4.1268 20.111-11.528 5.4867-3.9191 15.753-11.068 22.814-15.887 7.0612-4.819 14.195-10.031 15.854-11.582l3.0153-2.8207-0.13234 31.152c-0.13111 30.838-0.35745 29.074-1.3284 32.446-1.2227 3.8654-3.7982 5.7457-7.9223 7.0116-4.4037 1.2787-56.625 0.37227-56.625 0.37227-47.145 0.0843-57.484-0.011-58.97-0.5447zm54.206-38.299c-3.1929-1.1937-5.9109-2.9062-17.151-10.806-5.2404-3.6833-15.094-10.549-21.896-15.257-6.8026-4.7083-12.388-9.0063-14.988-11.543-2.6005-2.5369-6.441-7.0514-7.7909-11.697-0.51182-1.7614-0.75969-2.9478-0.78889-5.0529-0.029201-2.1051 0.55156-4.963 1.6576-6.9047 1.5182-2.6653 4.2124-3.8755 6.9304-4.3377 2.718-0.46224 37.66-0.71779 57.688-0.54822 20.028 0.16957 54.316 0.27336 58.209 1.2043 3.2813 0.78474 4.7263 1.4589 6.826 3.4621 1.9289 1.8402 2.6819 4.0547 2.6819 6.4367 0 2.382-0.66928 3.5482-1.939 6.1308-1.2696 2.5827-6.4245 8.136-9.1896 10.819-2.7652 2.6832-7.2232 6.708-14.243 11.889-7.1148 5.2516-16.119 12.334-29.194 21.249-8.0795 5.5085-12.136 6.7041-16.812 4.9558z"/>
+      <!-- ...to here.  -->
+    </symbol>
+  </svg> <!-- envelopeIconSVG  -->
+
 
 </head>
 <body>
-
-
-
-
   <nav>
     <!--Navigation-->
     <div class="topnav" id="myTopnav">
@@ -95,30 +85,7 @@
       <p><img src="media/images/appLogo.png" id="appLogo" alt="App logo" width="100"> Practice your rational reasoning and take it to the next level. AI Card Player is a computer vision app that runs on iPhone devices and helps you to learn and master the card game SET. Card Player analyses images from camera or file, identifies color, shape, shading, and number of cards, visualizes game rules, and provides hints for finding sets. The app turns your iPhone into a companion of a fascinating and fun card game.</p>
 
       <h2 id="previews">Previews</h2>
-      <p>The following previews demonstrate main features of the app. The animation of yellow disks represent user's fingertip tapping or dragging elements on screen (for simplicity's sake, taps that close a view are not shown).</p>
-
-<!--
-      <div class="previews-grid-container">
-        <div class="video-card">
-          <video preload="none" controls src="media/videos/AppPreviewCardFeatures.mp4"
-          type="video/mp4" width="320px" poster="media/images/AppPreviewCardFeaturesPoster@2x.png">
-          Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewCardFeatures.mp4"> MP4 video.</a>
-        </video>
-
-        <p><b class="lead">Explore card features.</b> Get to know color, shape, shading, and number of cards by tapping on it.</p>
-      </div>
-
-      <div class="video-card">
-        <video preload="none" controls src="media/videos/AppPreviewTwo.mp4"
-        type="video/mp4" width="320px" poster="media/images/AppPreviewTwoPoster@2x.png">
-        Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewTwo.mp4"> MP4 video.</a>
-      </video>
-      <p><b class="lead">Do you need a hint?</b> The app provides hints whenever you need little help to find a set. The clue is based on the sets in the scene, cards you've selected, sets you've already found, and the level of details needed. The level of detail increases after you've tried different card combinations that didn't form a set. At level four (last level), the app shows you all four card features of the set in question.</p>
-    </div>
-
-    </div>
--->
-
+      <p>The following previews demonstrate main features. The animation of yellow disks represent user's fingertip tapping or dragging elements on screen (taps on background that close views are not shown).</p>
 
       <div class="row">
         <div class="column">
@@ -130,7 +97,7 @@
               </video>
             </div> <!-- video-frame  -->
 
-            <p><b class="lead">Get to know your cards.</b> Tap on a card and the app visualizes its color, shape, shading, and number.</p>
+            <p><b class="lead">Get to know your cards.</b> Tap on a card, the app will visualize its color, shape, shading, and number.</p>
           </div> <!-- video-container  -->
 
           <div class="video-container">
@@ -140,7 +107,7 @@
               Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
             </video>
             </div> <!-- video-frame  -->
-            <p><b class="lead">Set or no set?</b> Select three cards and check if they form a set. The app gives you immediately feedback by visualizing what is and what isn’t a set.</p>
+            <p><b class="lead">Set or no set?</b> Select three cards and check if they form a set. The app gives you immediately feedback by showing you what is or isn’t a set, and visualizing the rules.</p>
 
             <!-- <p>This is a paragraph that visualizes <span class="marker">a line length of approximately</span> 36 to 66 characters.</p>
               -->
@@ -159,7 +126,7 @@
               </video>
             </div> <!-- video-frame  -->
 
-            <p><b class="lead">Need a hint?</b> Card Player gives you hints whenever you need them. A hint is based on sets in the scene, cards you've selected, and the sets you've already found. It has four detail levels. At level one it shows either color, shape, shading, or number of the three cards that form a set. The level increases after you've tried different card combinations that didn't form a set. At level four, you'll see all four features (color, shape, shading, and number) of the three cards, or in other words, the set is fully disclosed.</p>
+            <p><b class="lead">Need a hint?</b> Card Player gives you hints whenever you need them. A hint is based on sets in the scene, cards you've selected, and sets you've already found. It has four detail levels. At level one the hint shows either color, shape, shading, or number of three cards that form a set. The level increases after you've tried different card combinations, which didn't form a set. At level four, you'll see all four features (color, shape, shading, and number), in other words, a full disclosure of the set.</p>
           </div> <!-- video-container  -->
 
           <div class="video-container">
@@ -170,7 +137,7 @@
               </video>
             </div> <!-- video-frame  -->
 
-            <p><b class="lead">Explore all sets.</b> The app finds <em>all</em> possible sets in a group of recognized cards. If there are sets in a scene, tap on the number of sets (top right corner) and get to know them.</p>
+            <p><b class="lead">Explore all sets.</b> The app finds <em>all</em> possible sets in a group of recognized cards. If any, tap on the number of sets (top right corner) and explore them.</p>
           </div> <!-- video-container  -->
 
           </div> <!-- column  -->
@@ -186,7 +153,7 @@
                 </video>
               </div> <!-- video-frame  -->
 
-              <p><b class="lead">Color cast?</b> The app needs to recognize all cards precisely. One obstacle might be a color cast caused by lighting conditions (e.g., blue sky or artificial light). However, the app can adapt to those conditions if you show it a card background.</p>
+              <p><b class="lead">Color cast?</b> The app needs to recognize all cards precisely. One obstacle might be a color cast caused by lighting conditions (e.g., blue sky or artificial light). However, the app can adapt to those conditions if you let it know the card background color.</p>
 
               <p>Tap (longer than 0.5 seconds) with your fingertip on the phone's screen. A rectangle with a sample area in the center will appear. Drag it to any card background. The app will analyze its color and then mark recognized cards with either a red, green, or purple dot.</p>
 
@@ -201,7 +168,7 @@
                 </video>
               </div> <!-- video-frame  -->
 
-              <p><b class="lead">Ready for a challenge?</b> As you gain more experience with the game and our app, you may want to challenge yourself, create and explore other card scenes, or ask questions from a more mathematical point of view. For example, how many sets are possible in a group of N cards? Find a scene of six cards that contains ten sets (is this even possible?). What experiments would you like to do?</p> <!-- answer: (N * N - 1 * 1) / 3, N greater 3 (proof ?) --> <!-- Start here: https://en.wikipedia.org/wiki/Set_(card_game) then Mathematics Workbook
+              <p><b class="lead">Ready for a challenge?</b> As you gain more experience with the game and our app, you may want to challenge yourself, create and explore other card scenes, or try to solve problems with the help of Card Player. How many sets are possible in a group of N cards? Find a group of 6 (out of 81) cards that form 10 sets. Find 20 cards (out of 81) cards that do <em>not</em> form any set.</p> <!-- answer: (N * N - 1 * 1) / 3, N greater 3 (proof ?) --> <!-- Start here: https://en.wikipedia.org/wiki/Set_(card_game) then Mathematics Workbook
 How to use SET® in the classroom
 https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
   -->
@@ -233,23 +200,20 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
           <li>Always keep in mind that your phone doesn't see objects as you perceive them by your eye-brain system.</li>
         </ul>
 
-
         <h2 id="downloads">Downloads</h2>
-        <p>The video collection below consists of card scenes you can download to your iPhone and start to play with, in case you don't have a deck of cards at hand.</p>
+        <p>You may want to download a video to your iPhone from the collection below. It enables you to play at times where you don't have a deck of SET cards at hand.</p>
 
-        <p>As of this writing (November 2019, iOS 12.4.3), Firefox is surprisingly the only browser that allows to download and save a video on your iPhone. Thus we need to ask you to use Firefox for this procedure: </p>
+        <p>As of this writing (November 2019, iOS 12.4.3), Firefox is surprisingly the only browser that allows to download and save a video on your iPhone. Thus, we need to ask you to use Firefox for this procedure: </p>
         <ol>
-          <li>On your iPhone, navigate in Firefox to any of the videos below.</li>
-          <li>Tap on <span class="itemToSelect">Download Video</span> button (longer than 0.5 s).</li>
+          <li>On your iPhone, navigate in Firefox to videos below.</li>
+          <li>Tap on <span class="itemToSelect">Download Video</span> (longer than 0.5 s).</li>
           <li>Select <span class="itemToSelect">Download Link</span>.</li>
-          <li>Select <span class="itemToSelect">Download Now</span>. By default, Firefox is going to store the video in folder <span class="itemToSelect">Downloads</span>.</li>
-          <li>Either tap immediately on <span class="itemToSelect">Downloads</span>, or navigate to that folder: select <span class="itemToSelect">Settings </span> &gt; <span class="itemToSelect">Your Library</span> &gt; <span class="itemToSelect">Downloads</span>.</li>
-          <li>Choose video, then select <span class="itemToSelect">Save Video</span>. Firefox will add a copy to your Photos library.</li>
-          <li>Done.</li>
+          <li>Select <span class="itemToSelect">Download Now</span>. By default, Firefox is going to store video in folder <span class="itemToSelect">Downloads</span>.</li>
+          <li>Either tap immediately on <span class="itemToSelect">Downloads</span>, or navigate to it (select <span class="itemToSelect">Settings </span> &gt; <span class="itemToSelect">Your Library</span> &gt; <span class="itemToSelect">Downloads</span>).</li>
+          <li>Choose video and select <span class="itemToSelect">Save Video</span>. Firefox will add a copy to your Photos library.</li>
         </ol>
 
-
-        <p>Alternatively, if you have access to an Apple desktop or laptop computer, use your favorite browser and choose a video from collection below; after downloading, open video, for example with QuickTime Player, and share it with your iPhone (in QuickTime Player choose <span class="itemToSelect">File</span> &gt; <span class="itemToSelect">Share</span>).</p>
+        <p>Alternatively, if you have access to an Apple desktop or laptop computer, use your favorite browser and choose a video (<span class="itemToSelect">Download Video</span>); after downloading, open video in your favorite video player and share it with your iPhone (in QuickTime Player, select <span class="itemToSelect">File</span> &gt; <span class="itemToSelect">Share</span>).</p>
 
         <p>All videos have MPG-4 format and a file sizes of approximately 1 MB (duration about 0.2 seconds).</p>
 
@@ -259,7 +223,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene12Cards6setsPoster.jpg" alt="Sample 12 cards 6 sets" width=375></a>
               <p>12 Cards / 6 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene12Cards6sets.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
               </div><!-- card  -->
 
           <div class="card">
@@ -267,7 +231,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene12Cards5setsPoster.jpg" alt="Sample 12 cards 5 sets" width=375></a>
               <p>12 Cards / 5 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene12Cards5sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene12Cards5sets.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -275,7 +239,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene7Cards1setPoster.jpg" alt="Sample 7 cards 1 set" width=375></a>
               <p>7 Cards / 1 Set</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene7Cards1set.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene7Cards1set.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -283,7 +247,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene10Cards1setPoster.jpg" alt="Sample 12 cards 5 sets" width=375></a>
               <p>10 Cards / 1 Set</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene10Cards1set.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene10Cards1set.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -291,7 +255,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene9Cards4setsPoster.jpg" alt="Sample 9 cards 4 sets" width=375></a>
               <p>9 Cards / 4 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene9Cards4sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene9Cards4sets.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -299,7 +263,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene9Cards3setsPoster.jpg" alt="Sample 9 cards 3 sets" width=375></a>
               <p>9 Cards / 3 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene9Cards3sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene9Cards3sets.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -307,7 +271,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene12Cards6setsTwoPoster.jpg" alt="Sample 12 cards 6 sets" width=375></a>
               <p>12 Cards / 6 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene12Cards6setsTwo.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene12Cards6setsTwo.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
           <div class="card">
@@ -315,7 +279,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
               <img src="downloads/cardScene27Cards36setsPoster.jpg" alt="Sample 27 cards 36 sets" width=375></a>
               <p>27 Cards / 36 Sets</p>
               <div class="downloadButton">
-                <a href="downloads/cardScene27Cards36sets.mp4" type="video/mp4" download><i class="downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
+                <a href="downloads/cardScene27Cards36sets.mp4" type="video/mp4" download><i class="inlineSVGIcon downloadIcon"><svg><use xlink:href="#downloadIconSVG"/></svg></i> Download Video</a></div> <!-- downloadButton  -->
           </div><!-- card  -->
 
       </div> <!-- downloads-grid-container  -->
@@ -323,7 +287,7 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf
       <h2 id="contact">Contact Us</h2>
       <p>We look forward to reading your questions and comments. Please send us your thoughts by email:</p>
       <div class="centerText">
-        <div class="open-me-button" onclick = "create()" ><span id="openMe"><i class="fa fa-envelope"></i> Open Me</span></div> <noscript><span class="redBoldText">&nbsp;JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise the <span class="itemToSelect">Open Me</span> button won't work.</noscript>
+        <div class="open-me-button" onclick = "create()" ><span id="openMe"><i class="inlineSVGIcon envelopeIcon"><svg><use xlink:href="#envelopeIconSVG"/></svg></i> Open Me</span></div> <noscript><span class="redBoldText">&nbsp;JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise the <span class="itemToSelect">Open Me</span> button won't work.</noscript>
       </div>
 
       </section>
