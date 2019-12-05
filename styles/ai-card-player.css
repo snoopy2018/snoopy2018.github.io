@@ -236,6 +236,14 @@ a {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+#appLogoEye {
+  float:left;
+  width: 2em;
+  height: 2em;
+  background: url(../media/images/image1533.png);
+  background-size: contain;
+}
+
 .hamburgerIcon {
   display: inline-block; /* will alternate with crossIcon */
   width: 1.1em;
