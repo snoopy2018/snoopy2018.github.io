@@ -96,7 +96,7 @@ footer {
 footer p {
   font-size: 0.618em; /* 1 / 1.618 (Golden Ratio), assume p: 1em */
   text-align: left;
-  margin: auto 0;
+  margin: auto 0em;
 }
 
 img, video {
@@ -236,6 +236,16 @@ a {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+#copyright-note {
+  margin-top: 0.7em;
+}
+
+/*
+#copyright-note p {
+  text-align: right;
+}
+ */
+
 #appLogoEye {
   float:left;
   width: 2em;
