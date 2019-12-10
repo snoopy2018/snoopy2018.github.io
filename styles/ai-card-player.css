@@ -94,9 +94,10 @@ footer {
 }
 
 footer p {
-  font-size: 0.618em; /* 1 / 1.618 (Golden Ratio), assume p: 1em */
+  font-size: 0.7em; /* 1 / 1.618 (Golden Ratio), assume p: 1em */
   text-align: left;
   margin: auto 0em;
+  max-width: 94%;
 }
 
 img, video {
@@ -236,15 +237,22 @@ a {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+
 #copyright-note {
   margin-top: 0.7em;
 }
 
 /*
 #copyright-note p {
-  text-align: right;
+  text-align: center;
 }
- */
+*/
+
+.vertical-spacer {
+  /* border-left: 1px solid #000; */
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+}
 
 #appLogoEye {
   float:left;
