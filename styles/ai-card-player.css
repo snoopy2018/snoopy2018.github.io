@@ -9,14 +9,19 @@
 
 html {
   font-family:  PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  /*font-size: 17px;*/
+  font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
   line-height: 1.5;
   letter-spacing: normal; /* -0.022em;  at some Apple websites */
 }
 
-body {
-  font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
+/* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
+/*
+@media (min-width: 40em) {
+ html {font-size: 112.5%;}
+}
+*/
 
+body {
   max-width: 56em;  /* 63em is a value adopted from "Learning Responsive Web Design" by Clarissa Peterson, p.131. I choose 56em (approximately 900px) because it looks good for videos at max-width = 340px. State of mind on November 24, 2019. */
   margin: auto; /* only if (?) max-width < 100%: needed to center web page */
 
