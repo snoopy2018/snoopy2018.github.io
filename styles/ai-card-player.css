@@ -14,15 +14,9 @@ html {
   letter-spacing: normal; /* -0.022em;  at some Apple websites */
 }
 
-/* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
-/*
-@media (min-width: 40em) {
- html {font-size: 112.5%;}
-}
-*/
 
 body {
-  max-width: 56em;  /* 63em is a value adopted from "Learning Responsive Web Design" by Clarissa Peterson, p.131. I choose 56em (approximately 900px) because it looks good for videos at max-width = 340px. State of mind on November 24, 2019. */
+  max-width: 40em; /* 56em;*/  /* 63em is a value adopted from "Learning Responsive Web Design" by Clarissa Peterson, p.131. I choose 56em (approximately 900px) because it looks good for videos at max-width = 340px. State of mind on November 24, 2019. */
   margin: auto; /* only if (?) max-width < 100%: needed to center web page */
 
   /* max-width: 100%; */ /* Apple HGI webpage */
@@ -94,10 +88,6 @@ header, section, footer {
   width: 94%; /* Recommended for <article> by  Peterson, p. 285 */
 }
 
-footer {
-  border-top: 1px solid #ccc;
-}
-
 footer p {
   font-size: 0.7em; /* 1 / 1.618 (Golden Ratio), assume p: 1em */
   text-align: left;
@@ -118,52 +108,6 @@ a {
   text-decoration: none; /* no underline */
 }
 
-/* Responsive Grid  -------------------------------> */
-
-/* Source based on: w3.com, How To, Responsive Image Grid */
-
-.video-container {
-  display: block;
-  width: 100%;
-  margin-left: auto; /* center items */
-  margin-right: auto; /* center items */
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  /*
-  padding-top: 0;
-  padding-right: 4px;
-  */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  display: flex;
-  margin: 0 auto; /* center column */
-}
-
-.column .video-container {
-  flex: 50%; /* 50% = two columns */
-  padding-top: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 1em;
-}
-
-#BEFORE.column .video-container {
-  width: 100%;
-  padding: 1em 1em;
-}
-
 .video-frame { /* settings make video centered in container */
   display: table;
   max-width: 21.25em; /* 21.25 * 16px = 340px is an arbitrary value but looks not too bad on iPhone 6 */ /* 90%; */  /* ... of video's intrinsic width (375px); 100% (375px) looks too bulky in my opinion. State of mind November 23, 2019. */
@@ -171,17 +115,9 @@ a {
   margin: 0 auto; /* center video */
 }
 
-.video-container >p {
-  max-width: 21.25em; /* 90%; */ /* same percentage or pixels as in video-frame property; don't let text go beyond video frame */
-}
-
-
-/* <------------------------------  Responsive Grid */
-
 /* Navigation -----------------------------------> */
 
 /* Source based on: w3.com, How To, Responsive Topnav */
-
 /* Add a black background color to the top navigation */
 .topnav {
  background-color: #fff; /* #f0f0f0; */
@@ -210,15 +146,6 @@ a {
  /* text-decoration: underline;*/ /* that's what WWF does (underline only). */
 }
 
-/* Add an active class to highlight the current page */
-/* NOT needed since we stay always at the same page */
-/*
-.topnav a.active {
- background-color: #4CAF50;
- color: white;
-}
-*/
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
  display: none;
@@ -243,29 +170,28 @@ a {
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
 
-#copyright-note {
-  margin-top: 0.7em;
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.end-of-main-ruler {
+  border-bottom: 1px solid #ccc;
+}
+
+#textbox-footer {
+  margin-top: 1em;
 }
 
 /*
-#copyright-note p {
-  text-align: center;
+.vertical-spacer {
+  border-left: 1px solid #000;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 */
-
-.vertical-spacer {
-  /* border-left: 1px solid #000; */
-  margin-left: 0.7em;
-  margin-right: 0.7em;
-}
-
-#appLogoEye {
-  float:left;
-  width: 2em;
-  height: 2em;
-  background: url(../media/images/image1533.png);
-  background-size: contain;
-}
 
 .hamburgerIcon {
   display: inline-block; /* will alternate with crossIcon */
@@ -391,19 +317,34 @@ a {
 .downloads-grid-container {
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+.previews-grid-container {
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: 1fr;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.preview-container p {
+  max-width: 30em;
+}
+
 
 /* ----------------------------------------------------------------------- */
 /* --------------------     MEDIA QUERIES (LAST)      -------------------- */
 /* ----------------------------------------------------------------------- */
 
-/* Source based on: w3.com, How To, Responsive Topnav
-
-*/
-
-@media only screen and (max-width: 700px) {
+/* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
+@media only screen and (min-width: 38em) {  /* 38em apprximately 600px with em = 16px */
+ html {
+   font-size: 112.5%; /* Number 112.5%. Reasoning? */
+ }
 }
+
 
 /* Source based on: w3.com, How To, Responsive Topnav
   The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
@@ -412,7 +353,7 @@ a {
   if Javascript is disabled and viewport below, for example 600px, the button function is not working and the user doesn't see menu at all. Unfortunatly, the media query @media (scripting: enabled) { } isn't supported by any browser yet.
   */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 38em) {
   /* If the browser window is <max-width> or smaller then... */
   .javascript .topnav a {
     display: none;  /* don't show text but show...  */
@@ -456,34 +397,14 @@ a {
   }
 }
 
-@media only screen and (max-width: 735px) {
-  .downloads-grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 38em) {
     .downloads-grid-container {
       grid-template-columns: 1fr 1fr;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 50em) {
     .previews-grid-container {
       grid-template-columns: 1fr;
     }
-}
-
-/* Source based on: w3.com, How To, Responsive Image Grid
- Responsive layout - makes the two columns stack on top of each other instead of next to each other
- */
-@media only screen and (max-width: 600px) {
-  /* If the browser window is <max-width> or smaller then... */
-  .column {
-    display: block;
-  }
-
-  .column .video-container {
-    max-width: 100%; /* fill entire column */
-  }
 }

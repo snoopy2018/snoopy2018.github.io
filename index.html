@@ -13,7 +13,10 @@
 
   <!-- My style sheets -->
   <link href="styles/ai-card-player.css" rel="stylesheet" type="text/css">
+</head>
 
+<body>
+  <!-- Inline SVG  -->
   <svg display="none">
     <symbol  viewBox="0 0 120 120" id="downloadIconSVG">
       <!-- COPY of SVG code (media/images/downloadOpti.svg) from here...  -->
@@ -34,9 +37,6 @@
     </symbol>
   </svg> <!-- envelopeIconSVG  -->
 
-
-</head>
-<body>
   <nav>
     <!--Navigation-->
     <div class="topnav" id="myTopnav">
@@ -87,49 +87,41 @@
       <h2 id="previews">Previews</h2>
       <p>The following video clips demonstrate Card Player's main features. The animation of yellow disks represent user's fingertip tapping or dragging elements on the screen (for simplicity's sake, swipe gestures and taps that close views are not shown).</p>
 
-      <div class="row">
-        <div class="column">
-          <div class="video-container">
-            <div class="video-frame">
-              <video class="video-border" preload="none" controls src="media/videos/AppPreviewCardFeatures.mp4" width="375" poster="media/images/AppPreviewCardFeaturesPoster@2x.png">
-              <!-- fallback for browsers that don't support video tag -->
-              Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
-              </video>
-            </div> <!-- video-frame  -->
-
-            <p><b class="lead">Get to know your cards.</b> Tap on any card marked by a colored dot. Card Player will visualize its color, shape, shading, and number.</p>
-          </div> <!-- video-container  -->
-
-          <div class="video-container">
-            <div class="video-frame">
-              <video class="video-border" preload="none" controls src="media/videos/AppPreviewOne.mp4" width="375" poster="media/images/AppPreviewOnePoster@2x.png">
-              <!-- fallback for browsers that don't support video tag -->
-              Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+        <div class="previews-grid-container">
+          <div class="preview-container">
+          <div class="video-frame">
+            <video class="video-border" preload="none" controls src="media/videos/AppPreviewCardFeatures.mp4" width="375" poster="media/images/AppPreviewCardFeaturesPoster@2x.png">
+            <!-- fallback for browsers that don't support video tag -->
+            Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
             </video>
-            </div> <!-- video-frame  -->
+          </div> <!-- video-frame  -->
+
+          <p><b class="lead">Get to know your cards.</b> Tap on any card marked by a colored dot. Card Player will visualize its color, shape, shading, and number.</p>
+          </div> <!-- preview-container  -->
+
+          <div class="preview-container">
+          <div class="video-frame">
+            <video class="video-border" preload="none" controls src="media/videos/AppPreviewOne.mp4" width="375" poster="media/images/AppPreviewOnePoster@2x.png">
+            <!-- fallback for browsers that don't support video tag -->
+            Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewOne.mp4"> MP4 video.</a>
+          </video>
+          </div> <!-- video-frame  -->
+
             <p><b class="lead">Set or no set?</b> Select a group of three cards. Card Player will show you whether or not they form a set, and the reason why they do or do not. Observe how the number of sets (top left) found by users increases when they find a <em>new</em> set. </p>
+          </div> <!-- preview-container  -->
 
-            <!-- <p>This is a paragraph that visualizes <span class="marker">a line length of approximately</span> 36 to 66 characters.</p>
-              -->
-            </div> <!-- video-container  -->
-          </div> <!-- column  -->
-        </div> <!-- row  -->
-
-        <div class="row">
-          <div class="column">
-
-          <div class="video-container">
-              <div class="video-frame">
-                <video class="video-border" preload="none" controls src="media/videos/AppPreviewTwo.mp4" width="375" poster="media/images/AppPreviewTwoPoster@2x.png">
-                <!-- fallback for browsers that don't support video tag -->
-                Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewTwo.mp4"> MP4 video.</a>
-              </video>
+          <div class="preview-container">
+            <div class="video-frame">
+              <video class="video-border" preload="none" controls src="media/videos/AppPreviewTwo.mp4" width="375" poster="media/images/AppPreviewTwoPoster@2x.png">
+              <!-- fallback for browsers that don't support video tag -->
+              Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewTwo.mp4"> MP4 video.</a>
+            </video>
             </div> <!-- video-frame  -->
 
             <p><b class="lead">Need a hint?</b> Card Player provides you with hints whenever you need them. A hint is based on sets in a scene, cards you've selected, and sets you've already found. It has four detail levels. At level one, a hint shows either color, shape, shading, or number of three cards that form a set. The level increases after you've tried different card combinations that didn't form a set. At level four, you'll see all four features: color, shape, shading, and number. Or in other words, the full disclosure of a set.</p>
-          </div> <!-- video-container  -->
+          </div> <!-- preview-container  -->
 
-          <div class="video-container">
+          <div class="preview-container">
             <div class="video-frame">
               <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree1of3.mp4" width="375" poster="media/images/AppPreviewThree1of3Poster@2x.png">
                 <!-- fallback for browsers that don't support video tag -->
@@ -138,44 +130,37 @@
             </div> <!-- video-frame  -->
 
             <p><b class="lead">Explore all sets.</b> The app finds <em>all</em> possible sets in a group of recognized cards. If any, tap on the number of sets (top right) and explore them.</p>
-          </div> <!-- video-container  -->
+          </div> <!-- preview-container  -->
 
-          </div> <!-- column  -->
-        </div> <!-- row  -->
+          <div class="preview-container">
+            <div class="video-frame">
+              <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree2of3.mp4" width="375" poster="media/images/AppPreviewThree2of3Poster@2x.png">
+              <!-- fallback for browsers that don't support video tag -->
+              Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewThree2of3.mp4"> MP4 video.</a>
+              </video>
+            </div> <!-- video-frame  -->
+            <div id="color-cast-description"> <!-- Dummy container to make the three paragraphs stay in one grid element instead of three. -->
+            <p><b class="lead">Color cast?</b> Card Player needs to recognize all cards precisely. One obstacle might be a color cast caused by lighting conditions (e.g., the blue sky or artificial light). However, the app can adapt to those conditions if you let it know card background color.</p>
 
-        <div class="row">
-          <div class="column">
-            <div class="video-container">
-              <div class="video-frame">
-                <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree2of3.mp4" width="375" poster="media/images/AppPreviewThree2of3Poster@2x.png">
-                <!-- fallback for browsers that don't support video tag -->
-                Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewThree2of3.mp4"> MP4 video.</a>
-                </video>
-              </div> <!-- video-frame  -->
+            <p>Tap with your fingertip on the phone's screen (longer than 0.5 seconds). A rectangle with a sample area in the center will appear. Drag it to any card background. Card Player will analyze its color and then mark recognized cards with either a red, green, or purple dot.</p>
 
-              <p><b class="lead">Color cast?</b> Card Player needs to recognize all cards precisely. One obstacle might be a color cast caused by lighting conditions (e.g., the blue sky or artificial light). However, the app can adapt to those conditions if you let it know card background color.</p>
+            <p>You may use this feature to measure a color composition of any object in an image. The sample monitor displays red, green, and blue (RGB) colors of a sample area (arithmetic means).</p>
+          </div>
 
-              <p>Tap with your fingertip on the phone's screen (longer than 0.5 seconds). A rectangle with a sample area in the center will appear. Drag it to any card background. Card Player will analyze its color and then mark recognized cards with either a red, green, or purple dot.</p>
+        </div> <!-- preview-container  -->
 
-              <p>You may use this feature to measure a color composition of any object in an image. The sample monitor displays red, green, and blue (RGB) colors of a sample area (arithmetic means).</p>
-            </div> <!-- video-container  -->
+        <div class="preview-container">
+            <div class="video-frame">
+              <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree3of3.mp4" width="375" poster="media/images/AppPreviewThree3of3Poster@2x.png">
+              <!-- fallback for browsers that don't support video tag -->
+              Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewThree3of3.mp4"> MP4 video.</a>
+              </video>
+            </div> <!-- video-frame  -->
 
-            <div class="video-container">
-              <div class="video-frame">
-                <video class="video-border" preload="none" controls src="media/videos/AppPreviewThree3of3.mp4" width="375" poster="media/images/AppPreviewThree3of3Poster@2x.png">
-                <!-- fallback for browsers that don't support video tag -->
-                Your browser does not support HTML5 video. Get <a href="media/videos/AppPreviewThree3of3.mp4"> MP4 video.</a>
-                </video>
-              </div> <!-- video-frame  -->
+            <p><b class="lead">Ready for a challenge?</b> As you gain more experience with SET and our app, you may want to challenge yourself, create and explore card scenes, or try to solve problems with help of Card Player. Consider the following. What is the maximum number of sets you can find in a group of N cards? Find a group of 6 cards that consists of 4 sets. Find 20 cards that do <em>not</em> form any set.</p>
+          </div> <!-- preview-container  -->
 
-              <p><b class="lead">Ready for a challenge?</b> As you gain more experience with SET and our app, you may want to challenge yourself, create and explore card scenes, or try to solve problems with help of Card Player. Consider the following. What is the maximum number of sets you can find in a group of N cards? Find a group of 6 cards that consists of 4 sets. Find 20 cards that do <em>not</em> form any set.</p> <!-- answer: N * (N - 1) / 3!, N greater 3 (proof ?) --> <!-- Start here: https://en.wikipedia.org/wiki/Set_(card_game) then Mathematics Workbook
-How to use SET® in the classroom
-https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf, ``Developing Mathematical Reasoning'' page 41.
-  -->
-            </div> <!-- video-container  -->
-          </div> <!-- column  -->
-
-        </div> <!-- row  -->
+       </div> <!-- previews-grid-container  -->
 
         <h2 id="bestPractices">Best Practices</h2>
         <p>The following guidelines helped us during development to achieve high card recognition rates, and we hope they will help you to have the best experience with Card Player.</p>
@@ -288,21 +273,25 @@ https://www.setgame.com/sites/default/files/teacherscorner/mathworkbook_0.pdf, `
       <h2 id="contact">Contact Us</h2>
       <p>We look forward to reading your questions and comments. Please send us your thoughts by email.</p>
       <div class="centerText">
-        <div class="open-me-button" onclick = "create()" ><span id="openMe"><i class="inlineSVGIcon envelopeIcon"><svg><use xlink:href="#envelopeIconSVG"/></svg></i> Open Me</span></div> <noscript><span class="redBoldText">&nbsp;JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise the <span class="itemToSelect">Open Me</span> button won't work.</noscript>
+        <div class="open-me-button" onclick = "create()" ><span id="openMe"><i class="inlineSVGIcon envelopeIcon"><svg><use xlink:href="#envelopeIconSVG"/></svg></i> Please Open Me</span></div> <noscript><span class="redBoldText">&nbsp;JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise the <span class="itemToSelect">Please Open Me</span> button won't work.</noscript>
       </div>
 
       </section>
+
+      <div class="end-of-main-ruler"></div>
     </main>
 
     <footer>
       <!--Footer-->
-      <p><em>SET</em> is a registered trademark of Cannei LLC licensed by Set Enterprises, Inc. </p>
+      <p>Disclaimer: <em>SET</em> is a registered trademark of Cannei LLC licensed by Set Enterprises, Inc. <em>iPhone</em> is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
 
-      <p>iPhone</em> is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
-
-      <div id="copyright-note">
-        <p>Copyright &copy; 2019 Jürgen Ehret. All rights reserved. <span class = "vertical-spacer"></span> <a href="privacy/privacy-policy.pdf"> Privacy Policy</a></p>
+      <div id="textbox-footer"> <!-- Source: https://css-tricks.com/left-align-and-right-align-text-on-the-same-line/  -->
+        <p class="alignleft"><a href="privacy/privacy-policy.pdf"> Privacy Policy</a></p>
+        <p class="alignright">Copyright &copy; 2019 Jürgen Ehret. All rights reserved.</p>
       </div>
+      <div style="clear: both;"></div> <!-- Clear float (https://css-tricks.com/left-align-and-right-align-text-on-the-same-line/)  -->
+
+
 
       <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>  -->
 
