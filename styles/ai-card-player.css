@@ -33,7 +33,7 @@ body {
 p {
   font-size: 1em;
 /*   line-height: 1.4; */ /* or 1.5 as htnl? */
-  max-width: 44em; /* I feel text need to be limited to a certain width. 44em seems to be a good starting point. Note to center the text with margin: auto;
+  max-width: 36em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
   top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
   margin: 0.5em auto;
 }
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul, ol {
-  max-width: 44em; /* same as p element. State of mind on November 26, 2019. */
+  max-width: 36em; /* same as p element. State of mind on December 11, 2019. */
   margin: 0.5em auto;
 }
 
@@ -110,8 +110,7 @@ a {
 
 .video-frame { /* settings make video centered in container */
   display: table;
-  max-width: 21.25em; /* 21.25 * 16px = 340px is an arbitrary value but looks not too bad on iPhone 6 */ /* 90%; */  /* ... of video's intrinsic width (375px); 100% (375px) looks too bulky in my opinion. State of mind November 23, 2019. */
-  /* margin: 0 auto; */ /* center video But decided not to do so. State of mind on Novemeber 21, 2019. */
+  max-width: 340px; /*  340px is an arbitrary value but looks not too bad on iPhone 6 */ /* 90%; */  /* ... of video's intrinsic width (375px); 100% (375px) looks too bulky in my opinion. State of mind November 23, 2019. */
   margin: 0 auto; /* center video */
 }
 
@@ -339,12 +338,17 @@ a {
 /* ----------------------------------------------------------------------- */
 
 /* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
-@media only screen and (min-width: 38em) {  /* 38em apprximately 600px with em = 16px */
+@media only screen and (min-width: 900px) {  /* 38em apprximately 600px with em = 16px */
  html {
    font-size: 112.5%; /* Number 112.5%. Reasoning? */
  }
 }
 
+@media only screen and (max-width: 37.5em) {
+    .downloads-grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+}
 
 /* Source based on: w3.com, How To, Responsive Topnav
   The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
@@ -353,7 +357,7 @@ a {
   if Javascript is disabled and viewport below, for example 600px, the button function is not working and the user doesn't see menu at all. Unfortunatly, the media query @media (scripting: enabled) { } isn't supported by any browser yet.
   */
 
-@media only screen and (max-width: 38em) {
+@media only screen and (max-width: 40em) { /* breakpoint at max-wdth of body. In em because nav text is relative to em. State of mind on December 11, 2019.*/
   /* If the browser window is <max-width> or smaller then... */
   .javascript .topnav a {
     display: none;  /* don't show text but show...  */
@@ -395,16 +399,4 @@ a {
   .javascript .topnav ul li {
     float: none;
   }
-}
-
-@media only screen and (max-width: 38em) {
-    .downloads-grid-container {
-      grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media only screen and (max-width: 50em) {
-    .previews-grid-container {
-      grid-template-columns: 1fr;
-    }
 }
