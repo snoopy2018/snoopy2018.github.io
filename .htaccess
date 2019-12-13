@@ -1,0 +1,2 @@
+#Redirect an entire site:
+Redirect 301 / https://snoopy2018.github.io/ai-card-player/
