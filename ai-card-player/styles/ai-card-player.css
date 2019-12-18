@@ -22,11 +22,10 @@ body {
   /* max-width: 100%; */ /* Apple HGI webpage */
   min-width: 20em; /* approximately 320px; e.g., Apple HGI webpage */
   overflow-x: hidden; /* Apple HGI webpage */
-/*
+
   background-image: url(../media/images/underConstruction.png);
   background-repeat: no-repeat;
-  background-position: center 3em;;
-*/
+  background-position: center 100px;
 }
 
 /* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
