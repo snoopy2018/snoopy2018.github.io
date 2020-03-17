@@ -22,10 +22,11 @@ body {
   /* max-width: 100%; */ /* Apple HGI webpage */
   min-width: 20em; /* approximately 320px; e.g., Apple HGI webpage */
   overflow-x: hidden; /* Apple HGI webpage */
-
+/*
   background-image: url(../media/images/underConstruction.png);
   background-repeat: no-repeat;
   background-position: center 100px;
+  */
 }
 
 /* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
@@ -168,6 +169,37 @@ a {
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
 
+.app-logo-container {
+  /* ????????????? display: block; */
+  float: left;
+/*  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2); */
+  max-width: 180px; /* size of image */
+  text-align: center;
+  /*font-family: arial; */
+  margin: 1.6em 1.5em 0em 0.5em; /* looks good with those arbitrary values, March 16, 2020 */
+}
+
+.app-logo-image {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  width: 180px;
+  border-radius: 0.8em;
+}
+.get-beta-button {
+  border: none;
+  border-radius: 0.8em;
+  padding: 0.3em;
+  color: #fff; /*white;*/
+  background-color: #4490ee; /* eye color: #4490ee */
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: block;
+  width: 66%;
+  margin: 1em auto;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+}
+
 .alignleft {
 	float: left;
 }
@@ -281,6 +313,7 @@ a {
   box-shadow: 0 10px 6px -6px #777; /* Source: box-shadow. https://css-tricks.com/almanac/properties/b/box-shadow/ */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */ /* w3schools.com Product Card */
 }
+
 
 /* Based on Source: w3schools.com --------------------> */
 /* Beautiful card examples at w3schools.com (e.g., Profile or Product Card) */
