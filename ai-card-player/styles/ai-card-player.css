@@ -171,6 +171,16 @@ a {
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
 
+.beta-for-free {
+  width: auto;
+  border:2px solid blue; /* : 1px rgb(1, 0, 0,) ; /*  #4490ee;*/
+  border-color: #4490ee; /*rgba(255, 99, 71, 0.5);*/
+  border-radius: 0.8em;
+  padding: 1.0em; /* 10px; */
+  margin: 0.1em; /* 10px; */
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+}
+
 .app-logo-container {
   /* ????????????? display: block; */
   float: left;
@@ -194,7 +204,7 @@ a {
   background-color: #4490ee; /* eye color: #4490ee */
   text-align: center;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   cursor: pointer;
   display: block;
   width: 66%;
