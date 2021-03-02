@@ -68,7 +68,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  margin: 1em auto 0 auto;
+  /* margin: 1em auto 0 auto;  */ /* removed constraint (new design) State of mind on March 2, 2021 */
 }
 
 ul, ol {
@@ -112,9 +112,15 @@ a {
 
 .video-frame { /* settings make video centered in container */
   display: table;
-  max-width: 340px; /*  340px is an arbitrary value but looks not too bad on iPhone 6 */ /* 90%; */  /* ... of video's intrinsic width (375px); 100% (375px) looks too bulky in my opinion. State of mind November 23, 2019. */
+  max-width: 251px; /*  340px is an arbitrary value but looks not too bad on iPhone 6 */ /* 90%; */  /* ... of video's intrinsic width (375px); 100% (375px) looks too bulky in my opinion. State of mind November 23, 2019.
+
+  UPDATE The videos looked in my opinion too bulky (overwhelming) especially on a narrow screen like my iPhone 6. The number is kind of arbitrary but calculated from 375 * 0.67 (67 %). State of mind on March 2, 2021. */
   margin: 0 auto; /* center video */
 }
+
+/* .preview-container p {
+margin-bottom: -3em;
+} */
 
 /* Navigation -----------------------------------> */
 
@@ -176,8 +182,8 @@ a {
   border:2px solid blue; /* : 1px rgb(1, 0, 0,) ; /*  #4490ee;*/
   border-color: #4490ee; /*rgba(255, 99, 71, 0.5);*/
   border-radius: 0.8em;
-  padding: 1.0em; /* 10px; */
-  margin: 0.1em; /* 10px; */
+  padding: 0.5em; /* 10px; */
+  margin-bottom: 0.1em; /* 10px; */
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -326,6 +332,19 @@ a {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */ /* w3schools.com Product Card */
 }
 
+#imageCardFeatures { /* based on class "video-border", look for original there. State of mind on March 2, 2021. */
+  /* display: table; /* same as in class video-frame */ */
+  max-width: 251px; /* same as in class video-frame */
+  /* margin: 0 auto 0.5em auto; /* top right bottom left;  center image same as in class video-frame */ */
+  border-radius: 0px;
+  border-color: rgba(0, 0, 0, 0.4); /* #202020; */ /* choose a gray that is distinguishable on all background colors, except on itself */
+  border-width: 1px; /* only 1 pixel wide, almost invisible, ot dominant */
+  border-style: solid;
+  /*filter: drop-shadow(1em 1em 1em #aaa);*/ /* values dpend on taste */
+  /* filter: drop-shadow(0.5em 0.5em 1em rgba(0, 0, 0, 0.4) ); */
+  box-shadow: 0 10px 6px -6px #777; /* Source: box-shadow. https://css-tricks.com/almanac/properties/b/box-shadow/ */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */ /* w3schools.com Product Card */
+}
 
 /* Based on Source: w3schools.com --------------------> */
 /* Beautiful card examples at w3schools.com (e.g., Profile or Product Card) */
@@ -361,19 +380,21 @@ a {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em auto 2em auto;
 }
 
 .previews-grid-container {
   display: grid;
-  grid-gap: 1.5em;
+  /* grid-gap: 1.5em;  /* removed constraint (new design) State of mind on March 2, 2021 */ */
   grid-template-columns: 1fr;
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-top: 0em; /* was 1em. Constraint removed for new design. State of mind on March 2, 2021. */
+  margin-left: 0em; /* was 1em. Constraint removed for new design. State of mind on March 2, 2021. */
+  margin-right: 0em; /* was 1em. Constraint removed for new design. State of mind on March 2, 2021. */
 }
 
+/* Questionable constraint for new design. State of mind on March 2, 2021. */
 .preview-container p {
-  max-width: 30em;
+  max-width: 26em; /*  was 30em before March 2, 2021 */
 }
 
 
