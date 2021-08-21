@@ -144,9 +144,17 @@ span.small-caps {font-variant-caps: small-caps;}
 }
 */
 .card-container {
-  padding: 8px 0px 16px 0px;
+  padding: 8px 0px 8px 0px;
 }
 
+.my-floater {
+  float: left;
+  width: 275px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+}
 </style>
 <body>
 
@@ -196,7 +204,7 @@ span.small-caps {font-variant-caps: small-caps;}
   <div class="w3-row">
     <!-- 21Aug2021 10:42<div class="w3-col m4 w3-center w3-padding-12"> -->
 
-    <div class="w3-col m4 w3-center">
+    <!-- <div class="w3-col m9 w3-center"> -->
 
       <!--<img src="media/images/me-sharpened.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
      <!--<br><img src="media/images/me-sun.png" class="w3-round-medium w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
@@ -204,34 +212,25 @@ span.small-caps {font-variant-caps: small-caps;}
 
      <!-- 21Aug2021 10:42 <br><img src="media/images/me-sun.png" class="w3-card-4 w3-round-large w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
        <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p> -->
-<div class="card w3-round w3-margin-top">
-   <img class="w3-round" src="media/images/me-sun.png"  alt="Jürgen Ehret" style="width:100%">
-   <div class="card-container">
-     <p class="w3-small"><em>Dr.-Ing. Jürgen Ehret</em></p>
-     <p class="w3-small w3-margin-top">Software Engineer & Founder</p>
-   </div>
- </div>
+       <div class="my-floater">
+           <div class="card w3-round w3-margin-top w3-center">
+              <img class="w3-round" src="media/images/me-sun.png"  alt="Jürgen Ehret" style="width:100%">
+              <div class="card-container">
+                <p class="w3-small"><em>Dr.-Ing. Jürgen Ehret</em></p>
+                <p class="w3-small w3-margin-top">Software Engineer & Founder</p>
+              </div>
+           </div>
+       <!--</div> -->
+       </div>
+     <p>Willkommen! Mein Name ist Jürgen Ehret und ich gründete das <em>Ingenieurbüro für Softwaresysteme</em>, um kleinen und mittelständischen Unternehmen meine fundierte langjährige Erfahrung in der Softwareentwicklung als maßgeschneiderte Dienstleistung anzubieten.</p>
 
+    <p>Ich liebe es, mich in komplexe technische Probleme einzuarbeiten, sie zu analysieren und mit kreativen Ansätzen zu lösen. Meine Lösungen basieren auf der Entwicklung effektiver Algorithmen und deren Umsetzung in hochwertige Softwaresysteme.</p>
 
-    </div>
+    <p>Das Ingenieurhandwerk erlernte ich bei einem namhaften bayerischen Automobilhersteller und entdeckte gleichzeitig die Software für mich.
+    Die anschließende Tätigkeit als freiberuflicher Softwareingenieur im kalifornischen Silicon Valley hat meine analytischen und kreativen Fähigkeiten stark verfeinert, aber auch den Wunsch geweckt, dieses Ingenieurbüro in Deutschland zu gründen (mehr Details finden Sie bei Interesse in meinem <a href="cv/Juergen-Ehret-CV.pdf" title="PDF-File >" target="_blank" class="w3-hover-text-blue">Curriculum Vitae</a>).
 
-    <div class="w3-col m8 w3-padding-large">
-        <p>Willkommen, mein Name ist Jürgen Ehret. Suchen Sie einen Softwareingenieur? Das <em>Ingenieurbüro für Softwaresysteme</em> gründete ich, um kleinen und mittelständischen Unternehmen meine fundierte langjährige Erfahrung in der Softwareentwicklung als maßgeschneiderte Dienstleistung anzubieten.</p>
+    <p>Bitte lesen Sie in meinem <a href="#portfolio" title="#PORTFOLIO" class="w3-hover-text-blue">Portfolio</a>, wie ich Sie bei Ihrem Softwareprojekt unterstützen kann. </p>
 
-        <p>Ich liebe es, mich in komplexe technische Probleme einzuarbeiten, sie zu analysieren und mit kreativen Ansätzen zu lösen. Meine Lösungen basieren auf der Entwicklung effektiver Algorithmen und deren Umsetzung in hochwertige Softwaresysteme.
-
-            <!--Die Entwicklung und der Einsatz effektiver Software sind wesentliche Bestandteile meiner Lösungen. -->
-
-            <!-- Die Entwicklung und der Einsatz effektiver Software spielen in meinen Lösungen eine entscheidende Rolle, wie die Beispiele in meinem <a href="#portfolio" title="#PORTFOLIO" class="w3-hover-text-blue" >Portfolio</a> zeigen. -->
-
-        <p>Das Ingenieurhandwerk erlernte ich bei einem namhaften bayerischen Automobilhersteller und entdeckte gleichzeitig die Software für mich.
-        Die anschließende Tätigkeit als freiberuflicher Softwareingenieur im kalifornischen Silicon Valley hat meine analytischen und kreativen Fähigkeiten stark verfeinert, aber auch den Wunsch geweckt, dieses Ingenieurbüro in Deutschland zu gründen (mehr Details finden Sie bei Interesse in meinem <a href="cv/Juergen-Ehret-CV.pdf" title="PDF-File >" target="_blank" class="w3-hover-text-blue">Curriculum Vitae</a>).
-
-        <!-- Im kalifornischen Silicon Valley verfeinerte ich meine analytischen und kreativen Fähigkeiten als freiberuflicher Softwareingenieur in vielen Bereichen der Softwareentwicklung (mehr Details finden Sie in meinem <a href="cv/Juergen-Ehret-CV.pdf" title="PDF-File >" target="_blank" class="w3-hover-text-blue">Curriculum Vitae</a>).</p> -->
-
-        <!-- <a href="#portfolio"></i> Projekte</a> -->
-
-    </div>
   </div>
 
 </div>
@@ -248,8 +247,9 @@ span.small-caps {font-variant-caps: small-caps;}
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h2 class="w3-center"><span class="small-caps">Was kann ich für <em>Sie</em> tun?</span></h2>
-  <p class="w3-center w3-padding-16">Die folgenden kurzen Projektbeschreibungen sollen Ihnen einen Einblick in meine bisherige Arbeit als Softwareingenieur geben. Vielleicht ähnelt die eine oder andere Aufgabenstellung oder Technologie Ihrem Projekt und ich kann Ihnen mit meiner Erfahrung und Mitarbeit helfen, es zu einem erfolgreichen Abschluss zu bringen. Ich freue mich auf eine Zusammenarbeit!</p>
-
+  <div class="w3-row w3-margin-bottom">
+      <p>Die folgenden kurzen Projektbeschreibungen sollen Ihnen einen Einblick in meine bisherige Arbeit als Softwareingenieur geben. Vielleicht ähnelt die eine oder andere Aufgabenstellung oder Technologie Ihrem Projekt und ich kann Ihnen mit meiner Erfahrung und Mitarbeit helfen, es zu einem erfolgreichen Abschluss zu bringen. Ich freue mich auf eine Zusammenarbeit!</p>
+  </div>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding">
     <div class="w3-col m12 w3-light-grey">   <!-- m12 -> gesamte Breite? >-->
