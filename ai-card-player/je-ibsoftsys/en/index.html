@@ -147,14 +147,43 @@ span.small-caps {font-variant-caps: small-caps;}
   padding: 8px 0px 8px 0px;
 }
 
-.my-floater {
+.image-floater {
   float: left;
   width: 275px;
   margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
-
+  margin-top: 0px;
 }
+
+.rectangle {
+  height: 20px;
+  width: 100%;
+  background-color: #555;
+}
+
+/* ----------------------------------------------------------------------- */
+/* --------------------     MEDIA QUERIES (LAST)      -------------------- */
+/* ----------------------------------------------------------------------- */
+
+/* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
+@media only screen and (min-width: 900px) {  /* 38em approximately 600px with em = 16px */
+ html {
+   font-size: 112.5%; /* Number 112.5%. Reasoning? */
+ }
+}
+
+@media only screen and (max-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image */
+.image-floater {
+    float: left;
+    width: 275px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 222px; /* pus away the text by this 'margin-right' value; I don't know better to avoid that text appears to the right that contains only one word or so. State of mind on August 22, 2021. */
+    margin-top: 0px;
+    }
+}
+
 </style>
 <body>
 
@@ -215,18 +244,20 @@ span.small-caps {font-variant-caps: small-caps;}
 
      <!-- 21Aug2021 10:42 <br><img src="media/images/me-sun.png" class="w3-card-4 w3-round-large w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
        <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p> -->
-       <div class="my-floater">
-           <div class="card w3-round w3-margin-top w3-center">
-              <img class="w3-round" src="../media/images/me-sun.png"  alt="Jürgen Ehret" style="width:100%">
-              <div class="card-container">
-                <p class="w3-small"><span class="small-caps">Dr.-Ing. Jürgen Ehret</span></p>
-                <p class="w3-small w3-margin-top">Software Engineer & Founder</p>
-              </div>
-           </div>
-       <!--</div> -->
-       </div>
-     <p>Welcome! Are you looking for support for your software project? Please read on, maybe I can help you.</p>
 
+    <p>Welcome! Are you looking for support for your software project? Please read on, maybe I can help you.</p>
+
+    <div class="image-floater">
+        <div class="card w3-round w3-margin-top w3-center">
+            <img class="w3-round" src="../media/images/me-sun.png"  alt="Jürgen Ehret" style="width:100%">
+            <div class="card-container">
+                <p style="font-size:0.9em;">Dr.-Ing. Jürgen Ehret</p>
+                <p class="w3-margin-top w3-margin-bottom" style="color: grey; font-size:0.9em;">Software Engineer & Founder</p>
+            </div>
+        </div>
+        <!--</div> -->
+    </div>
+       
     <p>My name is Jürgen Ehret and I founded the <em>Engineering Office for Software Systems</em> in order to offer small and medium-sized companies my extensive experience as a tailor-made service.</p>
 
     <p>I love to familiarize myself with complex technical problems, to analyze them and to solve them with creative approaches. My solutions are based on the development of effective algorithms and their implementation in high-quality software systems.</p>
