@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="de">
 <html>
+
 <title>Ingenieurbüro für Softwaresysteme</title>
 
 <link rel="shortcut icon" type="image/png" href="media/images/favicon68x68x.png">  <!-- technique adopted from Wikipedia (https://en.wikipedia.org/wiki/Favicon). State of mind on March 20, 2020. -->
@@ -189,7 +191,7 @@ span.small-caps {font-variant-caps: small-caps;}
     <a class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" id="logo"></a>
+    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" alt="nav logo" id="logo"></a>
     <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small w3-margin-left">DAS BÜRO</a>
     <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">KONTAKT</a>
@@ -244,8 +246,9 @@ span.small-caps {font-variant-caps: small-caps;}
         <div class="card w3-round w3-margin-top w3-center">
             <img class="w3-round" src="media/images/me-sun.png"  alt="Jürgen Ehret" style="width:100%">
             <div class="card-container">
-                <p style="font-size:0.9em;">Dr.-Ing. Jürgen Ehret</p>
-                <p class="w3-margin-top w3-margin-bottom" style="color: grey; font-size:0.9em;">Software Engineer & Founder</p>
+                <!-- Increased contrast between name, title, and background August 23, 2021 -->
+                <p style="font-size:0.9em; color: #333;">Dr.-Ing. Jürgen Ehret</p>
+                <p class="w3-margin-top w3-margin-bottom" style="font-size:0.9em; color: #666; ;">Software Engineer & Founder</p>
             </div>
         </div>
         <!--</div> -->
@@ -284,9 +287,9 @@ span.small-caps {font-variant-caps: small-caps;}
         <h3 class="w3-center"><span class="small-caps">Smartphone-App</span></h3>
         <p>Die Idee zu dieser App entstand an der Laurelwood Elementary School in Santa Clara, Kalifornien. Als Volontär habe ich mit Zweitklässlern in den Pausen vom Mathematikunterricht das Kartenspiel „SET“ gespielt, das die visuelle Wahrnehmung und das logische Denken schult. Ich stellte mir immer wieder vor, wie ein Smartphone meine Schiedsrichterrolle übernehmen könnte. <br><span id="dots-1">. . .<br>Eingesetzte Technologien: iOS, Objective-C, C/C++, Xcode, OpenCV, Scilab.</span>
         <span id="more-1">
-                <br>Ausgehend von dieser Vision entwickelte ich die Smartphone-App <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >" target="_blank" class="w3-hover-text-blue">AI Card Player</a>. Die App erkennt die Farben und Symbole der Spielkarten, berechnet alle erlaubten Kombinationen nach den Spielregeln und präsentiert die Lösung des Rätsels anschaulich und verständlich.
+                <br>Ausgehend von dieser Vision entwickelte ich die Smartphone-App <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >" target="_blank" rel="noopener" class="w3-hover-text-blue">AI Card Player</a>. Die App erkennt die Farben und Symbole der Spielkarten, berechnet alle erlaubten Kombinationen nach den Spielregeln und präsentiert die Lösung des Rätsels anschaulich und verständlich.
 
-                <br><br>Der größte Teil der Entwicklung bestand darin, einen zuverlässigen Weg zu finden, um die Farben und Symbole der Spielkarten zu erkennen und dieses Modell in  effektive Software zu übersetzen. Bitte bedenken Sie, dass die visuelle Wahrnehmung von Spielkarten ist für uns Menschen ein relativ einfaches Problem, ist aber für ein  Computersystem keine triviale Aufgabe. Dagegen erscheint die Nachbildung des logischen Denkens für ein Computersystem ein Kinderspiel zu sein. Die Umsetzung der Spielregeln machte nur einen winzigen Bruchteil des Entwicklungsaufwandes aus. Weitere Informationen zur App finden Sie bei Interesse unter <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >" target="_blank" class="w3-hover-text-blue">AI Card Player</a>.
+                <br><br>Der größte Teil der Entwicklung bestand darin, einen zuverlässigen Weg zu finden, um die Farben und Symbole der Spielkarten zu erkennen und dieses Modell in  effektive Software zu übersetzen. Bitte bedenken Sie, dass die visuelle Wahrnehmung von Spielkarten ist für uns Menschen ein relativ einfaches Problem, ist aber für ein  Computersystem keine triviale Aufgabe. Dagegen erscheint die Nachbildung des logischen Denkens für ein Computersystem ein Kinderspiel zu sein. Die Umsetzung der Spielregeln machte nur einen winzigen Bruchteil des Entwicklungsaufwandes aus. Weitere Informationen zur App finden Sie bei Interesse unter <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >" target="_blank" rel="noopener" class="w3-hover-text-blue">AI Card Player</a>.
                 <br><br>Eingesetzte Technologien: iOS, Objective-C, C/C++, Xcode, OpenCV, Scilab.
         </span></p>
         <p><button onclick="moreLessFunction(1)" id="myBtn-1">Mehr lesen</button></p>
@@ -375,7 +378,7 @@ span.small-caps {font-variant-caps: small-caps;}
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="media/images/where.jpg" class="w3-image w3-round" style="width:100%">
+      <img src="media/images/where.jpg" alt="location map" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-margin-bottom">
@@ -409,9 +412,9 @@ span.small-caps {font-variant-caps: small-caps;}
       <!-- href=https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/ -->
     <!--<i class="fa fa-linkedin w3-hover-opacity"></i> -->
     <!--<i class="fa fa-linkedin w3-hover-opacity"></i> -->
-    <a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/" title="Profile Webpage >" target="_blank" class="text-color-not-selected w3-hover-text-white">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/" title="Profile Webpage >" target="_blank" rel="noopener" class="text-color-not-selected w3-hover-text-white">LinkedIn</a>
   </div>
-  <p class="w3-small text-color-not-selected">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Webpage >" target="_blank" class="text-color-not-selected w3-hover-text-white">w3.css</a></p>
+  <p class="w3-small text-color-not-selected">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Webpage >" target="_blank" rel="noopener" class="text-color-not-selected w3-hover-text-white">w3.css</a></p>
 </footer>
 
 <script>
