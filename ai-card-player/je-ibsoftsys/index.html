@@ -152,10 +152,10 @@ span.small-caps {font-variant-caps: small-caps;}
 .image-floater {
   float: left;
   width: 275px;
-  margin-bottom: 16px;
   margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 32px;
   margin-top: 0px;
+  margin-bottom: 32px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -172,11 +172,11 @@ span.small-caps {font-variant-caps: small-caps;}
 @media only screen and (max-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image */
 .image-floater {
     float: left;
-    width: 275px;
-    margin-bottom: 16px;
-    margin-left: 16px;
+    width: 80%; /* instead of ..px; side effect: image gets centered */
+    margin-left: 32px;
     margin-right: 222px; /* pus away the text by this 'margin-right' value; I don't know better to avoid that text appears to the right that contains only one word or so. State of mind on August 22, 2021. */
     margin-top: 0px;
+    margin-bottom: 32px;
     }
 }
 
