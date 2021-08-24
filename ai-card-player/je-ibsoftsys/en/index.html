@@ -125,11 +125,11 @@ span.small-caps {font-variant-caps: small-caps;}
 }
 
 /* Source: https://stackoverflow.com/questions/38479979/positioning-my-logo-inside-the-navigation-bar-using-css */
-#logo{
+#navbar-logo{
     position:absolute;
-    top:0px;
+    top:2px; /* to be approximately inline with text, assume 43px nav bar height. I don't know better today August 24, 2021. */
     left:10px;
-    width:40p;
+    width:40px;
     height:40px;
     overflow:hidden;
 }
@@ -190,7 +190,7 @@ span.small-caps {font-variant-caps: small-caps;}
     <a class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="../media/images/navbar-logo213x213px@300.png" alt="nav logo" id="logo"></a>
+    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="../media/images/navbar-logo213x213px@300.png" alt="nav logo" id="navbar-logo"></a>
     <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small w3-margin-left">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">CONTACT</a>
