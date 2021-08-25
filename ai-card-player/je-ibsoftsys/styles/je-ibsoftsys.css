@@ -61,7 +61,7 @@ p {
 
 
 /* Create a Parallax Effect ----------------------------------- */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,6 +83,12 @@ p {
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../media/images/schoenberg-view.jpg");
+  min-height:  500px; /*40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+}
+
+/* Third image (Contact) */
+.bgimg-4 {
+  background-image: url("../media/images/sunset.jpg");
   min-height:  500px; /*40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
@@ -147,6 +153,15 @@ span.small-caps {font-variant-caps: small-caps;}
   margin-bottom: 32px;
 }
 
+/* Mimics the attempt to have a single source for the 'Updated on ,,,' label across multiple html/css files.
+Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/constant-text-in-css/60344
+State of mind on August 25, 2021.
+*/
+span.updated-on:after{
+    content:'Aug 25 21:35:48 CEST 2021'
+}
+
+
 /* ----------------------------------------------------------------------- */
 /* --------------------     MEDIA QUERIES (LAST)      -------------------- */
 /* ----------------------------------------------------------------------- */
@@ -155,17 +170,12 @@ Source: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 State of mind on August 25, 2021.
 */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
   /* Second image (Portfolio) */
-  .bgimg-2 {
+  .bgimg-2,  .bgimg-3, .bgimg-4 {
     min-height: 350px; /* window through which you see background image takes up at least yyy px of viewport height; experimental determined so image looks good at limited heights AND parallax feature cannot made available. State of mind on August 25, 2021. */
-  }
-
-  /* Third image (Contact) */
-  .bgimg-3 {
-    min-height:  350px; /* window through which you see background image takes up at least yyy px of viewport height; experimental determined so image looks good at limited heights AND parallax feature cannot made available. State of mind on August 25, 2021. */
   }
 
 }
