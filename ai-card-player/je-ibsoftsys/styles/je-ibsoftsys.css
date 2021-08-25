@@ -76,14 +76,14 @@ p {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("../media/images/kuehe.jpg");
-  min-height: 40%;   /* window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  background-image: url("../media/images/kuehe-3.jpg");
+  min-height: 500px; /*40%;   /* window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../media/images/schoenberg-view.jpg");
-  min-height:  40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  min-height:  500px; /*40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* ----------------------------------------------------------------------- */
@@ -158,6 +158,16 @@ State of mind on August 25, 2021.
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
   }
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    min-height: 350px; /* window through which you see background image takes up at least yyy px of viewport height; experimental determined so image looks good at limited heights AND parallax feature cannot made available. State of mind on August 25, 2021. */
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+    min-height:  350px; /* window through which you see background image takes up at least yyy px of viewport height; experimental determined so image looks good at limited heights AND parallax feature cannot made available. State of mind on August 25, 2021. */
+  }
+
 }
 
 
