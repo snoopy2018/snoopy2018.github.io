@@ -77,13 +77,13 @@ p {
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("../media/images/kuehe.jpg");
-  min-height: 40%; /* 400px; */
+  min-height: 40%;   /* window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../media/images/schoenberg-view.jpg");
-  min-height:  40%; /* 400px; */
+  min-height:  40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* ----------------------------------------------------------------------- */
@@ -157,6 +157,7 @@ span.small-caps {font-variant-caps: small-caps;}
     min-height: 400px;
   }
 }
+
 
 /* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
 @media only screen and (min-width: 900px) {  /* 38em approximately 600px with em = 16px */
