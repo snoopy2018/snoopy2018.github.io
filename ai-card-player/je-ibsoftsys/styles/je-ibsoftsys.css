@@ -1,10 +1,17 @@
 /* General ----------------------------------- */
 
 /* whole website */
-/*
 *, *:after, *.before {
   box-sizing: border-box;
-} */
+}
+
+/* Mimics the attempt to have a single source for the 'Updated on ,,,' label across multiple html/css files.
+Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/constant-text-in-css/60344
+State of mind on August 25, 2021.
+*/
+span.updated-on:after{
+    content:'Aug 26 07:42:06 CEST 2021'
+}
 
 /* TYPOGRAPHY ----------------------------------- */
 
@@ -152,15 +159,6 @@ span.small-caps {font-variant-caps: small-caps;}
   margin-top: 0px;
   margin-bottom: 32px;
 }
-
-/* Mimics the attempt to have a single source for the 'Updated on ,,,' label across multiple html/css files.
-Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/constant-text-in-css/60344
-State of mind on August 25, 2021.
-*/
-span.updated-on:after{
-    content:'Aug 25 21:35:48 CEST 2021'
-}
-
 
 /* ----------------------------------------------------------------------- */
 /* --------------------     MEDIA QUERIES (LAST)      -------------------- */
