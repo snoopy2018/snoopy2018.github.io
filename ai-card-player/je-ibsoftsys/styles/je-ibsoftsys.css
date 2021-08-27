@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Aug 26 21:00:29 CEST 2021'
+    content:'Aug 27 12:17:38 CEST 2021'
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -80,7 +80,7 @@ p {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("../media/images/forest-path-2880x2180px-min.jpg");
+  background-image: url("../media/images/forest-path-2880x2180px-draft-min.jpg");
   min-height: 100%;
 }
 
