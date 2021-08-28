@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Aug 28 12:15:15 CEST 2021';
+    content:'Aug 28 15:01:02 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -132,11 +132,12 @@ span.small-caps {font-variant-caps: small-caps;}
 
 /* Source: https://stackoverflow.com/questions/38479979/positioning-my-logo-inside-the-navigation-bar-using-css */
 #navbar-logo{
-    position:absolute;
-    top:0px;
-    left:12px;
-    width:43px; /* same as height! */
-    height:43px;/* to be approximately inline with text, assume 43px nav bar height. I don't know better today August 24, 2021. */
+    /* display: flex;
+    justify-content: center;
+    margin: 0px; */
+
+    width:auto; /* same as height! */
+    height:1.4em;/* to be approximately inline with text, assume 43px nav bar height. I don't know better today August 24, 2021. */
     overflow:hidden;
 }
 

@@ -24,13 +24,13 @@
      inkscape:pagecheckerboard="false"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.82943085"
-     inkscape:cx="335.16959"
-     inkscape:cy="405.69988"
+     inkscape:zoom="1.1833381"
+     inkscape:cx="413.23779"
+     inkscape:cy="286.0552"
      inkscape:window-width="1872"
      inkscape:window-height="1189"
      inkscape:window-x="32"
-     inkscape:window-y="73"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer3"
      fit-margin-top="0"
@@ -39,13 +39,15 @@
      fit-margin-bottom="0"
      showborder="false"
      inkscape:showpageshadow="false"
-     units="px" />
+     units="px"
+     inkscape:snap-grids="true"
+     inkscape:snap-global="true" />
   <defs
      id="defs168631">
     <color-profile
        name="D65"
        xlink:href="../../../../../../Library/ColorSync/Profiles/D65.icc"
-       id="color-profile3721" />
+       id="color-profile2184" />
     <rect
        x="309.9783"
        y="662.06946"
@@ -116,7 +118,7 @@
       </g>
     </g>
     <g
-       id="g3718">
+       id="g2181">
       <g
          aria-label="SOFTWARESYSTEME "
          id="text2710"
@@ -187,7 +189,7 @@
          aria-label="INGENIEURBÜRO"
          id="text2714"
          style="font-size:4.23333px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         transform="matrix(3.4734583,0,0,3.4734583,-468.42027,-902.47821)">
+         transform="matrix(3.4734583,0,0,3.4734583,-468.42027,-903.80138)">
         <path
            d="m 110.68232,274.04993 h -0.4517 v -3.3365 h 0.4517 z"
            style="-inkscape-font-specification:Lato;stroke-width:0.291041"
