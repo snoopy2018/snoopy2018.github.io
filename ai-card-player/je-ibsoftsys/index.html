@@ -22,6 +22,27 @@
 </head>
 
 <body>
+    <!-- Check if JavaScript is disabled/enabled   -->
+    <noscript>
+        <div class="noScriptingWarning w3-bottom">
+            <span class="redBoldText">JavaScript is disabled!</span> Please enable JavaScript in your browser, otherwise some buttons on this page won't work.
+        </div>
+    </noscript>
+    <!-- NOTE:
+    The following implements the idea to react in CSS when JavaScript is disabled.
+    In HTML:
+    document.body.className += ' javascript'; (1)
+
+    In CSS:
+    .javascript .someClass { statement if enabled }  (2)
+    .someClass { statement if disabled }  (3)
+
+    Rule (1) gets only executed if class "javascript" exists, which is true only if (1) got executed. Otherwise, (2) is ignored. You may can use (2)
+    as standalone or create a fallback (3) if JavaScript is disabled.
+
+    Source: "Define css if javascript is not enabled". https://stackoverflow.com/questions/4665748/define-css-if-javascript-is-not-enabled
+-->
+
 
 <!-- Navbar (sit on top) -->
 <!-- NOTE I replaced in the nav bars 'w3-button' by 'text-color-not-selected w3-hover-text-white'. It removes this greyish hove behavior, which I personnaly dislike. State of mind on August 12, 2021. -->
@@ -356,6 +377,9 @@ function moreLessFunction(article) {
         moreText.style.display = "inline";
     }
 }
+
+// Used for javascript disabled warning 
+document.body.className += ' javascript';
 
 
 </script>

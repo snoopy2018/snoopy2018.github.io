@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Aug 28 15:12:15 CEST 2021';
+    content:'Aug 28 17:54:38 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -163,6 +163,15 @@ span.small-caps {font-variant-caps: small-caps;}
   margin-top: 0px;
   margin-bottom: 32px;
 }
+
+
+.noScriptingWarning {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ff0000;
+  background-color: white;
+}
+
 
 /* ----------------------------------------------------------------------- */
 /* --------------------     MEDIA QUERIES (LAST)      -------------------- */
