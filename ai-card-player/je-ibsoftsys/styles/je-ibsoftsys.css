@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Aug 28 15:01:02 CEST 2021';
+    content:'Aug 28 15:12:15 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
