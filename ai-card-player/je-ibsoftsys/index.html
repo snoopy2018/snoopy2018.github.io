@@ -19,13 +19,15 @@
 
     <!-- My style sheets -->
     <link href="styles/je-ibsoftsys.css" rel="stylesheet" type="text/css">
+
+    <script type = "text/javascript" src = "js/javascript.js" ></script>
 </head>
 
 <body>
     <!-- Check if JavaScript is disabled/enabled   -->
     <noscript>
-        <div class="noScriptingWarning w3-bottom">
-            <span>JavaScript ist deaktiviert!<br>Bitte aktivieren Sie JavaScript in Ihrem Browser, da sonst einige Schaltflächen auf dieser Seite nicht funktionieren.</span>
+        <div class="noScriptingWarning">
+            <span><span style="font-size:1.17em">JavaScript ist deaktiviert!</span><br>Bitte aktivieren Sie JavaScript in Ihrem Browser, da sonst einige Schaltflächen auf dieser Seite nicht funktionieren.</span>
         </div>
     </noscript>
     <!-- NOTE:
@@ -105,7 +107,7 @@
 
      <!-- 21Aug2021 10:42 <br><img src="media/images/me-sun.png" class="w3-card-4 w3-round-large w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
        <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p> -->
-    <p>Willkommen! Suchen Sie jemanden, der Sie bei Ihrem Softwareprojekt unterstützt? Bitte lesen Sie weiter, vielleicht kann ich Ihnen helfen.</p>
+    <p>Willkommen! Suchen Sie jemanden, der Sie bei Ihrem Softwareprojekt unterstützt? Bitte lesen Sie weiter, dabei kann ich Ihnen auf jeden Fall helfen.</p>
 
     <div class="image-floater">
         <div class="card w3-round w3-margin-top w3-center">
@@ -123,7 +125,9 @@
 
     <p>Ich liebe es, mich in komplexe technische Probleme einzuarbeiten, sie zu analysieren und mit kreativen Ansätzen zu lösen. Meine Lösungen basieren auf der Entwicklung effektiver Algorithmen und deren Umsetzung in hochwertige Softwaresysteme.</p>
 
-    <p>Die interdisziplinäre Ingenieurskunst erlernte ich bei einem namhaften bayerischen Automobilhersteller und entdeckte gleichzeitig die Software für mich. Die anschließende spannende Tätigkeit als freiberuflicher Softwareingenieur im kalifornischen Silicon Valley hat meine analytischen und kreativen Fähigkeiten definitiv verfeinert, mich aber gleichzeitig motiviert, dieses Ingenieurbüro in Deutschland aufzubauen (weitere Details finden Sie in meinem <a href="cv/Juergen-Ehret-CV.pdf" title="PDF-File >" target="_blank" class="w3-hover-text-blue">Curriculum Vitae</a>).
+    <p>Die interdisziplinäre Ingenieurskunst erlernte ich bei einem namhaften bayerischen Automobilhersteller und entdeckte gleichzeitig die Software für mich.</p>
+
+    <p>Die anschließende spannende Tätigkeit als freiberuflicher Softwareingenieur im kalifornischen Silicon Valley hat meine analytischen und kreativen Fähigkeiten definitiv verfeinert, mich aber gleichzeitig motiviert, dieses Ingenieurbüro in Deutschland aufzubauen (weitere Details finden Sie in meinem <a href="cv/Juergen-Ehret-CV.pdf" title="PDF-File >" target="_blank" class="w3-hover-text-blue">Curriculum Vitae</a>).
 
     <p>In meinem <a href="#portfolio" title="#PORTFOLIO" class="w3-hover-text-blue">Portfolio</a> lesen sie, wie ich Sie bei Ihrem Softwareprojekt unterstützen kann.</p>
 
@@ -155,21 +159,26 @@
   </div>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding">
-    <div class="w3-col m12 w3-light-grey">   <!-- m12 -> gesamte Breite? >-->
-        <h3 class="w3-center"><span class="small-caps">Smartphone-App</span></h3>
-        <p>Die Idee zu dieser App entstand an der Laurelwood Elementary School in Santa Clara, Kalifornien. Als Volontär habe ich mit Zweitklässlern in den Pausen vom Mathematikunterricht das Kartenspiel „SET“ gespielt, das die visuelle Wahrnehmung und das logische Denken schult. Ich stellte mir immer wieder vor, wie ein Smartphone meine Schiedsrichterrolle übernehmen könnte. <br><span id="dots-1">. . .<br>Eingesetzte Technologien: iOS, Objective-C, C/C++, Xcode, OpenCV, Scilab.</span>
+    <div class="w3-col m12 w3-light-grey w3-round-xlarge">   <!-- m12 -> gesamte Breite? >-->
+        <h2 class="w3-center"><span class="small-caps">Smartphone-App</span></h2>
+        <p>Die Idee zu dieser App entstand an der Laurelwood Elementary School in Santa Clara, Kalifornien. Als Volontär habe ich mit Zweitklässlern in den Pausen vom Mathematikunterricht das Kartenspiel „SET“ gespielt, das die visuelle Wahrnehmung und das logische Denken schult. Ich stellte mir immer wieder vor, wie ein Smartphone meine Schiedsrichterrolle übernehmen könnte. <br>
+        <span id="dots-1"><b>. . .</b><br>Eingesetzte Technologien: iOS, Objective-C, C/C++, Xcode, OpenCV, Scilab.
+        <!--<p><button onclick="moreLessFunction(1)" class="fa fa-2x fa-plus-circle w3-right w3-padding" style="background-color: Transparent; background-repeat:no-repeat; border: none;" id="myBtn-111"></button></p> -->
+        </span>
         <span id="more-1">
                 <br>Ausgehend von dieser Vision entwickelte ich die Smartphone-App <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >" target="_blank" rel="noopener" class="w3-hover-text-blue">AI Card Player</a>. Die App erkennt die Farben und Symbole der Spielkarten, berechnet alle erlaubten Kombinationen nach den Spielregeln und präsentiert die Lösung des Rätsels anschaulich und verständlich.
 
                 <br><br>Der größte Teil der Entwicklung bestand darin, einen zuverlässigen Weg zu finden, um die Farben und Symbole der Spielkarten zu erkennen und dieses Modell in  effektive Software zu übersetzen. Bitte bedenken Sie, dass die visuelle Wahrnehmung von Spielkarten ist für uns Menschen ein relativ einfaches Problem, ist aber für ein  Computersystem keine triviale Aufgabe. Dagegen erscheint die Nachbildung des logischen Denkens für ein Computersystem ein Kinderspiel zu sein. Die Umsetzung der Spielregeln machte nur einen winzigen Bruchteil des Entwicklungsaufwandes aus. Weitere Informationen zur App finden Sie unter <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >" target="_blank" rel="noopener" class="w3-hover-text-blue">AI Card Player</a>.
                 <br><br>Eingesetzte Technologien: iOS, Objective-C, C/C++, Xcode, OpenCV, Scilab.
+
+                <div><i onclick="togglePlusMinus(this, 1)" class="btn-plus w3-right w3-padding"></i></div>
         </span></p>
-        <p><button onclick="moreLessFunction(1)" id="myBtn-1">Mehr lesen</button></p>
+        <!--<p><button onclick="moreLessFunction(1)" id="myBtn-1">Mehr lesen</button></p> -->
     </div>
     <!-- --------------------------------------------------------------------->
-    <div class="w3-col m12 w3-padding-16">   <!-- m12 -> gesamte Breite? >-->
-        <h3 class="w3-center"><span class="small-caps">Analyse von Webseiten</span></h3>
-        <p>Ein Kunde aus Berlin wünschte sich ein Softwareprogramm, das die generierten Webseiten eines Online-Fahrzeugmarktes nach Kriterien durchsucht und interessante Händler aus der Angebotsflut herausfiltert. <br><span id="dots-2">. . .<br>Eingesetzte Technologien: Python, Beautiful Soup, Selenium WebDriver, JSON, Unix Scripts.</span>
+    <div class="w3-col m12 w3-margin-top w3-light-grey w3-round-xlarge">   <!-- m12 -> gesamte Breite? >-->
+        <h2 class="w3-center"><span class="small-caps">Analyse von Webseiten</span></h2>
+        <p>Ein Kunde aus Berlin wünschte sich ein Softwareprogramm, das die generierten Webseiten eines Online-Fahrzeugmarktes nach Kriterien durchsucht und interessante Händler aus der Angebotsflut herausfiltert. <br><span id="dots-2"><b>. . .</b><br>Eingesetzte Technologien: Python, Beautiful Soup, Selenium WebDriver, JSON, Unix Scripts.</span>
         <span id="more-2">
                 <br>Eine Herausforderung bei diesem Projekt war die hohe Anzahl an Anfragen an den Webserver des Online-Portals (mehr als 50.000) und die damit verbundenen Zeitverzögerungen oder gar Abbrüche durch den Server.
 
@@ -179,13 +188,14 @@
 
                 <br><br>Eingesetzte Technologien: Python, Beautiful Soup, Selenium WebDriver, JSON, Unix Scripts.
 
+                <div><i onclick="togglePlusMinus(this, 2)" class="btn-plus w3-right w3-padding"></i></div>
+
         </span></p>
-        <p><button onclick="moreLessFunction(2)" id="myBtn-2">Mehr lesen</button></p>
     </div>
     <!-- --------------------------------------------------------------------->
-    <div class="w3-col m12 w3-light-grey w3-padding-16">   <!-- m12 -> gesamte Breite? >-->
-        <h3 class="w3-center"><span class="small-caps">Simulationsmodell vernetzter Steuergeräte</span></h3>
-        <p>Ein großer Automobilhersteller in den USA suchte nach einem Simulationsmodell für vernetzte elektronischer Steuergeräte (verteilte Systeme). Übergeordnetes Ziel war es, optimale Systemarchitekturen für zukünftige Fahrzeugmodelle zu entwickeln. <br><span id="dots-3">. . .<br>Eingesetzte Technologien: C++, MLDesigner.</span>
+    <div class="w3-col m12 w3-margin-top w3-light-grey w3-round-xlarge">   <!-- m12 -> gesamte Breite? >-->
+        <h2 class="w3-center"><span class="small-caps">Modell vernetzter Steuergeräte</span></h2>
+        <p>Ein großer Automobilhersteller in den USA suchte nach einem Simulationsmodell für vernetzte elektronischer Steuergeräte (verteilte Systeme). Übergeordnetes Ziel war es, optimale Systemarchitekturen für zukünftige Fahrzeugmodelle zu entwickeln. <br><span id="dots-3"><b>. . .</b><br>Eingesetzte Technologien: C++, MLDesigner.</span>
         <span id="more-3">
                 <br>Als Lösung haben wir mithilfe eines Simulationstools ein konfigurierbares Modell für verteilte Systeme entwickelt. Herzstück des Modells ist ein Suchalgorithmus, der alle möglichen Kommunikationskanäle analysiert und damit die Bewertung gewählter Systemarchitekturen ermöglicht. Individuell entwickelte Auswertefunktionen erlauben zudem eine einfache Analyse der Simulationsergebnisse.
 
@@ -193,25 +203,26 @@
 
                 <br><br>Eingesetzte Technologien: C++, MLDesigner.
 
+                <div><i onclick="togglePlusMinus(this, 3)" class="btn-plus w3-right w3-padding"></i></div>
+
         </span></p>
-        <p><button onclick="moreLessFunction(3)" id="myBtn-3">Mehr lesen</button></p>
     </div>
     <!-- --------------------------------------------------------------------->
-    <div class="w3-col m12 w3-padding-16">   <!-- m12 -> gesamte Breite? >-->
-        <h3 class="w3-center"><span class="small-caps">Testen von Software</span></h3>
-        <p>In einem Start-up Unternehmen im Silicon Valley entwickelten wir in einem kleinen Team ein Softwaretool, das automatisch Unit Test Cases für C/C++ Funktionen generiert. Das Tool unterstützte Softwareentwicklungsteams beim Testen ihrer Funktionen und zielte auf die Verbesserung der Softwarequalität ab. <br><span id="dots-4">. . .<br>Eingesetzte Technologien: Java, C/C++, Perl, Unix Scripts.</span>
+    <div class="w3-col m12 w3-margin-top w3-light-grey w3-round-xlarge">   <!-- m12 -> gesamte Breite? >-->
+        <h2 class="w3-center"><span class="small-caps">Testen von Software</span></h2>
+        <p>In einem Start-up Unternehmen im Silicon Valley entwickelten wir in einem kleinen Team ein Softwaretool, das automatisch Unit Test Cases für C/C++ Funktionen generiert. Das Tool unterstützte Softwareentwicklungsteams beim Testen ihrer Funktionen und zielte auf die Verbesserung der Softwarequalität ab. <br><span id="dots-4"><b>. . .</b><br>Eingesetzte Technologien: Java, C/C++, Perl, Unix Scripts.</span>
         <span id="more-4">
                 <br>Mit einem ähnlichen Ziel vor Augen unterstützte ich ein Supportteam für einen Zulieferer der Telekommunikationsindustrie im Silicon Valley. Wir entwickelten Unix-Skripte zur Testautomatisierung und allgemeine Richtlinien zum Testen von Software. Aufgabe des Teams war es auch, die Softwareentwickler mit diesen neuen Werkzeugen und Methoden vertraut zu machen und sie bei ihrer Anwendung zu unterstützen.
 
                 <br><br>Eingesetzte Technologien: Java, C/C++, Perl, Unix Scripts.
 
+                <div><i onclick="togglePlusMinus(this, 4)" class="btn-plus w3-right w3-padding"></i></div>
         </span></p>
-        <p><button onclick="moreLessFunction(4)" id="myBtn-4">Mehr lesen</button></p>
     </div>
     <!-- --------------------------------------------------------------------->
-    <div class="w3-col m12 w3-light-grey  w3-padding-16">   <!-- m12 -> gesamte Breite? >-->
-        <h3 class="w3-center"><span class="small-caps">Software für sicherheitskritische Systeme</span></h3>
-        <p>In einem namhaften bayerischen Automobilunternehmen arbeitete ich in interdisziplinären Ingenieurteams an der Entwicklung von sicherheitskritischen Systemen.  <br><span id="dots-5">. . .<br>Eingesetzte Technologien: Assembler, C/C++, ASCET, Virtual Component Co-Design (VCC).</span>
+    <div class="w3-col m12 w3-margin-top w3-light-grey w3-round-xlarge">   <!-- m12 -> gesamte Breite? >-->
+        <h2 class="w3-center"><span class="small-caps">Sicherheitskritische Systeme</span></h2>
+        <p>In einem namhaften bayerischen Automobilunternehmen arbeitete ich in interdisziplinären Ingenieurteams an der Entwicklung von sicherheitskritischen Systemen.  <br><span id="dots-5"><b>. . .</b><br>Eingesetzte Technologien: Assembler, C/C++, ASCET, Virtual Component Co-Design (VCC).</span>
         <span id="more-5">
                 <br>Als Softwareingenieur entwickelte ich echtzeitkritische Softwaresysteme, die mit unterschiedlichen Hardwareplattformen in verschiedenen Fahrzeugmodellen zum Einsatz kamen. Mein Arbeitsgebiet umfasste die Betreuung der Softwaresysteme vom ersten Laboreinsatz über Systemtests im Fahrzeug unter extremen klimatischen Bedingungen bis hin zur Betreuung der Softwaresysteme nach der Produktion der Fahrzeuge.
 
@@ -219,8 +230,9 @@
 
                 <br><br>Eingesetzte Technologien: Assembler, C/C++, ASCET, Virtual Component Co-Design (VCC).
 
+                <div><i onclick="togglePlusMinus(this, 5)" class="btn-plus w3-right w3-padding"></i></div>
+
         </span></p>
-        <p><button onclick="moreLessFunction(5)" id="myBtn-5">Mehr lesen</button></p>
     </div>
   </div>
 </div>
@@ -245,7 +257,7 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" >
-  <h2 class="w3-center"><span class="small-caps">Haben Sie bereits ein Projekt im Sinn?</span></h2>
+  <h2 class="w3-center"><span class="small-caps">Haben <em>Sie</em> bereits ein Projekt im Sinn?</span></h2>
   <p class="w3-center"><em>Ich freue mich darauf, davon zu hören!</em></p> <!-- ENGLISH version: I am excited and look forward to your message! -->
 
   <div class="w3-row w3-padding-32 w3-section">
@@ -296,93 +308,12 @@
     </div>
 </footer>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-// Disabled 'animated navbar on scroll'. State of mind on August 12, 2021
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var navbar = document.getElementById("myNavbar");
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-//     } else {
-//         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-//     }
-// }
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Used for 'Read More / Less'
-function moreLessFunction(article) {
-    var dots;
-    var moreText;
-    var btnText;
-
-    // Java Script Debugger
-    // console.log(article); // print value of article on console
-
-    switch (article) {
-        case 1:
-            dots = document.getElementById("dots-1");
-            moreText = document.getElementById("more-1");
-            btnText = document.getElementById("myBtn-1");
-            break;
-        case 2:
-            dots = document.getElementById("dots-2");
-            moreText = document.getElementById("more-2");
-            btnText = document.getElementById("myBtn-2");
-            break;
-        case 3:
-            dots = document.getElementById("dots-3");
-            moreText = document.getElementById("more-3");
-            btnText = document.getElementById("myBtn-3");
-            break;
-        case 4:
-            dots = document.getElementById("dots-4");
-            moreText = document.getElementById("more-4");
-            btnText = document.getElementById("myBtn-4");
-            break;
-        case 5:
-            dots = document.getElementById("dots-5");
-            moreText = document.getElementById("more-5");
-            btnText = document.getElementById("myBtn-5");
-            break;
-        default:
-            // Leave default
-            break;
-    }
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Mehr lesen";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Weniger lesen";
-        moreText.style.display = "inline";
-    }
-}
-
-// Used for javascript disabled warning
-document.body.className += ' javascript';
-
-
-</script>
-
 </body>
+
+<!--
+<script type="text/javascript">
+    // Used for javascript disabled warning (see Note "The following implements the idea to react in CSS when JavaScript is disabled." above)
+    document.body.className += ' javascript';
+</script> -->
+
 </html>
