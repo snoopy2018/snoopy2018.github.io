@@ -1,4 +1,4 @@
-/* General ----------------------------------- */
+symbol-find-contact-details/* General ----------------------------------- */
 
 /* whole website */
 *, *:after, *.before {
@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Mon Aug 30 10:22:03 CEST 2021';
+    content:'Fri Sep 17 18:57:51 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -31,16 +31,40 @@ State of mind on August 15, 2021.
 
 body,h1,h2,h3,h4,h5,h6 {font-family: Lato, sans-serif;}
 */
- /* ORIGINAL body,h1,h2,h3,h4,h5,h6 {font-family: PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif} */
+
+ body, h1, h2, h3, h4, h5, h6 {font-family: PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif}
 
 
 body, html {
   height: 100%;
-  color: #444; /* w3: #777; */ /* It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
+  color: #444; /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
   font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
   line-height: 1.5;
 }
+/* DRIVES ME CRAZY
 
+overflow: scroll; seem to work on Mac but not on iOS (only Firfox seems to work on iOS with this setting)
+
+overflow: auto; does not work on iOS with any browser
+
+I am very tired now.
+
+State of mind on September 4, 2021 21:32:19 CEST
+
+UPDATE  Hurray, it's solved! See comment in overlayOff().
+
+State of mind on September 5, 2021 17:44:26 CEST
+
+*/
+/* 'overflow:scroll' OR 'overflow:auto'??????? necessary to prevent that body-scroll-lock feature automatically scrolls to top of page after calling  overlayOn() instead of preserving the current scroll position. State of mind on September 4, 2021. */
+/* body {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+} */
+
+body {
+   width:100%;  /* JE 06Sep21-1954 Needed for body-scroll-lock adjustments made by me. */
+}
 
 a {
   color: #0070c9; /* Apple Developer HIG site: link color #0070c9 */
@@ -53,11 +77,55 @@ a:hover {
 
 /* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
 p {
-  font-size: 1em; /* 1.25em;  /* 1em x 1.25 ; Factor of 1/0.8 since w3.css seems to scale fontsize down to 80 %. State of mind on August 9, 2021.
-/*   line-height: 1.4; */ /* or 1.5 as htnl? */
+  font-size: 1em; /* 1.25em;  1em x 1.25 ; Factor of 1/0.8 since w3.css seems to scale fontsize down to 80 %. State of mind on August 9, 2021.
+/*   line-height: 1.4;or 1.5 as htnl? */
   max-width: 36em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
   top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
   margin: 0.5em auto;
+}
+
+ul {
+    max-width: 36em; /* has the same property as p! */
+    margin: 0.5em auto; /* has the same property as p! */
+}
+
+ul:before{
+    content:attr(aria-label);
+    font-size:117%;
+    /* font-weight:bold; */
+    font-variant: small-caps;
+    margin-left:-2em;
+}
+/* h_(i-1) = h_(i) * 1.125, i = 1..6, h1 = 2em */
+/* NOTE font-sizes after w3schools.com ``HTML <h1> to <h6> Tags'' https://www.w3schools.com/tags/tag_hn.asp. State of mind on April 6, 2020 */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  /* margin: 1em auto 0 auto; removed constraint (new design) State of mind on March 2, 2021 */
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -86,21 +154,115 @@ p {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("../media/images/kuehe-2880x1620px-min.jpg");
-  min-height: 66%; /*500px; /*40%;   /* window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  background-image: url("../media/images/kuehe-clipout-min.jpg");
+  min-height: 55%; /*500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../media/images/schoenberg-view-2880x2160px-min.jpg");
-  min-height: 66%; /* 500px; /*40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  min-height: 55%; /* 500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-4 {
-  background-image: url("../media/images/sunset-2880x2160px-min.jpg");
-  min-height:  66%; /*500px; /*40%; /*  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  background-image: url("../media/images/sunset-2850x1603px-min.jpg");
+  min-height:  55%; /*500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
+
+/* iPhone plus AI Card Player screenshot */
+.symbol-smartphone-app {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;  /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
+    height: 280px; /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
+    /* padding: 18px; */
+}
+
+.symbol-find-contact-details {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
+    height: 280px; /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
+
+    /* width: 250px; */
+    /* max-width: 100%; */
+    /* height: 100%; */  /* use 100% instead of auto, because auto seems not to work on iOS for some reason (my iPhone) JE 13Sep21-1437 */
+    /* padding: 18px; */
+}
+
+.symbol-model-of-distributed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    /* max-width: 100%; */
+    height: 100%;  /* use 100% instead of auto, because auto seems not to work on iOS for some reason (my iPhone) JE 13Sep21-1437 */
+    /* padding: 18px; */
+}
+
+.symbol-test-software {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* same as symbol-develop-safety-critical */
+    min-height: 160px; /* same as symbol-develop-safety-critical */
+    height:100%; /* same as symbol-develop-safety-critical */
+    /* width: 280px; before */
+    /* height: 100%; before */
+}
+
+.symbol-develop-safety-critical {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: auto; */
+    width: 100%; /* combination 'max-width: 100%; min-height: 190px;' DOES NOT work on iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
+    min-height: 160px;  /* Value of 160px makes sure for narrow screens that the 'BMW Niere' does get distorted (e.g. iPhone 5/SE). State of mind on September 17, 2021. */
+    height:100%; /* the combination of 'width: 100%; min-height: 160px; height:100%;' does the magic trick on iOS. Crazy. State of mind on September 17, 2021. */
+    /* max-height:300px; */ /* DOES NOT work !!!!!!! necessary for iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
+}
+
+
+.box {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    /* padding-top: 8px; /* Cosmetic. It's a hack to give image space to headline (Smartphone ...). State of mind on September 11, 2021 */
+
+    /* JE 13Sep21 Experiment */
+    /* background-image: url("../media/images/tools-smartphone-app.png");
+    background-size: contain;
+    background-repeat: repeat; */
+}
+
+.box-image-container {
+    height:90px;
+    margin-top:8px;
+}
+
+.portfolio-section-frame {
+    display: table;
+    padding: 18px;
+    border-radius: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f8f8f8;
+    max-width: 500px;
+    width:100%;
+}
+
+.portfolio-section-headline {
+    display: block;
+    font-size: 1.6em;
+    font-weight: normal;
+    font-variant: small-caps;
+    text-align: center;
+}
+
 
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
@@ -152,10 +314,7 @@ span.small-caps {font-variant-caps: small-caps;}
   width: 100%;
 }
 
-/*.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-*/
+
 .card-container {
   padding: 8px 0px 8px 0px;
 }
@@ -188,30 +347,214 @@ span.small-caps {font-variant-caps: small-caps;}
   text-align: center;
 }
 
-.btn-plus:before{
+.overlay-button-show:before{
     font-family: 'FontAwesome';
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: 2.4em;
+    font-size: 2.5em;
     content: "\f055"; /* fa-plus-circle */
 }
 
-.btn-minus:before {
+.overlay-button-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+
+.margin-top-32 {
+    margin-top: 32px;
+}
+
+.margin-top-16 {
+    margin-top: 16px;
+}
+
+.button-minus:before {
     font-family: 'FontAwesome';
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: 2.4em;
+    font-size: 2.5em;
     content: "\f056"; /* fa-minus-circle */
 }
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0,0,0,0.7); /* imitates Apple modal appearance https://www.apple.com/accessibility/ */
+
+    z-index: 11000;
+    cursor: auto;
+}
+.overlay-container {
+    height: 100%;
+    /* padding: 42px 0; moved to overlay-canvas-container  */ /* let's the modal at the top and bottom space when scrolling begins (top) and ends (bottom). looks nice and imitates the behavior of Apple modal appearance https://www.apple.com/accessibility/ */
+
+    /* overflow-y: scroll; */ /* JE 07Sep21-0655 TEST */
+    /*-webkit-overflow-scrolling: touch; */ /* JE 07Sep21-0655 TEST */ /* Live saver! This make scrolling fast for content in modal view. I needed this trick after I used body-scroll-block to prevent scrolling of background (behind overlay-canvas (body).
+    State of mind on August 31, 2021. */
+}
+
+
+.overlay-canvas-container {
+    position: relative;
+
+    width: 44em; /* Reasoning: p max-width is set to 36em, thus I added e.g. 4em to the right and left. This allows p to expand to 36em while there is still some white space left on the right and left to look good. */ /* 980px at Apple modal appearance https://www.apple.com/accessibility/ */
+    height:100%; /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
+    padding: 52px 0; /* let's the modal at the top and bottom space when scrolling begins (top) and ends (bottom). looks nice and imitates the behavior of Apple modal appearance https://www.apple.com/accessibility/ */
+
+    max-width: 66.6667%;
+    margin: 0 auto;
+    overflow-y: scroll;  /* JE 07Sep21-0655 TEST */
+    -webkit-overflow-scrolling: touch; /* JE 07Sep21-0655 TEST */
+}
+
+.overlay-canvas {
+    display: flex;  /* TEST 11SEP21-2019 with flex archtecture of overlay-canvas*/
+    flex-direction: row;  /* TEST 11SEP21-2019 with flex archtecture of overlay-canvas*/
+
+    position: relative;
+    /*width: 100%;*/  /* was 980px moved to .overlay-canvas-padding */
+    /* max-width: 66.6667%; */ /* was 980px moved to .overlay-canvas-padding */
+
+    margin: 0 auto; /* center element (if it is a block with widt: xx) */
+
+    border-radius: 18px; /* Apple modal appearance https://www.apple.com/accessibility/ */
+
+
+    font-size: inherit;
+    background-color: white;
+    color: inherit;
+
+    /* height:100%; scrolling: set max-height and overflow-y: auto */
+
+    /* DISABLED because overlay-container takes over. 03sep21 220:42 */
+    /*overflow-y: scroll; */
+
+    cursor: auto;
+
+    /*height: 100%;*/ /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
+
+    /* DISABLED because overlay-container takes over. 03sep21 220:42 */
+    /*-webkit-overflow-scrolling: touch; */  /* Live saver! This make scrolling fast for content in modal view. I needed this trick after I used body-scroll-block to prevent scrolling of background (behind overlay-canvas (body).
+    State of mind on August 31, 2021. */
+}
+
+.overlay-content {
+    /* padding-top: 12px; */
+    /* padding-left: 52px; */ /* left/right 52px so 'close button' does not interfere with text and text get centered */
+    /* padding-right: 52px; *//* dto. */
+    padding-bottom: 24px;
+
+     /* TEST 11SEP21-2019 with flex archtecture of overlay-canvas */
+     padding-top: 18px;
+     padding-left: 0;
+     padding-right: 32px;
+}
+
+.sticky-top {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding: 12px;
+    align-self: flex-start; /* makes flex item 'sticky' (http://stackoverflow.com/questions/44446671/ddg#44446672) */ /* TEST 11SEP21-2019 */
+}
+
+.overlay-button-close {
+    background-color: transparent;
+    border: none;
+    align-items: flex-start;  /* default for button with Safari on Mac */
+    text-align: center; /* dto.  */
+    cursor: default; /* changed to transparent  */
+    color: transparent; /* default for button with Safari on Mac */
+    padding: 3px; /* changed default to 3px */
+    /* padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    padding-left: 6px; */
+}
+
+.overlay-button-close:before {  /* :before means: add cosmetic content to an element (here: button)  */
+    /* display:block; */
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 42px; /* Apple modal appearance https://www.apple.com/accessibility/ */
+    color: black;
+    content: "\f00d"; /* .fa-remove:before, .fa-close:before, .fa-times:before */
+}
+
+
+/* I took all initial properties and values of the following classes from Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/).
+
+State of mind on September 1, 2021.
+
+UPDATE I removed the source code of the 'try' today. Read my note in ~/Freelancer/Projects/SoftSys/softsys-journal.pages on September 9, 2021.
+
+    State of mind on September 9, 2021.
+
+ */
+
 
 /* ----------------------------------------------------------------------- */
 /* --------------------     MEDIA QUERIES (LAST)      -------------------- */
 /* ----------------------------------------------------------------------- */
+
+/* ------- IMPORTANT QUOTE ----------
+"Safari Responsive Design Mode CSS media query 'device' not applied"
+
+device-width, along with its siblings, min-device-width and max-device width have been deprecated and removed from the standards.
+
+You should just use width, min-width, and max-width, which are calculated based on the size of the viewport. On most mobile devices, width, min-width, and max-width end up yielding the same net result as device-width, min-device-width, and max-device-width.
+
+Here's information on the deprecation of device-width. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/device-width
+
+Here's the new spec, which no longer includes device-width. https://www.w3.org/TR/mediaqueries-4/#width
+
+--Philip Jones
+
+Source: https://stackoverflow.com/questions/38220485/safari-responsive-design-mode-css-media-query-device-not-applied#39401858
+*/
+
+/* Give overlay/modal full screen size (100%). I adapted this rule from
+Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/). */
+@media only screen and (max-width: 734px) {
+    .overlay-container {
+        padding: 0; /* no space when modal covers entire screen */
+    }
+    .overlay-canvas {
+        max-width: 100%; /* JE 05Sep21-1634 TEST ONLY to see background and test close feature. production code: 100%; */
+        min-height: 100%; /* 'min-' neccessary so that overflow area user scrolls to is covered, too (try only 'height' and you'll see what I mean on iPhone 6, for instance)*/
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    .overlay-canvas-container {
+        max-width: 100%; /* JE 05Sep21-1634 TEST ONLY to see background and test close feature. production code: 100%; */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+}
+
+
 /* Turn off parallax scrolling for tablets and phones
 Source: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 State of mind on August 25, 2021.
 */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
