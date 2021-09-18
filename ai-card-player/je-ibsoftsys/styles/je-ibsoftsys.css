@@ -160,13 +160,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("../media/images/schoenberg-view-2880x2160px-min.jpg");
+  background-image: url("../media/images/background-wall-flowers-1-min.jpg");
   min-height: 55%; /* 500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-4 {
-  background-image: url("../media/images/sunset-2850x1603px-min.jpg");
+  background-image: url("../media/images/background-wall-flowers-1-min.jpg");
   min-height:  55%; /*500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
