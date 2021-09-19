@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Sat Sep 18 11:47:02 CEST 2021';
+    content:'Sun Sep 19 13:58:17 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -175,43 +175,74 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;  /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
-    height: 280px; /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
-    /* padding: 18px; */
+    /* width: auto; */ /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
+    /*height: 280px;*/ /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
+
+    /* width: 250px;
+    height:100%; */
+
+    width: auto;  /* measurements so all first four  symbols appear similar ... */
+    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
+
+    /* background-color: bisque; */
+
 }
 
 .symbol-find-contact-details {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto; /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
-    height: 280px; /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
+    /* width: auto;*/ /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
+    /*height: 270px; *//* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
+
+    /* width: 270px;
+    height:100%;
+ */
+    width: auto; /* measurements so all first four  symbols appear similar ... */
+    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
+
 
     /* width: 250px; */
     /* max-width: 100%; */
     /* height: 100%; */  /* use 100% instead of auto, because auto seems not to work on iOS for some reason (my iPhone) JE 13Sep21-1437 */
     /* padding: 18px; */
+
+        /* background-color: bisque; */
 }
 
 .symbol-model-of-distributed {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 220px;
+    /* width: 250px; */
     /* max-width: 100%; */
-    height: 100%;  /* use 100% instead of auto, because auto seems not to work on iOS for some reason (my iPhone) JE 13Sep21-1437 */
+    /* height: 100%; */ /* use 100% instead of auto, because auto seems not to work on iOS for some reason (my iPhone) JE 13Sep21-1437 */
     /* padding: 18px; */
+
+    width: auto; /* measurements so all first four  symbols appear similar ... */
+    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
+
+
+    /* background-color: bisque; */
 }
 
 .symbol-test-software {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%; /* same as symbol-develop-safety-critical */
-    min-height: 160px; /* same as symbol-develop-safety-critical */
-    height:100%; /* same as symbol-develop-safety-critical */
+    /*width: 100%;*/ /* same as symbol-develop-safety-critical */
+    /* min-width: 250px; */
+    /* width: 300px; */
+    /*min-height: 160px; *//* same as symbol-develop-safety-critical */
+    /* height:100%; */ /* same as symbol-develop-safety-critical */
     /* width: 280px; before */
     /* height: 100%; before */
+
+    width: 100%; /* (because of iOS use 100% instead of 'auto') measurements so all first four  symbols appear similar ... */
+    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
+
+
+    /* background-color: bisque; */
 }
 
 .symbol-develop-safety-critical {
@@ -219,12 +250,53 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     /* width: auto; */
-    width: 100%; /* combination 'max-width: 100%; min-height: 190px;' DOES NOT work on iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
-    min-height: 160px;  /* Value of 160px makes sure for narrow screens that the 'BMW Niere' does get distorted (e.g. iPhone 5/SE). State of mind on September 17, 2021. */
-    height:100%; /* the combination of 'width: 100%; min-height: 160px; height:100%;' does the magic trick on iOS. Crazy. State of mind on September 17, 2021. */
+    /*width: 100%;*/ /* combination 'max-width: 100%; min-height: 190px;' DOES NOT work on iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
+    /*min-height: 160px;*/  /* Value of 160px makes sure for narrow screens that the 'BMW Niere' does get distorted (e.g. iPhone 5/SE). State of mind on September 17, 2021. */
+    /*height:100%;*? /* the combination of 'width: 100%; min-height: 160px; height:100%;' does the magic trick on iOS. Crazy. State of mind on September 17, 2021. */
     /* max-height:300px; */ /* DOES NOT work !!!!!!! necessary for iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
+
+    width: 310px; /* this symbol needs special treatment because it is ... */
+    height: 100%;  /* ... (because of iOS use 100% instead of 'auto') the last and has special dimensions that are different to the other four. State of mind on September, 19 2021 */
+
+
+    /* background-color: bisque; */
 }
 
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;  /* do not let row get wider than that */
+
+  margin-left: auto;  /* allign row ... */
+  margin-right: auto; /* ... horizontally */
+
+}
+
+.flex-item {
+  /* display: flex;
+  flex-direction: column;
+  flex-basis: 100%; */
+  flex: 50%; /* assume two items per row each occupies 50% of the space */
+
+  /* width: 270px; */
+
+  margin-top: auto;   /* allign row item ... */
+  margin-bottom: auto;  /* ... verically */
+
+  padding: 18px;
+
+  /* align-content: center;
+  justify-content: center; */
+}
+
+/* .section-box {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+} */
 
 .box {
     display: flex;
@@ -250,8 +322,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 18px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #f8f8f8;
-    max-width: 500px;
+
+    /* background-color: #f8f8f8; */ /* I decided not to use a background because I believe the symbol (image) should stand out by itself. [I think no painter would come to such an idea anyway.] State of mind on September 19, 0221. */
+
+    max-width: 450px;
     width:100%;
 }
 
@@ -359,7 +433,7 @@ span.small-caps {font-variant-caps: small-caps;}
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 18px;
+    /* margin-top: 18px; */
 }
 
 .margin-top-32 {
@@ -581,5 +655,13 @@ State of mind on August 25, 2021.
     margin-right: 222px; /* pus away the text by this 'margin-right' value; I don't know better to avoid that text appears to the right that contains only one word or so. State of mind on August 22, 2021. */
     margin-top: 0px;
     margin-bottom: 32px;
+    }
+
+
+}
+
+@media only screen and (min-width: 500px) {  /* value determined by experiment to make symbol appear bigger because (1) it is the only one in the last row and (2) the dimensions are a bit different to the other symbols. State of mind on September 19, 2021. */
+ .symbol-develop-safety-critical {
+        width: 440px;
     }
 }
