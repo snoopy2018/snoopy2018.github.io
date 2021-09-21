@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Mon Sep 20 17:01:23 CEST 2021';
+    content:'Tue Sep 21 10:38:46 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -271,7 +271,6 @@ h1, h2, h3, h4, h5, h6 {
 
   margin-left: auto;  /* allign row ... */
   margin-right: auto; /* ... horizontally */
-
 }
 
 .flex-item {
@@ -285,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: auto;   /* allign row item ... */
   margin-bottom: auto;  /* ... verically */
 
-  padding: 18px;
+  padding: 18px 18px 32px 18px;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 */
 
   /* align-content: center;
   justify-content: center; */
