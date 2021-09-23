@@ -55,27 +55,36 @@
 
 <div class="w3-top">
   <div class="w3-bar text-color-not-selected background-color-darkgrey" id="myNavbar">
-    <a class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
+    <a class="w3-hide-medium w3-hide-large w3-right" style="padding:8px 18px 0 0" href="javascript:void(0);" title="Toggle Navigation Menu" onclick="openNav()">
+      <i id="sideNav-hamburger" ><img style="width: 20px; height:auto;" src="../media/images/hamburgerPlain.svg"></i>
     </a>
     <!--<a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" alt="nav logo" id="navbar-logo"></a> -->
 
-    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white"><img src="../media/images/logo-navbar.svg" alt="nav logo" id="navbar-logo"></a>
+    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white"><img src="../media/images/logo-navbar.svg" alt="nav logo" id="navbar-logo" title="Home"></a>
 
-    <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small w3-margin-left">ABOUT</a> <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
-    <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">CONTACT</a>
-    <a href="../index.html" class="w3-bar-item w3-right text-color-not-selected w3-hover-text-white w3-hide-small"><em>DEUTSCH</em></a>
+    <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small w3-margin-left"><span class="navigation-title">About</span></a> <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
+    <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Portfolio</span></a>
+    <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Contact</span></a>
+    <a href="../index.html" class="w3-bar-item w3-right text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title"><em>Deutsch</em></span></a>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block text-color-not-selected background-color-darkgrey w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">CONTACT</a>
-    <a href="" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">        </a> <!-- dummy horizontal space (I don't know better) -->
-    <a href="../index.html" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()"><em>DEUTSCH</em></a>
+  <!-- Navbar on small screens
+  The side navigation class is adopted from w3schools
+  with some modifications (https://www.w3schools.com/howto/howto_js_sidenav.asp). In particular the feature that
+  let the sidenav disappear when user taps/clicks on the
+  background (not the side navigation panel) is developed
+  by me.
+
+  State of mind on Septmeber 23, 2021.-->
+  <div id="sideNav" class="sidenav w3-hide-large w3-hide-medium">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img style="width: 20px; height:auto;" src="../media/images/crossPlain.svg"></a> <!-- width value: so it matches approximately hamburger icon -->
+      <a href="#about" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">About</span></a>
+      <a href="#portfolio" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Portfolio</span></a>
+      <a href="#contact" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Contact</span></a>
+      <a >  </a>  <!-- dummy horizontal space (I don't know better) -->
+      <a href="../index.html" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title"><em>Deutsch</em></span></a>
   </div>
+
 </div>
 
 <!-- First Parallax Image with Logo Text -->
@@ -98,7 +107,7 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" id="about">
-  <h1 class="w3-center"><span class="small-caps">Engineering Office for Software Systems</span></h1>
+  <h2 class="w3-center"><span class="headline">Engineering Office for Software Systems</span></h2>
   <h3><em>"Software development with analytical <span style="font-variant: small-caps;"> and</span> creative mindsets."</em></h3>
   <div class="w3-row">
     <!-- 21Aug2021 10:42<div class="w3-col m4 w3-center w3-padding-12"> -->
@@ -150,15 +159,13 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-32">
-  <h1 class="w3-center"><span class="small-caps">Selected Software Projects</span></h1>
+  <h2 class="w3-center"><span class="headline">Selected Software Projects</span></h2>
 
   <div class="w3-row">
       <p>The following overview of some of my software projects gives you an insight into my previous work and expertise. One or the other task or technology will certainly be similar in your software project, and I am convinced that my knowledge and experience will help you to complete it successfully. I look forward to working with you!
       </p>
   </div>
 </div>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
   <div class="flex-container">
       <!-- BEGIN Section I --------->
@@ -443,7 +450,7 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-32">
-  <h1 class="w3-center"><span class="small-caps">What Does Your Software Project Look Like?</span></h1>
+  <h2 class="w3-center"><span class="small-caps">Do You Already Have a Software Project in Mind?</span></h2>
   <h3><em>I am looking forward to hearing from you!</em></h3> <!-- GERMAN version: Ich bin gespannt und freue mich auf Ihre Nachricht! -->
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">

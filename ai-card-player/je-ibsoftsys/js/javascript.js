@@ -1,126 +1,103 @@
+
+
+// -------------------------------------------------------------------------
+// CLEANUP on Tue Sep 21 11:12:28 CEST 2021:
+//  - Removed scripts that handle plus minus button but old layout style.
+//  - Removed old functions (commented out)
+//
+// You find the old version of this file in the Time Machine.
+// -------------------------------------------------------------------------
+
+// BEGIN JE 22Sep21 DO I NEED THIS FUNCTION onClick()
+//????????????????????????
 // Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-// Disabled 'animated navbar on scroll'. State of mind on August 12, 2021
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var navbar = document.getElementById("myNavbar");
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-//     } else {
-//         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-//     }
+// function onClick(element) {
+//   document.getElementById("img01").src = element.src;
+//   document.getElementById("modal01").style.display = "block";
+//   var captionText = document.getElementById("caption");
+//   captionText.innerHTML = element.alt;
 // }
+// ????????????????????????
+// END JE 22Sep21 DO I NEED THIS FUNCTION onClick()
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
+/* -------- SIDE NAVIGATION -----------------------------
+
+The side navigation class is adopted from w3schools
+with some modifications (https://www.w3schools.com/howto/howto_js_sidenav.asp). In particular the feature that
+let the sidenav disappear when user taps/clicks on the
+background (not the side navigation panel) is developed
+by me.
+
+State of mind on Septmeber 23, 2021.
+
+*/
+function sidenavManager(event) {
+    var insideSidenav = document.getElementById("sideNav").contains(event.target);
+    if(insideSidenav) {
+        // nothing to do
+        // console.log("in sidenavManager(): clicked INSIDE 'sideNav' ");
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        // console.log("in sidenavManager(): clicked OUTSIDE 'sideNav' ");
+        closeNav();
     }
 }
 
-// Used for '+ / -' button
-
-function changeClass(btn, cls) {
-        if(!hasClass(btn, cls)) {
-            addClass(btn, cls);
-        }
-    }
-
-// ----- togglePlusMinus   -------
-// Source and inspired by "How can I change an element's class with JavaScript?"
-// https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript
-function hasClass(ele, cls) {
-    return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+function touchStartEventListener(event) {
+    sidenavManager(event);
 }
 
-// function addClass(ele, cls) {
-//     if (!hasClass(ele, cls))
-//         ele.className += " " + cls;
-// }
-
-// function removeClass(ele, cls) {
-//     if (hasClass(ele, cls)) {
-//         var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-//         ele.className = ele.className.replace(reg, ' ');
-//     }
-// }
-
-function togglePlusMinus(btn, article) {
-    // console.log("before:" + btn.className);
-
-    if (hasClass(btn, "overlay-button-show")) {
-        var reg = new RegExp('(\\s|^)' + "overlay-button-show" + '(\\s|$)');
-        btn.className = btn.className.replace(reg, 'button-minus ');
-    } else if (hasClass(btn, "button-minus")) {
-        var reg = new RegExp('(\\s|^)' + "button-minus" + '(\\s|$)');
-        btn.className = btn.className.replace(reg, ' overlay-button-show ');
-    } else {
-        console.log("Warning: neither class 'overlay-button-show' nor 'button-minus'  found");
-    }
-
-    /* This code snippet works also. */
-    // if (btn.className.indexOf("overlay-button-show") == -1) {
-    //     var reg = new RegExp('(\\s|^)' + "button-minus" + '(\\s|$)');
-    //     btn.className = btn.className.replace(reg, ' overlay-button-show ');
-    // } else {
-    //     var reg = new RegExp('(\\s|^)' + "overlay-button-show" + '(\\s|$)');
-    //     btn.className = btn.className.replace(reg, ' button-minus ');
-    // }
-
-    // console.log("after:" + btn.className);
-
-    // Java Script Debugger
-    // console.log(article); // print value of article on console
-    var dots;
-    var moreText;
-
-    switch (article) {
-        case 1:
-            dots = document.getElementById("dots-1");
-            moreText = document.getElementById("more-1");
-            break;
-        case 2:
-            dots = document.getElementById("dots-2");
-            moreText = document.getElementById("more-2");
-            break;
-        case 3:
-            dots = document.getElementById("dots-3");
-            moreText = document.getElementById("more-3");
-            break;
-        case 4:
-            dots = document.getElementById("dots-4");
-            moreText = document.getElementById("more-4");
-            break;
-        case 5:
-            dots = document.getElementById("dots-5");
-            moreText = document.getElementById("more-5");
-            break;
-        default:
-            // Leave default
-            break;
-    }
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        /* btnText.innerHTML = ""; /* "Mehr lesen"; */
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        /* btnText.innerHTML = ""; /*"Weniger lesen"; */
-        moreText.style.display = "inline";
-    }
-
+function clickEventListener(event) {
+    sidenavManager(event);
 }
+
+function openNav() {
+  document.getElementById("sideNav").style.width = "160px";
+  // document.getElementById("dummy-background").style.display = "block";
+  document.getElementById("sideNav-hamburger").style.display = "none"; // hide 'hamburger'
+  window.addEventListener("click", clickEventListener, true); // IMPORTANT I assume, the parameter 'true' makes sure that the click for this event gets consumed; otherwise, the click event listener invokes closeNav() immediately (i.e. navbar does not show at all).
+  window.addEventListener("touchstart", touchStartEventListener, true);
+}
+
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0";
+  // document.getElementById("dummy-background").style.display = "";
+  document.getElementById("sideNav-hamburger").style.display = "inline-block"; // show 'hamburger'
+  window.removeEventListener("click", clickEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
+  window.removeEventListener("touchstart", touchStartEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
+}
+
+
+// document.addEventListener(
+//   "touchstart",
+//   function(event) {
+//       console.log("Event Listener: touchstart event");
+//       // touchStartHandler(event);
+//       // mobileNavbarClose(event);
+//   },
+//   false // 'useCapture" parameter: default is false.
+// )
+
+// document.addEventListener(
+//   "touchend",
+//   function(event) {
+//       console.log("Event Listener: touchend event);
+//       touchEndHandler(event);
+//   },
+//   false // 'useCapture" parameter: default is false.
+// )
+
+
+// document.addEventListener(
+//   "click",
+//   function(event) {
+//       console.log("Event Listener: click event");
+//       // clicktHandler(event);
+//       // mobileNavbarClose(event);
+//   },
+//   false // 'useCapture" parameter: default is false.
+// )
+//
+
 
 // USE OF body-scroll-lock (lib/bodyScrollLock.js)
 // 1. Import the functions
@@ -241,7 +218,7 @@ function checkIdentity() {
     var targetID = event.target.id;
     var targetClassName = event.target.className;
 
-    console.log("in checkIdentity(): document.getElementById('overlay-1').style.display: " + document.getElementById("overlay-1").style.display);
+    // console.log("in checkIdentity(): document.getElementById('overlay-1').style.display: " + document.getElementById("overlay-1").style.display);
 
     console.log("in checkIdentity(): target id: " + targetID);
     console.log("in checkIdentity(): target className: " + targetClassName);

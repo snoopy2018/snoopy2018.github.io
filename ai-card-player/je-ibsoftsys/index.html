@@ -51,31 +51,50 @@
 
 
 <!-- Navbar (sit on top) -->
-<!-- NOTE I replaced in the nav bars 'w3-button' by 'text-color-not-selected w3-hover-text-white'. It removes this greyish hove behavior, which I personnaly dislike. State of mind on August 12, 2021. -->
+<!-- NOTE I replaced in the nav bars 'w3-button' by 'text-color-not-selected w3-hover-text-white'. It removes this greyish hove behavior, which I personally dislike. State of mind on August 12, 2021. -->
 
 <div class="w3-top">
-  <div class="w3-bar text-color-not-selected background-color-darkgrey" id="myNavbar">
-    <a class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <!--<a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" alt="nav logo" id="navbar-logo"></a> -->
+    <div class="w3-bar text-color-not-selected background-color-darkgrey" id="myNavbar">
+        <a class="w3-hide-medium w3-hide-large w3-right" style="padding:8px 18px 0 0" href="javascript:void(0);" onclick="openNav()">
+            <!--<i id="sideNav-hamburger" class="hamburgerIcon"></i> -->
+            <i id="sideNav-hamburger" ><img style="width: 20px; height:auto;" src="media/images/hamburgerPlain.svg"></i>
+        </a>
+        <!--<a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" alt="nav logo" id="navbar-logo"></a> -->
 
-    <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white"><img src="media/images/logo-navbar.svg" alt="nav logo" id="navbar-logo"></a>
+        <a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white"><img src="media/images/logo-navbar.svg" alt="nav logo" id="navbar-logo"></a>
 
-    <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small w3-margin-left">DAS BÜRO</a> <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
-    <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small">KONTAKT</a>
-    <a href="en/index.html" class="w3-bar-item w3-right text-color-not-selected w3-hover-text-white w3-hide-small"><em>ENGLISH</em></a>
-  </div>
+        <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small w3-margin-left"><span class="navigation-title">Das Büro</span></a> <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
+        <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Portfolio</span></a>
+        <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Kontakt</span></a>
+        <a href="en/index.html" class="w3-bar-item w3-right text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title"><em>English</em></span></a>
+    </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block text-color-not-selected background-color-darkgrey w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">DAS BÜRO</a>
-    <a href="#portfolio" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">KONTAKT</a>
-    <a href="" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()">        </a> <!-- dummy horizontal space (I don't know better) -->
-    <a href="en/index.html" class="w3-bar-item text-color-not-selected w3-hover-text-white" onclick="toggleFunction()"><em>ENGLISH</em></a>
-  </div>
+    <!-- Navbar on small screens
+    The side navigation class is adopted from w3schools
+    with some modifications (https://www.w3schools.com/howto/howto_js_sidenav.asp). In particular the feature that
+    let the sidenav disappear when user taps/clicks on the
+    background (not the side navigation panel) is developed
+    by me.
+
+    State of mind on Septmeber 23, 2021.-->
+    <div id="sideNav" class="sidenav w3-hide-large w3-hide-medium">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+            <img style="width: 20px; height:auto;" src="media/images/crossPlain.svg"></img>
+            <!-- width value: so it matches approximately hamburger icon -->
+
+            <!-- <object type="image/svg+xml" data="media/images/crossPlain.svg" style="width: 20px; height:auto;"> -->
+                <!-- Your fall back here -->
+                <!-- <img src="media/images/crossPlain-bigger.svg" /> -->
+            </object>
+
+
+        <a href="#about" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Das Büro</span></a>
+        <a href="#portfolio" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Portfolio</span></a>
+        <a href="#contact" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Kontakt</span></a>
+        <a >  </a>  <!-- dummy horizontal space (I don't know better) -->
+        <a href="en/index.html" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title"><em>English</em></span></a>
+    </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
@@ -98,7 +117,7 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" id="about">
-  <h1 class="w3-center"><span class="small-caps">Ingenieurbüro für Softwaresysteme</span></h1>
+  <h2 class="w3-center"><span class="headline">Ingenieurbüro für Softwaresysteme</span></h2>
   <h3><em>"Softwareentwicklung mit analytischen <span style="font-variant: small-caps;"> und </span> kreativen Denkweisen."</em></h3>
   <div class="w3-row">
     <!-- 21Aug2021 10:42<div class="w3-col m4 w3-center w3-padding-12"> -->
@@ -179,7 +198,7 @@
 
 
 <div class="w3-content w3-container w3-padding-32">
-  <h1 class="w3-center"><span class="small-caps">Ausgewählte Softwareprojekte</span></h1>
+  <h2 class="w3-center"><span class="headline">Ausgewählte Softwareprojekte</span></h2>
 
   <div class="w3-row">
       <p>Die folgende Auswahl von Softwareprojekten gibt Ihnen einen Einblick in meine bisherige Arbeit. Die eine oder andere Aufgabenstellung oder Technologie wird in Ihrem Softwareprojekt sicherlich ähnlich sein und ich bin überzeugt, dass mein Wissen und meine Erfahrung Ihnen helfen werden, es erfolgreich abzuschließen. Ich freue mich auf eine Zusammenarbeit!
@@ -195,9 +214,6 @@
 
       State of mind on September 9, 2021.
   -->
-
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
 
   <div class="flex-container">
@@ -229,7 +245,7 @@
                                   <div class="box"><img class="box-image-container" src="media/images/symbol-smartphone-app-min.png" alt="Symbol of Smartphone App">
                                   </div>
 
-                                   <span class="portfolio-section-headline">Entwicklung einer Smartphone-App als Lernhilfe</span>
+                                  <span class="portfolio-section-headline">Entwicklung einer Smartphone-App als Lernhilfe</span>
 
 
                                   <p>Die Idee zu dieser App entstand an der Laurelwood Elementary School in Santa Clara, Kalifornien. Als Volontär habe ich mit Zweitklässlern in den Pausen des Mathematikunterrichts das Kartenspiel „SET“ gespielt, das die visuelle Wahrnehmung und das logische Denken schult. Ich stellte mir immer wieder vor, wie ein Smartphone meine Schiedsrichterrolle übernehmen könnte.</p>
@@ -292,7 +308,7 @@
                                   <div class="box"><img class="box-image-container" src="media/images/symbol-find-contact-details-de-min.png" alt="Symbol of Search for Contacts">
                                   </div>
 
-                                   <span class="portfolio-section-headline">Suche nach Kontaktadressen auf Webseiten</span>
+                                  <span class="portfolio-section-headline">Suche nach Kontaktadressen auf Webseiten</span>
 
                                   <p>Ein Kunde aus Berlin wünschte sich ein Softwareprogramm, das die generierten Webseiten eines Online-Fahrzeugmarktes nach Kriterien durchsucht und interessante Händler aus der Angebotsflut herausfiltert.</p>
 
@@ -349,7 +365,7 @@
                                   <div class="box"><img class="box-image-container" src="media/images/symbol-model-of-distributed-min.png" alt="Symbol of Model of Distributed Systems">
                                   </div>
 
-                                   <span class="portfolio-section-headline">Modellierung verteilter Systeme</span>
+                                  <span class="portfolio-section-headline">Modellierung verteilter Systeme</span>
 
                                   <p><em>General Motors (GM)</em> in den USA suchte nach einem Simulationsmodell für vernetzte elektronischer Steuergeräte (verteilte Systeme). Übergeordnetes Ziel war es, optimale Systemarchitekturen für zukünftige Fahrzeugmodelle zu entwickeln.</p>
 
@@ -375,52 +391,52 @@
       <!-- END Section III -->
       <div class='flex-item'>
           <!-- BEGIN Section IV --------->
-              <div class="portfolio-section-frame">
+          <div class="portfolio-section-frame">
 
-                  <span class="portfolio-section-headline">Testen von Softwaresystemen</span>
-                  <!-- <p><b>Software Test</b> How to symbolize it? Or should I use some other symbol/graphical representation? What about text?</p>
+              <span class="portfolio-section-headline">Testen von Softwaresystemen</span>
+              <!-- <p><b>Software Test</b> How to symbolize it? Or should I use some other symbol/graphical representation? What about text?</p>
 
-                  <p>Maybe a kind of examination you will see at the doctor's office could symbolise the examination. A stethoscope around a computer will do it. You will find inspiration on the web for sure. Have fun design it with <b>Inkscape</b>! </p> -->
-                  <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
-                  <div class="box">
-                      <!-- <div class="slogan"><p>Vision...</p><p>Implementierung.</p></div> -->
-                      <img class="symbol-test-software" src="media/images/symbol-test-software-min.png" alt="Symbol of Test Software Systems">
-                  </div>
+              <p>Maybe a kind of examination you will see at the doctor's office could symbolise the examination. A stethoscope around a computer will do it. You will find inspiration on the web for sure. Have fun design it with <b>Inkscape</b>! </p> -->
+              <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
+              <div class="box">
+                  <!-- <div class="slogan"><p>Vision...</p><p>Implementierung.</p></div> -->
+                  <img class="symbol-test-software" src="media/images/symbol-test-software-min.png" alt="Symbol of Test Software Systems">
+              </div>
 
-                  <div class="overlay" id="overlay-4">
-                      <div class="overlay-container" id="overlay-container-4" onclick="overlayContainerClicked(4)">
-                          <div class="overlay-canvas-container" id="overlay-canvas-container-4">
-                              <div class="overlay-canvas" id="overlay-canvas-4">
-                                  <div class="sticky-top">
-                                      <button class="overlay-button-close" onclick="overlayOff(4)"></button>
-                                  </div>
-                                  <div class="overlay-content">
-                                      <div class="box"><img class="box-image-container" src="media/images/symbol-test-software-min.png" alt="Symbol of Test Software Systems">
-                                      </div>
-
-                                      <span class="portfolio-section-headline">Testen von Softwaresystemen</span>
-
-                                      <p>In der Start-up <em>Crosstest</em> im Silicon Valley entwickelten wir in einem kleinen Team ein Softwaretool, das automatisch Unit Test Cases für C/C++ Funktionen generiert. Das Tool unterstützte Softwareentwicklungsteams beim Testen ihrer Funktionen und zielte auf die Verbesserung der Softwarequalität ab.</p>
-
-                                      <p>Mit einem ähnlichen Ziel vor Augen unterstützte ich ein Supportteam bei <em>Cisco Systems</em> im Silicon Valley. Wir entwickelten Unix-Skripte zur Testautomatisierung und allgemeine Richtlinien zum Testen von Software. Aufgabe des Teams war es auch, die Softwareentwickler mit diesen neuen Werkzeugen und Methoden vertraut zu machen und sie bei ihrer Anwendung zu unterstützen.</p>
-
-                                      <ul aria-label="Technologien">
-                                          <li>Java</li>
-                                          <li>C/C++</li>
-                                          <li>Perl</li>
-                                          <li>Unix Scripts</li>
-                                      </ul>
-                                  </div>
-
+              <div class="overlay" id="overlay-4">
+                  <div class="overlay-container" id="overlay-container-4" onclick="overlayContainerClicked(4)">
+                      <div class="overlay-canvas-container" id="overlay-canvas-container-4">
+                          <div class="overlay-canvas" id="overlay-canvas-4">
+                              <div class="sticky-top">
+                                  <button class="overlay-button-close" onclick="overlayOff(4)"></button>
                               </div>
+                              <div class="overlay-content">
+                                  <div class="box"><img class="box-image-container" src="media/images/symbol-test-software-min.png" alt="Symbol of Test Software Systems">
+                                  </div>
+
+                                  <span class="portfolio-section-headline">Testen von Softwaresystemen</span>
+
+                                  <p>In der Start-up <em>Crosstest</em> im Silicon Valley entwickelten wir in einem kleinen Team ein Softwaretool, das automatisch Unit Test Cases für C/C++ Funktionen generiert. Das Tool unterstützte Softwareentwicklungsteams beim Testen ihrer Funktionen und zielte auf die Verbesserung der Softwarequalität ab.</p>
+
+                                  <p>Mit einem ähnlichen Ziel vor Augen unterstützte ich ein Supportteam bei <em>Cisco Systems</em> im Silicon Valley. Wir entwickelten Unix-Skripte zur Testautomatisierung und allgemeine Richtlinien zum Testen von Software. Aufgabe des Teams war es auch, die Softwareentwickler mit diesen neuen Werkzeugen und Methoden vertraut zu machen und sie bei ihrer Anwendung zu unterstützen.</p>
+
+                                  <ul aria-label="Technologien">
+                                      <li>Java</li>
+                                      <li>C/C++</li>
+                                      <li>Perl</li>
+                                      <li>Unix Scripts</li>
+                                  </ul>
+                              </div>
+
                           </div>
                       </div>
                   </div>
               </div>
-              <div  class="overlay-button-container">
-                  <i onclick="overlayOn(4)" class="overlay-button-show w3-right w3-padding"></i>
-              </div>
-              <!-- END Section IV -->
+          </div>
+          <div  class="overlay-button-container">
+              <i onclick="overlayOn(4)" class="overlay-button-show w3-right w3-padding"></i>
+          </div>
+          <!-- END Section IV -->
       </div> <!-- flex-item -->
   </div>  <!-- flex-container -->
 
@@ -450,7 +466,7 @@
                                   <div class="box"><img class="box-image-container" src="media/images/symbol-develop-safety-critical-min.png" alt="Symbol of Develop Safety-Critical Systems">
                                   </div>
 
-                                   <span class="portfolio-section-headline">Entwicklung sicherheitskritischer Systeme</span>
+                                  <span class="portfolio-section-headline">Entwicklung sicherheitskritischer Systeme</span>
 
                                   <p>Bei der <em>BMW Group</em> in München arbeitete ich in interdisziplinären Ingenieurteams an der Entwicklung von sicherheitskritischen Systemen.</p>
 
@@ -479,21 +495,21 @@
       <!-- END Section V -->
   </div>  <!-- flex-container -->
 
+  
 
+  <!------------------------------------------------>
+  <!--  Contact Section ---------------------------->
+  <!------------------------------------------------>
+  <div class="bgimg-3 w3-display-container" style="margin-top: 32px;" id="contact">
 
-<!------------------------------------------------>
-<!--  Contact Section ---------------------------->
-<!------------------------------------------------>
-<div class="bgimg-3 w3-display-container" style="margin-top: 32px;" id="contact">
-
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+      <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+      </div>
   </div>
-</div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-32" >
-  <h1 class="w3-center"><span class="small-caps">Wie sieht Ihr Softwareprojekt aus?</span></h1>
+  <h2 class="w3-center"><span class="small-caps">Haben Sie schon ein Softwareprojekt im Sinn?</span></h2>
   <h3><em>Ich freue mich auf Ihre Nachricht!</em></h3> <!-- ENGLISH version: I am excited and look forward to your message! -->
 
   <div class="w3-row w3-padding-32 w3-section">
@@ -528,7 +544,6 @@
         </p>
     </div>
 </footer>
-
 </body>
 
 <!--

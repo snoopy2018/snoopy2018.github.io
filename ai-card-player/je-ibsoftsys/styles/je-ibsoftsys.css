@@ -1,4 +1,4 @@
-symbol-find-contact-details/* General ----------------------------------- */
+/* General ----------------------------------- */
 
 /* whole website */
 *, *:after, *.before {
@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Tue Sep 21 10:38:46 CEST 2021';
+    content:'Thu Sep 23 16:37:30 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -72,7 +72,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline; /* show underline on hover */
+  /*text-decoration: underline; */ /* show underline on hover */
 }
 
 /* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
@@ -133,7 +133,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Navigation ----------------------------------- */
-
+.navigation-title {
+    font-variant:small-caps;
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
 /* Create a Parallax Effect ----------------------------------- */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -277,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   /* display: flex;
   flex-direction: column;
   flex-basis: 100%; */
-  flex: 50%; /* assume two items per row each occupies 50% of the space */
+  flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
   /* width: 270px; */
 
@@ -330,16 +334,69 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio-section-headline {
     display: block;
-    font-size: 1.5em;
-    font-weight: normal;
+    font-size: 1.17em; /* same as 'h3' */
+    font-weight: bold;
     font-variant: small-caps;
     text-align: center;
+}
+
+.hamburgerIcon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background-image: url(../media/images/hamburgerPlain.svg);
+  background-size: cover;
 }
 
 
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+
+.headline {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* -------- SIDE NAVIGATION -----------------------------
+
+The side navigation class is adopted from w3schools
+with some modifications (https://www.w3schools.com/howto/howto_js_sidenav.asp). In particular the feature that
+let the sidenav disappear when user taps/clicks on the
+background (not the side navigation panel) is developed
+by me.
+
+State of mind on Septmeber 23, 2021.
+
+*/
+.sidenav {
+  height: 259px;  /* width (= 160px) * 1.618 (golden ratio) */
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(51,51,51,0.95); /* big navbar's color is rgb(51,51,51); */
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 24px;
+  /* text-decoration: none; */
+  /* font-size: 1.2em; */
+  color: rgb(214,214,214); /* approximately color of navigation items (NOT selected) at apple.com (text color of selected text is white (255,255,255)). State of mind on August 12, 2021 */
+  display: block;
+  /* transition: 0.4s; */
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 8px; /* it matches approximately hamburger icon */
+  padding: 8px 10px 0px 0px; /* values experimental determined so 'cross' icon matches approximately 'hamburger' icon */
+}
 
 /* Default values at the beginning. Used for 'Read more / Less' */
 #more-1 {display: none;}
