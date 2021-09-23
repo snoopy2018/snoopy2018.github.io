@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="97.407951"
-   height="48"
-   viewBox="0 0 25.772515 12.699996"
+   width="97.407944"
+   height="40"
+   viewBox="0 0 25.772513 10.58333"
    version="1.1"
    id="svg168634"
    sodipodi:docname="logo-navbar.svg"
@@ -26,17 +26,17 @@
      showgrid="true"
      inkscape:zoom="6.5325093"
      inkscape:cx="56.027475"
-     inkscape:cy="24.569425"
+     inkscape:cy="25.487909"
      inkscape:window-width="1872"
      inkscape:window-height="1163"
      inkscape:window-x="41"
-     inkscape:window-y="60"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer3"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="2"
+     fit-margin-bottom="0"
      showborder="true"
      inkscape:showpageshadow="false"
      units="px"
@@ -48,7 +48,7 @@
     <color-profile
        name="D65"
        xlink:href="../../../../../../Library/ColorSync/Profiles/D65.icc"
-       id="color-profile2952" />
+       id="color-profile1046" />
     <rect
        x="309.9783"
        y="662.06946"
@@ -61,7 +61,7 @@
      id="layer3"
      inkscape:label="logo"
      style="display:inline"
-     transform="translate(-5.5518001,17.885902)">
+     transform="translate(-5.5517999,17.885902)">
     <g
        id="use1150"
        transform="matrix(0.26458333,0,0,0.26458333,100.72788,192.81393)"
