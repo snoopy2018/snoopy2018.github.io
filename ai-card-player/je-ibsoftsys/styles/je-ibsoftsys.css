@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Thu Sep 23 19:22:01 CEST 2021';
+    content:'Fri Sep 24 07:27:09 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -423,15 +423,9 @@ span.small-caps {font-variant-caps: small-caps;}
   background-color: rgb(51,51,51); /* approximately color of navigation background at apple.com. State of mind on August 12, 2021 */
 }
 
-/* Source: https://stackoverflow.com/questions/38479979/positioning-my-logo-inside-the-navigation-bar-using-css */
-#navbar-logo{
-    /* display: flex;
-    justify-content: center;
-    margin: 0px; */
-
-    width:auto; /* same as height! */
-    height:1.4em;/* to be approximately inline with text, assume 43px nav bar height. I don't know better today August 24, 2021. */
-    overflow:hidden;
+.navbar-icon {
+    width: auto;
+    height: 1.2em;
 }
 
 #logo-plus {
