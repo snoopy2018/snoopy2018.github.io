@@ -111,8 +111,8 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" id="about">
-  <h2 class="w3-center"><span class="headline">Engineering Office for Software Systems</span></h2>
-  <h3><em>"Software development with analytical <span style="font-variant: small-caps;"> and</span> creative mindsets."</em></h3>
+  <h1>Engineering Office for Software Systems</h1>
+  <h3><em>Software development with analytical <span class="small-caps"> and</span> creative mindsets.</em></h3>
   <div class="w3-row">
     <!-- 21Aug2021 10:42<div class="w3-col m4 w3-center w3-padding-12"> -->
 
@@ -163,7 +163,7 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-32">
-  <h2 class="w3-center"><span class="headline">Selected Software Projects</span></h2>
+  <h2>Selected Software Projects</h2>
 
   <div class="w3-row">
       <p>The following overview of some of my software projects gives you an insight into my previous work and expertise. One or the other task or technology will certainly be similar in your software project, and I am convinced that my knowledge and experience will help you to complete it successfully. I look forward to working with you!
@@ -172,11 +172,11 @@
 </div>
 
   <div class="flex-container">
-      <!-- BEGIN Section I --------->
+      <!-- BEGIN Section I -------->
       <div class='flex-item'>
           <div class="portfolio-section-frame" >
 
-              <span class="portfolio-section-headline">Development of Smartphone App as Learning Aid</span>
+              <span class="project-headline">Development of Smartphone App as Learning Aid</span>
 
               <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
               <div class="box">
@@ -189,17 +189,15 @@
                       <div class="overlay-canvas-container" id="overlay-canvas-container-1">
                           <div class="overlay-canvas" id="overlay-canvas-1">
                               <div class="sticky-top">
-                                  <button class="overlay-button-close" onclick="overlayOff(1)"></button>
-                                  <!-- I'm a sticky text. -->
+                                <div onclick="overlayOff(1)"><svg
+                                   class="overlay-button-close-icon"></svg></div>
                               </div>
 
                               <div class="overlay-content">
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-smartphone-app-min.png" alt="Symbol of Smartphone App">
                                   </div>
 
-                                  <span class="portfolio-section-headline">Development of Smartphone App as Learning Aid</span>
-
-
+                                  <span class="project-overlay-headline">Development of Smartphone App as Learning Aid</span>
 
                                   <p>The idea for this app emerged at Laurelwood Elementary School in Santa Clara, California. As a volunteer, I played the card game “SET” with second graders during the breaks from math class. The game trains visual perception and logical thinking. I kept imagining how a smartphone could take over my referee role. </p>
 
@@ -207,7 +205,7 @@
 
                                   <p>Most of the development has been finding a reliable way to recognize the colors and symbols of the playing cards and translating that model into effective software. Please keep in mind that the visual perception of playing cards is a relatively simple problem for us humans, but it is not a trivial task for a computer system. In contrast, imitating logical reasoning appears to be child's play for a computer system. The implementation of the rules of the game only accounted for a tiny fraction of the development effort. You can find more information about the app at <a href="https://snoopy2018.github.io/ai-card-player/" title="Webpage >"  rel="noopener" class="w3-hover-text-blue">AI Card Player</a>.</p>
 
-                                  <ul aria-label="Technologies">
+                                  <ul aria-label="Technologies:">
                                       <li>Objective-C</li>
                                       <li>C/C++</li>
                                       <li>iOS</li>
@@ -234,7 +232,7 @@
       <div class='flex-item'>
           <div class="portfolio-section-frame">
 
-              <span class="portfolio-section-headline">Search for Contact Addresses on Websites</span>
+              <span class="project-headline">Search for Contact Addresses on Websites</span>
 
               <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
               <div class="box">
@@ -248,15 +246,15 @@
                       <div class="overlay-canvas-container" id="overlay-canvas-container-2">
                           <div class="overlay-canvas" id="overlay-canvas-2">
                               <div class="sticky-top">
-                                  <button class="overlay-button-close" onclick="overlayOff(2)"></button>
-                                  <!-- I'm a sticky text. -->
+                                <div onclick="overlayOff(2)"><svg
+                                   class="overlay-button-close-icon"></svg></div>
                               </div>
 
                               <div class="overlay-content">
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-find-contact-details-en-min.png" alt="Symbol of Search for Contacts">
                                   </div>
 
-                                  <span class="portfolio-section-headline">Search for Contact Addresses on Websites</span>
+                                  <span class="project-overlay-headline">Search for Contact Addresses on Websites</span>
 
                                   <p>A customer from Berlin wanted a software that searches the generated websites of an online vehicle market according to criteria and filters out interesting dealers from the flood of offers.</p>
 
@@ -268,7 +266,7 @@
 
 
 
-                                  <ul aria-label="Technologies">
+                                  <ul aria-label="Technologies:">
                                       <li>Python</li>
                                       <li>Beautiful Soup</li>
                                       <li>Selenium WebDriver</li>
@@ -294,7 +292,8 @@
       <!-- BEGIN Section III --------->
       <div class='flex-item'>
           <div class="portfolio-section-frame">
-              <span class="portfolio-section-headline">Modeling Distributed Systems</span>
+
+              <span class="project-headline">Modeling Distributed Systems</span>
 
               <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
               <div class="box">
@@ -307,13 +306,15 @@
                       <div class="overlay-canvas-container" id="overlay-canvas-container-3">
                           <div class="overlay-canvas" id="overlay-canvas-3">
                               <div class="sticky-top">
-                                  <button class="overlay-button-close" onclick="overlayOff(3)"></button>
+                                <div onclick="overlayOff(3)"><svg
+                                   class="overlay-button-close-icon"></svg></div>
                               </div>
+
                               <div class="overlay-content">
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-model-of-distributed-min.png" alt="Symbol of Model of Distributed Systems">
                                   </div>
 
-                                  <span class="portfolio-section-headline">Modeling Distributed Systems</span>
+                                   <span class="project-overlay-headline">Modeling Distributed Systems</span>
 
                                   <p><em>General Motors (GM)</em> in the USA was looking for a simulation model for distributed electronic control units (distributed systems). The overriding goal was to develop optimal system architectures for future vehicle models.</p>
 
@@ -321,7 +322,7 @@
 
                                   <p>The simulation model based on statistical methods was finally accepted by the developers and successfully used in the development department at <em>GM</em>.</p>
 
-                                  <ul aria-label="Technologies">
+                                  <ul aria-label="Technologies:">
                                       <li>C++</li>
                                       <li>MLDesigner</li>
                                   </ul>
@@ -341,7 +342,7 @@
           <!-- BEGIN Section IV --------->
           <div class="portfolio-section-frame">
 
-              <span class="portfolio-section-headline">Testing Software Systems</span>
+              <span class="project-headline">Testing Software Systems</span>
 
               <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
               <div class="box">
@@ -354,19 +355,21 @@
                       <div class="overlay-canvas-container" id="overlay-canvas-container-4">
                           <div class="overlay-canvas" id="overlay-canvas-4">
                               <div class="sticky-top">
-                                  <button class="overlay-button-close" onclick="overlayOff(4)"></button>
+                                <div onclick="overlayOff(4)"><svg
+                                   class="overlay-button-close-icon"></svg></div>
                               </div>
+
                               <div class="overlay-content">
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-test-software-min.png" alt="Symbol of Test Software Systems">
                                   </div>
 
-                                  <span class="portfolio-section-headline">Testing Software Systems</span>
+                                  <span class="project-overlay-headline">Testing Software Systems</span>
 
                                   <p>At the start-up company <em>Crosstest</em> in the Silicon Valley, we developed in a small team a software tool that automatically generates unit test cases for C/C++ functions. The tool supported software development teams in testing their functions and aimed at improving software quality.</p>
 
                                   <p>With a similar goal in mind, I worked on a support team at <em>Cisco Systems</em> in the Silicon Valley. We developed Unix scripts for test automation and general guidelines for testing software. It was also the task of the team to familiarize the software developers with these new tools and methods and to support them in their application.</p>
 
-                                  <ul aria-label="Technologies">
+                                  <ul aria-label="Technologies:">
                                       <li>Java</li>
                                       <li>C/C++</li>
                                       <li>Perl</li>
@@ -391,7 +394,7 @@
     <div class='flex-item'>
         <div class="portfolio-section-frame">
 
-            <span class="portfolio-section-headline">Development of Safety-Critical Systems</span>
+            <span class="project-headline">Development of Safety-Critical Systems</span>
 
             <div class="margin-top-16"></div>  <!-- Cosmetic. Give Image some space to the top but do not compromise it's height (in case you put the padding-top in the image wrapper class) 11Sep21-2120 -->
             <div class="box">
@@ -404,13 +407,15 @@
                     <div class="overlay-canvas-container" id="overlay-canvas-container-5">
                         <div class="overlay-canvas" id="overlay-canvas-5">
                             <div class="sticky-top">
-                                <button class="overlay-button-close" onclick="overlayOff(5)"></button>
+                              <div onclick="overlayOff(5)"><svg
+                                 class="overlay-button-close"></svg></div>
                             </div>
+
                             <div class="overlay-content">
                                 <div class="box"><img class="box-image-container" src="../media/images/symbol-develop-safety-critical-min.png" alt="Symbol of Develop Safety-Critical Systems">
                                 </div>
 
-                                <span class="portfolio-section-headline">Development of Safety-Critical Systems</span>
+                                <span class="project-overlay-headline">Development of Safety-Critical Systems</span>
 
                                 <p>At the <em>BMW Group</em> in Munich, I worked in interdisciplinary engineering teams on the development of safety-critical systems.</p>
 
@@ -418,7 +423,7 @@
 
                                 <p>Ever more complex systems in the vehicle required the use of new development methods and tools. In order to master the complexity for future vehicle models, I developed and evaluated new software development approaches as part of my doctorate in a research team at the <em>BMW Technology Office</em> in Palo Alto.</p>
 
-                                <ul aria-label="Technologies">
+                                <ul aria-label="Technologies:">
                                     <li>C/C++</li>
                                     <li>Assembler</li>
                                     <li>ASCET</li>
