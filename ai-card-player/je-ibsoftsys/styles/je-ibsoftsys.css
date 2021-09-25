@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Sat Sep 25 19:29:54 CEST 2021';
+    content:'Sat Sep 25 21:03:51 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
     /* max-height:300px; */ /* DOES NOT work !!!!!!! necessary for iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
 
     width: 310px; /* this symbol needs special treatment because it is ... */
-    height: 100%;  /* ... (For iOS use 100% instead of 'auto' although 'auto' works with the height-property for the other four--totally weird to me!) the last and has special dimensions that are different to the other four. State of mind on September, 20 2021 */
+    height: intrinsic;  /* ... (For iOS use 100% instead of 'auto' although 'auto' works with the height-property for the other four--totally weird to me!) the last and has special dimensions that are different to the other four. State of mind on September 20, 2021 CHANGED from 100% to intrinsic after weird results on iPhone 6 (height:100% resulted in too tall image but only at the German version. Weird, weird. State of mind on September 25, 2021.)*/
 
 
     /* background-color: bisque; */
@@ -436,13 +436,6 @@ h1, h2, h3, h4, h5, h6 {
   /* align-content: center;
   justify-content: center; */
 }
-
-/* .section-box {
-    display: flex;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-} */
 
 .box {
     display: flex;
