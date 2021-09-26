@@ -471,8 +471,12 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 430px;  /* size by which longest headline ('Entwicklung...') fits in one line, and therefore does not screw up the 'alignment' of two items (i.e. 'Entwicklung...' and 'Suche...' goes along with .flex-container max-width:XYZpx. Sorry, I don't know better at this point, September 24, 2021. */
     width:100%;
 
-    /*border-style: solid;*/ /* CHANGED for test only JE 25Sep21-1715 */
-    /*border-width: 1px; */ /* CHANGED for test only JE 25Sep21-1715 */
+    /*border-style: solid;*/ /* for test only JE 25Sep21-1715 */
+    /*border-width: 1px; */ /* for test only JE 25Sep21-1715 */
+    background-image: url("../media/images/corner.svg");
+    background-position-x: 100%;
+    background-position-y: bottom; 
+    background-repeat: no-repeat;
 }
 
 
