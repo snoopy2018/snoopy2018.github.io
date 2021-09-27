@@ -135,6 +135,7 @@ function overlayOn(section) {
 
   document.getElementById(overlayID).style.display = "block";
 
+
   // For some reason body-scroll-lock seem to scroll to #home (top position y=0) whenever it starts. This hack fixes that anoying feature. 31Aug2021
   // FIXED on 04Sep21 (see comment in overlayOff)
   // scrollPosition = window.pageYOffset;
@@ -152,6 +153,12 @@ function overlayOn(section) {
   targetElement.scrollTop = 0;
 
   // console.log("document.body.scrollTop) (after disableBodyScroll): " + document.body.scrollTop); // JE
+
+  // JE 26Sep21-2100 animation TEST
+  // Animation: transition x-property from 0% t0 100% of overlay object
+  // document.getElementById(overlayID).style.width = "100%";
+  // document.getElementById(overlayID).style.height = "100%";
+  // document.getElementById(overlayID).style.opacity = "1";
 }
 
 function overlayOff(section) {
@@ -179,6 +186,12 @@ function overlayOff(section) {
          // console.log("in overlayOff: AFTER document.body.style.top = " + document.body.style.top); // JE 06Sep21-1655
     }
     // console.log("document.body.scrollTop) (after enableBodyScroll): " + document.body.scrollTop); // JE
+
+    // JE 26Sep21-2100 animation TEST
+   // Animation: transition x-property from 0% t0 100% of overlay object
+   // document.getElementById(overlayID).style.width = "0";
+   // document.getElementById(overlayID).style.height = "0";
+   // document.getElementById(overlayID).style.opacity = "0";
 }
 
 

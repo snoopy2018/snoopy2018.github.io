@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Sun Sep 26 08:22:35 CEST 2021';
+    content:'Sun Sep 26 21:34:32 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -325,14 +325,10 @@ h1, h2, h3, h4, h5, h6 {
     /* width: auto; */ /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
     /*height: 280px;*/ /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
 
-    /* width: 250px;
-    height:100%; */
-
     width: auto;  /* measurements so all first four  symbols appear similar ... */
-    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
+    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
 
     /* background-color: bisque; */
-
 }
 
 .symbol-find-contact-details {
@@ -342,12 +338,8 @@ h1, h2, h3, h4, h5, h6 {
     /* width: auto;*/ /* if you set height, width: 100% seems NOT to work on iOS ... it drives me crazy. JE 13Sep21-1441 */
     /*height: 270px; *//* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
 
-    /* width: 270px;
-    height:100%;
- */
     width: auto; /* measurements so all first four  symbols appear similar ... */
-    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
-
+    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
 
     /* width: 250px; */
     /* max-width: 100%; */
@@ -367,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
     /* padding: 18px; */
 
     width: auto; /* measurements so all first four  symbols appear similar ... */
-    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
+    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
 
 
     /* background-color: bisque; */
@@ -377,18 +369,9 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /*width: 100%;*/ /* same as symbol-develop-safety-critical */
-    /* min-width: 250px; */
-    /* width: 300px; */
-    /*min-height: 160px; *//* same as symbol-develop-safety-critical */
-    /* height:100%; */ /* same as symbol-develop-safety-critical */
-    /* width: 280px; before */
-    /* height: 100%; before */
 
     width: auto; /* measurements so all first four  symbols appear similar ... */
-    height: 310px;  /* ... in size. State of mind on September, 19 2021 */
-
-
+    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
     /* background-color: bisque; */
 }
 
@@ -402,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
     /*height:100%;*? /* the combination of 'width: 100%; min-height: 160px; height:100%;' does the magic trick on iOS. Crazy. State of mind on September 17, 2021. */
     /* max-height:300px; */ /* DOES NOT work !!!!!!! necessary for iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
 
-    width: 310px; /* this symbol needs special treatment because it is ... */
+    width: 270px; /* this symbol needs special treatment because it is ... */
     height: 100%;  /* ... (For iOS use 100% instead of 'auto' although 'auto' works with the height-property for the other four--totally weird to me!) the last and has special dimensions that are different to the other four. State of mind on September 20, 2021 CHANGED from 100% to intrinsic after weird results on iPhone 6 (height:100% resulted in too tall image but only at the German version. Weird, weird. State of mind on September 25, 2021.) CHANGED back from intrinsic to 100% because it was not the cause of the problem. The problem was a typo (!) at the beginning of the source file: "Technologien<!DOCTYPE html>" instead of "<!DOCTYPE html>". State of mind on September 26, 2021. */
 
 
@@ -455,8 +438,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .box-image-container {
-    height:120px;
-    margin-top:8px;
+    height: 90px;
+    margin-top: 8px;
 }
 
 .portfolio-section-frame {
@@ -475,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
     /*border-width: 1px; */ /* for test only JE 25Sep21-1715 */
     background-image: url("../media/images/corner.svg");
     background-position-x: 100%;
-    background-position-y: bottom; 
+    background-position-y: bottom;
     background-repeat: no-repeat;
 }
 
@@ -540,6 +523,7 @@ State of mind on Septmeber 23, 2021.
   background-color: rgba(51, 51, 51, 0.95); /* big navbar's color is rgb(51,51,51); */
   overflow-x: hidden;
   transition: 0.4s;
+  /* -webkit-transition: 0.4s; */
   padding-top: 50px;
 }
 
@@ -598,7 +582,6 @@ span.small-caps {
 
 .card {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* with hover: 0 4px 8px 0 rgba(0,0,0,0.2); */
-  /* transition: 0.3s; */
   width: 100%;
 }
 
@@ -670,8 +653,8 @@ span.small-caps {
 .overlay {
     position: fixed;
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* was 100%; // JE 26Sep21-2100 animation TEST */
+    height: 100%; /* was 100%; // JE 26Sep21-2100 animation TEST */
     top: 0;
     left: 0;
     right: 0;
@@ -681,6 +664,11 @@ span.small-caps {
 
     z-index: 11000;
     cursor: auto;
+
+    /* transition: width 0.4s, height 0.4s; */ /* // JE 26Sep21-2100 animation TEST */
+    /* opacity: 0; */
+    /* transition: opacity 0.4s ease 0.5s; /* // JE 26Sep21-2100 animation TEST */ */
+    /* -webkit-transition: opacity 0.7s; */
 }
 .overlay-container {
     height: 100%;
@@ -696,13 +684,16 @@ span.small-caps {
     position: relative;
 
     width: 44em; /* Reasoning: p max-width is set to 36em, thus I added e.g. 4em to the right and left. This allows p to expand to 36em while there is still some white space left on the right and left to look good. */ /* 980px at Apple modal appearance https://www.apple.com/accessibility/ */
-    height:100%; /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
+
+    height:100%; /* animated? was 100%; // JE 26Sep21-2024 TEST */ /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
+    /*transition: height 0.5s;*/ /* animated?  // JE 26Sep21-2024 TEST */
+
     padding: 52px 0; /* let's the modal at the top and bottom space when scrolling begins (top) and ends (bottom). looks nice and imitates the behavior of Apple modal appearance https://www.apple.com/accessibility/ */
 
     max-width: 66.6667%;
     margin: 0 auto;
-    overflow-y: scroll;  /* JE 07Sep21-0655 TEST */
-    -webkit-overflow-scrolling: touch; /* JE 07Sep21-0655 TEST */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .overlay-canvas {
@@ -869,6 +860,6 @@ State of mind on August 25, 2021.
 
 @media only screen and (min-width: 500px) {  /* value determined by experiment to make symbol appear bigger because (1) it is the only one in the last row and (2) the dimensions are a bit different to the other symbols. State of mind on September 19, 2021. */
  .symbol-develop-safety-critical {
-        width: 440px;
+        width: 400px;
     }
 }
