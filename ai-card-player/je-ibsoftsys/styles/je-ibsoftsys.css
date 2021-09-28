@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:after{
-    content:'Mon Sep 27 11:18:41 CEST 2021';
+    content:'Tue Sep 28 12:35:18 CEST 2021';
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -393,6 +393,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+.symbol-wanted {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 280px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -488,6 +497,23 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../media/images/hamburgerPlain.svg);
   background-size: cover;
 }
+
+.plusSymbol {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin: 12px;
+    mask: url("../media/images/plusSymbol.svg");
+    -webkit-mask: url("../media/images/plusSymbol.svg");
+    /* background-color: red; */ /* color defined in HTML code */
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    cursor: pointer;
+
+    /* background-image: url(../media/images/plusSymbol.svg);
+    background-size: cover; */
+}
+
 
 
 /* ----------------------------------------------------------------------- */
@@ -617,21 +643,22 @@ span.small-caps {
   font-weight: normal;
   text-align: center;
 }
-
+/*
 .overlay-button-show:before{
     font-family: 'FontAwesome';
     display: inline-block;
     cursor: pointer;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 2.5em;
-    content: "\f055"; /* fa-plus-circle */
+    content: "\f055";
 }
-
+*/
 .overlay-button-container {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 18px; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .margin-top-32 {
