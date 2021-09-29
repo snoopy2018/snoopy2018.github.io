@@ -9,8 +9,9 @@
 Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/constant-text-in-css/60344
 State of mind on August 25, 2021.
 */
-span.updated-on:after{
-    content:'Tue Sep 28 12:35:18 CEST 2021';
+span.updated-on:before {
+    content:'Wed Sep 29 09:08:50 CEST 2021';
+    font-size: inherit;
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -392,8 +393,6 @@ h1, h2, h3, h4, h5, h6 {
     /* background-color: bisque; */
 }
 
-
-
 .symbol-wanted {
     display: block;
     margin-left: auto;
@@ -514,7 +513,19 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover; */
 }
 
+.footer-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* justify-content: center; */
+    place-content: space-around;
 
+    font-size: 0.8em;
+
+    padding: 16px;
+}
 
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
