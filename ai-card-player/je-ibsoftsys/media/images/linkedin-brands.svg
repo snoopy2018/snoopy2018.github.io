@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fab"
+   data-icon="linkedin"
+   class="svg-inline--fa fa-linkedin"
+   role="img"
+   viewBox="0 0 383.46783 101.6064"
+   version="1.1"
+   id="svg826"
+   sodipodi:docname="linkedin-brands.svg"
+   width="383.46783"
+   height="101.6064"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs830" />
+  <sodipodi:namedview
+     id="namedview828"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.9215298"
+     inkscape:cx="88.991593"
+     inkscape:cy="40.852866"
+     inkscape:current-layer="svg826">
+    <sodipodi:guide
+       position="-40.211093,13.690769"
+       orientation="0,-1"
+       id="guide25680" />
+    <sodipodi:guide
+       position="207.38221,62.824789"
+       orientation="0,-1"
+       id="guide30312" />
+  </sodipodi:namedview>
+  <path
+     fill="currentColor"
+     d="m 376.21025,0 h -87.11388 c -3.99168,0 -7.23492,3.2886 -7.23492,7.32564 v 86.95512 c 0,4.03704 3.24324,7.32564 7.23492,7.32564 h 87.11388 c 3.99168,0 7.2576,-3.2886 7.2576,-7.32564 V 7.32564 C 383.46785,3.2886 380.20193,0 376.21025,0 Z M 312.57017,87.0912 H 297.51065 V 38.60136 h 15.0822 V 87.0912 Z m -7.52976,-55.1124 c -4.83084,0 -8.7318,-3.92364 -8.7318,-8.7318 0,-4.80816 3.90096,-8.7318 8.7318,-8.7318 4.80816,0 8.7318,3.92364 8.7318,8.7318 0,4.83084 -3.90096,8.7318 -8.7318,8.7318 z m 63.98028,55.1124 H 353.96117 V 63.504 c 0,-5.62464 -0.1134,-12.85956 -7.8246,-12.85956 -7.84728,0 -9.04932,6.1236 -9.04932,12.45132 V 87.0912 H 322.02773 V 38.60136 h 14.44716 v 6.62256 h 0.20412 c 2.01852,-3.81024 6.94008,-7.8246 14.26572,-7.8246 15.24096,0 18.07596,10.04724 18.07596,23.11092 z"
+     id="path824"
+     style="stroke-width:0.2268;fill:#333333;fill-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-size:96px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Normal';text-align:center;letter-spacing:0px;text-anchor:middle;fill:#333333;fill-opacity:1"
+     x="130.96049"
+     y="87.915627"
+     id="text1926"><tspan
+       sodipodi:role="line"
+       id="tspan1924"
+       x="130.96049"
+       y="87.915627">Linked</tspan></text>
+</svg>

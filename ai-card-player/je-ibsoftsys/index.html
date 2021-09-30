@@ -105,9 +105,9 @@
 <!--<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">-->
 <!-- NOTE 'w3-opacity-min' wash-out effect?! -->
 <div class="bgimg-1 w3-display-container" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
+    <div class="w3-display-middle">
         <!--<img src="media/images/logo-plus.png"  alt="Logo" width="110%"> -->
-        <img src="media/images/logo-plus.svg"  alt="Logo" id="logo-plus">
+        <img id="logo-plus" src="media/images/logo-plus.svg"  alt="Company Logo Plus">
         <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span> -->
 
         <!--<div class="absolute">
@@ -196,7 +196,8 @@
 <div class="bgimg-2 w3-display-container" id="portfolio">
 
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <!-- <span class="section-headline">PORTFOLIO</span> -->
+    <img class="section-headline" src="media/images/text-portfolio.svg"  alt="Section Headline">
   </div>
 </div>
 
@@ -523,7 +524,8 @@
   <div class="bgimg-3 w3-display-container" style="margin-top: 32px;" id="contact">
 
       <div class="w3-display-middle">
-          <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+          <!-- <span class="section-headline">KONTAKT</span> -->
+          <img class="section-headline" src="media/images/text-kontakt.svg"  alt="Section Headline">
       </div>
   </div>
 
@@ -546,16 +548,23 @@
   </div>
 </div>
 
+
+
 <!-- Footer -->
-<footer class="background-color-darkgrey" >
+<!-- <footer class="background-color-darkgrey"> -->
+<footer style="background-color:rgb(245, 245, 245)">
     <div class="footer-content">
-        <span class="text-color-not-selected" style="margin-right:1em;">Designed by Jürgen Ehret</span>
+        <!-- <span style="margin-right:1em;">Designed by<span style="letter-spacing: 0.1em;"> Jürgen Ehret</span></span> -->
 
-        <span class="text-color-not-selected" style="margin-right:1em;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Webpage >" target="_blank" rel="noopener" class="text-color-not-selected w3-hover-text-white" style="font-weight:bold; letter-spacing: 0.1em;">w3.css</a></span>
+        <span style="margin-right:1em;">Designed by <em>Jürgen Ehret</em></span>
 
-        <a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/" title="Profile Webpage >" target="_blank" rel="noopener" class="text-color-not-selected w3-hover-text-white" style="margin-right:1em; font-weight:bold; letter-spacing: 0.1em;">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/" title="Profile Webpage >" target="_blank" rel="noopener" style="margin-right:1em;"><img class="linkedin-icon" src="media/images/linkedin-brands.svg"></a>
 
-        <span class="text-color-not-selected">Updated on <span class="updated-on"> </span></span>
+        <span style="margin-right:1em;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Webpage >" target="_blank" rel="noopener" style="color:inherit; font-weight:bold; letter-spacing: 0.1em;">w3.css</a></span>
+
+        <!-- <a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/" title="Profile Webpage >" target="_blank" rel="noopener" class="text-color-not-selected w3-hover-text-white" style="margin-right:1em; font-weight:bold; letter-spacing: 0.1em;">LinkedIn</a> -->
+
+        <span>Updated on <em><span class="updated-on"></span></em></span>
     </div>
 </footer>
 </body>

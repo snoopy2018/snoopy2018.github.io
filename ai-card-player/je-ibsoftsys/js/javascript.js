@@ -51,7 +51,7 @@ function clickEventListener(event) {
 }
 
 function openNav() {
-  document.getElementById("sideNav").style.width = "160px";
+  document.getElementById("sideNav").style.width = "9em";
   // document.getElementById("dummy-background").style.display = "block";
   document.getElementById("sideNav-hamburger").style.display = "none"; // hide 'hamburger'
   window.addEventListener("click", clickEventListener, true); // IMPORTANT I assume, the parameter 'true' makes sure that the click for this event gets consumed; otherwise, the click event listener invokes closeNav() immediately (i.e. navbar does not show at all).

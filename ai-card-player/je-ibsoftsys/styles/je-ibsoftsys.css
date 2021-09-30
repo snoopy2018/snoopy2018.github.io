@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Wed Sep 29 09:08:50 CEST 2021';
+    content:'Wed Sep 29 15:54:52 CEST 2021';
     font-size: inherit;
 }
 
@@ -450,6 +450,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 8px;
 }
 
+.section-headline {
+    min-width: 250px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
+    width: 100%; /* keeps it centered under this "w3' classes around */
+    max-width: 450px; /* don't let it grow too much on big screens */
+}
+
 .portfolio-section-frame {
     display: table;
     /* padding: 18px; */
@@ -499,8 +505,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .plusSymbol {
     display: inline-block;
-    width: 2em;
-    height: 2em;
+    width: 32px;
+    height: 32px;
     margin: 12px;
     mask: url("../media/images/plusSymbol.svg");
     -webkit-mask: url("../media/images/plusSymbol.svg");
@@ -515,7 +521,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-content {
     display: flex;
+
     width: 100%;
+    max-width: 950px; /* prevents that text get too spread out (value same as of flex-container) */
+    margin-left: auto;
+    margin-right: auto;
+
     flex-direction: row;
     flex-wrap: wrap;
     /* align-content: center; */
@@ -526,6 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 
     padding: 16px;
 }
+
 
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
@@ -551,7 +563,7 @@ State of mind on Septmeber 23, 2021.
 
 */
 .sidenav {
-  height: 259px;  /* width (= 160px) * 1.618 (golden ratio) */
+  height: 16.18em;  /* width (= 160px) * 1.618 (golden ratio) */
   width: 0;
   position: fixed;
   z-index: 1;
@@ -561,7 +573,7 @@ State of mind on Septmeber 23, 2021.
   overflow-x: hidden;
   transition: 0.4s;
   /* -webkit-transition: 0.4s; */
-  padding-top: 50px;
+  padding-top: 2.5em;
 }
 
 .sidenav a {
@@ -612,9 +624,16 @@ span.small-caps {
 }
 
 
+.linkedin-icon {
+    width: auto;
+    height: 1em;
+    margin-bottom: 0.25em; /* adjust image position, I don't know better. JE 29Sep21  */
+}
+
+
 #logo-plus {
-    min-width:250px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
-    width:100%;
+    min-width: 250px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
+    width: 100%; /* keeps it centered under this "w3' classes around */
 }
 
 .card {
