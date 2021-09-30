@@ -10,8 +10,13 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Wed Sep 29 15:54:52 CEST 2021';
+    content:'Sep 30 20:50 CEST 2021';
     font-size: inherit;
+}
+
+/* VARIABLES ----------------------------------- */
+:root { /* global for all html */
+    --textColor: #444;  /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -170,14 +175,15 @@ Source: MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/font-weigh
 }
 
 body, html {
-  font-family:  Lato, PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family:  Lato, PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
   line-height: 1.5;
   letter-spacing: normal; /* -0.022em;  at some Apple websites */
 
   height: 100%;
 
-  color: #444; /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
+  color: #444; /* default supported fallback style */
+  color: var(--textColor); /* will not be used by any browser that doesn't support it, and will default to the previous fallback */
 }
 
 /* DRIVES ME CRAZY
@@ -522,22 +528,31 @@ h1, h2, h3, h4, h5, h6 {
 .footer-content {
     display: flex;
 
-    width: 100%;
-    max-width: 950px; /* prevents that text get too spread out (value same as of flex-container) */
-    margin-left: auto;
-    margin-right: auto;
-
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-content: center; */
-    /* justify-content: center; */
-    place-content: space-around;
+    align-content: center;
+    justify-content: space-between;
+    /* place-content: space-around; */
+
+    width: 100%;
+    max-width: 750px; /* prevents that text get too spread out (value same as of flex-container) based on 4 items today on September 30, 2021. */
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: 0.8em;
 
     padding: 16px;
 }
 
+.border-right {
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding-right: 5px;  /* padding: gap inside of border */
+    margin-right: 5px; /* margin: gap outside of border */
+
+    border-color: #444; /* default supported fallback style */
+    border-color: var(--textColor);
+}
 
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
@@ -626,7 +641,7 @@ span.small-caps {
 
 .linkedin-icon {
     width: auto;
-    height: 1em;
+    height: 1.1em;
     margin-bottom: 0.25em; /* adjust image position, I don't know better. JE 29Sep21  */
 }
 
