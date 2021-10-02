@@ -10,13 +10,14 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Sep 30 20:50 CEST 2021';
+    content:'Oct  2 20:39 CEST 2021';
     font-size: inherit;
 }
 
 /* VARIABLES ----------------------------------- */
 :root { /* global for all html */
-    --textColor: #444;  /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
+    --textColor: rgb(51, 51, 51);  /* saw #333 == rgb(51, 51, 51) at ndr.de NDR; SZ rgb(41, 41, 58); BZ rgb(51, 51, 51); NOTE #333 == #333333 (shorthand)*/
+    /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -182,7 +183,7 @@ body, html {
 
   height: 100%;
 
-  color: #444; /* default supported fallback style */
+  color: rgb(51, 51, 51); /* default supported fallback style */
   color: var(--textColor); /* will not be used by any browser that doesn't support it, and will default to the previous fallback */
 }
 
@@ -233,7 +234,7 @@ ul {
 ul:before{
     content:attr(aria-label);
     font-size: 1.17em;
-    font-weight: 300;
+    /* font-weight: 300; */
     /* font-variant: small-caps;  */
     margin-left:-2em;
 }
@@ -496,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-size: 1.3em;
     margin: 10px 0; /* same as h1, h2, etc. */
-    font-weight: 300;
+    /* font-weight: 300; */
     /* font-variant: small-caps; */
     /* text-align: center; */
 }
@@ -526,31 +527,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-content {
-    display: flex;
+    display: table; /* flex; */
 
-    flex-direction: row;
+    /* flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     /* place-content: space-around; */
 
-    width: 100%;
-    max-width: 750px; /* prevents that text get too spread out (value same as of flex-container) based on 4 items today on September 30, 2021. */
+    width: fit-content; /* 'fit-content' instead of 100 % because then browser does NOT fill space with white space and therefore content is always centered. State of mind on October 2, 2021. */
+    /* max-width: 825px; */ /* prevents that text get too spread out (value same as of flex-container) based on four items today on October 1, 2021. UPDATE 'max-width' not necessary anymore with width: 'fit-content' in place. State of mind on October 2, 2021.  */
     margin-left: auto;
     margin-right: auto;
 
     font-size: 0.8em;
 
-    padding: 16px;
+    padding: 12px;
 }
 
 .border-right {
     border-right-style: solid;
     border-right-width: 1px;
-    padding-right: 5px;  /* padding: gap inside of border */
-    margin-right: 5px; /* margin: gap outside of border */
+    padding-right: 8px;  /* padding: gap inside of border. UPDATE I inserted a white space to allow ...*/
+    margin-right: 0.4em; /* margin: gap outside of border. In em to allow space grow/shrink if user changes font-size settings. State of mind on October 2, 2021. */
 
-    border-color: #444; /* default supported fallback style */
+    border-color: rgb(51, 51, 51); /* default supported fallback style */
     border-color: var(--textColor);
 }
 
@@ -642,7 +643,7 @@ span.small-caps {
 .linkedin-icon {
     width: auto;
     height: 1.1em;
-    margin-bottom: 0.25em; /* adjust image position, I don't know better. JE 29Sep21  */
+    margin-bottom: 0.2em; /* adjust image position, I don't know better. JE 02Oct21  */
 }
 
 
