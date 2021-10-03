@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct  2 20:39 CEST 2021';
+    content:'Oct  3 07:24 CEST 2021';
     font-size: inherit;
 }
 
@@ -526,8 +526,15 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover; */
 }
 
+.footer-container {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .footer-content {
-    display: table; /* flex; */
+    /*display: table;*/ /* flex; */
 
     /* flex-direction: row;
     flex-wrap: wrap;
@@ -535,7 +542,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between; */
     /* place-content: space-around; */
 
-    width: fit-content; /* 'fit-content' instead of 100 % because then browser does NOT fill space with white space and therefore content is always centered. State of mind on October 2, 2021. */
+    /* width: fit-content; */ /* 'fit-content' instead of 100 % because then browser does NOT fill space with white space and therefore content is always centered. State of mind on October 2, 2021. */
     /* max-width: 825px; */ /* prevents that text get too spread out (value same as of flex-container) based on four items today on October 1, 2021. UPDATE 'max-width' not necessary anymore with width: 'fit-content' in place. State of mind on October 2, 2021.  */
     margin-left: auto;
     margin-right: auto;
