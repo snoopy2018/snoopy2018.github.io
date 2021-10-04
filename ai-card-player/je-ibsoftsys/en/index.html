@@ -221,7 +221,7 @@
               </div>
 
               <div class="overlay-button-container">
-                  <i onclick="overlayOn(1)" class="plusSymbol background-color-darkgrey"></i>
+                  <i onclick="overlayOn(1)" class="symbol-plus background-color-darkgrey"></i>
               </div>
           </div>
 
@@ -280,7 +280,7 @@
               </div>
 
               <div class="overlay-button-container">
-                  <i onclick="overlayOn(2)" class="plusSymbol background-color-darkgrey"></i>
+                  <i onclick="overlayOn(2)" class="symbol-plus background-color-darkgrey"></i>
               </div>
           </div>
 
@@ -334,7 +334,7 @@
               </div>
 
               <div class="overlay-button-container">
-                  <i onclick="overlayOn(3)" class="plusSymbol background-color-darkgrey"></i>
+                  <i onclick="overlayOn(3)" class="symbol-plus background-color-darkgrey"></i>
               </div>
           </div>
       </div> <!-- flex-item -->
@@ -384,7 +384,7 @@
               </div>
 
               <div class="overlay-button-container">
-                  <i onclick="overlayOn(4)" class="plusSymbol background-color-darkgrey"></i>
+                  <i onclick="overlayOn(4)" class="symbol-plus background-color-darkgrey"></i>
               </div>
           </div>
           <!-- END Section IV -->
@@ -444,7 +444,7 @@
             </div>
 
               <div class="overlay-button-container">
-                <i onclick="overlayOn(5)" class="plusSymbol background-color-darkgrey"></i>
+                <i onclick="overlayOn(5)" class="symbol-plus background-color-darkgrey"></i>
             </div>
         </div>
 
@@ -476,9 +476,15 @@
     <div class="w3-col m8 w3-panel">
       <div class="w3-margin-bottom">
 
-        <i class="fa fa-map-marker fa-fw  w3-xlarge w3-margin-right"></i>Freiburg im Breisgau, Germany<br>
-        <i class="fa fa-phone fa-fw  w3-xlarge w3-margin-right"></i>+49 157 7768 8503<br>
-        <i class="fa fa-envelope fa-fw  w3-xlarge w3-margin-right"></i><a href="mailto:juergen_ehret2000@yahoo.com?subject=Request to the ''Engineering Office for Software Systems''" title="juergen_ehret2000@yahoo.com">Write email</a><br>
+        <i class="fa fa-map-marker fa-fw  w3-margin-right" style="font-size: 1.2em;"></i>Freiburg im Breisgau, Germany<br>
+
+        <!-- <i class="fa fa-phone fa-fw  w3-xlarge w3-margin-right"></i>+49 157 7768 8503<br> -->
+
+        <i class="fa fa-phone fa-fw  w3-margin-right" style="font-size: 1.2em;"></i><span id="phone-number" style="cursor: pointer;" onclick="showPhoneNumber()">+49 157 7...<a> show</a></span><br>
+
+        <!-- <i class="fa fa-envelope fa-fw  w3-margin-right" style="font-size: 1.2em;"></i><a href="mailto:juergen_ehret2000@yahoo.com?subject=Request to the ''Engineering Office for Software Systems''" title="juergen_ehret2000@yahoo.com">Write email</a><br> -->
+
+        <i class="fa fa-envelope fa-fw  w3-margin-right" style="font-size: 1.2em;"></i><span id="email-address" style="cursor: pointer;" onclick="showEmail('en')">Email...<a> show</a></span><br>
       </div>
     </div>
   </div>

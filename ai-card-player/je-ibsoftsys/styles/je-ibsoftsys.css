@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct  4 08:03 CEST 2021';
+    content:'Oct  4 19:09 CEST 2021';
     font-size: inherit;
 }
 
@@ -510,19 +510,19 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-.plusSymbol {
+.symbol-plus {
     display: inline-block;
     width: 32px;
     height: 32px;
     margin: 12px;
-    mask: url("../media/images/plusSymbol.svg");
-    -webkit-mask: url("../media/images/plusSymbol.svg");
+    mask: url("../media/images/symbol-plus.svg");
+    -webkit-mask: url("../media/images/symbol-plus.svg");
     /* background-color: red; */ /* color defined in HTML code */
     mask-size: cover;
     -webkit-mask-size: cover;
     cursor: pointer;
 
-    /* background-image: url(../media/images/plusSymbol.svg);
+    /* background-image: url(../media/images/symbol-plus.svg);
     background-size: cover; */
 }
 
@@ -565,7 +565,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
-
 
 /* REMOVED JE 25Sep21-643
 .headline {
