@@ -232,7 +232,7 @@ function showPhoneNumber() {
 
 function showEmail(language) {
     var elem = document.getElementById("email-address");
-    if (elem.innerHTML.startsWith("Email...")) {
+    if (elem.innerHTML.startsWith("juergen...")) {
         if(language === "de") {
             // elem.innerHTML = "+49 157 7768 8503";
             elem.innerHTML = "<a href='mailto:juergen_ehret2000@yahoo.com?subject=Anfrage an das Ingenieurbüro für Softwaresysteme' title='juergen_ehret2000@yahoo.com'>juergen_ehret2000@yahoo.com</a>";
