@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct  5 11:39 CEST 2021';
+    content:'Oct  5 12:14 CEST 2021';
     font-size: inherit;
 }
 
@@ -555,8 +555,9 @@ h1, h2, h3, h4, h5, h6 {
 .border-right {
     border-right-style: solid;
     border-right-width: 1px;
-    padding-right: 8px;  /* padding: gap inside of border. UPDATE I inserted a white space to allow ...*/
-    margin-right: 0.4em; /* margin: gap outside of border. In em to allow space grow/shrink if user changes font-size settings. State of mind on October 2, 2021. */
+    /* padding-right: 8px; */ /* padding: gap inside of border. UPDATE I inserted a white space to allow ...*/
+    margin-left: 0.3em; /* value determined until it looked good to me. JE 05Oct21 */
+    margin-right: 0.5em; /* value determined until it looked good to me. JE 05Oct21 */ /*margin: gap outside of border. In em to allow space grow/shrink if user changes font-size settings. State of mind on October 2, 2021. */
 
     border-color: rgb(51, 51, 51); /* default supported fallback style */
     border-color: var(--textColor);
