@@ -224,6 +224,14 @@ p {
   max-width: 36em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
   top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
   margin: 0.5em auto;
+
+
+  /* Source: `Silbentrennung — CSS' https://www.stichpunkt.de/html/umbruch.html  */
+   -moz-hyphens: auto;
+   -o-hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto; 
 }
 
 ul {
