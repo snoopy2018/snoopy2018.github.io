@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct  5 12:34 CEST 2021';
+    content:'Oct  7 20:00 CEST 2021';
     font-size: inherit;
 }
 
@@ -231,7 +231,7 @@ p {
    -o-hyphens: auto;
    -webkit-hyphens: auto;
    -ms-hyphens: auto;
-   hyphens: auto; 
+   hyphens: auto;
 }
 
 ul {
@@ -258,7 +258,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em; /* changed from 1. em to 1.7 em so it's bigger than project headlines. I know, it's a hack. JE 07Oct21 */
 }
 
 h3 {
@@ -519,9 +519,9 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat; */
 }
 
-.project-overlay-headline {
+.project-headline-overlay {
     display: block;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 10px 0; /* same as h1, h2, etc. */
     /* font-weight: 300; */
     /* font-variant: small-caps; */
@@ -589,6 +589,46 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--textColor);
 }
 
+.section-intro {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-plus-text {
+    max-width: 36em;  /* should be the same as p { max-width } */
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.identity-card-text {
+  padding: 8px 0px 8px 0px;
+}
+
+.identity-card {
+    float: left;
+    width: 250px; /* 250px gives the text (assume font-size = 14px) some space to the right and left */
+
+    margin-top: 0.4em; /* allighs approximately with text */
+    margin-right: 18px; /* keep space to text */
+    margin-bottom: 16px;
+
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+
+    text-align: center;
+    border-radius: 4px;
+}
+
+.identity-card img {
+    width: inherit;
+    height: auto;
+    border-radius: inherit;
+}
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
@@ -689,21 +729,6 @@ span.small-caps {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* with hover: 0 4px 8px 0 rgba(0,0,0,0.2); */
   width: 100%;
 }
-
-
-.card-container {
-  padding: 8px 0px 8px 0px;
-}
-
-.image-floater {
-  float: left;
-  width: 275px;
-  margin-left: 16px;
-  margin-right: 32px;
-  margin-top: 0px;
-  margin-bottom: 32px;
-}
-
 
 .noScriptingWarning {
   position: fixed;
@@ -952,20 +977,9 @@ State of mind on August 25, 2021.
 }
 
 @media only screen and (max-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image */
-.image-floater {
-    float: left;
-    width: 80%; /* instead of ..px; side effect: image gets centered */
-    margin-left: 32px;
-    margin-right: 222px; /* pus away the text by this 'margin-right' value; I don't know better to avoid that text appears to the right that contains only one word or so. State of mind on August 22, 2021. */
-    margin-top: 0px;
-    margin-bottom: 32px;
-    }
-
-
-}
-
-@media only screen and (min-width: 500px) {  /* value determined by experiment to make symbol appear bigger because (1) it is the only one in the last row and (2) the dimensions are a bit different to the other symbols. State of mind on September 19, 2021. */
- .symbol-develop-safety-critical {
-        width: 400px;
+    .identity-card  {
+        float: none;
+        margin-left: auto;  /* center image (no text around) */
+        margin-right: auto;
     }
 }

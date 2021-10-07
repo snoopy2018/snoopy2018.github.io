@@ -110,44 +110,45 @@
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-32" id="about">
-  <h1>Engineering Office for Software Systems</h1>
-  <h3><em>Software development with analytical <span class="small-caps"> and</span> creative mindsets.</em></h3>
-  <div class="w3-row">
-    <!-- 21Aug2021 10:42<div class="w3-col m4 w3-center w3-padding-12"> -->
+<!-- <div class="w3-content w3-container w3-padding-32" id="about"> -->
+<div class="section-intro" id="about">
+    <h1>Engineering Office for Software Systems</h1>
+    <h3><em>Software development with analytical <span class="small-caps"> and</span> creative mindsets.</em></h3>
+    <div class="w3-row">
+        <!-- 21Aug2021 10:42<div class="w3-col m4 w3-center w3-padding-12"> -->
 
-    <!-- <div class="w3-col m9 w3-center"> -->
+        <!-- <div class="w3-col m9 w3-center"> -->
 
-      <!--<img src="media/images/me-sharpened.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
-     <!--<br><img src="media/images/me-sun.png" class="w3-round-medium w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
-      <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p>-->
+        <!--<img src="media/images/me-sharpened.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
+        <!--<br><img src="media/images/me-sun.png" class="w3-round-medium w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
+        <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p>-->
 
-     <!-- 21Aug2021 10:42 <br><img src="media/images/me-sun.png" class="w3-card-4 w3-round-large w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
-       <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p> -->
+        <!-- 21Aug2021 10:42 <br><img src="media/images/me-sun.png" class="w3-card-4 w3-round-large w3-image w3-hover-opacity-off" alt="Photo of Me" width="300">
+        <p class="w3-margin-right w3-small">Dr.-Ing. Jürgen Ehret</p> -->
+        <div class="image-plus-text">
+            <p>Welcome! My name is Jürgen Ehret. With the <em>Engineering Office for Software Systems</em>, I offer small and medium-sized companies my knowledge and extensive experience in software development as a tailor-made service.<p>
 
-    <p>Welcome! My name is Jürgen Ehret. With the <em>Engineering Office for Software Systems</em>, I offer small and medium-sized companies my knowledge and extensive experience in software development as a tailor-made service.<p>
-
-    <div class="image-floater">
-        <div class="card w3-round w3-margin-top w3-center">
-            <img class="w3-round" src="../media/images/me-4.jpg"  alt="Jürgen Ehret" style="width:100%">
-            <div class="card-container">
-                <!-- Increased contrast between name, title, and background. August 23, 2021 -->
-                <p style="font-size:0.9em; color: #333;">Dr.-Ing. Jürgen Ehret</p>
-                <p class="w3-margin-top w3-margin-bottom" style="font-size:0.9em; color: #666; ;">Software Engineer & Founder</p>
+            <div class="identity-card">
+                <img src="../media/images/me-4.jpg"  alt="Photo Jürgen Ehret">
+                <div class="identity-card-text">
+                    <!-- Increased contrast between name, title, and background. August 23, 2021 -->
+                    <!-- CHANGED font-size in px to avoid too big lettres that do not fit in image frame (fixed width!). JE 07Oct21.  -->
+                    <p style="font-size: 14px; color: #333;">Dr.-Ing. Jürgen Ehret</p>
+                    <p class="w3-margin-top w3-margin-bottom" style="font-size:14px; color: #666; ;">Software Engineer & Founder</p>
+                </div>
             </div>
+
+            <p>I love to familiarize myself with complex technical problems, to analyze them and to solve them with creative approaches. My solutions are based on the development of effective algorithms and their implementation in high-quality software systems.</p>
+
+            <p>I learned the interdisciplinary art of engineering at the <em>BMW Group</em> in Munich and at the same time discovered the software for myself.</p>
+
+            <p>The very exciting activity that followed as a freelance software engineer in California's Silicon Valley has definitely refined my analytical and creative skills, but at the same time motivated me to set up this engineering office in Germany (you find more details in my <a href="../cv/Juergen-Ehret-CV-en.pdf" title="PDF-File >"  class="w3-hover-text-blue">Curriculum Vitae</a>).
+
+            <p>Please review my <a href="#portfolio" title="#PORTFOLIO" class="w3-hover-text-blue">Portfolio</a> to see how I can support you with your software project. </p>
+
         </div>
-        <!--</div> -->
+
     </div>
-
-    <p>I love to familiarize myself with complex technical problems, to analyze them and to solve them with creative approaches. My solutions are based on the development of effective algorithms and their implementation in high-quality software systems.</p>
-
-    <p>I learned the interdisciplinary art of engineering at the <em>BMW Group</em> in Munich and at the same time discovered the software for myself.</p>
-
-    <p>The very exciting activity that followed as a freelance software engineer in California's Silicon Valley has definitely refined my analytical and creative skills, but at the same time motivated me to set up this engineering office in Germany (you find more details in my <a href="../cv/Juergen-Ehret-CV-en.pdf" title="PDF-File >"  class="w3-hover-text-blue">Curriculum Vitae</a>).
-
-    <p>Please review my <a href="#portfolio" title="#PORTFOLIO" class="w3-hover-text-blue">Portfolio</a> to see how I can support you with your software project. </p>
-
-  </div>
 
 </div>
 
@@ -162,7 +163,9 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-32">
+<!-- <div class="w3-content w3-container w3-padding-32"> -->
+<div class="section-intro" style="padding-bottom:0px;">
+    <!-- Overwrite class margin-bottom in this case instead it is too much vertical space. I know, it's a hack. JE 07Oct21  -->
   <h2>Selected Software Projects</h2>
 
   <div class="w3-row">
@@ -197,7 +200,7 @@
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-smartphone-app-min.png" alt="Symbol of Smartphone App">
                                   </div>
 
-                                  <span class="project-overlay-headline">Development of Smartphone App as Learning Aid</span>
+                                  <span class="project-headline-overlay">Development of Smartphone App as Learning Aid</span>
 
                                   <p>The idea for this app emerged at Laurelwood Elementary School in Santa Clara, California. As a volunteer, I played the card game “SET” with second graders during the breaks from math class. The game trains visual perception and logical thinking. I kept imagining how a smartphone could take over my referee role. </p>
 
@@ -254,7 +257,7 @@
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-find-contact-details-en-min.png" alt="Symbol of Search for Contacts">
                                   </div>
 
-                                  <span class="project-overlay-headline">Search for Contact Addresses on Websites</span>
+                                  <span class="project-headline-overlay">Search for Contact Addresses on Websites</span>
 
                                   <p>A customer from Berlin wanted a software that searches the generated websites of an online vehicle market according to criteria and filters out interesting dealers from the flood of offers.</p>
 
@@ -314,7 +317,7 @@
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-model-of-distributed-min.png" alt="Symbol of Model of Distributed Systems">
                                   </div>
 
-                                   <span class="project-overlay-headline">Modeling Distributed Systems</span>
+                                   <span class="project-headline-overlay">Modeling Distributed Systems</span>
 
                                   <p><em>General Motors (GM)</em> in the USA was looking for a simulation model for distributed electronic control units (distributed systems). The overriding goal was to develop optimal system architectures for future vehicle models.</p>
 
@@ -364,7 +367,7 @@
                                   <div class="box"><img class="box-image-container" src="../media/images/symbol-test-software-min.png" alt="Symbol of Test Software Systems">
                                   </div>
 
-                                  <span class="project-overlay-headline">Testing Software Systems</span>
+                                  <span class="project-headline-overlay">Testing Software Systems</span>
 
                                   <p>At the start-up company <em>Crosstest</em> in the Silicon Valley, we developed in a small team a software tool that automatically generates unit test cases for C/C++ functions. The tool supports software development teams in testing their functions and aims to improve software quality.</p>
 
@@ -427,7 +430,7 @@
 
                                 </div>
 
-                                <span class="project-overlay-headline">Development of Safety-Critical Systems</span>
+                                <span class="project-headline-overlay">Development of Safety-Critical Systems</span>
 
                                 <p>At the <em>BMW Group</em> in Munich, I worked in interdisciplinary engineering teams on the development of safety-critical systems.</p>
 
