@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 11 13:03 CEST 2021';
+    content:'Oct 11 17:16 CEST 2021';
     font-size: inherit;
 }
 
@@ -392,32 +392,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .symbol-develop-safety-critical {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: auto; */
-    /*width: 100%;*/ /* combination 'max-width: 100%; min-height: 190px;' DOES NOT work on iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
-    /*min-height: 160px;*/  /* Value of 160px makes sure for narrow screens that the 'BMW Niere' does get distorted (e.g. iPhone 5/SE). State of mind on September 17, 2021. */
-    /*height:100%;*? /* the combination of 'width: 100%; min-height: 160px; height:100%;' does the magic trick on iOS. Crazy. State of mind on September 17, 2021. */
-    /* max-height:300px; */ /* DOES NOT work !!!!!!! necessary for iOS for some reason someone may know, I don't. State of mind on September 17, 2021. */
-
-    width: 270px; /* this symbol needs special treatment because it is ... */
-    height: 100%;  /* ... (For iOS use 100% instead of 'auto' although 'auto' works with the height-property for the other four--totally weird to me!) the last and has special dimensions that are different to the other four. State of mind on September 20, 2021 CHANGED from 100% to intrinsic after weird results on iPhone 6 (height:100% resulted in too tall image but only at the German version. Weird, weird. State of mind on September 25, 2021.) CHANGED back from intrinsic to 100% because it was not the cause of the problem. The problem was a typo (!) at the beginning of the source file: "Technologien<!DOCTYPE html>" instead of "<!DOCTYPE html>". State of mind on September 26, 2021. */
-
-
-    /* background-color: bisque; */
-}
-
-.symbol-wanted {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: 280px;
-}
-
-
-.symbol-crash-test-dummy {
     display: block;
     margin-left: auto;
     margin-right: auto;
