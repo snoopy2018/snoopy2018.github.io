@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 13 17:03 CEST 2021';
+    content:'Oct 14 12:24 CEST 2021';
     font-size: inherit;
 }
 
@@ -463,7 +463,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /* background-color: #f8f8f8for ; */ /* I decided not to use a background because I believe the symbol (image) should stand out by itself. [I think no painter would come to such an idea anyway.] State of mind on September 19, 0221. */
 
-    max-width: 430px;  /* size by which longest headline ('Entwicklung...') fits in one line, and therefore does not screw up the 'alignment' of two items (i.e. 'Entwicklung...' and 'Suche...' goes along with .flex-container max-width:XYZpx. Sorry, I don't know better at this point, September 24, 2021. */
+    max-width: 440px;  /* size by which longest headline ('Entwicklung...') fits in one line, and therefore does not screw up the 'alignment' of two items (i.e. 'Entwicklung...' and 'Suche...' goes along with .flex-container max-width:XYZpx. Sorry, I don't know better at this point, September 24, 2021. */
     width:100%;
 
     /*border-style: solid;*/ /* for test only JE 25Sep21-1715 */
@@ -478,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 .project-headline {
     display: block;
     background-color: rgb(250, 250, 250); /* equivalent to #fafafa; */ /* changed from white to grey shade; feedback Jenny. JE 07Oct21 */
-    padding: 18px; /* added because of background color. JE 07Oct21 */
+    padding: 8px 8px; /* added because of background color. JE 07Oct21 */
 
     font-size: 1.5em;
     margin: 18px 0; /* similar to  h1, h2, etc. */
