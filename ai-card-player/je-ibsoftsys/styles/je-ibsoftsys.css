@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 15 17:37:42 CEST 2021';
+    content:'Oct 16 07:49:19 CEST 2021';
     font-size: inherit;
 }
 
@@ -317,21 +317,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("../media/images/kuehe-clipout-min.jpg");
+  background-image: url("../media/images/try-1938-200X1330-min.png");
   min-height: 55%; /*500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("../media/images/background-wall-flowers-2-min.jpg");
-  min-height: 55%; /* 500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  background-image: url("../media/images/kuehe-clipout-min.jpg");
+  min-height: 55%;
 }
 
 /* Third image (Contact) */
-.bgimg-4 {
+/* .bgimg-3 {
   background-image: url("../media/images/background-wall-flowers-2-min.jpg");
-  min-height:  55%; /*500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
-}
+  min-height: 55%;
+} */
+
+/* Third image (Contact) */
+/* .bgimg-4 {
+  background-image: url("../media/images/background-wall-flowers-2-min.jpg");
+  min-height:  55%;
+} */
 
 /* iPhone plus AI Card Player screenshot */
 .symbol-smartphone-app {
