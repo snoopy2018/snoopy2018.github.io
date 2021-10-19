@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 19 11:01:09 CEST 2021';
+    content:'Oct 19 17:59:14 CEST 2021';
     font-size: inherit;
 }
 
@@ -601,7 +601,7 @@ p.ibsoftsys-slogan {
     width: 250px; /* 250px gives the text (assume font-size = 14px) some space to the right and left */
 
     margin-top: 0.4em; /* allighs approximately with text */
-    margin-right: 18px; /* keep space to text */
+    margin-right: 24px; /* keep space to text */
     margin-bottom: 16px;
 
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
