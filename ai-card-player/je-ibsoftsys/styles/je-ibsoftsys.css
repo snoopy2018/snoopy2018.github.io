@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 20 18:58:13 CEST 2021';
+    content:'Oct 20 20:21:09 CEST 2021';
     font-size: inherit;
 }
 
@@ -464,8 +464,15 @@ h1, h2, h3, h4, h5, h6 {
 p.ibsoftsys-slogan {
     text-align: center;
     font-size: 1.17em; /* same as h3! */
+    font-style: italic;
 }
 
+.ibsoftsys-slogan span {
+    letter-spacing: 0.05em;
+    /* font-style: normal; */
+    white-space: pre;
+    color: #777;
+}
 .portfolio-section-frame {
     display: table;
     /* padding: 18px; */
