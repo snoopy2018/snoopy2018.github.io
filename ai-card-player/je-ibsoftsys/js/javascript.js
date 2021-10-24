@@ -221,27 +221,35 @@ function overlayContainerClicked(section) {
     }
 }
 
-function showPhoneNumber() {
-    var elem = document.getElementById("phone-number");
-    if (elem.innerHTML.startsWith("+49 157 7...")) {
-        // elem.innerHTML = "+49 157 7768 8503";
-        elem.innerHTML = "<a href='tel:+49 157 7768 8503'>+49 157 7768 8503</a>";
-        elem.style.cursor = "auto";
-    } // else do nothing
-}
+// Function showPhoneNumber() disabled because phone
+// number and email address are displayed as images.
+// State of mind on October 24, 2021.
+//
+// function showPhoneNumber() {
+//     var elem = document.getElementById("phone-number");
+//     if (elem.innerHTML.startsWith("+49 157 7...")) {
+//         // elem.innerHTML = "+49 157 7768 8503";
+//         elem.innerHTML = "<a href='tel:+49 157 7768 8503'>+49 157 7768 8503</a>";
+//         elem.style.cursor = "auto";
+//     } // else do nothing
+// }
 
-function showEmail(language) {
-    var elem = document.getElementById("email-address");
-    if (elem.innerHTML.startsWith("juergen...")) {
-        if(language === "de") {
-            // elem.innerHTML = "+49 157 7768 8503";
-            elem.innerHTML = "<a href='mailto:juergen_ehret2000@yahoo.com?subject=Anfrage an das Ingenieurbüro für Softwaresysteme' title='juergen_ehret2000@yahoo.com'>juergen_ehret2000@yahoo.com</a>";
-            elem.style.cursor = "auto";
-        } else if (language === "en") {
-            elem.innerHTML = "<a href='mailto:juergen_ehret2000@yahoo.com?subject=Request to the Engineering Office for Software Systems' title='juergen_ehret2000@yahoo.com'>juergen_ehret2000@yahoo.com</a>";
-        } // else do nothing
-    } // else do nothing
-}
+// Function showEmail() disabled because phone
+// number and email address are displayed as images.
+// State of mind on October 24, 2021.
+//
+// function showEmail(language) {
+//     var elem = document.getElementById("email-address");
+//     if (elem.innerHTML.startsWith("juergen...")) {
+//         if(language === "de") {
+//             // elem.innerHTML = "+49 157 7768 8503";
+//             elem.innerHTML = "<a href='mailto:juergen_ehret2000@yahoo.com?subject=Anfrage an das Ingenieurbüro für Softwaresysteme' title='juergen_ehret2000@yahoo.com'>juergen_ehret2000@yahoo.com</a>";
+//             elem.style.cursor = "auto";
+//         } else if (language === "en") {
+//             elem.innerHTML = "<a href='mailto:juergen_ehret2000@yahoo.com?subject=Request to the Engineering Office for Software Systems' title='juergen_ehret2000@yahoo.com'>juergen_ehret2000@yahoo.com</a>";
+//         } // else do nothing
+//     } // else do nothing
+// }
 
 
 // BEGIN ------>  FOR TEST only (checkIdentity) -------------------
