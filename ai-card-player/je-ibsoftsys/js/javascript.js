@@ -221,6 +221,33 @@ function overlayContainerClicked(section) {
     }
 }
 
+// The following two functions are more or less a copy of the function
+// proposed by the article "Mailto using Javascript? [duplicate]"
+// https://stackoverflow.com/questions/21028939/mailto-using-javascript#23966347
+//
+// State of mind on October 26, 2021.
+function makePhoneCall()
+{
+    document.location.href = "tel:+49 157 7768 8503";
+}
+
+function sendEmail(language)
+{
+    var subject = "";
+    if(language === "de") {
+        subject = "Anfrage an das 'Ingenieurbüro für Softwaresysteme'";
+    } else if (language === "en") {
+        subject = "Request to the 'Engineering Office for Software Systems'";
+    } // else nothing to do
+    if (subject !== "") {
+        // var message = "hallo my friend!";
+        document.location.href = "mailto:juergen_ehret2000@yahoo.com?subject="        + encodeURIComponent(subject);
+        // + "&body=" + encodeURIComponent(message);
+    } // else nothing to do
+}
+
+
+
 // Function showPhoneNumber() disabled because phone
 // number and email address are displayed as images.
 // State of mind on October 24, 2021.
