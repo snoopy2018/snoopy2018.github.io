@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 29 21:05:48 CEST 2021';
+    content:'Oct 30 07:55:31 CEST 2021';
     font-size: inherit;
 }
 
@@ -609,7 +609,7 @@ p.ibsoftsys-slogan {
     margin-right: 0;
     margin-bottom: 16px;
 
-    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
 
     text-align: center;
     border-radius: 4px;
@@ -627,8 +627,32 @@ p.ibsoftsys-slogan {
     width: inherit;
     height: auto;
     border-radius: inherit;
+
+    /* ---Experimental October 30, 2021 ---
+    Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
+    /* -webkit-filter:sepia(0); */
+    /* -webkit-filter:saturate(0); */
+    /* -webkit-filter:blur(0); */
+    -webkit-filter:grayscale(1) blur(1px);
+
 }
 
+
+.identity-card img:hover {
+    /* ---Experimental October 30, 2021 ---
+    Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
+    /* -webkit-filter:sepia(1); */
+    /* -webkit-filter:saturate(4); */
+    /* -webkit-filter:blur(3px); */
+    -webkit-transform:scale(1.1);
+    -webkit-filter:grayscale(0) blur(0);
+    background-color: white;
+
+}
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------     EXPERIMENTAL      ------------------------ */
+/* ----------------------------------------------------------------------- */
 /* The following classes (flip-box-*) are used for flip technique adopted from w3schools.com. State of mind on October 29, 2021.
 */
 /*
@@ -676,9 +700,6 @@ p.ibsoftsys-slogan {
   transform: rotateY(180deg);
 } */
 
-/* ----------------------------------------------------------------------- */
-/* ------------------------     EXPERIMENTAL      ------------------------ */
-/* ----------------------------------------------------------------------- */
 
 /* REMOVED JE 25Sep21-643
 .headline {
