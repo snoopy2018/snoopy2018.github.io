@@ -633,7 +633,11 @@ p.ibsoftsys-slogan {
     /* -webkit-filter:sepia(0); */
     /* -webkit-filter:saturate(0); */
     /* -webkit-filter:blur(0); */
-    -webkit-filter:grayscale(1) blur(1px);
+    transform:translate(30px, -30px) scale(0.6);
+    /* transform:scale(0.6); */
+    filter:grayscale(1) blur(1px);
+    transition: 0.5s; /* animate all properties */
+    transition-timing-function: ease; /* ease is the default */
 
 }
 
@@ -644,10 +648,9 @@ p.ibsoftsys-slogan {
     /* -webkit-filter:sepia(1); */
     /* -webkit-filter:saturate(4); */
     /* -webkit-filter:blur(3px); */
-    -webkit-transform:scale(1.1);
-    -webkit-filter:grayscale(0) blur(0);
-    background-color: white;
-
+    transform:scale(1.0);
+    filter:grayscale(0) blur(0);
+    background-color: white; /* in case image ranges over container (white background) */
 }
 
 /* ----------------------------------------------------------------------- */
