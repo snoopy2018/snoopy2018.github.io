@@ -601,21 +601,27 @@ p.ibsoftsys-slogan {
 
 
 .identity-card {
+    position: relative;
     float: right;
     width: 250px; /* 250px gives the text (assume font-size = 14px) some space to the right and left */
+    height: 310px;
+
+    overflow: hidden;
 
     margin-top: 0.4em; /* allighs approximately with text */
     margin-left: 24px; /* keep space to text (if floating to the right) */
     margin-right: 0;
     margin-bottom: 16px;
 
-    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
 
     text-align: center;
     border-radius: 4px;
 }
 
 .identity-card-text {
+  position: relative;
+  top: 230px;
   padding: 8px 0px 8px 0px;
   background-color: rgb(250, 250, 250);
   margin-top: 8px;
@@ -633,24 +639,41 @@ p.ibsoftsys-slogan {
     /* -webkit-filter:sepia(0); */
     /* -webkit-filter:saturate(0); */
     /* -webkit-filter:blur(0); */
-    transform:translate(30px, -30px) scale(0.6);
+    /* transform:translate(30px, -30px) scale(0.5); */
     /* transform:scale(0.6); */
-    filter:grayscale(1) blur(1px);
-    transition: 0.5s; /* animate all properties */
-    transition-timing-function: ease; /* ease is the default */
+    /* filter:grayscale(1) blur(1px); */
+    /* transition: 0.5s;  */
+    /* animate all properties */
+    /* transition-timing-function: ease;  */
+    /* ease is the default */
 
+    /* ---Experimental October 31, 2021 ---
+    Inspired by "Cross fading images" http://css3.bradshawenterprises.com/cfimg/
+    */
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 
-.identity-card img:hover {
+.identity-card img.top:hover {
     /* ---Experimental October 30, 2021 ---
     Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
     /* -webkit-filter:sepia(1); */
     /* -webkit-filter:saturate(4); */
     /* -webkit-filter:blur(3px); */
-    transform:scale(1.0);
-    filter:grayscale(0) blur(0);
-    background-color: white; /* in case image ranges over container (white background) */
+    /* transform:scale(1.0); */
+    /* filter:grayscale(0) blur(0); */
+    /* background-color: white; */
+     /* in case image ranges over container (white background) */
+
+     /* ---Experimental October 31, 2021 ---
+     Inspired by "Cross fading images" http://css3.bradshawenterprises.com/cfimg/
+     */
+     opacity: 0;
 }
 
 /* ----------------------------------------------------------------------- */
