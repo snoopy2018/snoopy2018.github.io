@@ -672,7 +672,7 @@ bottom: snoopy-on-the-roof-min.svg
    /* -o-transform-origin: top left; */
 
    /* transition: all 1s ease-in-out 0.7s; */
-   transition: all 1s ease-in-out 0.7s;
+   transition: all 1s ease-in-out;
 
    opacity:0;
  }
@@ -682,7 +682,7 @@ bottom: snoopy-on-the-roof-min.svg
     /* -moz-transform-origin: top right; */
     /* -o-transform-origin: top right; */
 
-    transition: all 1s ease-in-out 0.2s;
+    transition: all 1s ease-in-out;
  }
 
 
