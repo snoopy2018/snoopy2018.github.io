@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Oct 30 07:55:31 CEST 2021';
+    content:'Nov  1 14:03 CET 2021';
     font-size: inherit;
 }
 
@@ -234,6 +234,7 @@ p {
    hyphens: auto;
 }
 
+
 ul {
     max-width: 36em; /* has the same property as p! */
     margin: 0.5em auto; /* has the same property as p! */
@@ -276,7 +277,6 @@ h5 {
 h6 {
   font-size: 0.67em;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -598,13 +598,16 @@ p.ibsoftsys-slogan {
     margin-right: auto;
     margin-left: auto;
 }
-
+/*
+.identity-card:hover {
+    cursor: pointer;
+} */
 
 .identity-card {
     position: relative;
     float: right;
     width: 250px; /* 250px gives the text (assume font-size = 14px) some space to the right and left */
-    height: 310px;
+    height: 300px;
 
     overflow: hidden;
 
@@ -621,7 +624,7 @@ p.ibsoftsys-slogan {
 
 .identity-card-text {
   position: relative;
-  top: 230px;
+  top: 220px;
   padding: 8px 0px 8px 0px;
   background-color: rgb(250, 250, 250);
   margin-top: 8px;
@@ -652,14 +655,37 @@ p.ibsoftsys-slogan {
     */
     position: absolute;
     left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
 }
 
+/* NOTE November 1, 2021:
+top:  me-office-2.jpg
+bottom: snoopy-on-the-roof-min.svg
+*/
 
-.identity-card img.top:hover {
+.identity-card  img.top {
+   -webkit-transform:scale(0,0);
+   /* thought center approx. 40px 40px; */
+   /* -webkit-transform-origin: top left; */
+   -moz-transform:scale(0,0);
+   /* -moz-transform-origin: top left; */
+   -o-transform:scale(0,0);
+   /* -o-transform-origin: top left; */
+
+   transition: all 1s ease-in-out 0.7s;
+
+   opacity:0;
+ }
+
+.identity-card img.bottom {
+    /* -webkit-transform-origin: top right; */
+    /* -moz-transform-origin: top right; */
+    /* -o-transform-origin: top right; */
+
+    transition: all 1s ease-in-out 1.2s;
+ }
+
+
+.identity-card:hover img.top{
     /* ---Experimental October 30, 2021 ---
     Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
     /* -webkit-filter:sepia(1); */
@@ -673,8 +699,21 @@ p.ibsoftsys-slogan {
      /* ---Experimental October 31, 2021 ---
      Inspired by "Cross fading images" http://css3.bradshawenterprises.com/cfimg/
      */
-     opacity: 0;
+     opacity: 1;
+
+     -webkit-transform:scale(1,1);
+     -moz-transform:scale(1,1);
+     -o-transform:scale(1,1);
 }
+
+
+ .identity-card:hover img.bottom {
+     -webkit-transform:scale(0,0);
+     -moz-transform:scale(0,0);
+     -o-transform:scale(0,0);
+
+     transition: all 1s ease-in-out;
+ }
 
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
