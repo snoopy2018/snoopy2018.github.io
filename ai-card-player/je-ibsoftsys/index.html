@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Ingenieurbüro für Softwaresysteme</title>
+    <title>IB Software Systems</title>
 
     <link rel="shortcut icon" type="image/png" href="media/images/favicon68x68x.png">  <!-- technique adopted from Wikipedia (https://en.wikipedia.org/wiki/Favicon). State of mind on March 20, 2020. -->
 
@@ -139,14 +139,17 @@
         <div class="image-plus-text">
             <p>Willkommen, mein Name ist Jürgen Ehret. Über das <em> Ingenieurbüro für Softwaresysteme </em> möchte ich Ihnen meine Erfahrung und Expertise in der Soft&shy;ware&shy;ent&shy;wick&shy;lung als individuelle, maßgeschneiderte Dienstleistung anbieten.</p>
 
-            <div class="identity-card">
-                <img class="bottom" src="media/images/snoopy-on-the-roof-min.svg"  alt="Snoopy on the Roof"/>
-                <img class="top" src="media/images/me-office-2.jpg"  alt="Jürgen in the Office"/>
+            <div id="identity-card" onclick="showMe()">
+                <!-- <img class="bottom" src="media/images/snoopy-on-the-roof-live-min.svg"  alt="Snoopy on the Roof"/>
+                <img class="top" src="media/images/me-office-2.jpg"  alt="Jürgen in the Office"/> -->
+
+                <img id="snoopy-image" class="snoopy" src="media/images/snoopy-on-the-roof-live-min.svg"  alt="Snoopy on the Roof"/>
+                <img id="me-image" class="me" src="media/images/me-office-2.jpg" alt="Jürgen in the Office"/>
 
                 <div class="identity-card-text">
                     <!-- Increased contrast between name, title, and background. August 23, 2021 -->
                     <!-- CHANGED font-size in px to avoid too big letters that do not fit in image frame (fixed width!). JE 07Oct21.  -->
-                    <p style="font-size: 15px;">Dr.-Ing. Jürgen Ehret<br>
+                    <p style="font-size: 15px; padding-top: 4px; padding-bottom: 4px;">Dr.-Ing. Jürgen Ehret<br>
                     <span style="font-size: 15px; color: #777; ;">Engineer & Founder</span></p>
                 </div>
             </div>

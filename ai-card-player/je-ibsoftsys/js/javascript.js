@@ -246,6 +246,58 @@ function sendEmail(language)
     } // else nothing to do
 }
 
+// Source of GetVendorPrefix(): "CODING VENDOR PREFIXES WITH JAVASCRIPT"
+// https://www.developerdrive.com/coding-vendor-prefixes-with-javascript/
+function GetVendorPrefix(arrayOfPrefixes) {
+
+    var tmp = document.createElement("div");
+    var result = "";
+
+    for (var i = 0; i < arrayOfPrefixes.length; ++i) {
+
+        if (typeof tmp.style[arrayOfPrefixes[i]] != 'undefined') {
+            result = arrayOfPrefixes[i];
+        }
+        else {
+            result = null;
+        }
+
+        return result;
+    }
+}
+
+function showMe() {
+    console.log("in showMe()");
+
+    var transformPrefix = GetVendorPrefix(["transform", "msTransform", "MozTransform", "WebkitTransform", "OTransform"]);
+
+    var filterPrefix = GetVendorPrefix(["filter", "msFilter", "MozFilter", "WebkitFilter", "OFilter"]);
+
+    console.log("transformPrefix = ", transformPrefix);
+    console.log("filterPrefix = ", filterPrefix);
+
+    var me_element = document.getElementById("me-image");
+    me_element.style[transformPrefix] = "scale(1,1)";
+    // me_element.style.transform = "scale(1)";
+
+
+    me_element.style[filterPrefix]= "grayscale(0) blur(0)";
+
+    // me_element.style.WebkitFilter = "grayscale(0) blur(0)";
+
+    me_element.style.borderRadius = "0";
+
+    me_element.style.top = "0";
+
+    me_element.style.left = "0";
+
+    var snoopy_element = document.getElementById("snoopy-image");
+    snoopy_element.style[transformPrefix]= "translateX(-100%)";
+
+    var container_element = document.getElementById("identity-card");
+    container_element.style.cursor = "default";
+
+}
 
 
 // Function showPhoneNumber() disabled because phone

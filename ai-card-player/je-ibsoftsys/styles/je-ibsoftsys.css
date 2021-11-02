@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov  1 14:03 CET 2021';
+    content:'Nov  2 19:45 CET 2021';
     font-size: inherit;
 }
 
@@ -599,15 +599,15 @@ p.ibsoftsys-slogan {
     margin-left: auto;
 }
 /*
-.identity-card:hover {
+#identity-card:hover {
     cursor: pointer;
 } */
 
-.identity-card {
+#identity-card {
     position: relative;
     float: right;
     width: 250px; /* 250px gives the text (assume font-size = 14px) some space to the right and left */
-    height: 300px;
+    height: 284px;
 
     overflow: hidden;
 
@@ -620,19 +620,23 @@ p.ibsoftsys-slogan {
 
     text-align: center;
     border-radius: 4px;
+
+    cursor: pointer;
 }
 
 .identity-card-text {
   position: relative;
-  top: 220px;
-  padding: 8px 0px 8px 0px;
+  top: 210px;
+  height: 60px;
+  width: inherit;
+  /* padding: 8px 0px 8px 0px; */
   background-color: rgb(250, 250, 250);
-  margin-top: 8px;
+  margin-top: 16px;
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
 }
 
-.identity-card img {
+#identity-card img {
     width: inherit;
     height: auto;
     border-radius: inherit;
@@ -657,12 +661,41 @@ p.ibsoftsys-slogan {
     left: 0;
 }
 
+
+#identity-card img.snoopy {
+    transition: all 0.6s ease-in-out;
+}
+
+#identity-card  img.me {
+    border-radius: 50%;
+    top: 8px;
+    left: -8px;
+
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -o-transform-origin: top right;
+    transform-origin: top right;
+
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    transform: scale(0.2);
+
+    /* opacity: 0.7; */
+    -webkit-filter: grayscale(0.5) blur(1px);
+    -moz-filter: grayscale(0.5) blur(1px);
+    -o-filter: grayscale(0.5) blur(1px);
+    filter: grayscale(0.5) blur(1px);
+
+    transition: all 0.6s ease-in-out;
+}
+
 /* NOTE November 1, 2021:
 top:  me-office-2.jpg
 bottom: snoopy-on-the-roof-min.svg
 */
 
-.identity-card  img.top {
+#identity-card  img.top {
    /* -webkit-transform:scale(0,0); */
    /* thought center approx. 40px 40px; */
    /* -webkit-transform-origin: top left; */
@@ -677,7 +710,7 @@ bottom: snoopy-on-the-roof-min.svg
    opacity:0;
  }
 
-.identity-card img.bottom {
+#identity-card img.bottom {
     /* -webkit-transform-origin: top right; */
     /* -moz-transform-origin: top right; */
     /* -o-transform-origin: top right; */
@@ -686,7 +719,7 @@ bottom: snoopy-on-the-roof-min.svg
  }
 
 
-.identity-card:hover img.top{
+#identity-card:hover img.top{
     /* ---Experimental October 30, 2021 ---
     Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
     /* -webkit-filter:sepia(1); */
@@ -707,7 +740,7 @@ bottom: snoopy-on-the-roof-min.svg
      /* -o-transform:scale(1,1); */
 }
 
-.identity-card:hover img.bottom {
+#identity-card:hover img.bottom {
     opacity: 0;
 }
 
@@ -1106,7 +1139,7 @@ State of mind on August 25, 2021.
 }
 
 @media only screen and (max-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image */
-    .identity-card  {
+    #identity-card  {
         float: none;
         margin-left: auto;  /* center image (no text around) */
         margin-right: auto;
