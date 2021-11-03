@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov  3 09:32:58 CET 2021';
+    content:'Nov  3 13:57:56 CET 2021';
     font-size: inherit;
 }
 
@@ -496,12 +496,13 @@ p.ibsoftsys-slogan {
 
 .project-headline {
     display: block;
-    background-color: rgb(250, 250, 250); /* equivalent to #fafafa; */ /* changed from white to grey shade; feedback Jenny. JE 07Oct21 */
+    /* background-color: rgb(250, 250, 250);  */
+    /* equivalent to #fafafa; */ /* changed from white to grey shade; feedback Jenny. JE 07Oct21 */
     padding: 8px 8px; /* added because of background color. JE 07Oct21 */
 
     font-size: 1.5em;
     margin: 18px 0; /* similar to  h1, h2, etc. */
-    font-weight: 400;  /* increade from 300 to normal (400) maybe bold?; feedback Jenny. JE 07Oct21 */
+    font-weight: bold;  /* increade from 300 to normal (400) maybe bold?; feedback Jenny. JE 07Oct21 */
     /* font-variant: small-caps; */
     text-align: center;
 
@@ -534,11 +535,14 @@ p.ibsoftsys-slogan {
     width: 32px;
     height: 32px;
     margin: 12px;
-    mask: url("../media/images/symbol-plus.svg");
+
     -webkit-mask: url("../media/images/symbol-plus.svg");
+    mask: url("../media/images/symbol-plus.svg");
     /* background-color: red; */ /* color defined in HTML code */
-    mask-size: cover;
+
     -webkit-mask-size: cover;
+    mask-size: cover;
+
     cursor: pointer;
 
     /* background-image: url(../media/images/symbol-plus.svg);
@@ -980,8 +984,9 @@ span.small-caps {
 
     max-width: 66.6667%;
     margin: 0 auto;
-    overflow-y: scroll;
+
     -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 
 .overlay-canvas {
@@ -1042,11 +1047,15 @@ span.small-caps {
     width: 24px;
     height: 24px;
     /* background-color: transparent; */
-    mask: url("../media/images/crossPlain.svg");
+
     -webkit-mask: url("../media/images/crossPlain.svg");
+    mask: url("../media/images/crossPlain.svg");
+
     background-color: black;
-    mask-size: cover;
     -webkit-mask-size: cover;
+
+    mask-size: cover;
+
     cursor: pointer;
 }
 
