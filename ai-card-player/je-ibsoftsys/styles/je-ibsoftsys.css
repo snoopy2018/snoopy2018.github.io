@@ -473,6 +473,7 @@ p.ibsoftsys-slogan {
     white-space: pre;
     color: #777;
 }
+
 .portfolio-section-frame {
     display: table;
     /* padding: 18px; */
@@ -487,10 +488,8 @@ p.ibsoftsys-slogan {
 
     /*border-style: solid;*/ /* for test only JE 25Sep21-1715 */
     /*border-width: 1px; */ /* for test only JE 25Sep21-1715 */
-    background-image: url("../media/images/corner-bottom-right.svg");
-    background-position-x: 100%;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
+
+    background: url("../media/images/corner-bottom-right-min.svg") 100% bottom no-repeat, url("../media/images/corner-bottom-left-min.svg") 0% bottom no-repeat;
 }
 
 
