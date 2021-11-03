@@ -267,28 +267,26 @@ function GetVendorPrefix(arrayOfPrefixes) {
 }
 
 function showMe() {
-    console.log("in showMe()");
+    // console.log("in showMe()");
 
     var transformPrefix = GetVendorPrefix(["transform", "msTransform", "MozTransform", "WebkitTransform", "OTransform"]);
 
     var filterPrefix = GetVendorPrefix(["filter", "msFilter", "MozFilter", "WebkitFilter", "OFilter"]);
 
-    console.log("transformPrefix = ", transformPrefix);
-    console.log("filterPrefix = ", filterPrefix);
+    var transformOriginPrefix = GetVendorPrefix(["transform-origin", "msTransformOrigin", "MozTransformOrigin", "WebkitTransformOrigin", "OTransformOrigin"]);
+
+    // console.log("transformPrefix = ", transformPrefix);
+    // console.log("filterPrefix = ", filterPrefix);
+    // console.log("transformOriginPrefix = ", transformOriginPrefix);
 
     var me_element = document.getElementById("me-image");
-    me_element.style[transformPrefix] = "scale(1,1)";
+    me_element.style[transformOriginPrefix] = "50% 50%";
+    me_element.style[transformPrefix] = "scale(0.97)";
     // me_element.style.transform = "scale(1)";
-
-
     me_element.style[filterPrefix]= "grayscale(0) blur(0)";
-
     // me_element.style.WebkitFilter = "grayscale(0) blur(0)";
-
     me_element.style.borderRadius = "0";
-
     me_element.style.top = "0";
-
     me_element.style.left = "0";
 
     var snoopy_element = document.getElementById("snoopy-image");
