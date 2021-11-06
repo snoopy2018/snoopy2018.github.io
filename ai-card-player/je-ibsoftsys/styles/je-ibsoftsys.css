@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov  6 07:55 CET 2021';
+    content:'Nov  6 11:32:26 CET 2021';
     font-size: inherit;
 }
 
@@ -686,66 +686,12 @@ p.ibsoftsys-slogan {
     transform: translate(42%, -42%) scale(0.15);
 
     /* opacity: 0.7; */
-    -webkit-filter: grayscale(0.5) blur(1px);
-    -moz-filter: grayscale(0.5) blur(1px);
-    -o-filter: grayscale(0.5) blur(1px);
-    filter: grayscale(0.5) blur(1px);
+    -webkit-filter: grayscale(0.0) blur(1px);
+    -moz-filter: grayscale(0.0) blur(1px);
+    -o-filter: grayscale(0.0) blur(1px);
+    filter: grayscale(0.0) blur(1px);
 
     transition: all 0.6s ease-in-out;
-}
-
-/* NOTE November 1, 2021:
-top:  me-office-2.jpg
-bottom: snoopy-on-the-roof-min.svg
-*/
-
-#identity-card  img.top {
-   /* -webkit-transform:scale(0,0); */
-   /* thought center approx. 40px 40px; */
-   /* -webkit-transform-origin: top left; */
-   /* -moz-transform:scale(0,0); */
-   /* -moz-transform-origin: top left; */
-   /* -o-transform:scale(0,0); */
-   /* -o-transform-origin: top left; */
-
-   /* transition: all 1s ease-in-out 0.7s; */
-   transition: all 1s ease-in-out;
-
-   opacity:0;
- }
-
-#identity-card img.bottom {
-    /* -webkit-transform-origin: top right; */
-    /* -moz-transform-origin: top right; */
-    /* -o-transform-origin: top right; */
-
-    transition: all 1s ease-in-out;
- }
-
-
-#identity-card:hover img.top{
-    /* ---Experimental October 30, 2021 ---
-    Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
-    /* -webkit-filter:sepia(1); */
-    /* -webkit-filter:saturate(4); */
-    /* -webkit-filter:blur(3px); */
-    /* transform:scale(1.0); */
-    /* filter:grayscale(0) blur(0); */
-    /* background-color: white; */
-     /* in case image ranges over container (white background) */
-
-     /* ---Experimental October 31, 2021 ---
-     Inspired by "Cross fading images" http://css3.bradshawenterprises.com/cfimg/
-     */
-     opacity: 1;
-
-     /* -webkit-transform:scale(1,1); */
-     /* -moz-transform:scale(1,1); */
-     /* -o-transform:scale(1,1); */
-}
-
-#identity-card:hover img.bottom {
-    opacity: 0;
 }
 
 /* ----------------------------------------------------------------------- */
