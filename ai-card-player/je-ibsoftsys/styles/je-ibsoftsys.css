@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov  5 20:51:35 CET 2021';
+    content:'Nov  6 07:40:36 CET 2021';
     font-size: inherit;
 }
 
@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
-  max-width: 950px;  /* goes along with .portfolio-section-frame max-width:430px */
+  max-width: 950px;  /* goes along with .projects-section-frame max-width:430px */
 
   margin-left: auto;  /* allign row ... */
   margin-right: auto; /* ... horizontally */
@@ -474,7 +474,7 @@ p.ibsoftsys-slogan {
     color: #777;
 }
 
-.portfolio-section-frame {
+.projects-section-frame {
     display: table;
     /* padding: 18px; */
     /* border-radius: 18px; */ /* CHANGED to none. JE 25Sep21-1719 */
