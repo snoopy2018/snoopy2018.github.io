@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov  6 11:36:47 CET 2021';
+    content:'Nov  8 13:33:23 CET 2021';
     font-size: inherit;
 }
 
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("../media/images/forest-path-2880x2180px-draft-min.jpg");
+  background-image: url("../media/images/forest-path-2880x2180px-min.jpg");
   min-height: 100%;
 }
 
@@ -830,8 +830,6 @@ span.small-caps {
     height: 1.1em;
     margin-bottom: 0.2em; /* adjust image position, I don't know better. JE 02Oct21  */
 }
-
-
 #logo-plus {
     min-width: 250px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
     width: 100%; /* keeps it centered under this "w3' classes around */
