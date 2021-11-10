@@ -312,8 +312,8 @@ h1, h2, h3, h4, h5, h6 {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url("../media/images/forest-path-2880x2180px-min.jpg");
-  background-image: url("../media/images/forest-path-sepia-0-5-min.jpg");
-  background-image: url("../media/images/forest-path-color-to-gray-min.jpg");
+  /* background-image: url("../media/images/forest-path-sepia-0-5-min.jpg"); */
+  /* background-image: url("../media/images/forest-path-color-to-gray-min.jpg"); */
   min-height: 100%;
 }
 
