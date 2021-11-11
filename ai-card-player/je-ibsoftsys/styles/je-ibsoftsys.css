@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov 10 18:02:59 CET 2021';
+    content:'Nov 11 13:36:15 CET 2021';
     font-size: inherit;
 }
 
@@ -311,8 +311,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("../media/images/forest-path-2880x2180px-min.jpg");
-  /* background-image: url("../media/images/forest-path-sepia-0-5-min.jpg"); */
+  /* background-image: url("../media/images/forest-path-2880x2180px-min.jpg"); */
+  background-image: url("../media/images/forest-path-sepia-0-5-min.jpg");
   /* background-image: url("../media/images/forest-path-color-to-gray-min.jpg"); */
   min-height: 100%;
 }
