@@ -464,9 +464,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* NOTE: Assume this class is child of p (inherits margin for instance) */
-.ibsoftsys-slogan {
+/* .ibsoftsys-slogan {
     font-variant: small-caps;
-}
+} */
 
 p.ibsoftsys-slogan {
     text-align: center;
