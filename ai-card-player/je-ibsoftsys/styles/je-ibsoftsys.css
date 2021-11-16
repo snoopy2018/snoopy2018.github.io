@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov 14 18:41:51 CET 2021';
+    content:'Nov 16 08:17:52 CET 2021';
     font-size: inherit;
 }
 
@@ -856,7 +856,7 @@ span.small-caps {
 }
 
 #logo-plus {
-    min-width: 300px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
+    min-width: 270px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
     width: 100%; /* keeps it centered under this "w3' classes around */
 }
 
