@@ -856,7 +856,7 @@ span.small-caps {
 }
 
 #logo-plus {
-    min-width: 270px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
+    min-width: 300px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
     width: 100%; /* keeps it centered under this "w3' classes around */
 }
 
