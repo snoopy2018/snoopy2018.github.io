@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov 18 18:45:58 CET 2021';
+    content:'Nov 19 11:51:40 CET 2021';
     font-size: inherit;
 }
 
@@ -208,8 +208,13 @@ State of mind on September 5, 2021 17:44:26 CEST
     -webkit-overflow-scrolling: touch;
 } */
 
-body {
-   width:100%;  /* JE 06Sep21-1954 Needed for body-scroll-lock adjustments made by me. */
+
+
+
+body, .logo-ibsoftsys { /* Added logo-ibsoftsys so I can set image property (logo) relative to viewport size in percentage.  State of mind on November 2021. */
+  width: 100%;  /* JE 06Sep21-1954 Needed for body-scroll-lock adjustments made by me. */
+
+  height: 100%; /* added height because of reason above (19Nov21) */
 }
 
 a {
@@ -859,6 +864,38 @@ span.small-caps {
     min-width: 250px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
     max-width: 400px;
     width: 100%; /* keeps it centered under this "w3' classes around */
+/*
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+*/
+}
+
+.logo-ibsoftsys {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%); */
+
+    /* width: 100%; */
+}
+
+.logo-ibsoftsys img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 60%;
+    height: 64%; /* x * 1029 / 970, because logo: width / height = 970 px / 1029 px */
+
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 .card {
@@ -1122,11 +1159,5 @@ State of mind on August 25, 2021.
         float: none;
         margin-left: auto;  /* center image (no text around) */
         margin-right: auto;
-    }
-}
-
-@media only screen and (max-height: 350px) {  /* value determined by experiment to avoid words only on the right of the image */
-    #logo-plus  {
-        /* max-height: 250px; */
     }
 }
