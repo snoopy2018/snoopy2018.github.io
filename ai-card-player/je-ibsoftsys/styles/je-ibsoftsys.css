@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov 21 15:47:14 CET 2021';
+    content:'Nov 21 20:01:36 CET 2021';
     font-size: inherit;
 }
 
@@ -650,7 +650,12 @@ p.ibsoftsys-slogan {
     margin-right: 0;
     margin-bottom: 16px;
 
-    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+
+    /* Inspired by a duck-duck search result screen. State of mind on November 21, 2021. */
+    /* box-shadow: 0 2px 3px rgba(0, 0, 0 ,0.06);
+    border: 1px solid rgba(150,150,150,0.3); */
+
 
     text-align: center;
     border-radius: 4px;
