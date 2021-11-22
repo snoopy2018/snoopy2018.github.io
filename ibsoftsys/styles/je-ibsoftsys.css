@@ -647,7 +647,7 @@ p.ibsoftsys-slogan {
 
     margin-top: 0.4em; /* allighs approximately with text */
     margin-left: 24px; /* keep space to text (if floating to the right) */
-    margin-right: 0;
+    margin-right: 16px;
     margin-bottom: 16px;
 
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
@@ -716,10 +716,10 @@ p.ibsoftsys-slogan {
     transform: translate(42%, -42%) scale(0.15);
 
     /* opacity: 0.7; */
-    -webkit-filter: grayscale(1.0) blur(4px);
-    -moz-filter: grayscale(1.0) blur(4px);
-    -o-filter: grayscale(1.0) blur(4px);
-    filter: grayscale(1.0) blur(4px);
+    -webkit-filter: grayscale(1.0) blur(1px);
+    -moz-filter: grayscale(1.0) blur(1px);
+    -o-filter: grayscale(1.0) blur(1px);
+    filter: grayscale(1.0) blur(1px);
 
     transition: all 0.6s ease-in-out;
 }
