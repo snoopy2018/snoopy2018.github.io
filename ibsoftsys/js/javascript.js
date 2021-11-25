@@ -285,7 +285,7 @@ function showMe() {
     // me_element.style.transform = "scale(1)";
     me_element.style[filterPrefix]= "grayscale(0) blur(0)";
     // me_element.style.WebkitFilter = "grayscale(0) blur(0)";
-    me_element.style.borderRadius = "0";
+    me_element.style.borderRadius = "8px";
     // me_element.style.top = "0";
     me_element.style.left = "0";
 
