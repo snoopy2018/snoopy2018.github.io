@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov 29 13:12:48 CET 2021';
+    content:'Nov 29 13:59:27 CET 2021';
     font-size: inherit;
 }
 
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
     /*height: 280px;*/ /* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
 
     width: auto;  /* measurements so all first four  symbols appear similar ... */
-    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
+    height: 250px;  /* ... in size. State of mind on September, 19 2021 */
 
     /* background-color: bisque; */
     /* background-color: #fafafa; */
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
     /*height: 270px; *//* Reasoning: image should fit on iPhone 6 screen in landscape mode (367 px) */
 
     width: auto; /* measurements so all first four  symbols appear similar ... */
-    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
+    height: 250px;  /* ... in size. State of mind on September, 19 2021 */
 
     /* width: 250px; */
     /* max-width: 100%; */
@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 
     width: auto; /* measurements so all first four  symbols appear similar ... */
-    height: 270px;  /* ... in size. State of mind on September, 19 2021 */
+    height: 250px;  /* ... in size. State of mind on September, 19 2021 */
     /* background-color: bisque; */
     /* background-color: #fafafa; */
 
@@ -412,7 +412,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     width: auto;
-    height: 270px;
+    height: 250px;
 
     /* background-color: #fafafa; */
 
