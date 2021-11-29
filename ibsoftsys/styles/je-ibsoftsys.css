@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Nov 25 18:26:46 CET 2021';
+    content:'Nov 29 13:12:48 CET 2021';
     font-size: inherit;
 }
 
@@ -245,13 +245,6 @@ ul {
     margin: 0.5em auto; /* has the same property as p! */
 }
 
-ul:before{
-    content:attr(aria-label);
-    font-size: 1.17em;
-    /* font-weight: 300; */
-    /* font-variant: small-caps;  */
-    margin-left:-2em;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family:  Lato, PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -536,9 +529,10 @@ p.ibsoftsys-slogan {
     /* equivalent to #fafafa; */ /* changed from white to grey shade; feedback Jenny. JE 07Oct21 */
     /*padding: 8px 8px;*/ /* added because of background color. JE 07Oct21 */
 
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 18px; /* similar to  h1, h2, etc. */
-    font-weight: bold;  /* increade from 300 to normal (400) maybe bold?; feedback Jenny. JE 07Oct21 */
+    /* font-variant: small-caps; */
+    /*font-weight: bold;*/  /* Increased from 300 to normal (400) maybe bold?; feedback Jenny. JE 07Oct21 */
     /* font-variant: small-caps; */
     text-align: center;
 
@@ -551,12 +545,14 @@ p.ibsoftsys-slogan {
 
 .project-headline-overlay {
     display: block;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.17em;  /* same as h3 */
     margin: 10px 0; /* same as h1, h2, etc. */
-    /* font-weight: 300; */
-    /* font-variant: small-caps; */
-    /* text-align: center; */
+}
+
+.items-headline-overlay {
+    display: block;
+    font-size: 1em;  /* same as h4 */
+    margin: 10px 0; /* same as h1, h2, etc. */
 }
 
 .hamburgerIcon {
