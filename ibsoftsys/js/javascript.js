@@ -32,12 +32,12 @@ State of mind on Septmeber 23, 2021.
 
 */
 function sidenavManager(event) {
-    var insideSidenav = document.getElementById("sideNav").contains(event.target);
+    var insideSidenav = document.getElementById("sidenav-id").contains(event.target);
     if(insideSidenav) {
         // nothing to do
-        // console.log("in sidenavManager(): clicked INSIDE 'sideNav' ");
+        // console.log("in sidenavManager(): clicked INSIDE 'sidenav-id' ");
     } else {
-        // console.log("in sidenavManager(): clicked OUTSIDE 'sideNav' ");
+        // console.log("in sidenavManager(): clicked OUTSIDE 'sidenav-id' ");
         closeNav();
     }
 }
@@ -51,17 +51,17 @@ function clickEventListener(event) {
 }
 
 function openNav() {
-  document.getElementById("sideNav").style.width = "9em";
+  document.getElementById("sidenav-id").style.width = "9em";
   // document.getElementById("dummy-background").style.display = "block";
-  document.getElementById("sideNav-hamburger").style.display = "none"; // hide 'hamburger'
+  document.getElementById("sidenav-id-hamburger").style.display = "none"; // hide 'hamburger'
   window.addEventListener("click", clickEventListener, true); // IMPORTANT I assume, the parameter 'true' makes sure that the click for this event gets consumed; otherwise, the click event listener invokes closeNav() immediately (i.e. navbar does not show at all).
   window.addEventListener("touchstart", touchStartEventListener, true);
 }
 
 function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
+  document.getElementById("sidenav-id").style.width = "0";
   // document.getElementById("dummy-background").style.display = "";
-  document.getElementById("sideNav-hamburger").style.display = "inline-block"; // show 'hamburger'
+  document.getElementById("sidenav-id-hamburger").style.display = "inline-block"; // show 'hamburger'
   window.removeEventListener("click", clickEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
   window.removeEventListener("touchstart", touchStartEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
 }

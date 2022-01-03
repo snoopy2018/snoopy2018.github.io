@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Dec 4 13:13:49 CET 2021';
+    content:'Jan 3 09:14:50 CET 2022';
     font-size: inherit;
 }
 
@@ -822,7 +822,7 @@ State of mind on Septmeber 23, 2021.
 
 */
 .sidenav {
-  height: 16.18em;  /* width (= 160px) * 1.618 (golden ratio) */
+  height: 16.18em;
   width: 0;
   position: fixed;
   z-index: 1;
