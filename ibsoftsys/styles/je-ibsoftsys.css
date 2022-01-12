@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Jan 12 07:32:47 CET 2022';
+    content:'Jan 12 12:30:54 CET 2022';
     font-size: inherit;
 }
 
@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: auto;   /* allign row item ... */
   margin-bottom: auto;  /* ... verically */
 
-  padding: 12px 18px 12px 18px;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items are too much apart. State of mind on January 12, 2022. */
+  padding: 12px 18px 12px 18px;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
 
   /* align-content: center;
   justify-content: center; */
