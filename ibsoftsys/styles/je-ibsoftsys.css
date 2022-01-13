@@ -736,11 +736,11 @@ p.ibsoftsys-slogan {
 }
 
 #identity-card  img.me-without-snoopy {
-    /* Reduced the color to adapt to the black-and-white around the image (text) State of mind on Jnauray 13, 202.*/
-    -webkit-filter: grayscale(0.4);
-    -moz-filter: grayscale(0.4);
-    -o-filter: grayscale(0.4);
-    filter: grayscale(0.3);
+    /* Reduced the color to adapt to the black-and-white around the image (text). The experimental value of 0.2 is based on the optimized image (-min.png) with 128 colors only. State of mind on Jnauray 13, 202.*/
+    -webkit-filter: grayscale(0.2);
+    -moz-filter: grayscale(0.2);
+    -o-filter: grayscale(0.2);
+    filter: grayscale(0.2);
 }
 
 #identity-card  img.me {
