@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Jan 13 12:54:33 CET 2022';
+    content:'Jan 13 13:25:55 CET 2022';
     font-size: inherit;
 }
 
@@ -736,7 +736,7 @@ p.ibsoftsys-slogan {
 }
 
 #identity-card  img.me-without-snoopy {
-    /* Reduced the color to adapt to the black-and-white around the image (text). The experimental value of 0.2 is based on the optimized image (-min.png) with 128 colors only. State of mind on Jnauray 13, 202.*/
+    /* Reduced the color to adapt to the black-and-white around the image (text). The experimental value of 0.2 is based on the optimized image (-min.png) with 127 colors only. State of mind on Jnauray 13, 202.*/
     -webkit-filter: grayscale(0.2);
     -moz-filter: grayscale(0.2);
     -o-filter: grayscale(0.2);
