@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Jan 14 13:11:35 CET 2022';
+    content:'Jan 15 14:45:04 CET 2022';
     font-size: inherit;
 }
 
@@ -767,6 +767,21 @@ p.ibsoftsys-slogan {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+
+p.none {
+   -webkit-hyphens: none;
+   hyphens: none;
+}
+
+p.manual {
+   -webkit-hyphens: manual;
+   hyphens: manual;
+}
+
+p.auto {
+   -webkit-hyphens: auto;
+   hyphens: auto;
+}
 /* The following classes (flip-box-*) are used for flip technique adopted from w3schools.com. State of mind on October 29, 2021.
 */
 /*
