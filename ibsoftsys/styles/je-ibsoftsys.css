@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Jan 16 13:37:14 CET 2022';
+    content:'Jan 17 07:55:33 CET 2022';
     font-size: inherit;
 }
 
