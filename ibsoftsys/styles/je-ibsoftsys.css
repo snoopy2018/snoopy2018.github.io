@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Jan 22 12:31:04 CET 2022';
+    content:'Jan 23 13:14:23 CET 2022';
     font-size: inherit;
 }
 
@@ -499,7 +499,8 @@ p.ibsoftsys-slogan {
     font-size: 1.3em; /* same as ibsoftsys-slogan */
     font-style: italic; /* same as ibsoftsys-slogan */
 
-    width: 80%; /* looks better than 100% on smaller screens */
+    width: 80%; /* looks better than 100% on smaller screens*/
+
 
     margin: 10px auto 0 auto; /* to and bottom is same as h1, h2, etc. */
 
@@ -514,8 +515,10 @@ p.ibsoftsys-slogan {
 }
 
 .contact-headline-bottom {
-    font-size: 1.17em;
+    font-size: 1em;
     font-style: normal;
+
+    max-width: 36em; /* same as p */
 }
 
 .ibsoftsys-slogan span {
