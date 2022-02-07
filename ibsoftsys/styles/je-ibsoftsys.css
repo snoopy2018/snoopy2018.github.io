@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 7 07:57:17 CET 2022';
+    content:'Feb 7 08:17:53 CET 2022';
     font-size: inherit;
 }
 
@@ -484,7 +484,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .box-image-container {
     height: 90px;
-    margin-top: 8px;
+    margin-top: 18px;
+    margin-left: 18px;
 }
 
 .section-headline {
