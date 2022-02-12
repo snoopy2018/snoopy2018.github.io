@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 12 06:58:25 CET 2022';
+    content:'Feb 12 13:00:26 CET 2022';
     font-size: inherit;
 }
 
@@ -425,8 +425,8 @@ h1, h2, h3, h4, h5, h6 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 950px;  /* goes along with .projects-section-frame max-width:430px */
+  /* width: 90%; */ /* removed JE 12Feb2022 */
+  max-width: 700px;  /* reduced from 950px. JE 12Feb2022 */
 
   margin-left: auto;  /* allign row ... */
   margin-right: auto; /* ... horizontally */
@@ -439,10 +439,14 @@ h1, h2, h3, h4, h5, h6 {
 
   flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
-  /* width: 270px; */
+  max-width: 320px; /* so that plus-button is not too far to the right. JE 12Feb2022 */
 
   margin-top: auto;   /* allign row item ... */
   margin-bottom: auto;  /* ... verically */
+
+  margin-left: auto;   /* allign row item ... */
+  margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
+
 
   padding: 12px 18px 12px 18px;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
 
