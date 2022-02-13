@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 12 13:25:42 CET 2022';
+    content:'Feb 13 07:48:26 CET 2022';
     font-size: inherit;
 }
 
@@ -696,7 +696,7 @@ p.ibsoftsys-slogan {
 #identity-card {
     position: relative;
     float: left;
-    width: 250px;  /* WITH Snoopy: 290px ? */ /* 250px gives the text (assume font-size = 14px) some space to the right and left */
+    width: 240px;  /* WITH Snoopy: 290px ? */ /* 240px gives the text (assume font-size = 14px) some space to the right and left */
     height: 265px; /* WITH only me: 265px; WITH Snoopy: 305px*/
 
     overflow: hidden;
@@ -717,7 +717,7 @@ p.ibsoftsys-slogan {
     background-color: rgb(250, 250, 250); /* WITH Snoopy: white (default) */
 
     text-align: center;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 
     /* cursor: pointer; */ /* WITH Snoopy */
 }
