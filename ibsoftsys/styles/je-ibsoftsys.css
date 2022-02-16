@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 14 19:06:30 CET 2022';
+    content:'Feb 16 13:44:54 CET 2022';
     font-size: inherit;
 }
 
@@ -450,6 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flex-container-bottom {
+    font-size: 18px; /* MEANS in this class 1em = 18px. Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
     max-width: 36em; /* as wide as paragraph */
 }
 
@@ -1153,6 +1154,40 @@ span.small-caps {
     mask-size: cover;
 
     cursor: pointer;
+}
+
+
+.contact-item {
+    flex: auto;
+
+    margin-top: auto;   /* allign row item ... */
+    margin-bottom: auto;  /* ... verically */
+
+    margin-left: auto;   /* allign row item ... */
+    margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
+
+}
+.contact-map {
+    display: block;
+    /* Trick so image does not get rotated in case you define only for example width:200px; height: auto (Source: stackoverflow. "CSS force image resize and keep aspect ratio") */
+    max-width:220px;  /* keep ratio  220/193 */
+    max-height:193px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding:18px;
+}
+
+.contact-text {
+    display: block;
+    max-width: 400px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
 }
 
 /* I took all initial properties and values of the following classes from Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/).
