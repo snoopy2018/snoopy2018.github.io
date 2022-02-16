@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 16 13:44:54 CET 2022';
+    content:'Feb 16 14:50:33 CET 2022';
     font-size: inherit;
 }
 
@@ -423,9 +423,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto; /* ... horizontally */
 }
 
-.projects-background {
-    background-color: rgb(250, 250, 250); /* EXPERIMENT I think it looks not bad if the projects especially the images have a little different background than the text, actually there is in this part of the section no text at all (the background should spread all to the left and right side on bigger screens, which is fortunately given by design (spreads only to the boundary of flex-container)). And the projects need special attention which they get by the different background, aren't they? State of mind on February 13, 2022.*/
-}
+
+/* EXPERIMENT I think it looks not bad if the projects especially the images have a little different background than the text. After another try by which the background spread over all project symbols, I decided to use another approach inspired by Apple Accessibility webpage (again). Each project has its own 'card' which includes grey background, rounded corners etc. I think by this projects look very different to the rest of the text, which they should in my opinion. State of mind on February 16, 2022.*/
 
 .flex-item {
   /* display: flex;
@@ -436,8 +435,6 @@ h1, h2, h3, h4, h5, h6 {
 
   max-width: 320px; /* so that plus-button is not too far to the right. JE 12Feb2022 */
 
-  margin-top: auto;   /* allign row item ... */
-  margin-bottom: auto;  /* ... verically */
 
   margin-left: auto;   /* allign row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
@@ -447,10 +444,18 @@ h1, h2, h3, h4, h5, h6 {
 
   /* align-content: center;
   justify-content: center; */
+
+  /* SPECIAL to make project pop out a little */
+  margin-top: 24px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 24px;
+  /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
 }
 
 .flex-container-bottom {
-    font-size: 18px; /* MEANS in this class 1em = 18px. Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
+    font-size: 16px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
     max-width: 36em; /* as wide as paragraph */
 }
 
@@ -561,7 +566,7 @@ p.ibsoftsys-slogan {
 
     /* background: url("../media/images/corner-bottom-right-min.svg") 100% bottom no-repeat, url("../media/images/corner-top-left-min.svg") 0% top no-repeat; */
 
-    background: url("../media/images/corner-bottom-right-min.svg") 100% bottom no-repeat;
+    /* background: url("../media/images/corner-bottom-right-min.svg") 100% bottom no-repeat; */
 }
 
 
