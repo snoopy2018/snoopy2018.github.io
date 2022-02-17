@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 17 13:20:35 CET 2022';
+    content:'Feb 17 20:07:30 CET 2022';
     font-size: inherit;
 }
 
@@ -581,13 +581,13 @@ p.ibsoftsys-slogan {
 .project-headline {
     display: block;
 
-    min-height: 3.5em; /* same height so alignment is independent of headline length (4em: assume 2 lines) */
+    min-height: 74px; /* in px because dimensions of container are in px, too // JE 17Feb2022; same height so alignment is independent of headline length (4em: assume 2 lines) */
 
     /* background-color: rgb(250, 250, 250);  */
     /* equivalent to #fafafa; */ /* changed from white to grey shade; feedback Jenny. JE 07Oct21 */
     /*padding: 8px 8px;*/ /* added because of background color. JE 07Oct21 */
 
-    font-size: 1.2em;
+    font-size: 21px; /* in px because dimensions of container are in px, too // JE 17Feb2022 */
     margin-top: 18px; /* similar to  h1, h2, etc. */
     /* font-variant: small-caps; */
     /*font-weight: bold;*/  /* Increased from 300 to normal (400) maybe bold?; feedback Jenny. JE 07Oct21 */
