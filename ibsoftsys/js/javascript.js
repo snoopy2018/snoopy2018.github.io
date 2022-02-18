@@ -235,9 +235,9 @@ function sendEmail(language)
 {
     var subject = "";
     if(language === "de") {
-        subject = "Anfrage an das INGENIEURBÜRO FÜR SOFTWARESYSTEME";
+        subject = "Nachricht an das INGENIEURBÜRO FÜR SOFTWARESYSTEME";
     } else if (language === "en") {
-        subject = "Request to the ENGINEERING OF SOFTWARE SYSTEMS";
+        subject = "Message to the ENGINEERING OF SOFTWARE SYSTEMS";
     } // else nothing to do
     if (subject !== "") {
         // var message = "hallo my friend!";
