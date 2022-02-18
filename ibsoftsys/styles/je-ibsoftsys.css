@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 18 07:00:49 CET 2022';
+    content:'Feb 18 07:06:33 CET 2022';
     font-size: inherit;
 }
 
@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 
   flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
-  max-width: 300px; /* so that plus-button is not too far to the right. JE 12Feb2022 */
+  max-width: 280px; /* so that plus-button is not too far to the right. JE 12Feb2022 */
 
 
   margin-left: auto;   /* allign row item ... */
