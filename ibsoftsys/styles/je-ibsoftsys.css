@@ -460,6 +460,8 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 280px;
 
     margin: 0.5em 1em;
+
+      border-radius: 18px;
 }
 
 .flex-item-me p {
