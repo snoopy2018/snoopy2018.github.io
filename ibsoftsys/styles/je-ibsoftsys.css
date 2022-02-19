@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 18 12:58:16 CET 2022';
+    content:'Feb 19 11:15:52 CET 2022';
     font-size: inherit;
 }
 
@@ -1215,7 +1215,10 @@ span.small-caps {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 18px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 18px;
+    padding-top: 18px;
 }
 
 /* I took all initial properties and values of the following classes from Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/).
