@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 20 17:19:48 CET 2022';
+    content:'Feb 20 19:23:10 CET 2022';
     font-size: inherit;
 }
 
@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  /* width: 90%; */ /* removed JE 12Feb2022 */
+  width: 90%;
   max-width: 700px;  /* reduced from 950px. JE 12Feb2022 */
 
   margin-left: auto;  /* allign row ... */
@@ -478,7 +478,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .flex-container-bottom {
-    font-size: 16px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
+    font-size: 18px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
+    width: 100%;
     max-width: 36em; /* as wide as paragraph */
 }
 
@@ -1314,6 +1315,18 @@ State of mind on August 25, 2021.
         float: none;
         margin-left: auto;
         margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+    /* #identity-card  {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    .flex-container-bottom {
+        font-size: 17px;
     }
 
 }
