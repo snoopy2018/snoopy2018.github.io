@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 20 19:23:10 CET 2022';
+    content:'Feb 22 06:55:14 CET 2022';
     font-size: inherit;
 }
 
@@ -457,20 +457,20 @@ h1, h2, h3, h4, h5, h6 {
 .flex-item-me { /* adjustments for me-image that is overwriting property values of a project card */
     float: left;
 
-    max-width: 280px;
+    max-width: 220px;
 
     margin: 0.5em 1em;
 
-      border-radius: 18px;
+    border-radius: 18px;
 }
 
 .flex-item-me p {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
 }
 
 .flex-item-me img {
-    height:180px;
+    height:160px;
     width: auto;
     padding: 8px;
 }
