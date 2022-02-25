@@ -228,7 +228,9 @@ function overlayContainerClicked(section) {
 // State of mind on October 26, 2021.
 function makePhoneCall()
 {
-    document.location.href = "tel:+49 157 7768 8503";
+    // document.location.href = "tel:+49 157 7768 8503"; // mobile
+    document.location.href = "tel:+49 761 51465070"; // landline
+
 }
 
 function sendEmail(language)
