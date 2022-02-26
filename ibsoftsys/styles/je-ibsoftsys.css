@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 25 11:05:13 CET 2022';
+    content:'Feb 26 06:47:41 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -259,7 +259,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7em; /* changed from 1. em to 1.7 em so it's bigger than project headlines. I know, it's a hack. JE 07Oct21 */
+  font-size: 1.5em; /* changed from 1.5em to 1.7 em so it's bigger than project headlines. I know, it's a hack. JE 07Oct21 UPDATE changed back to initial 1.5em. JE 25Feb22 */
 }
 
 h3 {
