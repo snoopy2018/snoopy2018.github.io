@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Feb 27 07:24:27 CET 2022';
+    content:'Feb 27 18:46:23 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -176,9 +176,12 @@ Source: MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/font-weigh
  font-display: swap;
 }
 
-body, html {
+body, html,
+h1, h2, h3, h4, h5, h6 {
  font-family:  "PT Sans", "Helvetica Neue", Helvetica,  Arial,  sans-serif; /* REMOVED Lato because I think it is not as readable as PT Sans or Helvetica Neue. State of mind on February 1, 2022 */
+}
 
+body, html {
   font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
   line-height: 1.5;
   letter-spacing: normal; /* -0.022em;  at some Apple websites */
@@ -247,9 +250,11 @@ ul {
     margin: 0.5em auto; /* has the same property as p! */
 }
 
-
+/* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
 h1, h2, h3, h4, h5, h6 {
-    font-family:  Lato, PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
+    text-align: center;
+    font-weight: 400;
     margin: 10px 0;
 }
 /* h_(i-1) = h_(i) * 1.125, i = 1..6, h1 = 2em */
@@ -278,10 +283,6 @@ h6 {
   font-size: 0.67em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  /* margin: 1em auto 0 auto; removed constraint (new design) State of mind on March 2, 2021 */
-}
 
 .w3-wide {
     letter-spacing: 10px;
