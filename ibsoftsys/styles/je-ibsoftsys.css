@@ -10,14 +10,14 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 13 13:18:23 CET 2022';
+    content:'Mar 14 06:48:00 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
 
 /* VARIABLES ----------------------------------- */
 :root { /* global for all html */
-    --textColor: rgb(51, 51, 51);  /* saw #333 == rgb(51, 51, 51) at ndr.de NDR; SZ rgb(41, 41, 58); BZ rgb(51, 51, 51); NOTE #333 == #333333 (shorthand)*/
+    --textColor: rgb(51, 50, 47); /* as tagesschau.de seen on March 13, 2022. BEFORE rgb(51, 51, 51);   saw #333 == rgb(51, 51, 51) at ndr.de NDR; SZ rgb(41, 41, 58); BZ rgb(51, 51, 51); NOTE #333 == #333333 (shorthand)*/
     /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
 }
 
@@ -470,7 +470,7 @@ h6 {
     font-size: 17px;
     text-align: center;
     font-variant: small-caps;
-    color: #777;
+    color: #666;
 }
 
 .flex-item-me img {
