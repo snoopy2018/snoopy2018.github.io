@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 20 06:42:04 CET 2022';
+    content:'Mar 20 13:16:09 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -481,7 +481,7 @@ h6 {
 
 
 
-.flex-container-bottom {
+.flex-container-contact {
     font-size: 18px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
     width: 100%;
     max-width: 36em; /* as wide as paragraph */
@@ -687,7 +687,7 @@ p.ibsoftsys-slogan {
 }
 
 .border-right {
-    border-right-style: solid;
+    /* border-right-style: solid; */
     border-right-width: 1px;
     /* padding-right: 8px; */ /* padding: gap inside of border. UPDATE I inserted a white space to allow ...*/
     margin-left: 0.3em; /* value determined until it looked good to me. JE 05Oct21 */
@@ -1329,8 +1329,15 @@ State of mind on August 25, 2021.
         margin-left: auto;
         margin-right: auto;
     } */
-    .flex-container-bottom {
+    .flex-container-contact {
         font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 374px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+    .flex-container-contact {
+        font-size: 14px;
     }
 
 }
