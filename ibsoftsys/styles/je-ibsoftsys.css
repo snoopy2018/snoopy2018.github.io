@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 20 20:54:08 CET 2022';
+    content:'Mar 20 21:06 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1347,7 +1347,7 @@ State of mind on August 25, 2021.
         font-size: 14px; /* reduce text size that email stays in one line */
     }
     .contact-text .fa {
-        font-size: 15px; /* need to reduce symbols' size too */
+        font-size: 14px; /* need to reduce symbols' size too */
     }
 
 }
