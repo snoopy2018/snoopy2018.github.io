@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 20 13:16:09 CET 2022';
+    content:'Mar 20 20:54:08 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -683,6 +683,8 @@ p.ibsoftsys-slogan {
 
     font-size: 0.8em;
 
+    text-align: center;
+
     padding: 12px;
 }
 
@@ -1329,15 +1331,23 @@ State of mind on August 25, 2021.
         margin-left: auto;
         margin-right: auto;
     } */
-    .flex-container-contact {
-        font-size: 17px;
+    /* Asumme contact-text font-size: 18 px */
+    .contact-text {
+        font-size: 16px; /* reduce text size that email stays in one line */
+    }
+    .contact-text .fa {
+        font-size: 18px; /* symbols stay in size */
     }
 
 }
 
-@media only screen and (max-width: 374px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
-    .flex-container-contact {
-        font-size: 14px;
+@media only screen and (max-width: 360px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+    /* Asumme contact-text font-size: 18 px */
+    .contact-text {
+        font-size: 14px; /* reduce text size that email stays in one line */
+    }
+    .contact-text .fa {
+        font-size: 15px; /* need to reduce symbols' size too */
     }
 
 }
