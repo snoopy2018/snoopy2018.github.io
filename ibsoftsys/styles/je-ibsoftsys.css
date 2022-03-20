@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 18 12:13:55 CET 2022';
+    content:'Mar 20 06:42:04 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1007,8 +1007,8 @@ span.small-caps {
     top: 50%;
     left: 50%;
 
-    width: 60%;
-    height: 64%; /* x * 1029 / 970, because logo: width / height = 970 px / 1029 px */
+    max-width: 75%;
+    max-height: 70%;
 
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
