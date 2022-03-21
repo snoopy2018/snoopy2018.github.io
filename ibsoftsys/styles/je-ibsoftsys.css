@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 20 21:06 CET 2022';
+    content:'Mar 21 06:53:33 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1211,7 +1211,9 @@ span.small-caps {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding:18px;
+    padding:12px;
+
+    border-radius: 50%; /* make it all round, looks better. State of mind on March 21, 2022 */
 }
 
 .contact-text {
@@ -1225,7 +1227,7 @@ span.small-caps {
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 18px;
-    padding-top: 18px;
+    /* padding-top: 18px; */
 }
 
 /* I took all initial properties and values of the following classes from Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/).
@@ -1325,29 +1327,13 @@ State of mind on August 25, 2021.
 
 }
 
-@media only screen and (max-width: 400px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
-    /* #identity-card  {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-    /* Asumme contact-text font-size: 18 px */
-    .contact-text {
-        font-size: 16px; /* reduce text size that email stays in one line */
-    }
-    .contact-text .fa {
-        font-size: 18px; /* symbols stay in size */
-    }
-
-}
-
 @media only screen and (max-width: 360px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
     /* Asumme contact-text font-size: 18 px */
     .contact-text {
-        font-size: 14px; /* reduce text size that email stays in one line */
+        font-size: 17px; /* reduce font-size of text + symbol that email stays in one line */
     }
     .contact-text .fa {
-        font-size: 14px; /* need to reduce symbols' size too */
+        /* need to reduce symbols' size too */
     }
 
 }
