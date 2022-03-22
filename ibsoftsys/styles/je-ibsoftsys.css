@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Mar 21 07:37:47 CET 2022';
+    content:'Mar 22 07:43:28 CET 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1201,19 +1201,6 @@ span.small-caps {
     margin-left: auto;   /* allign row item ... */
     margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
 
-}
-.contact-map {
-    display: block;
-    /* Trick so image does not get rotated in case you define only for example width:200px; height: auto (Source: stackoverflow. "CSS force image resize and keep aspect ratio") */
-    max-width:220px;  /* keep ratio  220/193 */
-    max-height:193px;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding:18px;
-
-    border-radius: 50%; /* make it all round, looks better. State of mind on March 21, 2022 */
 }
 
 .contact-text {

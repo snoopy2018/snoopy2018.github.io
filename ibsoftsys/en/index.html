@@ -525,9 +525,13 @@
 
     <div class="flex-container-contact flex-container">
         <div class="contact-item">
-            <a href="https://www.openstreetmap.org/#map=12/48.0171/7.7500" rel="noopener">
-                <img  class="contact-map" src="../media/images/freiburg-map-final-min.png" alt="Location Map" />
-            </a>
+            <!-- HACK I created the following div that the map can get a box shadow. To do this, you div and image must (?) have the same width or height specification. Sorry, I do not know better at this moment. State of mind on March 22, 2022.  -->
+            <div style="max-width:180px; margin-left:auto; margin-right: auto; margin-bottom:18px; margin-top:18px;">
+                <a href="https://www.openstreetmap.org/#map=12/48.0171/7.7500" rel="noopener">
+                    <!-- Trick that image does not get rotated in case you define only for example width:200px; height: auto (Source: stackoverflow. "CSS force image resize and keep aspect ratio (w/h = 583/510)")  -->
+                    <img  style="box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); max-width:180px;  height:auto;  border-radius: 4px;" src="../media/images/freiburg-map-final-min.png" alt="Location Map" />
+                </a>
+            </div>
         </div>
 
         <div class="contact-item">
