@@ -239,7 +239,7 @@ function sendEmail(language)
     if(language === "de") {
         subject = "Nachricht an das INGENIEURBÜRO FÜR SOFTWARESYSTEME";
     } else if (language === "en") {
-        subject = "Message to the ENGINEERING OF SOFTWARE SYSTEMS";
+        subject = "Message to the ENGINEERING OFFICE FOR SOFTWARE SYSTEMS";
     } // else nothing to do
     if (subject !== "") {
         // var message = "hallo my friend!";
