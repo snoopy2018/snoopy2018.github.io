@@ -615,7 +615,9 @@ p.ibsoftsys-slogan {
     font-size: 20px; /* in px because dimensions of container are in px, too // JE 17Feb2022 */
 
     font-weight: 300;
-    
+
+    color: #949494;
+
     margin-top: 18px; /* similar to  h1, h2, etc. */
     /* font-variant: small-caps; */
     /*font-weight: bold;*/  /* Increased from 300 to normal (400) maybe bold?; feedback Jenny. JE 07Oct21 */
