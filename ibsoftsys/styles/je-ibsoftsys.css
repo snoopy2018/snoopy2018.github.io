@@ -467,7 +467,7 @@ h6 {
 }
 
 .flex-item-me p {
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
     font-variant: small-caps;
     color: #666;
@@ -545,7 +545,7 @@ p.ibsoftsys-slogan {
 
 .headline-style {
     color: #949494; /* contrast ratio of approximately 3.0 to white background (recommended is 4.5: 1 to all standard body text but for larger text you can go done. (https://web.dev/color-and-contrast-accessibility/?utm_source=devtools)) */
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .contact-headline-top {
