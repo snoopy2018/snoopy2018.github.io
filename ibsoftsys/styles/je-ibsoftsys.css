@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 3 12:09:48 CEST 2022';
+    content:'Apr 3 13:34:35 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -178,7 +178,7 @@ Source: MDN Web Docs https://developer.mozilla.org/en-US/docs/Web/CSS/font-weigh
 
 body, html,
 h1, h2, h3, h4, h5, h6 {
- font-family:  "PT Sans", "Helvetica Neue", Helvetica,  Arial,  sans-serif; /* REMOVED Lato because I think it is not as readable as PT Sans or Helvetica Neue. State of mind on February 1, 2022 */
+ font-family:  "Helvetica Neue", "PT Sans", Helvetica,  Arial,  sans-serif; /* REMOVED Lato because I think it is not as readable as PT Sans or Helvetica Neue. State of mind on February 1, 2022. Made 'Helvetica Neue' the first choice because it looks very nice and it supports different weights better than 'PT Sans'. BTW, Apple  used it as system font on iOS and macOS and replaced it by a 'similarly looking San Francisco in iOS 9 and OS X El Capitan'. IBM used it as 'its corporate typeface until 2017' (Source Wikipedia.) simalar State of mind on April 3, 2022. */
 }
 
 body, html {
@@ -544,8 +544,8 @@ p.ibsoftsys-slogan {
 }
 
 .headline-style {
-    color: #666;
-    /* font-weight: bold; */
+    color: #949494; /* contrast ratio of approximately 3.0 to white background (recommended is 4.5: 1 to all standard body text but for larger text you can go done. (https://web.dev/color-and-contrast-accessibility/?utm_source=devtools)) */
+    font-weight: 500;
 }
 
 .contact-headline-top {
@@ -553,7 +553,7 @@ p.ibsoftsys-slogan {
     font-size: 1.3em; /* same as ibsoftsys-slogan */
     /*font-style: italic; */ /* same as ibsoftsys-slogan */
 
-    width: 80%; /* looks better than 100% on smaller screens*/
+    /* width: 80%; */ /* looks better than 100% on smaller screens. UPDATE NO. It causes a problem instead on screens width = 320 px (not centered). State of mind on April 3, 2022. */
 
 
     margin: 10px auto 0 auto; /* to and bottom is same as h1, h2, etc. */
