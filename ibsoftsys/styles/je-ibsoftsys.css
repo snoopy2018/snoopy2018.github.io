@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 3 13:34:35 CEST 2022';
+    content:'Apr 4 09:02:46 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -545,7 +545,7 @@ p.ibsoftsys-slogan {
 
 .headline-style {
     color: #949494; /* contrast ratio of approximately 3.0 to white background (recommended is 4.5: 1 to all standard body text but for larger text you can go done. (https://web.dev/color-and-contrast-accessibility/?utm_source=devtools)) */
-    font-weight: 300;
+    font-weight: normal; /* I think 300 is to thin and 500 too thick with the current color (#949494) and font-family (Helvetica Neue). State of mind on April 4, 2022.  */
 }
 
 .contact-headline-top {
@@ -612,7 +612,7 @@ p.ibsoftsys-slogan {
     /* equivalent to #fafafa; */ /* changed from white to grey shade; feedback Jenny. JE 07Oct21 */
     /*padding: 8px 8px;*/ /* added because of background color. JE 07Oct21 */
 
-    font-size: 21px; /* in px because dimensions of container are in px, too // JE 17Feb2022 */
+    font-size: 24px; /* in px because dimensions of container are in px, too // JE 17Feb2022 */
 
     /* font-weight: 300; */
 
@@ -633,13 +633,15 @@ p.ibsoftsys-slogan {
 
 .project-headline-overlay {
     display: block;
-    font-size: 1.17em;  /* same as h3 */
+    font-size: 1.4em;  /* same as h3 */
+    color: #949494;
     margin: 10px 0; /* same as h1, h2, etc. */
 }
 
 .items-headline-overlay {
     display: block;
-    font-size: 1em;  /* same as h4 */
+    font-size: 1.3em;
+    color: #949494;
     margin: 10px 0; /* same as h1, h2, etc. */
 }
 
@@ -1342,7 +1344,7 @@ State of mind on August 25, 2021.
 
     .project-headline {
         min-height: 55px;
-        font-size: 18px;
+        /* font-size: 24px; */
     }
 
     .flex-item {
