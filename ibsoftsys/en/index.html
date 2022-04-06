@@ -539,9 +539,9 @@
                 <p><i class="fa fa-map-marker fa-fw"></i>&nbspFreiburg im Breisgau, Germany</p>
 
                 <!-- The following technique is supposed to prevent that web crawlers find easily phone number and email address. Complicated? Yes, but I don't know better at this time. State of mind on October 26, 2021. -->
-                <p><i class="fa fa-phone fa-fw" ></i><img onclick="makePhoneCall()" style="cursor: pointer;" src="../media/images/phone-number-land-min.svg" alt="Phone Number"></p>
-
-                <p><i class="fa fa-envelope fa-fw"></i><img onclick="sendEmail('en')" style="cursor: pointer;" src="../media/images/email-address-min.svg" alt="E-Mail Address"></p>
+                <p><i class="fa fa-phone fa-fw" ></i><img onclick="makePhoneCall()" style="height: 1em; width:auto; cursor: pointer;" src="../media/images/phone-number-land-min.svg" alt="Phone Number"></p>
+                <!-- IMPORTANT Add 'height: 1em;' to img-tag that it inherits font-size. State of mind on April 5, 2022 -->
+                <p><i class="fa fa-envelope fa-fw"></i><img onclick="sendEmail('en')" style="height: 1em; width:auto; cursor: pointer;" src="../media/images/email-address-min.svg" alt="E-Mail Address"></p>
             </div>
         </div>
 
