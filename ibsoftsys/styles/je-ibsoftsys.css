@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 8 14:47:03 CEST 2022';
+    content:'Apr 8 15:27:32 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -477,10 +477,10 @@ h6 {
     height:160px;
     width: auto;
     padding: 8px;
-    -webkit-filter: grayscale(1);
+    /* -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
-    filter: grayscale(1);
+    filter: grayscale(1); */
 
 }
 
