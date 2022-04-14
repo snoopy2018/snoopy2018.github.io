@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 14 07:07:40 CEST 2022';
+    content:'Apr 14 11:23:48 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -461,7 +461,7 @@ h6 {
 
     max-width: 210px; /* limits the white space around image on narrow screens (no text on the right). JE 02Mar22 */
 
-    margin: 0.5em 1em;
+    margin: 1em;
 
     border-radius: 12px;
 }
