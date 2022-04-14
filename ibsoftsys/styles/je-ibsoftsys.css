@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 13 18:34:38 CEST 2022';
+    content:'Apr 14 07:07:40 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1026,7 +1026,8 @@ span.small-caps {
     top: 50%;
     left: 50%;
 
-    max-width: 75%;
+    max-width: 90%; /* that text of logo is big enough on smaller screens < 500 px (see media control below) */
+
     max-height: 70%;
 
     -webkit-transform: translate(-50%,-50%);
@@ -1328,7 +1329,13 @@ State of mind on August 25, 2021.
         margin-left: auto;
         margin-right: auto;
     }
+}
 
+@media only screen and (min-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+
+    .logo-ibsoftsys img {
+        max-width: 75%; /* that logo is not too big on larger screens */
+    }
 }
 
 @media only screen and (max-width: 360px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
@@ -1336,10 +1343,6 @@ State of mind on August 25, 2021.
     .contact-text {
         font-size: 17px; /* reduce font-size of text + symbol that email stays in one line */
     }
-    .contact-text .fa {
-        /* need to reduce symbols' size too */
-    }
-
 }
 
 @media only screen and (max-width: 667px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
