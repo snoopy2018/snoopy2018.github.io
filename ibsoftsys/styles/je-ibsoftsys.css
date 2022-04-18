@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 16 12:12:19 CEST 2022';
+    content:'Apr 18 11:29:49 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -192,6 +192,9 @@ body, html {
   color: var(--textColor); /* will not be used by any browser that doesn't support it, and will default to the previous fallback */
 }
 
+body {
+    min-width: 320px; /* seen at apple.com webpages ... cannot be too wrong :) */
+}
 /* DRIVES ME CRAZY
 
 overflow: scroll; seem to work on Mac but not on iOS (only Firfox seems to work on iOS with this setting)

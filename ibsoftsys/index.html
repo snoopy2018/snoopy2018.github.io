@@ -28,7 +28,7 @@
     State of mind on August 31, 2021. -->
     <script src="lib/bodyScrollLock.js"></script>
 
-    <script type = "text/javascript" src = "js/javascript.js" ></script>
+    <script src = "js/javascript.js" ></script>
 </head>
 
 <body>
@@ -88,14 +88,12 @@
     <div id="sidenav-id" class="sidenav w3-hide-large w3-hide-medium">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
 
-            <img class="navbar-icon" src="media/images/crossPlain.svg" alt="Navigation Button">
+            <img class="navbar-icon" src="media/images/crossPlain.svg" alt="Navigation Button"></a>
             <!-- width value: so it matches approximately hamburger icon -->
 
             <!-- <object type="image/svg+xml" data="media/images/crossPlain.svg" style="width: 20px; height:auto;"> -->
                 <!-- Your fall back here -->
                 <!-- <img src="media/images/crossPlain-bigger.svg" /> -->
-            </object>
-
 
         <a href="#about" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Das Büro</span></a>
 
@@ -216,7 +214,7 @@
 
             <p>Meine analytischen sowie kreativen Fähigkeiten wurden durch die sehr spannende Arbeit als freiberuflicher Softwareentwickler im Silicon Valley weiter verfeinert. Diese überwiegend selbstständige Tätigkeit motivierte mich, das Ingenieurbüro in Deutschland zu gründen (siehe auch <a href="cv/Juergen-Ehret-CV.pdf" class="w3-hover-text-blue">Curriculum Vitae</a>).</p>
 
-            <p>Einige Beispiele für Softwareentwicklungen, die ich Ihnen anbieten kann:
+            <p>Einige Beispiele für Softwareentwicklungen, die ich Ihnen anbieten kann: </p>
                 <ul>
                     <!-- <li>Entwicklung einer effizienten Softwarelösung nach eingehender Analyse des Problems</li> -->
 
@@ -227,7 +225,7 @@
                     <!-- <li>Für alle Leistungen gilt: Entwicklung einer effizienten Softwarelösung nach eingehender Analyse des Problems.</li> -->
                 </ul>
 
-            </p>
+
 
             <!-- <p>Im nächsten Abschnitt stelle ich einige Softwareprojekte vor, die Ihnen einen Einblick in meine Arbeit zu geben.</p> -->
 
@@ -237,10 +235,6 @@
 
 </div>
 
-
-
-    <!-- TEMPLATE for overlay technique used in Section PROJECTS -->
-<!-- NOTE <id>: unique identifier of overlay, an integer passed to javascript functions -->
 
 <!--
 <div class="overlay" id="overlay-<id>">
@@ -263,12 +257,7 @@
     <i onclick="overlayOn(<id>)" class="overlay-button-show w3-right w3-padding"></i>
 </div>
 -->
-<!--- END TEMPLATE----------->
 
-
-<!------------------------------------------------>
-<!--  Projekte Section ---------------------------->
-<!------------------------------------------------>
 <div class="bgimg-2 w3-display-container" id="projects">
   <div class="w3-display-middle">
     <!-- <span class="section-headline">PROJECTS</span> -->
@@ -310,7 +299,7 @@
 
 
   <div class="flex-container">
-      <!-- BEGIN Section I --------->
+
       <div class='flex-item'>
           <div class="projects-section-frame">
 
@@ -369,10 +358,8 @@
               </div>
           </div>
 
-      </div> <!-- flex-item -->
-      <!-- END of Section I -->
+      </div>
 
-      <!-- BEGIN Section II --------->
       <div class='flex-item'>
           <div class="projects-section-frame">
                <!-- <span class="project-headline">Suchprogramm für Webseiten</span> -->
@@ -433,13 +420,11 @@
               </div>
           </div>
 
-      </div> <!-- flex-item -->
-      <!-- END Section II-->
-  </div>  <!-- flex-container -->
+      </div>
+  </div>
 
 
   <div class="flex-container">
-      <!-- BEGIN Section III --------->
       <div class='flex-item'>
           <div class="projects-section-frame">
                <span class="project-headline" onclick="overlayOn(3)" style="cursor: pointer;">Simulation</span>
@@ -487,12 +472,9 @@
                   <i onclick="overlayOn(3)" class="symbol-plus background-color-darkgrey"></i>
               </div>
           </div>
-      </div> <!-- flex-item -->
+      </div>
 
-
-      <!-- END Section III -->
       <div class='flex-item'>
-          <!-- BEGIN Section IV --------->
           <div class="projects-section-frame">
               <span class="project-headline" onclick="overlayOn(4)" style="cursor: pointer;">Softwaretest</span>
 
@@ -541,12 +523,12 @@
                   <i onclick="overlayOn(4)" class="symbol-plus background-color-darkgrey"></i>
               </div>
           </div>
-          <!-- END Section IV -->
-      </div> <!-- flex-item -->
-  </div>  <!-- flex-container -->
+
+      </div>
+  </div>
 
   <div class="flex-container">
-      <!-- BEGIN Section V --------->
+
       <div class='flex-item'>
           <div class="projects-section-frame">
 
@@ -605,14 +587,9 @@
               </div>
           </div>
 
-      </div> <!-- flex-item -->
+      </div>
+  </div>
 
-      <!-- END Section V -->
-  </div>  <!-- flex-container -->
-
-  <!------------------------------------------------>
-  <!--  Contact Section ---------------------------->
-  <!------------------------------------------------>
   <div class="bgimg-3 w3-display-container" style="margin-top: 32px;" id="contact">
 
       <div class="w3-display-middle">
@@ -659,16 +636,16 @@
 
       <div class="contact-item">
           <div class="contact-text" >
-              <p><i class="fa fa-map-marker fa-fw"></i>&nbspFreiburg im Breisgau, Germany</p>
+              <p><i class="fa fa-map-marker fa-fw"></i>&nbsp;Freiburg im Breisgau, Germany</p>
 
               <!-- The following technique is supposed to prevent that web crawlers find easily phone number and email address. Complicated? Yes, but I don't know better at this time. State of mind on October 26, 2021. -->
-              <p><i class="fa fa-phone fa-fw" ></i>&nbsp<img onclick="makePhoneCall()" style="height: 0.96em; width: auto; cursor: pointer;" src="media/images/phone-number-land-min.svg" alt="Phone Number"></p>
+              <p><i class="fa fa-phone fa-fw" ></i>&nbsp;<img onclick="makePhoneCall()" style="height: 0.96em; width: auto; cursor: pointer;" src="media/images/phone-number-land-min.svg" alt="Phone Number"></p>
               <!-- NOTE A 'height: 1em;' to img-tag leads to letters of the SVG-image that are slightly bigger than 1em (e.g. 17 px). Thus, I experimented and measured a factor of 0.96 that will do the trick. Letters are approximately the same height as letters with font-size=1em. I know, it is a hack. State of mind on April 6, 2022 -->
-              <p><i class="fa fa-envelope fa-fw"></i>&nbsp<img onclick="sendEmail('de')" style="height: 0.96em; width: auto; cursor: pointer;" src="media/images/email-address-min.svg" alt="E-Mail Address"></p>
+              <p><i class="fa fa-envelope fa-fw"></i>&nbsp;<img onclick="sendEmail('de')" style="height: 0.96em; width: auto; cursor: pointer;" src="media/images/email-address-min.svg" alt="E-Mail Address"></p>
           </div>
       </div>
   </div>
-</div>
+
 
 <!-- Footer -->
 <!-- <footer class="background-color-darkgrey"> -->
@@ -683,11 +660,11 @@
 
     <!-- <span>Designed by <em>Jürgen Ehret</em></span> -->
 
-    <span style="white-space: nowrap;">Copyright &copy; 2022 Jürgen Ehret. All rights reserved.&nbsp</span>
+    <span style="white-space: nowrap;">Copyright &copy; 2022 Jürgen Ehret. All rights reserved.&nbsp;</span>
 
-    <span><a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/"  target="_blank" rel="noopener"><img class="linkedin-icon" src="media/images/linkedin-brands-min.svg" alt="Profile LinkedIn Webpage">&nbsp</a></span>
+    <span><a href="https://www.linkedin.com/in/dr-ing-j%C3%BCrgen-ehret-018aa2/"  target="_blank" rel="noopener"><img class="linkedin-icon" src="media/images/linkedin-brands-min.svg" alt="Profile LinkedIn Webpage">&nbsp;</a></span>
 
-    <span style="white-space: nowrap;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener" style="color:inherit; font-weight:bold; letter-spacing: 0.1em;">w3.css&nbsp</a></span>
+    <span style="white-space: nowrap;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener" style="color:inherit; font-weight:bold; letter-spacing: 0.1em;">w3.css&nbsp;</a></span>
 
 
     <!-- <span class="border-right"> </span>  -->
