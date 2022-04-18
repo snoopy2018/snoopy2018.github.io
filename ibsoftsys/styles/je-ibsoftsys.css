@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 18 11:29:49 CEST 2022';
+    content:'Apr 18 12:36 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1112,7 +1112,7 @@ span.small-caps {
 
     /* transition: width 0.4s, height 0.4s; */ /* // JE 26Sep21-2100 animation TEST */
     /* opacity: 0; */
-    /* transition: opacity 0.4s ease 0.5s; /* // JE 26Sep21-2100 animation TEST */ */
+    /* transition: opacity 0.4s ease 0.5s; /* // JE 26Sep21-2100 animation TEST */
     /* -webkit-transition: opacity 0.7s; */
 }
 .overlay-container {
