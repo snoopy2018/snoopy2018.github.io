@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 18 12:36 CEST 2022';
+    content:'Apr 18 18:37:07 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -303,7 +303,7 @@ h6 {
 }
 
 /* Create a Parallax Effect ----------------------------------- */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1303,11 +1303,11 @@ Source: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 State of mind on August 25, 2021.
 */
 @media only screen and (max-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
   }
   /* Second image (Portfolio) */
-  .bgimg-2,  .bgimg-3, .bgimg-4 {
+  .bgimg-2,  .bgimg-3 {
     min-height: 350px; /* window through which you see background image takes up at least yyy px of viewport height; experimental determined so image looks good at limited heights AND parallax feature cannot made available. State of mind on August 25, 2021. */
   }
 
@@ -1361,5 +1361,8 @@ State of mind on August 25, 2021.
     .flex-item {
         flex: 1 1 240px; /* flex-grow flex-shrink flex-basis ; item takes flex-basis = 240 px of available space */
         /* max-width: 240px; */
+    }
+    .bgimg-2,  .bgimg-3 {
+      min-height: 250px; /* reduce image on smaller screens.  State of mind on April 19, 2022. */
     }
 }
