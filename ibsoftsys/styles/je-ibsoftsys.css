@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 18 18:37:07 CEST 2022';
+    content:'Apr 20 08:03:11 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -682,9 +682,9 @@ p.ibsoftsys-slogan {
 
 .footer-container {
     background-color: rgb(245, 245, 245);
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .footer-content {
