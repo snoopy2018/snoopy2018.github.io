@@ -10,11 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-<<<<<<< HEAD
-    content:'Apr 21 11:42:45 CEST 2022';
-=======
-    content:'Apr 21 10:34 CEST 2022';
->>>>>>> 9e83d868f2c288b7aa2a94d418adee6ef6e64086
+    content:'Apr 21 11:56:59 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
