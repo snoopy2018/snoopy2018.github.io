@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Apr 22 18:38:17 CEST 2022';
+    content:'Apr 22 19:25:48 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -552,7 +552,7 @@ p.ibsoftsys-slogan {
 }
 
 .headline-style {
-    color: #949494; /* contrast ratio of approximately 3.0 to white background (recommended is 4.5: 1 to all standard body text but for larger text you can go done. (https://web.dev/color-and-contrast-accessibility/?utm_source=devtools)) */
+    color: #666; /* contrast ratio of approximately 5.74 to white background measured with Chrome developer tool. Recommended is 4.5: 1 to all standard body text but for larger text you can go  go down to 3:1. (https://web.dev/color-and-contrast-accessibility/?utm_source=devtools)) */
     font-weight: normal; /* I think 300 is to thin and 500 too thick with the current color (#949494) and font-family (Helvetica Neue). State of mind on April 4, 2022.  */
 }
 
@@ -624,7 +624,7 @@ p.ibsoftsys-slogan {
 
     /* font-weight: 300; */
 
-    color: #949494;
+    color: #666;
 
     margin-top: 18px; /* similar to  h1, h2, etc. */
     /* font-variant: small-caps; */
@@ -642,14 +642,14 @@ p.ibsoftsys-slogan {
 .project-headline-overlay {
     display: block;
     font-size: 1.4em;  /* same as h3 */
-    color: #949494;
+    color: #666;
     margin: 10px 0; /* same as h1, h2, etc. */
 }
 
 .items-headline-overlay {
     display: block;
     font-size: 1.3em;
-    color: #949494;
+    color: #666;
     margin: 10px 0; /* same as h1, h2, etc. */
 }
 
