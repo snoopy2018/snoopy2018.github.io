@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'May 13 11:33 CEST 2022';
+    content:'May 15 12:56:20 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1316,8 +1316,9 @@ Apple's website, because I love how they solved the problem ("Accessibility Appl
 /* Turn off parallax scrolling for tablets and phones
 Source: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 State of mind on August 25, 2021.
+UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px parallax scrolling. I set the max-width to an arbitrary value of 1011 px < 1024 px. State of mind on May 15, 2022.
 */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1011px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
   }
