@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'May 16 12:08:38 CEST 2022';
+    content:'May 16 14:03:04 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -183,6 +183,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body, html {
   font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
+
+  font-size: 16px; /* MEANS in body, html 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Most importantly, 15px set by w3.css does not get used. State of mind on May 16, 2022. */
   line-height: 1.5;
   letter-spacing: normal; /* -0.022em;  at some Apple websites */
 
@@ -490,7 +492,7 @@ h6 {
 
 
 .flex-container-contact {
-    font-size: 18px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
+    font-size: 16px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
     width: 100%;
     max-width: 36em; /* as wide as paragraph */
 }
@@ -1231,6 +1233,12 @@ span.small-caps {
     padding-right: 24px;
 }
 
+
+.contact-text-title {
+    font-size: 1.1em;
+    color: #161924;
+}
+
 .contact-container-image {
     max-width: 180px; /* SAME width as set in <img> proberty! */
     margin-left: auto;
@@ -1242,7 +1250,6 @@ span.small-caps {
 .contact-text {
     display: block;
     max-width: 400px;
-    max-height:180px;
     width: auto;
     height: auto;
     margin-left: auto;
@@ -1360,7 +1367,7 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 @media only screen and (max-width: 360px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
     /* Asumme contact-text font-size: 18 px */
     .contact-text {
-        font-size: 17px; /* reduce font-size of text + symbol that email stays in one line */
+        font-size: 16px; /* reduce font-size of text + symbol that email stays in one line */
     }
 }
 
