@@ -1236,7 +1236,7 @@ span.small-caps {
 
 .contact-text-title {
     font-size: 1.1em;
-    color: #161924;
+    /* color: #161924; */
 }
 
 .contact-container-image {
