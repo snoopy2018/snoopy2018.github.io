@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'May 17 12:30:28 CEST 2022';
+    content:'May 17 17:45:42 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -705,7 +705,7 @@ p.ibsoftsys-slogan {
     margin-left: auto;
     margin-right: auto;
 
-    font-size: 0.8em;
+    font-size: 14px; /* font-size that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
 
     text-align: center;
 
@@ -1123,11 +1123,11 @@ span.small-caps {
     margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
 
 }
-
+/*
 .contact-logo {
     padding-left: 24px;
     padding-right: 24px;
-}
+} */
 
 .contact-container-image {
     max-width: 180px; /* SAME width as set in <img> proberty! */
@@ -1140,12 +1140,12 @@ span.small-caps {
 .contact-text {
     display: block;
     /* max-width: 400px; */
-    width: 330px; /* experimental determined; assume base font-size (=1em) of 16px for this element. State of mind on May 17, 2022. */
+    width: 260px; /* MUST fit into iPhone 5s (width 320px); assume base font-size (=1em) of 16px for this element. State of mind on May 17, 2022. */
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 24px;
-    padding-left: 24px;
+    /* padding-right: 24px; */
+    /* padding-left: 24px; */
     padding-bottom: 12px;
     padding-top: 12px;
 }
