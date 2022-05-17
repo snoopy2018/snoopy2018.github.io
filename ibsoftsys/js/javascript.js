@@ -237,9 +237,11 @@ function sendEmail(language)
 {
     var subject = "";
     if(language === "de") {
-        subject = "Ingenieurbüro für Softwaresysteme";
+        // subject = "Ingenieurbüro für Softwaresysteme";
+        subject = "IBSoftSys - Ingenieurbüro Software Systems";
     } else if (language === "en") {
-        subject = "Engineering Office for Software Systems";
+        // subject = "Engineering Office for Software Systems";
+        subject = "IBSoftSys - Ingenieurbüro Software Systems";
     } // else nothing to do
     if (subject !== "") {
         // var message = "hallo my friend!";

@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'May 16 19:06:47 CEST 2022';
+    content:'May 17 12:30:28 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -184,7 +184,6 @@ h1, h2, h3, h4, h5, h6 {
 body, html {
   font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
 
-  font-size: 16px; /* MEANS in body, html 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Most importantly, 15px set by w3.css does not get used. State of mind on May 16, 2022. */
   line-height: 1.5;
   letter-spacing: normal; /* -0.022em;  at some Apple websites */
 
@@ -745,110 +744,6 @@ p.ibsoftsys-slogan {
     cursor: pointer;
 } */
 
-#identity-card {
-    position: relative;
-    float: left;
-    width: 230px;  /* WITH Snoopy: 290px ? */ /* 240px gives the text (assume font-size = 14px) some space to the right and left */
-    height: 265px; /* WITH only me: 265px; WITH Snoopy: 305px*/
-
-    overflow: hidden;
-
-    margin-top: 0.4em; /* allighs approximately with text */
-    margin-left: 24px; /* keep space to text (if floating to the right) */
-    margin-right: 16px;
-    margin-bottom: 12px;
-
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
-
-    /* Inspired by a duck-duck search result screen. State of mind on November 21, 2021. */
-    /* box-shadow: 0 2px 3px rgba(0, 0, 0 ,0.06);
-    border: 1px solid rgba(150,150,150,0.3); */
-
-    /* background-color: green; */
-
-    background-color: rgb(250, 250, 250); /* WITH Snoopy: white (default) */
-
-    text-align: center;
-    /* border-radius: 4px; */
-
-    /* cursor: pointer; */ /* WITH Snoopy */
-}
-
-.identity-card-text {
-  position: relative;
-  top: 185px; /* WITH only me: 180px; WITH Snoopy: 229px */
-  height: 65px;
-  width: inherit;
-  /* padding: 8px 0px 8px 0px; */
-  background-color: rgb(250, 250, 250);
-  margin-top: 16px;
-  border-bottom-right-radius: inherit;
-  border-bottom-left-radius: inherit;
-}
-
-.identity-card-text p {
-    font-size: 16px;
-    padding-top: 8px;
-    padding-bottom: 0;
-}
-
-#identity-card img {
-    width: inherit;
-    height: auto;
-    border-radius: inherit;
-
-    /* ---Experimental October 30, 2021 ---
-    Inspired by "Using CSS3 Filters to Enhance your Transitions" http://tangledindesign.com/using-css3-filters-to-enhance-your-transitions/ */
-    /* -webkit-filter:sepia(0); */
-    /* -webkit-filter:saturate(0); */
-    /* -webkit-filter:blur(0); */
-    /* transform:translate(30px, -30px) scale(0.5); */
-    /* transform:scale(0.6); */
-    /* filter:grayscale(1) blur(1px); */
-    /* transition: 0.5s;  */
-    /* animate all properties */
-    /* transition-timing-function: ease;  */
-    /* ease is the default */
-
-    /* ---Experimental October 31, 2021 ---
-    Inspired by "Cross fading images" http://css3.bradshawenterprises.com/cfimg/
-    */
-    position: absolute;
-    left: 0;
-}
-
-
-#identity-card img.snoopy {
-    transition: all 0.6s ease-in-out;
-}
-
-#identity-card  img.me-without-snoopy {
-    /* Reduced the color to adapt to the black-and-white around the image (text). The experimental value of 0.2 is based on the optimized image (-min.png) with 127 colors only. State of mind on Jnauray 13, 202.*/
-    -webkit-filter: grayscale(0.1);
-    -moz-filter: grayscale(0.1);
-    -o-filter: grayscale(0.1);
-    filter: grayscale(0.1);
-}
-
-#identity-card  img.me {
-    border-radius: 50%;
-    top: 8px;
-    left: -8px;
-
-    -webkit-transform: translate(42%, -42%) scale(0.2);
-    -moz-transform: translate(42%, -42%) scale(0.2);
-    -o-transform: translate(42%, -42%) scale(0.2);
-    transform: translate(42%, -42%) scale(0.2);
-
-    /* opacity: 0.7; */
-    -webkit-filter: grayscale(1.0) blur(1px);
-    -moz-filter: grayscale(1.0) blur(1px);
-    -o-filter: grayscale(1.0) blur(1px);
-    filter: grayscale(1.0) blur(1px);
-
-    transition: all 0.6s ease-in-out;
-}
-
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
@@ -1229,7 +1124,7 @@ span.small-caps {
 
 }
 
-.contact-map {
+.contact-logo {
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -1244,8 +1139,8 @@ span.small-caps {
 
 .contact-text {
     display: block;
-    max-width: 400px;
-    width: auto;
+    /* max-width: 400px; */
+    width: 330px; /* experimental determined; assume base font-size (=1em) of 16px for this element. State of mind on May 17, 2022. */
     height: auto;
     margin-left: auto;
     margin-right: auto;

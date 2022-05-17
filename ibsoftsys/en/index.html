@@ -517,26 +517,20 @@
     <!-- GERMAN version: Ich bin gespannt und freue mich auf Ihre Nachricht! -->
 
     <div class="flex-container-contact flex-container">
-        <div class="contact-item contact-map">
+        <div class="contact-item contact-logo">
             <!-- HACK I created the following div that the map can get a box shadow. To do this, you div and image must (?) have the same width or height specification. Sorry, I do not know better at this moment. State of mind on March 22, 2022.  -->
             <div class="contact-container-image">
-                <a href="https://www.openstreetmap.org/#map=12/48.0171/7.7500" rel="noopener">
-                    <!-- Trick that image does not get rotated in case you define only for example width:200px; height: auto (Source: stackoverflow. "CSS force image resize and keep aspect ratio (w/h = 583/510)")  -->
-                    <img  style="box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); max-width:180px;  height:auto;  border-radius: 4px;" src="../media/images/freiburg-map-final-min.png" alt="Location Map" />
-                </a>
+                <!-- Trick that image does not get rotated in case you define only for example width:200px; height: auto (Source: stackoverflow. "CSS force image resize and keep aspect ratio (w/h = 583/510)")  -->
+                <img  style="box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); max-width:180px;  height:auto;  border-radius: 4px;" src="../media/images/logo-on-paper-min.svg" alt="Logo" />
             </div>
         </div>
 
         <div class="contact-item">
             <div class="contact-text" >
-                <p>&nbsp;<span style="font-size: 1.1em; color: black;">Ingenieurbüro Software Systems</span><br>&nbsp;Dr.-Ing. Jürgen Ehret</p>
-
-                <p><i class="fa fa-map-marker fa-fw"></i>&nbsp;Freiburg im Breisgau</p>
-
-                <!-- The following technique is supposed to prevent that web crawlers find easily phone number and email address. Complicated? Yes, but I don't know better at this time. State of mind on October 26, 2021. -->
-                <p><i class="fa fa-phone fa-fw" ></i>&nbsp;<img onclick="makePhoneCall()" style="height: 0.96em; width: auto; cursor: pointer;" src="../media/images/phone-number-land-min.svg" alt="Phone Number"></p>
-                 <!-- NOTE A 'height: 1em;' to img-tag leads to letters of the SVG-image that are slightly bigger than 1em (e.g. 17 px). Thus, I experimented and measured a factor of 0.96 that will do the trick. Letters are approximately the same height as letters with font-size=1em. I know, it is a hack. State of mind on April 6, 2022 -->
-                <p><i class="fa fa-envelope fa-fw"></i>&nbsp;<img onclick="sendEmail('en')" style="height: 0.96em; width: auto; cursor: pointer;" src="../media/images/email-address-min.svg" alt="E-Mail Address"></p>
+                <p style="font-size: 1.17em; color: black;">Ingenieurbüro Software Systems<br>Dr.-Ing. Jürgen Ehret
+                </p>
+                <p>Freiburg im Breisgau<br><img onclick="makePhoneCall()" style="height: 0.96em; width: auto; cursor: pointer;" src="../media/images/phone-number-land-min.svg" alt="Phone Number"/><br><img onclick="sendEmail('de')" style="height: 0.96em; width: auto; cursor: pointer;" src="../media/images/email-address-min.svg" alt="E-Mail Address"/>
+                </p>
             </div>
         </div>
 
