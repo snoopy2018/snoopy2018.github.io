@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'May 17 17:45:42 CEST 2022';
+    content:'May 17 19:14:35 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -1140,7 +1140,10 @@ span.small-caps {
 .contact-text {
     display: block;
     /* max-width: 400px; */
-    width: 260px; /* MUST fit into iPhone 5s (width 320px); assume base font-size (=1em) of 16px for this element. State of mind on May 17, 2022. */
+    /*width: 280px;*/ /* MUST fit into iPhone 5s (width 320px); assume base font-size (=1em) of 16px for this element. State of mind on May 17, 2022. */
+
+    text-align: center;
+
     height: auto;
     margin-left: auto;
     margin-right: auto;
