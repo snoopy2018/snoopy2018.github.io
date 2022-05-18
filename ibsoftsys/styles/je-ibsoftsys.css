@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'May 17 20:52:26 CEST 2022';
+    content:'May 18 12:58:31 CEST 2022';
     font-size: inherit;
     /* color: #777; */
 }
@@ -705,7 +705,7 @@ p.ibsoftsys-slogan {
     margin-left: auto;
     margin-right: auto;
 
-    font-size: 14px; /* font-size that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
+    font-size: 13px; /* font-size that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
 
     text-align: center;
 
