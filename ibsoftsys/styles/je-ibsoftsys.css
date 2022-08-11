@@ -10,7 +10,7 @@ Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/const
 State of mind on August 25, 2021.
 */
 span.updated-on:before {
-    content:'Date Is Not Used Anymore'; */ JE 19May2022 */
+    content:'Date Is Not Used Anymore'; /* JE 19May2022 */
     font-size: inherit;
     white-space: nowrap; /* do not break date & time */
     /* color: #777; */
@@ -301,7 +301,7 @@ h6 {
 .navigation-title {
     font-variant:normal; /* CHANGE JE 25Sep21-630 small-caps; */
     font-weight: normal;  /* CHANGE JE 25Sep21-630 bold */
-    font-size: 1.2em;
+    font-size: 1.1em; /* CHANGE JE 04Jun2022 before 1.2em */
 }
 
 /* Create a Parallax Effect ----------------------------------- */
@@ -327,13 +327,13 @@ h6 {
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("../media/images/keyboard-plus-2000x1330px-min.jpg");
-  min-height: 45%; /*500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
+  min-height: 35%; /* CHANGE from 45% to 35% because image feels too dominant to me. 01Jul2022. 500px; 40%;  window through which you see background image takes 40% of viewport height; w3schools value (?):400px */
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../media/images/kuehe-clipout-min.jpg");
-  min-height: 45%;
+  min-height: 35%; /* CHANGE from 45% to 35% because image feels too dominant to me. 01Jul2022. */
 }
 
 /* Third image (Contact) */
@@ -423,8 +423,8 @@ h6 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 700px;  /* reduced from 950px. JE 12Feb2022 */
+  width: 100%; /* before new design: 90% JE 03AUg2022 */
+  max-width: 720px; /* before new design: 700px; JE 03AUg2022; reduced from 950px. JE 12Feb2022 */
 
   margin-left: auto;  /* allign row ... */
   margin-right: auto; /* ... horizontally */
@@ -433,33 +433,37 @@ h6 {
 
 /* EXPERIMENT I think it looks not bad if the projects especially the images have a little different background than the text. After another try by which the background spread over all project symbols, I decided to use another approach inspired by Apple Accessibility webpage (again). Each project has its own 'card' which includes grey background, rounded corners etc. I think by this projects look very different to the rest of the text, which they should in my opinion. State of mind on February 16, 2022.*/
 
-.flex-item {
+.flex-item-new {
   /* display: flex;
   flex-direction: column;
   flex-basis: 100%; */
 
   flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
-  max-width: 280px; /* so that plus-button is not too far to the right. JE 12Feb2022  */
-
+  max-width:350px; /* change from 280px for new design JE 04Aug2022 */
 
   margin-left: auto;   /* allign row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
 
-
   padding: 12px 18px 12px 18px;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
-
-  /* align-content: center;
-  justify-content: center; */
 
   /* SPECIAL to make project pop out a little */
   margin-top: 24px;
-  /* background-color: rgb(252, 252, 252); */ /* pure white looks better because the shadow makes the content pop out from the page */
-  border-radius: 24px;
+  background-color: rgb(254, 254, 254);
+  /* pure white may look better because the shadow makes the content pop out from the page. However I leave it for the new design by non-white. // JE 02AUg2022  UPDATE I think with the thin border AND a very light gray background things look better. JE 06Aug2022. */
+
+  border-radius: 8px;
+  /* I use a smaller border radius for the new design because it looks better with the new "> Details" (before: plus sign). // JE 03AUg2022 */
+
   /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */ /* shadow replaced by a thin line (border) in light gray color. JE 06Aug2022. */
+
+  border-style: solid; /* Instead of a shodow a thin line (border) in light gray color. JE 06Aug2022. */
+  border-width: 2px;
+  border-color: rgb(240, 240, 240);
 
 }
+
 
 .flex-item-me { /* adjustments for me-image that is overwriting property values of a project card */
     float: left;
@@ -468,7 +472,7 @@ h6 {
 
     margin: 1em;
 
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }
 
 .flex-item-me p {
@@ -480,7 +484,7 @@ h6 {
 }
 
 .flex-item-me img {
-    height:160px;
+    height:250px;
     width: auto;
     padding: 8px;
     /* -webkit-filter: grayscale(1);
@@ -490,12 +494,13 @@ h6 {
 
 }
 
-
-
-.flex-container-contact {
-    font-size: 16px; /* MEANS in this class 1em = 16px (16px is 'Medium (Recommended)' font size of Google Chrome). Advantage is it keeps the graphics in place when user changes font-size and does not skrew up the layout. Disadvantage is that the text within graphics stays as it is, it does not change. User may use Zoom to make it readable if text is too small. State of mind on February 16, 2022. */
-    width: 100%;
-    max-width: 512px; /* distance between logo and text looks ok with this width constaint. JE 18May2022.  */
+.me-box {
+    float:left;
+    width: 190px;
+    margin-top: 18px;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 18px;
 }
 
 .box {
@@ -511,6 +516,7 @@ h6 {
     background-repeat: repeat; */
 }
 
+
 .bottom-box .box {
     justify-content: center;
     width: 80%;
@@ -523,9 +529,15 @@ h6 {
 }
 
 .box-image-container {
-    height: 90px;
-    margin-top: 18px;
-    margin-left: 18px;
+    height: 120px;
+    margin: 12px; /* new design with text  JE 02Aug2022 */
+    /* margin-top: 18px; */  /* previous design with NO text JE 02Aug2022 */
+    /* margin-left: 18px;   */  /* previous design with NO text JE 02Aug2022 */
+}
+
+.box-image-container-overlay {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .section-headline {
@@ -651,7 +663,7 @@ p.ibsoftsys-slogan {
 
 .items-headline-overlay {
     display: block;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: black; /* #161924; */ /* color: #666; */
     margin: 10px 0; /* same as h1, h2, etc. */
 }
@@ -763,6 +775,35 @@ p.auto {
    -webkit-hyphens: auto;
    hyphens: auto;
 }
+
+.experiment-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+  max-width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clear floats after the columns */
+.experiment-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.experiment-column {
+  float: left;
+  flex: 50%;
+}
+
+.center { /* Original Source: w3schools.com */
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 250px;
+}
+
 /* The following classes (flip-box-*) are used for flip technique adopted from w3schools.com. State of mind on October 29, 2021.
 */
 /*
@@ -831,7 +872,7 @@ State of mind on Septmeber 23, 2021.
 */
 .sidenav {
   height: 16.18em;
-  width: 0;
+  width: 0; /* width e.g. 11em is set by openNav() dynamically */
   position: fixed;
   z-index: 1;
   top: 0;
@@ -1131,11 +1172,11 @@ span.small-caps {
 } */
 
 .contact-container-image {
-    max-width: 180px; /* SAME width as set in <img> proberty! */
+    max-width: 250px; /* Changed to 250px that it matches approximately the text height when in one row. // JE 07Jul2022. SAME width as set in <img> proberty! */
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 18px;
-    margin-top: 18px;"
+    /* margin-bottom: 18px;
+    margin-top: 18px;" */
 }
 
 .contact-text {
@@ -1249,12 +1290,6 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
         margin-left: auto;
         margin-right: auto;
     }
-
-
-    .flex-container-contact {
-        flex-direction: column; /* so that distance between logo and text becomes not too small */
-    }
-
 }
 
 @media only screen and (min-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
@@ -1264,10 +1299,41 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
     }
 }
 
-@media only screen and (max-width: 360px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
-    /* Asumme contact-text font-size: 18 px */
-    .contact-text {
-        font-size: 16px; /* reduce font-size of text + symbol that email stays in one line */
+
+@media only screen and (max-width: 460px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+
+    .me-box {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .me-box img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+    .experiment-row {
+        flex-direction: column; /* make the two columns stack on top of each other instead of next to each other */
+    }
+}
+
+@media only screen and (max-width: 590px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
+    .experiment-contact {
+        flex-direction: column; /* make the two columns stack on top of each other instead of next to each other */
+    }
+
+    .center {
+        height: 190px; /* so that distance between logo and text of contact section becomes smaller (Value creates a nice appearance of the logo and text when placed on top of each other) */
+    }
+
+}
+
+@media only screen and (max-width: 374px) {  /* reduce project card width for screens smaller than 375px JE 09Aug22  */
+    .flex-item-new {
+        max-width: 300px; /* looks not bad until screen gets smaller than 320px JE 09Aug22   */
     }
 }
 
@@ -1281,11 +1347,7 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
         /* font-size: 24px; */
     }
 
-    .flex-item {
-        flex: 1 1 240px; /* flex-grow flex-shrink flex-basis ; item takes flex-basis = 240 px of available space */
-        /* max-width: 240px; */
-    }
-    .bgimg-2,  .bgimg-3 {
+        .bgimg-2,  .bgimg-3 {
       min-height: 250px; /* reduce image on smaller screens.  State of mind on April 19, 2022. */
     }
 }
