@@ -1326,7 +1326,7 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
     }
 
     .center {
-        height: 190px; /* so that distance between logo and text of contact section becomes smaller (Value creates a nice appearance of the logo and text when placed on top of each other) */
+        height: 165px; /* so that distance between logo and text of contact section becomes smaller (Value creates a nice appearance of the logo and text when placed on top of each other) */
     }
 
 }
