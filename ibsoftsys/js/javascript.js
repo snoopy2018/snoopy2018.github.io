@@ -238,10 +238,10 @@ function sendEmail(language)
     var subject = "";
     if(language === "de") {
         // subject = "Ingenieurbüro für Softwaresysteme";
-        subject = "Anfrage an IBSoftSys";
+        subject = "Nachricht an IBSoftSys";
     } else if (language === "en") {
         // subject = "Engineering Office for Software Systems";
-        subject = "Request to IBSoftSys";
+        subject = "Message to IBSoftSys";
     } // else nothing to do
     if (subject !== "") {
         // var message = "hallo my friend!";
@@ -349,15 +349,17 @@ function checkIdentity() {
     console.log("in checkIdentity(): target className: " + targetClassName);
 }
 
-// create() is borrowed from AI Card Player Project
+//
+// This function create() is borrowed from AI Card Player Project.
+//
 function create(language) {
   var btnObject = document.getElementById('openMe');
 
-  // Note that font-size of 17px (were object gets replaced) relates to an image height of approximately height="16px". State of mind on September 4, 2022.
+  // Note that font-size of 18px (were object gets replaced) relates to an image height of approximately height="17px". State of mind on September 5, 2022.
   if(language === "de") {
-      var object =  '<img src="media/images/email-address-min.svg" width="auto" height="16px" style="vertical-align:middle"/>';
+      var object =  '<img src="media/images/email-address-min.svg" width="auto" height="17px" style="vertical-align:middle"/>';
   } else if (language === "en") {
-      var object =  '<img src="../media/images/email-address-min.svg" width="auto" height="16px" style="vertical-align:middle"/>';
+      var object =  '<img src="../media/images/email-address-min.svg" width="auto" height="17px" style="vertical-align:middle"/>';
   } // else nothing to do
 
 
