@@ -797,6 +797,10 @@ p.auto {
   flex: 50%;
 }
 
+.experiment-contact {
+    max-width: 600px; /* HACK: prevents the email address and envelope icon from being displayed in two lines on screens with a width of 667 px (e.g. iPhone 8 landscape mode). Remove it if you change font size or other width/height settings. JE 06Sep2022 */
+}
+
 .center { /* Original Source: w3schools.com */
     display: flex;
    justify-content: center;
