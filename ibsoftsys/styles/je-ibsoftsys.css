@@ -718,7 +718,9 @@ p.ibsoftsys-slogan {
     margin-left: auto;
     margin-right: auto;
 
-    font-size: 0.8em; /* font-size that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
+    max-width: 600px;
+
+    font-size: 11px; /* before 07Sep2022: font-size of 0.8em that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
 
     text-align: center;
 
