@@ -810,6 +810,13 @@ p.auto {
    height: 250px;
 }
 
+.section-anchor { */ Inspired by 'offsetting an html anchor to adjust for fixed header' http://stackoverflow.com/questions/10732690/ddg#13184714 */
+    display: block;
+    position: relative;
+    top: -64px;
+    visibility: hidden;
+}
+
 /* The following classes (flip-box-*) are used for flip technique adopted from w3schools.com. State of mind on October 29, 2021.
 */
 /*
