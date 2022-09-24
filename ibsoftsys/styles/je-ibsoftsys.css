@@ -253,8 +253,19 @@ p {
 ul {
     max-width: 36em; /* has the same property as p! */
     margin: 0.5em auto; /* has the same property as p! */
-}
+    /* list-style-type: none;
 
+    padding-inline-start: 12px; */
+}
+/*
+ul li::before {
+
+    content: "— ";
+
+    text-indent: -5px;
+}
+ */
+ 
 /* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
 h1, h2, h3, h4, h5, h6 {
     /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
