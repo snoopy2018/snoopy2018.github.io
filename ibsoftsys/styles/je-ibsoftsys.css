@@ -242,11 +242,11 @@ p {
 
 
   /* Source: `Silbentrennung — CSS' https://www.stichpunkt.de/html/umbruch.html  */
-   -moz-hyphens: auto;
+   /* -moz-hyphens: auto;
    -o-hyphens: auto;
    -webkit-hyphens: auto;
    -ms-hyphens: auto;
-   hyphens: auto;
+   hyphens: auto; */
 }
 
 
@@ -265,7 +265,7 @@ ul li::before {
     text-indent: -5px;
 }
  */
- 
+
 /* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
 h1, h2, h3, h4, h5, h6 {
     /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
@@ -562,52 +562,13 @@ h6 {
     font-variant: small-caps;
 } */
 
-p.ibsoftsys-slogan {
-    text-align: center;
-    font-size: 1.3em; /* same as project-headline  */
-    font-style: italic;
-
-    width:80%;/* looks better than 100% on smaller screens */
-
-    /* Do NOT htpenate the slogan automatically (does not look good) */
-    -moz-hyphens: none;
-    -o-hyphens: none;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-}
 
 .headline-style {
     color: black; /*#161924;*/ /*color: #666;*/ /* contrast ratio of approximately 5.74 to white background measured with Chrome developer tool. Recommended is 4.5: 1 to all standard body text but for larger text you can go  go down to 3:1. (https://web.dev/color-and-contrast-accessibility/?utm_source=devtools)) */
     font-weight: normal; /* I think 300 is to thin and 500 too thick with the current color (#949494) and font-family (Helvetica Neue). State of mind on April 4, 2022.  */
 }
 
-.contact-headline-top {
-    display: block;
-    font-size: 1.3em; /* same as ibsoftsys-slogan */
-    /*font-style: italic; */ /* same as ibsoftsys-slogan */
 
-    /* width: 80%; */ /* looks better than 100% on smaller screens. UPDATE NO. It causes a problem instead on screens width = 320 px (not centered). State of mind on April 3, 2022. */
-
-
-    margin: 10px auto 0 auto; /* to and bottom is same as h1, h2, etc. */
-
-    text-align: center;
-
-    /* Do NOT htpenate the slogan automatically (does not look good) */
-    -moz-hyphens: none;
-    -o-hyphens: none;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-}
-
-.contact-headline-bottom {
-    font-size: 1em;
-    font-style: normal;
-
-    max-width: 36em; /* same as p */
-}
 
 .ibsoftsys-slogan span {
     letter-spacing: 0.05em;
@@ -773,21 +734,6 @@ p.ibsoftsys-slogan {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
-
-p.none {
-   -webkit-hyphens: none;
-   hyphens: none;
-}
-
-p.manual {
-   -webkit-hyphens: manual;
-   hyphens: manual;
-}
-
-p.auto {
-   -webkit-hyphens: auto;
-   hyphens: auto;
-}
 
 .experiment-row {
   display: flex;
