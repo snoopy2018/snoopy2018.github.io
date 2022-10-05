@@ -250,22 +250,6 @@ p {
 }
 
 
-ul {
-    max-width: 36em; /* has the same property as p! */
-    margin: 0.5em auto; /* has the same property as p! */
-    /* list-style-type: none;
-
-    padding-inline-start: 12px; */
-}
-/*
-ul li::before {
-
-    content: "— ";
-
-    text-indent: -5px;
-}
- */
-
 /* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
 h1, h2, h3, h4, h5, h6 {
     /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
@@ -306,6 +290,24 @@ h6 {
 
 .w3-hover-opacity {
     cursor: pointer;
+}
+
+/* Introduced space (0.3em by experiment) between list items. It is standard in LaTex, I believe. JE 05Dec2022 */
+li {
+    margin-bottom: 0.3em;
+}
+
+/* Reduceded space between FIRST item in list but leave default space at the end of the list (block). I feel it separates the list better from the rest of the text. JE05Dec2022 */
+ul {
+    margin-block-start: 0.5em; /* default: 1em */
+    margin-block-end: 1em; /* default: 1em */
+}
+
+/* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
+.list-container {
+    max-width: 36em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Navigation ----------------------------------- */
@@ -540,7 +542,7 @@ h6 {
 }
 
 .box-image-container {
-    height: 120px;
+    height: 130px;
     margin: 12px; /* new design with text  JE 02Aug2022 */
     /* margin-top: 18px; */  /* previous design with NO text JE 02Aug2022 */
     /* margin-left: 18px;   */  /* previous design with NO text JE 02Aug2022 */
@@ -629,13 +631,6 @@ h6 {
 .project-headline-overlay {
     display: block;
     font-size: 1.4em;  /* same as h3 */
-    color: black; /* #161924; */ /* color: #666; */
-    margin: 10px 0; /* same as h1, h2, etc. */
-}
-
-.items-headline-overlay {
-    display: block;
-    font-size: 1.1em;
     color: black; /* #161924; */ /* color: #666; */
     margin: 10px 0; /* same as h1, h2, etc. */
 }
@@ -1319,5 +1314,17 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 
         .bgimg-2,  .bgimg-3 {
       min-height: 250px; /* reduce image on smaller screens.  State of mind on April 19, 2022. */
+    }
+}
+
+@media only screen and (min-width: 700px) {  /* value determined by experiment to expand the LAST project description to full width when two projects are in one row. JE 04Oct2022  */
+    #last-project-description {
+        max-width: 99%; /* assuming max-width of flex-container is 720px AND  flex-item-new 350px the project card border matches approximately the border of the upper project cards. JE05Dec2022  */
+    }
+}
+
+@media only screen and (max-width: 700px) {  /* value determined by experiment to expand all project description to full width of a row. JE 04Oct2022  */
+    .flex-item-new {
+        max-width: 96%; /* assume that max-width of flex-container is 720px AND  flex-item-new 350px */
     }
 }
