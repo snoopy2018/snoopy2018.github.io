@@ -294,7 +294,7 @@ h6 {
 
 /* Introduced space (0.3em by experiment) between list items. It is standard in LaTex, I believe. JE 05Dec2022 */
 li {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.3em; /* 0.3em looks good (not too much but visible) in connection with a line-height of 1.5em and margin-bottom of 0.5em of paragraph. JE06Oct202 */
 }
 
 /* Reduceded space between FIRST item in list but leave default space at the end of the list (block). I feel it separates the list better from the rest of the text. JE05Dec2022 */
