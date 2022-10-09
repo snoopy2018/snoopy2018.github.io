@@ -51,6 +51,8 @@ function clickEventListener(event) {
 }
 
 function openNav() {
+  document.getElementById("lang-selector").style.visibility = "hidden";
+
   document.getElementById("sidenav-id").style.width = "8em";
   // document.getElementById("dummy-background").style.display = "block";
   document.getElementById("sidenav-id-hamburger").style.display = "none"; // hide 'hamburger'
@@ -64,6 +66,9 @@ function closeNav() {
   document.getElementById("sidenav-id-hamburger").style.display = "inline-block"; // show 'hamburger'
   window.removeEventListener("click", clickEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
   window.removeEventListener("touchstart", touchStartEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
+
+  document.getElementById("lang-selector").style.visibility = "visible";
+
 }
 
 
