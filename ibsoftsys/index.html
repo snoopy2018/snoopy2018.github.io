@@ -95,14 +95,15 @@
             <div id="sidenav-id" class="sidenav w3-hide-large w3-hide-medium">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
 
-                    <img class="navbar-icon" src="media/images/crossPlain.svg" alt="Navigation Button"/></a>
+                    <img class="navbar-icon" src="media/images/crossPlain-min.svg" alt="Navigation Button"/></a>
                 <!-- width value: so it matches approximately hamburger icon -->
 
                 <!-- <object type="image/svg+xml" data="media/images/crossPlain.svg" style="width: 20px; height:auto;"> -->
                 <!-- Your fall back here -->
                 <!-- <img src="media/images/crossPlain-bigger.svg" /> -->
 
-                <a href="#about" class="text-color-not-selected w3-hover-text-white" onclick="closeNav()"><span class="navigation-title">Das Büro</span></a>
+                <a href="#about" class="text-color-not-selected w3-hover-text-white" onclick="closeNav()"><nobr><span class="navigation-title" style="">Das&nbsp;Büro</span></nobr></a>
+                <!-- NOTE The &nbsp;  prevents that a line break DURING animation, which makes a unpleasant jitter to the text.   -->
 
                 <a href="#expertise" class="text-color-not-selected w3-hover-text-white" onclick="closeNav()"><span class="navigation-title">Expertise</span></a>
 
