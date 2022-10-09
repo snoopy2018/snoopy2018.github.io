@@ -896,7 +896,7 @@ span.small-caps {
 
 .navbar-icon {
     width: auto;
-    height: 1.2em;
+    height: 1.5em; /* The value was 1.2em, now I've changed it to 1.5em, same as in the logo navigation bar before it was removed. JE JE09Oct2022 */
 }
 
 
@@ -906,9 +906,10 @@ span.small-caps {
     margin-bottom: 0.2em; /* adjust image position, I don't know better. JE 02Oct21  */
 }
 
-#logo-navbar {
+/* logo-navbar necessary???? navbar-icon class specifies it already?! JE09Oct2022*/
+/* #logo-navbar {
     height: 1.5em;
-}
+} */
 
 #logo-plus {
     min-width: 250px; /* makes it readable when scaled down too much (i.e. iPhone 6 Portrait) */
