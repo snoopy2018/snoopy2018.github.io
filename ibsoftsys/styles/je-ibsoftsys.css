@@ -1102,23 +1102,24 @@ span.small-caps {
 .sticky-top {
     position: -webkit-sticky; /* Safari */
     position: sticky;
+
     top: 0;
     /* padding: 18px 12px 18px 18px; */
     padding: 12px;
+
     align-self: flex-start; /* makes flex item 'sticky' (http://stackoverflow.com/questions/44446671/ddg#44446672) */ /* TEST 11SEP21-2019 */
 }
 
 /* This class replaces the previous classes .overlay-button-close and .overlay-button-close:before. JE 24Sep21-1655 */
 /* Idea with 'mask' based on https://css-tricks.com/change-color-of-svg-on-hover/ */
 .overlay-button-close-icon {
-    width: 40px;
-    height: 40px;
-    /* background-color: transparent; */
+    width: 32px;
+    height: 32px;
 
     -webkit-mask: url("../media/images/crossPlain-min.svg");
     mask: url("../media/images/crossPlain-min.svg");
 
-    background-color: black;
+    background-color: #666; /* black; */
     -webkit-mask-size: cover;
 
     mask-size: cover;
