@@ -510,10 +510,10 @@ ul {
 .me-box {
     float:left;
     width: 190px;
-    margin-top: 18px;
+    margin-top: 1em;
     margin-bottom: auto;
-    margin-left: 0;
-    margin-right: 18px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .box {
