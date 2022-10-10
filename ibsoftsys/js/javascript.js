@@ -51,7 +51,8 @@ function clickEventListener(event) {
 }
 
 function openNav() {
-  document.getElementById("lang-selector").style.visibility = "hidden";
+  // document.getElementById("lang-selector").style.color = "rgba(255, 255, 255, 0";
+  // document.getElementById("lang-selector").style.visibility = "hidden";
 
   document.getElementById("sidenav-id").style.width = "8em";
   // document.getElementById("dummy-background").style.display = "block";
@@ -67,8 +68,8 @@ function closeNav() {
   window.removeEventListener("click", clickEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
   window.removeEventListener("touchstart", touchStartEventListener, true); // see IMPORTANT comment above (without the 'true' listener seems not o be removed)
 
-  document.getElementById("lang-selector").style.visibility = "visible";
-
+  // document.getElementById("lang-selector").style.visibility = "visible";
+  // document.getElementById("lang-selector").style.color = "rgba(255, 255, 255, 1.0";
 }
 
 
