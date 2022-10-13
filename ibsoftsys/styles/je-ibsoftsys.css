@@ -1141,10 +1141,10 @@ span.small-caps {
 /* This class replaces the previous classes .overlay-button-close and .overlay-button-close:before. JE 24Sep21-1655 */
 /* Idea with 'mask' based on https://css-tricks.com/change-color-of-svg-on-hover/ */
 .overlay-button-close-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
 
-    margin: 4px;
+    margin: 8px;
 
     /* -webkit-mask: url("../media/images/crossPlain-min.svg"); */
     /* mask: url("../media/images/crossPlain-min.svg"); */
