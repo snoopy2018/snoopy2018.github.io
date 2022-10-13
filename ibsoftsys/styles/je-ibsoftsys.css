@@ -599,8 +599,23 @@ ul {
     /* background: url("../media/images/corner-bottom-right-min.svg") 100% bottom no-repeat; */
 }
 
+.project-title {
+    color: black;
+    margin-bottom: 0;
+    font-weight: 500;
+}
 
-.project-headline {
+.project-subtitle {
+    color: #666;
+    margin-top: 0;
+}
+
+.headline-soft-tools  {
+    color: black;
+    font-size: 1.1em;
+}
+
+.OLD-project-headline {
     display: block;
 
     min-height: 74px; /* in px because dimensions of container are in px, too // JE 17Feb2022; same height so alignment is independent of headline length (4em: assume 2 lines) */
@@ -1091,12 +1106,18 @@ span.small-caps {
     /* padding-top: 12px; */
     /* padding-left: 52px; */ /* left/right 52px so 'close button' does not interfere with text and text get centered */
     /* padding-right: 52px; *//* dto. */
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
 
      /* TEST 11SEP21-2019 with flex archtecture of overlay-canvas */
-     padding-top: 18px;
+     /* padding-top: 18px;
      padding-left: 28px;
-     padding-right: 32px;
+     padding-right: 32px; */
+
+     /* Use margin instead of padding because it looks better with the NEW close icon design. JE13Oct2022 */
+     margin-left: 48px;
+     margin-right: 36px;
+     margin-top: 32px;
+     margin-bottom: 48px;
 }
 
 .sticky-top {
@@ -1108,7 +1129,7 @@ span.small-caps {
 
     top: 0;
     /* padding: 18px 12px 18px 18px; */
-    padding: 8px;
+    padding: 0;
 
     align-self: flex-start; /* makes flex item 'sticky' (http://stackoverflow.com/questions/44446671/ddg#44446672) */ /* TEST 11SEP21-2019 */
 }
@@ -1116,13 +1137,19 @@ span.small-caps {
 /* This class replaces the previous classes .overlay-button-close and .overlay-button-close:before. JE 24Sep21-1655 */
 /* Idea with 'mask' based on https://css-tricks.com/change-color-of-svg-on-hover/ */
 .overlay-button-close-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 
-    -webkit-mask: url("../media/images/crossPlain-min.svg");
-    mask: url("../media/images/crossPlain-min.svg");
+    margin: 4px;
 
-    background-color: #666; /* black; */
+    /* -webkit-mask: url("../media/images/crossPlain-min.svg"); */
+    /* mask: url("../media/images/crossPlain-min.svg"); */
+
+    -webkit-mask: url("../media/images/cross-in-circle-min.svg");
+    mask: url("../media/images/cross-in-circle-min.svg");
+
+    background-color: black;
+
     -webkit-mask-size: cover;
 
     mask-size: cover;
