@@ -1062,7 +1062,8 @@ span.small-caps {
     height:100%; /* animated? was 100%; // JE 26Sep21-2024 TEST */ /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
     /*transition: height 0.5s;*/ /* animated?  // JE 26Sep21-2024 TEST */
 
-    padding: 52px 0; /* let's the modal at the top and bottom space when scrolling begins (top) and ends (bottom). looks nice and imitates the behavior of Apple modal appearance https://www.apple.com/accessibility/ */
+    /*padding: 52px 0;*/ /* let's the modal at the top and bottom space when scrolling begins (top) and ends (bottom). looks nice and imitates the behavior of Apple modal appearance https://www.apple.com/accessibility/
+    UPDATE The problem is that in my theme the close button does NOT move to the top of the screen like the Apple theme does. It looks bad if you miss this behavior. I found the solution: set the margin of overlay-canvas instead (margin-top: 52px). DO NOT forget to set it to margin-top: 0 if the overlay fills the entire screen (see max-width: 734px). JE13Oct2022 */
 
     max-width: 66.6667%;
     margin: 0 auto;
@@ -1079,7 +1080,10 @@ span.small-caps {
     /*width: 100%;*/  /* was 980px moved to .overlay-canvas-padding */
     /* max-width: 66.6667%; */ /* was 980px moved to .overlay-canvas-padding */
 
-    margin: 0 auto; /* center element (if it is a block with widt: xx) */
+    margin-top: 52px; /* NEEDED for behavior as described in overlay-canvas-container. JE13Oct2022 */
+    margin-bottom: 0;
+    margin-left: auto; /* center element (if it is a block with widt: xx) */
+    margin-right: auto;
 
     border-radius: 18px; /* Apple modal appearance https://www.apple.com/accessibility/ */
 
@@ -1232,9 +1236,9 @@ Source: https://stackoverflow.com/questions/38220485/safari-responsive-design-mo
 /* Give overlay/modal full screen size (100%). I adapted this rule from
 Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/). */
 @media only screen and (max-width: 734px) {
-    .overlay-container {
-        padding: 0; /* no space when modal covers entire screen */
-    }
+    /* .overlay-container {
+        padding: 0;
+    } NOT needed anymore. JE13Oct2022 */
     .overlay-canvas {
         max-width: 100%; /* JE 05Sep21-1634 TEST ONLY to see background and test close feature. production code: 100%; */
         min-height: 100%; /* 'min-' neccessary so that overflow area user scrolls to is covered, too (try only 'height' and you'll see what I mean on iPhone 6, for instance)*/
@@ -1242,7 +1246,8 @@ Apple's website, because I love how they solved the problem ("Accessibility Appl
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 0;
+        /*padding: 0; */ /* NOT needed anymore. JE13Oct2022 */
+        margin-top: 0; /* NEEDED for 'correct' behavior (see comment at overlay-canvas-container). JE13Oct2022 */
         border-radius: 0;
     }
     .overlay-canvas-container {
