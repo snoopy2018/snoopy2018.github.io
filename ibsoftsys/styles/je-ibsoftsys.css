@@ -1095,7 +1095,7 @@ span.small-caps {
 
      /* TEST 11SEP21-2019 with flex archtecture of overlay-canvas */
      padding-top: 18px;
-     padding-left: 0;
+     padding-left: 28px;
      padding-right: 32px;
 }
 
@@ -1103,9 +1103,12 @@ span.small-caps {
     position: -webkit-sticky; /* Safari */
     position: sticky;
 
+    width: 0;   /* Introduced widt/height that width of  overlay-button-close-icon does NOT impact left alignment of overlay content. I do not better at this point, JE12Oct2022 */
+    height: 0;
+
     top: 0;
     /* padding: 18px 12px 18px 18px; */
-    padding: 12px;
+    padding: 8px;
 
     align-self: flex-start; /* makes flex item 'sticky' (http://stackoverflow.com/questions/44446671/ddg#44446672) */ /* TEST 11SEP21-2019 */
 }
