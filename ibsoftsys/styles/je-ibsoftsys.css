@@ -610,9 +610,16 @@ ul {
     margin-top: 0;
 }
 
-.headline-soft-tools  {
+.project-tools  {
     color: black;
     font-size: 1.1em;
+}
+
+.project-show-details {
+    font-style: normal;
+    font-size: 1.1em;
+    color: #0070c9;
+    cursor: pointer;
 }
 
 .OLD-project-headline {
