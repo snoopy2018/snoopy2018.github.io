@@ -612,7 +612,7 @@ ul {
 
 .project-tools  {
     color: black;
-    font-size: 1.1em;
+    font-size: 1.17em;
 }
 
 .project-show-details {
@@ -620,6 +620,23 @@ ul {
     font-size: 1.1em;
     color: #0070c9;
     cursor: pointer;
+}
+
+.project-tools-border {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 4px;
+    border-color: #ccc;
+    padding: 6px;
+    margin-right: 6px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-tools-container {
+    line-height:2.7em;
+    margin-bottom:18px;
 }
 
 .OLD-project-headline {
