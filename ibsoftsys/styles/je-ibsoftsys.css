@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
     /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
     text-align: center;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 0.625em 0;
 }
 /* h_(i-1) = h_(i) * 1.125, i = 1..6, h1 = 2em */
 /* NOTE font-sizes after w3schools.com ``HTML <h1> to <h6> Tags'' https://www.w3schools.com/tags/tag_hn.asp. State of mind on April 6, 2020 */
@@ -285,7 +285,7 @@ h6 {
 
 
 .w3-wide {
-    letter-spacing: 10px;
+    letter-spacing: 0.625em;
 }
 
 .w3-hover-opacity {
@@ -671,7 +671,7 @@ ul {
     display: block;
     font-size: 1.4em;  /* same as h3 */
     color: black; /* #161924; */ /* color: #666; */
-    margin: 10px 0; /* same as h1, h2, etc. */
+    margin: 0.625em 0; /* same as h1, h2, etc. */
 }
 
 .hamburgerIcon {
@@ -801,10 +801,10 @@ ul {
    height: 250px;
 }
 
-.section-anchor { */ Inspired by 'offsetting an html anchor to adjust for fixed header' http://stackoverflow.com/questions/10732690/ddg#13184714 */
+.section-anchor { /* Inspired by 'offsetting an html anchor to adjust for fixed header' http://stackoverflow.com/questions/10732690/ddg#13184714 */
     display: block;
     position: relative;
-    top: -52px;
+    top: -3.1em;
     visibility: hidden;
 }
 
