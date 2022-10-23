@@ -186,7 +186,8 @@ body, html {
   font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
 
   line-height: 1.5;
-  letter-spacing: normal; /* -0.022em;  at some Apple websites */
+
+  letter-spacing: 0.022em; /* NOTE: I feel the font is more readable with a littler bit of letter-spacing instead of the default (normal). I got the value of 0.022em by experiment and looking at Apple websites which use letter-spacing a lot. I leave this topic by now until I know better. JE18Oct2022  */
 
   height: 100%;
 
@@ -228,7 +229,7 @@ body, .logo-ibsoftsys { /* Added logo-ibsoftsys so I can set image property (log
 }
 
 a {
-  color: #0070c9; /* Apple Developer HIG site: link color #0070c9 */
+  color: #585858; /* #585858 -> Contrast ratio: 7.11 (Chrome tools) */ /* Apple Developer HIG site: link color #0070c9 */
   text-decoration: none; /* no underline */
 }
 
@@ -458,10 +459,10 @@ ul {
   margin-left: auto;   /* allign row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
 
-  padding: 12px 18px 12px 18px;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
+  padding: 0.75em 1.125em 0.75em 1.125em;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
 
   /* SPECIAL to make project pop out a little */
-  margin-top: 24px;
+  margin-top: 1.5em;
   background-color: rgb(254, 254, 254);
   /* pure white may look better because the shadow makes the content pop out from the page. However I leave it for the new design by non-white. // JE 02AUg2022  UPDATE I think with the thin border AND a very light gray background things look better. JE 06Aug2022. */
 
@@ -509,12 +510,25 @@ ul {
 
 .me-box {
     float:left;
-    width: 190px;
+    width: 10.5em; /* IMPORTANT: Image in me-box should have the same width as me-box itself so that text is centered. */
     margin-top: 1em;
     margin-bottom: auto;
     margin-left: 0;
     margin-right: 1em;
 }
+
+.me-box img {
+    width: 10.5em; /* IMPORTANT: Image width = width me-box. */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.me-box h3 {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
 
 .box {
     display: flex;
@@ -600,27 +614,32 @@ ul {
 }
 
 .project-title {
-    color: black;
-    margin-bottom: 0;
-    font-weight: 500;
+    /* color: #555; */
+    margin-bottom: 0.2em;
+    /* font-weight: 500; */
 }
 
 .project-subtitle {
-    color: #666;
-    margin-top: 0;
+    color: #555; /* CHANGE from #666 to #555 that gives better contrast. JE23Oct2022 */
+    margin-top: 0.2em;
 }
 
 .project-tools  {
-    color: black;
-    font-size: 1.17em;
+    /* color: black; */
+    display: block; /* NEEDED because class is used for <span> object. */
+
+    font-size: 1.17em;  /* Same size as h3. */
+
+    margin: 0.625em auto; /* Same margin at top and bottom as h2, h3, etc., for example. */
 }
 
-.project-show-details {
+.linked-style {
     font-style: normal;
-    font-size: 1.1em;
-    color: #0070c9;
+    /* font-size: 1.1em; */
+    color: #0070c9; /* MAYBE CHANGING #0070c9 to #550000 (high contrast on white) or something else because I wanted a different color than blue since I am using a shade of blue in the subtitle of the main title. JE23Oct2022 */
     cursor: pointer;
 }
+
 
 .project-tools-border {
     border-style: solid;
@@ -667,13 +686,6 @@ ul {
     background-repeat: no-repeat; */
 }
 
-.project-headline-overlay {
-    display: block;
-    font-size: 1.4em;  /* same as h3 */
-    color: black; /* #161924; */ /* color: #666; */
-    margin: 0.625em 0; /* same as h1, h2, etc. */
-}
-
 .hamburgerIcon {
   display: inline-block;
   width: 1.2em;
@@ -704,7 +716,6 @@ ul {
 .footer-container {
     background-color: rgb(250, 250, 250);
 
-    margin-top: 12px; /* give more space to map and address *?
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap; */
@@ -745,10 +756,10 @@ ul {
 }
 
 .section-intro {
-    padding-top: 32px;
-    padding-bottom: 18px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
 
     margin-left: auto;
     margin-right: auto;
@@ -772,8 +783,8 @@ ul {
 .experiment-row {
   display: flex;
   flex-direction: row;
-  column-gap: 18px;
-  max-width: 36em;
+  column-gap: 1.125em;
+  max-width: 40em; /* May exceed size of p because of image on the left. JE22Oct2022 */
   margin-left: auto;
   margin-right: auto;
 }
@@ -795,9 +806,9 @@ ul {
 }
 
 .center { /* Original Source: w3schools.com */
-    display: flex;
-   justify-content: center;
-   align-items: center;
+    /* display: flex; */
+   /* justify-content: center; */
+   /* align-items: center; */
    height: 250px;
 }
 
@@ -967,24 +978,16 @@ span.small-caps {
 */
 }
 
-.logo-ibsoftsys {
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%); */
-
-    /* width: 100%; */
-}
 
 .logo-ibsoftsys img {
     position: absolute;
     top: 50%;
     left: 50%;
 
-    max-width: 80%; /* that text of logo is big enough on smaller screens < 500 px (see media control below) */
+    width: 66%; /* Value of 55%-66% seems to look on most screens good with the restrictions of max-width and amx-height in place. JE 19Oct2022 */
+    max-width: 400px; /* That image does not get too big on huge screens. */
+    max-height: 66%; /* That image fits screen on narrow screens (e.g. landscape orientation) without hiding behind navigation bar. */
 
-    max-height: 70%;
 
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
@@ -1142,10 +1145,10 @@ span.small-caps {
      padding-right: 32px; */
 
      /* Use margin instead of padding because it looks better with the NEW close icon design. JE13Oct2022 */
-     margin-left: 48px;
-     margin-right: 36px;
-     margin-top: 32px;
-     margin-bottom: 48px;
+     margin-left: 48px; /* IMPORTANT: margin-left must be in px because overlay-button-close-icon width is measured in px (NO overlap). */
+     margin-right: 2.25em;
+     margin-top: 2em;
+     margin-bottom: 3em;
 }
 
 .sticky-top {
@@ -1185,7 +1188,6 @@ span.small-caps {
     cursor: pointer;
 }
 
-
 .contact-item {
     flex: auto;
 
@@ -1202,29 +1204,58 @@ span.small-caps {
     padding-right: 24px;
 } */
 
-.contact-container-image {
-    max-width: 250px; /* Changed to 250px that it matches approximately the text height when in one row. // JE 07Jul2022. SAME width as set in <img> proberty! */
+.contact-container {
+    display: flex;
+    max-width: 36em;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0em;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 18px;
-    margin-top: 18px;" */
+}
+
+.contact-container-logo {
+    display: block;
+    height: 14em;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-text {
-    display: block;
-    /* max-width: 400px; */
-    /*width: 280px;*/ /* MUST fit into iPhone 5s (width 320px); assume base font-size (=1em) of 16px for this element. State of mind on May 17, 2022. */
-
-    text-align: center;
-
-    height: auto;
+    width: 17em;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* padding-right: 24px; */
-    /* padding-left: 24px; */
-    padding-bottom: 12px;
-    padding-top: 12px;
+    /* border-radius: 4px;
+    border-style: solid; */
+    /* border-width: 2px;  */
+    /* same style as project cards */
+    /* border-color: rgb(240, 240, 240);  */
+    text-align: center;
 }
+
+
+/* NOTE: One or more space characters belong to the word it follows. In the example above to the word \verb+ Word1+. Therefore, the HTML code for the example above must be as follows:
+\begin{description}
+\item[] \footnotesize\verb*|W<span class="textsc">ord-one </span>W<span class="textsc">ord-two</span>|
+\end{description}
+
+See the details of an experiment in section 'Small Caps' of document: ~/Documents/NotesOnLaTeX/NotesOnLaTeX.pdf.
+
+Numbers seem NOT to konverted into mall caps! Thus, you need to exclude numbers from the object that gets converted. Example:
+    W<span class="textsc">ord</span>1 W<span class="textsc">ord</span>2
+
+State of mind on October 22, 2022.
+*/
+.textsc {
+    /* I got the idea about the numbers (i.e. letter-spacing) from this website: "Small Caps Typography: Real or Fake?" https://www.creativelive.com/blog/typography-small-caps-real-fake/ */
+    letter-spacing: 0.05em; /* 0.035em; */
+    font-weight: 500;  /* IMPORTANT: Font weight of capital letters + 100 (here: 400 + 100). Therefore it only works for fonts that support at least this granularity (e.g. 100, 200, 300, ... like 'Helvetica Neue'). JE17Oct2022 */
+    font-size: 73%;
+    text-transform: uppercase;
+}
+
 
 /* I took all initial properties and values of the following classes from Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/).
 
@@ -1330,14 +1361,6 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
     }
 }
 
-@media only screen and (min-width: 500px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
-
-    .logo-ibsoftsys img {
-        max-width: 75%; /* that logo is not too big on larger screens */
-    }
-}
-
-
 @media only screen and (max-width: 460px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
 
     .me-box {
@@ -1358,17 +1381,6 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
     }
 }
 
-@media only screen and (max-width: 590px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
-    .experiment-contact {
-        flex-direction: column; /* make the two columns stack on top of each other instead of next to each other */
-    }
-
-    .center {
-        height: 165px; /* so that distance between logo and text of contact section becomes smaller (Value creates a nice appearance of the logo and text when placed on top of each other) */
-    }
-
-}
-
 @media only screen and (max-width: 374px) {  /* reduce project card width for screens smaller than 375px JE 09Aug22  */
     .flex-item-new {
         max-width: 300px; /* looks not bad until screen gets smaller than 320px JE 09Aug22   */
@@ -1378,11 +1390,6 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 @media only screen and (max-width: 667px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
     .symbol-size {
         height: 180px;
-    }
-
-    .project-headline {
-        min-height: 55px;
-        /* font-size: 24px; */
     }
 
         .bgimg-2,  .bgimg-3 {

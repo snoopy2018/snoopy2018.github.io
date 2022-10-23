@@ -363,9 +363,10 @@ function create(language) {
 
   // Note that font-size of 18px (were object gets replaced) relates to an image height of approximately height="17px". State of mind on September 5, 2022.
   if(language === "de") {
-      var object =  '<img src="media/images/email-address-min.svg" width="auto" height="17px" style="vertical-align:middle"/>';
+      // NOTE: The width of e.g. 90% makes the email address stays in ONE line with the envelope icon on narrower screens width equal or greater than 375px. Drawback: In general, the font-size of the address does NOT exactly match the other text within the block. JE16Dec2022
+      var object = '<img src="media/images/email-address-min.svg" width="90%" height="auto" style="vertical-align:middle"/>';
   } else if (language === "en") {
-      var object =  '<img src="../media/images/email-address-min.svg" width="auto" height="17px" style="vertical-align:middle"/>';
+      var object =  '<img src="../media/images/email-address-min.svg" width="90%" height="auto" style="vertical-align:middle"/>';
   } // else nothing to do
 
 

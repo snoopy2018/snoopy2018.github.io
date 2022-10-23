@@ -3,7 +3,12 @@
     <head>
         <title>IBSoftSys - Ingenieurbüro Software Systems</title>
 
-        <link rel="shortcut icon" type="image/png" href="media/images/favicon192x192px-min.png">  <!-- technique adopted from Wikipedia (https://en.wikipedia.org/wiki/Favicon). State of mind on March 20, 2020. -->
+        <!-- technique adopted from Wikipedia (https://en.wikipedia.org/wiki/Favicon). State of mind on March 20, 2020. -->
+        <!-- <link rel="shortcut icon" type="image/png" href="media/images/favicon192px192px-min.png">  -->
+        <link rel="shortcut icon" href="media/images/logo-favicon.ico">
+        <!-- Converted bwith: https://www.online-convert.com/ JE22Oct2022 -->
+
+        <!-- <link rel="shortcut icon" type="image/png" href="media/images/favicon256px256px.png"> -->
 
             <!-- Reset CSS styles first (highly recommended (e.g., ``Learning Responsive Web Design by Clarissa Peterson)-->
             <link href="styles/normalize.css" rel="stylesheet" type="text/css">
@@ -66,18 +71,21 @@
 
                 <a href="#home" class="w3-bar-item text-color-not-selected "><img id="logo-navbar" class="navbar-icon" src="media/images/logo-navbar-min.svg" alt="Logo" /></a>
 
-                <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">Das&nbsp;Büro</span></a> <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
+                <!-- <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">Das&nbsp;Büro</span></a> -->
+                <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">D<span class="textsc">as&nbsp;</span>B<span class="textsc">üro</span></span></a>
+                <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
 
-                <a href="#expertise" class="w3-bar-item text-color-not-selected  w3-hide-small" style="padding-left:40px; padding-right:40px;"><span class="navigation-title">Expertise</span></a>
+
+                <a href="#expertise" class="w3-bar-item text-color-not-selected  w3-hide-small" style="padding-left:40px; padding-right:40px;"><span class="navigation-title">E<span class="textsc">xpertise</span></span></a>
 
 
                 <!-- ODER Referenzprojekte ODER Leistungen ... -->
 
                 <!-- <a href="#technologies" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Technologien</span></a> -->
 
-                <a href="#contact" class="w3-bar-item text-color-not-selected  w3-hide-small"><span class="navigation-title">Kontakt</span></a>
+                <a href="#contact" class="w3-bar-item text-color-not-selected  w3-hide-small"><span class="navigation-title">K<span class="textsc">ontakt<span></span></a>
 
-                <a href="en/index.html#about" class="w3-bar-item w3-right text-color-not-selected  w3-hide-small"><span class="navigation-title"><em>English</em></span></a>
+                <a href="en/index.html#about" class="w3-bar-item w3-right text-color-not-selected  w3-hide-small"><span class="navigation-title"><em>E<span class="textsc">nglish</em></span></span></a>
 
                 <!-- <a href="en/index.html#about" id="lang-selector" class="w3-bar-item w3-right text-color-not-selected  w3-hide-medium w3-hide-large" ><span class="navigation-title" ><em>English</em></span></a> -->
                 <!-- English language (ISO 639-1 language code en) -->
@@ -100,16 +108,16 @@
                 <!-- Your fall back here -->
                 <!-- <img src="media/images/crossPlain-bigger.svg" /> -->
 
-                <a href="#about" class="text-color-not-selected " onclick="closeNav()"  style="margin-top: 4px;"><nobr><span class="navigation-title" >Das&nbsp;Büro</span></nobr></a>
+                <a href="#about" class="text-color-not-selected " onclick="closeNav()"  style="margin-top: 4px;"><nobr><span class="navigation-title" >D<span class="textsc">as&nbsp;</span>B<span class="textsc">üro</span></span></nobr></a>
                 <!-- NOTE The &nbsp; prevents a line break occurring DURING the animation, which uncomfortably enlarges the image and then reduces it again.   -->
 
-                <a href="#expertise" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">Expertise</span></a>
+                <a href="#expertise" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">E<span class="textsc">xpertise</span></span></a>
 
                 <!-- <a href="#technologies" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Technologien</span></a> -->
 
-                <a href="#contact" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">Kontakt</span></a>
+                <a href="#contact" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">K<span class="textsc">ontakt</span></span></a>
 
-                <a href="en/index.html#about" class="text-color-not-selected" style="padding-top: 1.1em;"><span class="navigation-title" ><em>English</em></span></a>
+                <a href="en/index.html#about" class="text-color-not-selected" style="padding-top: 1.1em;"><span class="navigation-title" ><em>E<span class="textsc">nglish</em></span></span></a>
             </div>
         </div>
 
@@ -120,8 +128,7 @@
         <div class="bgimg-1 w3-display-container" id="home">
             <!-- <div class="w3-display-middle"> -->
             <div class="logo-ibsoftsys">
-                <!--<img src="media/images/logo-plus.png"  alt="Logo" width="110%"> -->
-                <img src="media/images/logo-ibsoftsys-min.svg"  alt="Company Logo">
+                <img src="media/images/logo-ibsoftsys-min.svg"  alt="Company Logo"></img>
             </div>
         </div>
 
@@ -131,22 +138,45 @@
         <div class="section-intro" >
             <!-- the max-width property makes sure that the headline expands not too much on larger screens AND is relativ to the font-size of the object (here 1.5 em) JE 07Aug2022. -->
             <div class="section-anchor" id="about"></div>
-            <h2 style="max-width: 600px; margin-left: auto; margin-right: auto; font-variant: small-caps;"><em>IBSoftSys &mdash; Ingenieurbüro Software Systems</em><br><span style="font-size:smaller;">Individuelle, kundenspezifische Softwareentwicklung</span></span></h2>
+
+            <h1 style="max-width: 38em; margin-left: auto; margin-right: auto; font-weight: 400; line-height: 1.2em;">I<span class="textsc">ngenieurbüro</span><br>S<span class="textsc">oftware </span>S<span class="textsc">ystems</span>
+
+                <!-- NOTE: The <br> instead of <hx><hx+1> looks in my opinion better but only with the tweaks of the <div>. JE18Oct2022 -->
+
+                <!-- <div  style="font-size: 61.8%; margin: 0.625em 0; line-height: 1.2em;">S<span class="textsc">oftware entwickeln mit </span>L<span class="textsc">eidenschaft<span>
+                </div> -->
+
+                <div  style="font-size: 61.8%; margin: 0.625em 0; line-height: 1.2em; color: #3d5280;">S<span class="textsc">oftware </span>D<span class="textsc">evelopment with </span>P<span class="textsc">assion</span>
+                </div>
+                <!-- Color #3d5280; picked from T-shirt. JE23Oct2022  -->
+
+            </h1>
 
         <div class="experiment-row">
             <div class="experiment-column">
                 <div class="me-box">
-                        <img style="display: block; width: 190px; border-radius: 4px;" src="media/images/me-20Jun2022-min.jpg" alt="Jürgen"/>  <!-- width same as me-box! -->
-                    <div>
-                        <h6><span style="font-size: 17px; line-height: 21px; font-weight: 400; font-variant:small-caps;">Dr.-Ing. Jürgen Ehret</span><br><span style="font-variant:small-caps; font-size: 17px;">Engineer, Founder</span><br>
-                        <span style="font-variant:small-caps; font-size: 16px;"><a href="cv/Juergen-Ehret-CV.pdf">Curriculum Vitae ></a></span>
-                        </h6>
-                    </div>
-                </div>
-                <p>Analytisches und kreatives Denken sind für uns die wesentlichen Instrumente bei der Entwicklung leistungsstarker und zuverlässiger Softwaresysteme. <span style="white-space: nowrap;">Dr.-Ing.</span> Jürgen Ehret konzipiert und entwickelt diese Systeme für Sie.</p>
+                    <img style="display: block;" src="media/images/me-20Jun2022-min.jpg" alt="Jürgen"/>  <!-- width same as me-box! -->
 
-                <p>Jürgen arbeitete viele Jahre als Ingenieur in der Softwareentwicklung bei <em>BMW</em> und als freiberuflicher Softwareentwickler im Silicon Valley.
-                Sich schnell in komplexe technische Aufgabenstellungen einarbeiten zu können, ist eine Spezialität von Jürgen. Eine weitere seiner Stärken ist der effektive Einsatz von Tools und Algorithmen zur Entwicklung von Softwarelösungen höchster Qualität.</p>
+                    <!-- <h3>D<span class="textsc">r.</span>-I<span class="textsc">ng.</span> J<span class="textsc">ürgen</span> E<span class="textsc">hret</span><br>
+                        E<span class="textsc">ngineer</span> & F<span class="textsc">ounder</span><br>
+                        <span><a href="cv/Juergen-Ehret-CV.pdf">C<span class="textsc">urriculum</span> V<span class="textsc">itae</span> ></a></span>
+                    </h3> -->
+
+                    <!-- <h3>Dr.-Ing. Jürgen Ehret<br>
+                        Engineer & Founder<br>
+                        <span><a href="cv/Juergen-Ehret-CV.pdf">Curriculum Vitae &gt;</a></span>
+                    </h3> -->
+
+                    <h4 style="font-size: 0.9em; line-height: 1.4em;">D<span class="textsc">r.</span>-I<span class="textsc">ng. </span>J<span class="textsc">ürgen </span>E<span class="textsc">hret</span><br>
+                        E<span class="textsc">ngineer</span> & F<span class="textsc">ounder</span><br>
+                        <span style="display: block; margin-top: 0.15em;" ><a class="linked-style" href="cv/Juergen-Ehret-CV.pdf" >Curriculum Vitae &gt;</a></span>
+                    </h4>
+                </div>
+
+                <p>Analytisches und kreatives Denken sind für uns die wesentlichen Instrumente bei der Entwicklung leistungsstarker und zuverlässiger Softwaresysteme, konzipiert und entwickelt von <span style="white-space: nowrap;">Dr.-Ing.</span> Jürgen Ehret.</p>
+
+                <p>Jürgen arbeitete viele Jahre als Entwicklungsingenieur bei <em>BMW</em> und als freiberuflicher Software-Ingenieur im Silicon Valley.
+                Eine seiner Spezialitäten ist es, sich schnell in komplexe Aufgabenstellungen einzuarbeiten und durch den effektiven Einsatz von Tools und Algorithmen Softwarelösungen in höchster Qualität zu entwickeln.</p>
 
                 <!-- <p>Eine von Jürgens Spezialitäten ist es, sich schnell in komplexe technische Aufgabenstellungen einzuarbeiten. Ein weitere Stärke von ihm ist Algorithmen und Tools effektiv einzusetzen um damit hochwertiger Softwarelösungen zu entwickeln.</p> -->
 
@@ -185,9 +215,9 @@
         <!-- <p><span style="font-size:larger; font-variant: small-caps;">Was können wir für Sie tun?</span></p> -->
 
         <!-- <p><span style="font-size:larger; font-variant: small-caps;">Wie können wir Ihnen helfen?</span></p> -->
-        <h2><span style="font-size: smaller; font-variant: small-caps;">Was können wir für Sie tun?</span></h2>
+        <h2>W<span class="textsc">as können wir für </span>S<span class="textsc">ie tun</span>?</h2>
 
-        <p>Hier sind einige Beispiele für <em>individuelle, kundenspezifische Softwareentwicklung</em>, die wir Ihnen anbieten können:</p>
+        <p>Einige Beispiele für Softwareentwicklung, die wir Ihnen anbieten können:</p>
 
         <div class="list-container">
             <ul>
@@ -204,16 +234,16 @@
 
         </div>
 
-        <div class="bgimg-2 w3-display-container" style="margin-top: 32px;">
+        <div class="bgimg-2 w3-display-container">
             <div class="w3-display-middle">
                 <!-- <span class="section-headline">PROJECTS</span> -->
                 <img class="section-headline" src="media/images/text-expertise-min.svg"  alt="Section Headline"/>
             </div>
         </div>
 
-        <div class="section-intro" style="padding-bottom: 0px;">
+        <div class="section-intro" style="padding-bottom: 0; padding-top: 1em;">
             <div class="section-anchor" id="expertise"></div>
-            <p>Diese Auswahl bisheriger Arbeitsgebiete und Projekte gibt Ihnen einen Einblick in die Expertise und Erfahrung, die Jürgen in die Softwareentwicklung einbringt. Wenn Sie Fragen haben oder Hilfe bei Ihrem Projekt benötigen, kontaktieren Sie uns, Jürgen hilft Ihnen gerne weiter!</p>
+            <p>Die folgende Auswahl bisheriger Projekte und Arbeitsbereiche von Jürgen soll Ihnen einen Einblick in seine Expertise und Erfahrung geben. Wenn Sie Fragen haben oder Hilfe bei <em>Ihrem</em> Projekt benötigen, kontaktieren Sie uns, Jürgen hilft Ihnen gerne weiter!</p>
 
             <!-- <p>Um einen ersten Eindruck von <span style="-webkit-hyphens: none; hyphens: none;"> Jürgens</span> Expertise zu bekommen, haben wir hier einige seiner bisherigen Tätigkeitsfelder und Projekte für Sie zusammengestellt. Bei Fragen steht er Ihnen gerne zur Verfügung!</p> -->
 
@@ -227,12 +257,15 @@
                 <div class="box"><img class="box-image-container" src="media/images/symbol-smartphone-app-min.png" alt="Symbol of Smartphone App"/>
                 </div>
 
-                <h2 class="project-title">Computer Vision</h2>
-                <h3 class="project-subtitle"><em style="font-size: 100%">IBS</em><em style="font-size: 83%">OFT</em><em style="font-size: 100%">S</em><em style="font-size: 83%">YS</em></h3>
+                <h2 class="project-title">C<span class="textsc">omputer </span>V<span class="textsc">ision</span></h2>
+                <h3 class="project-subtitle"><em>IBS<span class="textsc">oft</span>S<span class="textsc">ys</span></em></h3>
+
 
                 <p>Aus Interesse an Computer Vision und digitaler Bildverarbeitung entwickelte Jürgen eine Anwendung, die das menschliche Sehen und Denken beim Spielen des Kartenspiels SET<sup>&reg;</sup> simuliert. Normale Lichtverhältnisse vorausgesetzt, findet die entwickelte Smartphone App nicht nur die richtige Lösung vor allen anderen Spielern, sondern auch <em>alle</em> Lösungen.</p>
 
-                <p><span class="project-tools">Software Tools</span></p>
+                <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                </p>
+
                 <p class="project-tools-container">
                     <span class="project-tools-border">Objective-C</span>
                     <span class="project-tools-border">C/C++</span>
@@ -243,7 +276,10 @@
 
                 </p>
 
-                <p><i onclick="overlayOn(1)" class="project-show-details">Details lesen &gt;</i>
+                <!-- <p><i onclick="overlayOn(1)" class="project-show-details">D<span class="textsc">etails lesen </span>&gt;</i>
+                </p> -->
+
+                <p><i onclick="overlayOn(1)" class="linked-style">Details lesen &gt;</i>
                 </p>
 
                 <div class="overlay" id="overlay-1">
@@ -259,8 +295,8 @@
                                     <div class="box"><img class="box-image-container box-image-container-overlay" src="media/images/symbol-smartphone-app-min.png" alt="Symbol of Smartphone App"/>
                                     </div>
 
-                                    <h2 class="project-title">Computer Vision</h2>
-                                    <h3 class="project-subtitle">Eigenentwicklung</h3>
+                                    <h2 class="project-title">C<span class="textsc">omputer </span>V<span class="textsc">ision</span></h2>
+                                    <h3 class="project-subtitle"><em>IBS<span class="textsc">oft</span>S<span class="textsc">ys</span></em></h3>
 
                                     <p>Die Idee zu dieser App entstand an der Laurelwood Elementary School in Santa Clara, Kalifornien. Als Volontär spielte Jürgen mit Zweitklässlern im Mathematikunterricht als Gruppenarbeit das Kartenspiel SET<sup>&reg;</sup>, das die visuelle Wahrnehmung und das logische Denken trainiert. Er stellte sich immer wieder vor, wie ein Smartphone seine Rolle als Schiedsrichter übernehmen könnte.</p>
 
@@ -270,7 +306,9 @@
 
                                     <p>Weitere Informationen zur App finden Sie auf der Webseite <a href="https://snoopy2018.github.io/ai-card-player/"  rel="noopener">AI Card Player</a>.</p>
 
-                                    <p><span class="project-tools">Software Tools</span></p>
+                                    <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                                    </p>
+
                                     <p class="project-tools-container">
                                         <span class="project-tools-border">Objective-C</span>
                                         <span class="project-tools-border">C/C++</span>
@@ -292,12 +330,14 @@
                 <div class="box"><img class="box-image-container" src="media/images/symbol-crash-test-dummy-min.png" alt="Symbol of Crash Test Dummy"/>
                 </div>
 
-                <h2 class="project-title">Embedded Systems</h2>
+                <h2 class="project-title">E<span class="textsc">mbedded </span>S<span class="textsc">ystems</span></h2>
                 <h3 class="project-subtitle"><em>BMW Group</em></h3>
 
-                <p>In interdisziplinären Ingenieurteams bei <em>BMW</em> entwickelte Jürgen die Software von elektronischen Steuergeräten (Embedded Systems) für Lenk- und Antriebssysteme. Während seiner Tätigkeit bei <em>BMW</em> forschte Jürgen für seine Doktorarbeit und für <em>BMW</em> an Methoden zur Entwicklung von Soft- und Hardware für zukünftige Drive-by-Wire Systeme.</p>
+                <p>In interdisziplinären Ingenieurteams bei <em>BMW</em> entwickelte Jürgen die Software von elektronischen Steuergeräten (Embedded Systems) für Lenk- und Antriebssysteme. Während seiner Tätigkeit bei <em>BMW</em> forschte Jürgen für seine Doktorarbeit und <em>BMW</em> an Methoden zur Entwicklung von Soft- und Hardware zukünftiger Drive-by-Wire Systeme.</p>
 
-                <p><span class="project-tools">Software Tools</span></p>
+                <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                </p>
+
                 <p class="project-tools-container">
                     <span class="project-tools-border">C/C++</span>
                     <span class="project-tools-border">Assembler</span>
@@ -305,7 +345,7 @@
                     <span class="project-tools-border" style="white-space: nowrap;">Virtual&nbsp;Component&nbsp;Co-Design&nbsp;(VCC)</span>
                 </p>
 
-                <p><i onclick="overlayOn(2)" class="project-show-details">Details lesen &gt;</i>
+                <p><i onclick="overlayOn(2)" class="linked-style">Details lesen &gt;</i>
                 </p>
 
                 <div class="overlay" id="overlay-2">
@@ -321,7 +361,7 @@
                                 <div class="box"><img class="box-image-container box-image-container-overlay"  src="media/images/symbol-develop-safety-critical-min.svg" alt="Symbol Crash Test Dummy"/>
                                     </div>
 
-                                    <h2 class="project-title">Embedded Systems</h2>
+                                    <h2 class="project-title">E<span class="textsc">mbedded </span>S<span class="textsc">ystems</span></h2>
                                     <h3 class="project-subtitle"><em>BMW Group</em></h3>
 
                                     <p>In interdisziplinären Ingenieurteams bei <em>BMW</em>, München, entwickelte Jürgen die Software von elektronischen Steuergeräten (Embedded Systems) für Lenk- und Antriebssysteme, die beispielsweise im 3er und 7er in Serie gingen.</p>
@@ -331,7 +371,9 @@
 
                                     <p>Die immer komplexer werdenden Systeme in Fahrzeugen, wie beispielsweise Drive-by-Wire Systeme, erforderten den Einsatz neuer Methoden und Tools. Um den deutlich gestiegenen Anforderungen an Soft- und Hardware gerecht zu werden, hat Jürgen im Rahmen seiner Promotion im <em >BMW Technology Office</em>, Palo Alto, Kalifornien, neue Ansätze zur Entwicklung solcher Systeme entwickelt und evaluiert.</p>
 
-                                    <p><span class="project-tools">Software Tools</span></p>
+                                    <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                                    </p>
+
                                     <p class="project-tools-container">
                                         <span class="project-tools-border">C/C++</span>
                                         <span class="project-tools-border">Assembler</span>
@@ -353,18 +395,20 @@
                 <div class="box"><img class="box-image-container" src="media/images/symbol-model-of-distributed-min.svg" alt="Symbol of Distributed System"/>
                 </div>
 
-                <h2 class="project-title">Simulation</h2>
+                <h2 class="project-title">S<span class="textsc">imulation</span></h2>
                 <h3 class="project-subtitle"><em>GM Advanced Technology Office</em></h3>
 
                 <p>Gemeinsam mit dem <em>GM Advanced Technology Office</em> entwickelte Jürgen ein Modell zur Simulation vernetzter Steuergeräte. Anhand des Modells konnten die Ingenieure bei <em>GM</em> die Vernetzung der Steuergeräte neuer Modelle simulieren und analysieren.</p>
 
-                <p><span class="project-tools">Software Tools</span></p>
+                <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                </p>
+
                 <p class="project-tools-container">
                     <span class="project-tools-border">C/C++</span>
                     <span class="project-tools-border">MLDesigner</span>
                 </p>
 
-                <p><i onclick="overlayOn(3)" class="project-show-details">Details lesen &gt;</i>
+                <p><i onclick="overlayOn(3)" class="linked-style">Details lesen &gt;</i>
                 </p>
 
                 <div class="overlay" id="overlay-3">
@@ -380,7 +424,7 @@
                                     <div class="box"><img class="box-image-container box-image-container-overlay" src="media/images/symbol-model-of-distributed-min.svg" alt="Symbol of Model of Distributed Systems"/>
                                     </div>
 
-                                    <h2 class="project-title">Simulation</h2>
+                                    <h2 class="project-title">S<span class="textsc">imulation</span></h2>
                                     <h3 class="project-subtitle"><em>GM Advanced Technology Office</em></h3>
 
                                     <p><em>General Motors (GM)</em> in den USA suchte nach einem Simulationsmodell für vernetzte elektronischer Steuergeräte in ihren Fahrzeugen. Übergeordnetes Ziel war es, optimale Systemarchitekturen für zukünftige Fahrzeugmodelle zu entwickeln.</p>
@@ -389,7 +433,9 @@
 
                                     <p>Das auf statistischen Methoden basierende Simulationsmodell wurde von den <em>GM</em> Ingenieuren akzeptiert und in den Entwicklungsabteilungen erfolgreich eingesetzt.</p>
 
-                                    <p><span class="project-tools">Software Tools</span></p>
+                                    <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                                    </p>
+
                                     <p class="project-tools-container">
                                         <span class="project-tools-border">C/C++</span>
                                         <span class="project-tools-border">MLDesigner</span>
@@ -408,12 +454,14 @@
                 <div class="box"><img class="box-image-container" src="media/images/symbol-test-software-min.jpg" alt="Symbol of Test Software Systems"/>
                 </div>
 
-                <h2 class="project-title">Software Test</h2>
-                <h3 class="project-subtitle"><em>Cisco Systems</em><br><em>Crosstest</em></h3>
+                <h2 class="project-title">S<span class="textsc">oftware </span>T<span class="textsc">est</span></h2>
+                <h3 class="project-subtitle"><em>Crosstest</em> & <em>Cisco Systems</em></h3>
 
                 <p>In der Start-up <em>Crosstest</em> entwickelte Jürgen Module für ein Softwaretool, mit dem Softwareentwickler ihren C/C++ Code testen können. Später war Jürgen Teil des Support-Teams bei <em>Cisco Systems</em>, wo er Methoden zum Testen von Software entwickelte und die Automatisierung von Tests durch Shell Scripts unterstützte.</p>
 
-                <p><span class="project-tools">Software Tools</span></p>
+                <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                </p>
+
                 <p class="project-tools-container">
                     <span class="project-tools-border">Java</span>
                     <span class="project-tools-border">C/C++</span>
@@ -421,8 +469,9 @@
                     <span class="project-tools-border">Shell&nbsp;Scripts</span>
                 </p>
 
-                <p><i onclick="overlayOn(5)" class="project-show-details">Details lesen &gt;</i>
+                <p><i onclick="overlayOn(5)" class="linked-style">Details lesen &gt;</i>
                 </p>
+
                 <div class="overlay" id="overlay-5">
                     <div class="overlay-container" id="overlay-container-5" onclick="overlayContainerClicked(5)">
                         <div class="overlay-canvas-container" id="overlay-canvas-container-5">
@@ -436,8 +485,8 @@
                                     <div class="box"><img class="box-image-container box-image-container-overlay" src="media/images/symbol-test-software-min.jpg" alt="Symbol of Test Software Systems"/>
                                     </div>
 
-                                    <h2 class="project-title">Software Test</h2>
-                                    <h3 class="project-subtitle">Start-up & <em>Cisco Systems</em></h3>
+                                    <h2 class="project-title">S<span class="textsc">oftware </span>T<span class="textsc">est</span></h2>
+                                    <h3 class="project-subtitle"><em>Crosstest</em> & <em>Cisco Systems</em></h3>
 
                                     <p>In der Start-up <em>Crosstest</em>, San Mateo, Kalifornien, hat Jürgen in einem kleinen Team Module für ein Softwaretool entwickelt, das Unit-Testfälle für C/C++-Funktionen generiert. Das Tool unterstützt Softwareentwickler beim Testen ihrer Softwarefunktionen, um Fehler im Code frühzeitig zu erkennen und zu beseitigen. Der CEO von <em>Crosstest</em>, Khalid Sebti, war sehr begeistert von einem neuen Softwaremodul, das Jürgen entwickelte, und bemerkte: &bdquo;Jürgen, du hast die Messlatte für uns sehr hoch gelegt!&ldquo;</p>
 
@@ -447,7 +496,9 @@
 
                                     <p>Mit einem ähnlichen Ziel vor Augen arbeitete Jürgen im Supportteam bei <em>Cisco Systems</em>, San Jose, Kalifornien. Im Team entwickelte Jürgen Shell Scripts für die Testautomatisierung und allgemeine Richtlinien für das Testen von Software. Eine weitere wichtige Aufgabe des Teams war es, die Softwareentwickler mit diesen neuen Tools und Methoden vertraut zu machen und sie bei der Anwendung zu unterstützen.</p>
 
-                                    <p><span class="project-tools">Software Tools</span></p>
+                                    <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                                    </p>
+
                                     <p class="project-tools-container">
                                         <span class="project-tools-border">Java</span>
                                         <span class="project-tools-border">C/C++</span>
@@ -469,12 +520,15 @@
                 <div class="box"><img class="box-image-container" src="media/images/symbol-find-contact-details-de-min.png" alt="Symbol of Search for Contacts"/>
                 </div>
 
-                <h2 class="project-title">Webpage Filter</h2>
-                <h3 class="project-subtitle">Autogewerbe</h3>
+                <h2 class="project-title">W<span class="textsc">ebpage </span>F<span class="textsc">ilter</span></h2>
+                <h3 class="project-subtitle">Auto-Handels-Service</h3>
 
-                <p>Jürgen entwickelte eine Software, die die Webseiten eines Online-Fahrzeugmarktes nach Kontaktdaten von Autohändlern durchsucht, die eine bestimmte Fahrzeugklasse (Marke, Preis etc.) anbieten. Die gefundenen Kontakte werden speziell formatiert und in einer Datei gespeichert, sodass kommerzielle Programme die Daten problemlos lesen und interpretieren können.</p>
+                <p>Jürgen entwickelte ein Softwareprogramm, das die Webseiten eines Online-Fahrzeugmarktes nach Kontaktdaten von Autohändlern durchsucht, die für den Auto-Handels-Service interessant sind. Die gefundenen Kontakte werden vom Programm speziell formatiert, damit andere kommerzielle Programme die Daten problemlos lesen und interpretieren können.</p>
 
-                <p><span class="project-tools">Software Tools</span></p>
+
+                <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                </p>
+
                 <p class="project-tools-container">
                     <span class="project-tools-border">Python</span>
                     <span class="project-tools-border">Beautiful&nbsp;Soup</span>
@@ -483,7 +537,7 @@
                     <span class="project-tools-border">Shell&nbsp;Scripts</span>
                 </p>
 
-                <p><i onclick="overlayOn(4)" class="project-show-details">Details lesen &gt;</i>
+                <p><i onclick="overlayOn(4)" class="linked-style">Details lesen &gt;</i>
                 </p>
 
                 <div class="overlay" id="overlay-4">
@@ -500,10 +554,10 @@
                                     <div class="box"><img class="box-image-container box-image-container-overlay" src="media/images/symbol-find-contact-details-de-min.png" alt="Symbol of Search for Contacts"/>
                                     </div>
 
-                                    <h2 style="color: black; margin-bottom: 0;">Webpage Filter</h2>
-                                    <h3 style="color: #666; margin-top: 0;">Autogewerbe</h3>
+                                    <h2 class="project-title">W<span class="textsc">ebpage </span>F<span class="textsc">ilter</span></h2>
+                                    <h3 class="project-subtitle">Auto-Handels-Service</h3>
 
-                                    <p>Ein Berliner Autogewerbe Service wünschte sich eine Software, die die generierten Webseiten eines Online-Fahrzeugmarktes nach ausgewählten Kriterien durchsucht und aus der Informationsflut für ihn interessante Kontaktadressen herausfiltert.</p>
+                                    <p>Ein Berliner Auto-Handels-Service wünschte sich ein Softwareprogramm, das die generierten Webseiten eines Online-Fahrzeugmarktes nach ausgewählten Kriterien (Marke, Preis etc.) durchsucht und aus der Informationsflut für ihn interessante Kontaktadressen herausfiltert.</p>
 
                                     <p>Eine Herausforderung bei diesem Projekt war die hohe Anzahl an Anfragen an den Webserver des Online-Portals (mehr als 50.000) und die damit verbundenen Verzögerungen oder gar Abbrüche durch den Webserver.</p>
 
@@ -511,7 +565,9 @@
 
                                     <p>Diese Lösung machte das Softwaresystem nicht nur robuster und skalierbarer, sondern auch schneller.</p>
 
-                                    <p><span class="project-tools">Software Tools</span></p>
+                                    <p><span class="project-tools">S<span class="textsc">oftware </span>T<span class="textsc">ools</span></span>
+                                    </p>
+
                                     <p class="project-tools-container">
                                         <span class="project-tools-border">Python</span>
                                         <span class="project-tools-border">Beautiful&nbsp;Soup</span>
@@ -530,7 +586,7 @@
 
             </div>
 
-        <div class="bgimg-3 w3-display-container" style="margin-top: 64px;" >
+        <div class="bgimg-3 w3-display-container" style="margin-top: 3em;" >
 
             <div class="w3-display-middle">
                 <img class="section-headline" src="media/images/text-kontakt-min.svg"  alt="Section Headline"/>
@@ -538,7 +594,7 @@
         </div>
 
         <!-- Container (Contact Section) -->
-        <div class="section-intro" style="padding-top: 12px;">
+        <div class="section-intro" style="padding-top: 0.5em;">
             <!-- <h3 class="headline-style">&bdquo;Zuverlässige Softwaresysteme statt lästiger Softwareprobleme.&ldquo;</h3> -->
             <!-- <div class="contact-headline-top">&bdquo;Effiziente Softwarelösungen statt lästiger Softwareprobleme.&ldquo;</div> -->
 
@@ -576,31 +632,25 @@
         <!-- <p>Ich freue mich auf Ihre Nachricht!</p>  -->
         <!-- ENGLISH version: I am excited and look forward to your message! -->
 
-        <div class="experiment-row experiment-contact">
-
-            <div class="experiment-column">
+        <div class="contact-container">
                 <!-- Trick that image does not get rotated in case you define only for example width:200px; height: auto (Source: stackoverflow. "CSS force image resize and keep aspect ratio (w/h = 583/510)")  -->
-                <img  style="display: block; width:250px;  height:auto; margin-left: auto; margin-right: auto; border-radius: 4px;" src="media/images/logo-on-paper-min.svg" alt="Logo" />
-            </div>
-            <div class="experiment-column" >
-                <!-- Use px instead of em for font-size that text does not change size if global font size (em) does change. I use 1em = 18px. -->
-                <div class="center" style="font-size: 18px; color:#575757; text-align: center; line-height: 28px; ">
-                    <div><span style="font-variant: small-caps; font-size: 26px; font-weight: 500;" >Ingenieurbüro<br>Software Systems<br></span>
-                        <span style="font-variant: small-caps; font-weight: 500; font-size: 19px; ">Dr.-Ing. Jürgen Ehret</span><br>
-                        <div style="margin-top: 8px;">
-                            Freiburg im Breisgau<br>
-                            <i class="fa fa-phone"></i> +49 761 5146 5070<br>
-                            <span onclick="create('de'), sendEmail('de')" style="cursor: pointer;"><i class="fa fa-envelope"></i> <span id="openMe" style="color: #0070c9;">E-Mail schreiben &gt;</span></span>
+                <img class="contact-container-logo" src="media/images/logo-on-paper-min.svg"
+                    alt="Logo">
+
+                <div class="contact-text">
+                        <div style="line-height: 1.7em;">
+                            <div><span style="font-size: 1.5em;">I<span class="textsc">ngenieurbüro</span><br>S<span class="textsc">oftware </span>S<span class="textsc">ystems</span></span><br>
+                                <span style="font-size: 1.1875em;">D<span class="textsc">r.</span>-I<span class="textsc">ng. </span>J<span class="textsc">ürgen </span>E<span class="textsc">hret</span></span><br>
+                                <div style="margin-top: 0.5em; font-size:1.125em;">
+                                    Freiburg im Breisgau<br>
+                                    <i class="fa fa-phone"></i> +49 761 5146 5070<br>
+                                    <span onclick="create('de'), sendEmail('de')" style="cursor: pointer;"><i class="fa fa-envelope"></i> <span id="openMe" class="linked-style">E-Mail schreiben &gt;</span></span>
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- <div style="margin-top:5px;">
-                            <img onclick="makePhoneCall()" style="height: 16px; width: auto; cursor: pointer;" src="media/images/phone-number-land-min.svg" alt="Phone Number"/><br><img onclick="sendEmail('de')" style="height: 16px; width: auto; cursor: pointer;" src="media/images/email-address-min.svg" alt="E-Mail Address"/> -->
-
                     </div>
-                </div>
             </div>
         </div>
-    </div>
 
             <!-- Note I removed all 'title=blabla' within anchors <a>...</a>. First of all it is hard to find appropriate text to express what is going to happen if user clicks on this thing. Moreover this feature does not exist on touch screens for example on smartphones. It looks like that Apple does not use this title thing neither, which finally convinced me to remove it too. Basically the context should give the user enough information about the consequences when it clicks on those symbols. State of mind on February 16, 2022. -->
 
