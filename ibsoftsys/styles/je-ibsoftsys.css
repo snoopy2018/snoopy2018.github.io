@@ -20,6 +20,9 @@ span.updated-on:before {
 :root { /* global for all html */
     --textColor: rgb(51, 50, 47); /* as tagesschau.de seen on March 13, 2022. BEFORE rgb(51, 51, 51);   saw #333 == rgb(51, 51, 51) at ndr.de NDR; SZ rgb(41, 41, 58); BZ rgb(51, 51, 51); NOTE #333 == #333333 (shorthand)*/
     /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
+
+    /* Support of light color scheme only, at least for npw. JE23Oct2022 */
+    color-scheme: light; /* "Indicates that the element can be rendered using the operating system light color scheme." (MDN Web Docs) */
 }
 
 /* TYPOGRAPHY ----------------------------------- */
@@ -327,6 +330,7 @@ ul {
   /* max-width: 1280px; */  /* kind of arbitrary value to size images to this maximal value (e.g. Laptop HDPI screen). State of mind on August 26, 2021. */
   /*margin-left: auto; */ /* center image */
   /*margin-right: auto; */ /* center image */
+
 }
 
 /* First image (Logo. Full height) */
@@ -1220,6 +1224,8 @@ span.small-caps {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+
+    /* background-color: white; */ /* NEEDED if Firefox's Night Mode is on, otherwise the logo (black color!) is NOT visible if browser theme uses a black background. JE23Oct2022 */
 }
 
 .contact-text {
