@@ -1177,7 +1177,7 @@ span.small-caps {
     width: 32px;
     height: 32px;
 
-    margin: 8px;
+    margin: 18px 8px 8px 8px; /* Keep more space to top. ?8
 
     /* -webkit-mask: url("../media/images/crossPlain-min.svg"); */
     /* mask: url("../media/images/crossPlain-min.svg"); */
