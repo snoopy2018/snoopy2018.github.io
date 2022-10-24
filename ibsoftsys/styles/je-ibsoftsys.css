@@ -232,7 +232,7 @@ body, .logo-ibsoftsys { /* Added logo-ibsoftsys so I can set image property (log
 }
 
 a {
-  color: #585858; /* #585858 -> Contrast ratio: 7.11 (Chrome tools) */ /* Apple Developer HIG site: link color #0070c9 */
+  color: #0070c9; /* Apple Developer HIG site: link color #0070c9 */
   text-decoration: none; /* no underline */
 }
 
