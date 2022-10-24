@@ -516,21 +516,25 @@ ul {
 
 .me-box {
     float:left;
-    width: 10.5em; /* IMPORTANT: Image in me-box should have the same width as me-box itself so that text is centered. */
-    margin-top: 1em;
-    margin-bottom: auto;
+
+    width: 10em; /* IMPORTANT: Image in me-box should have the same width as me-box itself so that text is centered. */
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     margin-left: 0;
     margin-right: 1em;
 }
 
 .me-box img {
-    width: 10.5em; /* IMPORTANT: Image width = width me-box. */
+    width: 10em; /* IMPORTANT: Image width = width me-box. It gets increased on smaller screens when width of me-box is at 100%. */
+
     margin-left: auto;
     margin-right: auto;
 }
 
-.me-box h3 {
-    font-size: 0.9em;
+.me-box h4 {
+    font-size: 0.9em; /* IMPORTANT It gets increased on smaller screens when width of me-box is at 100%. */
+
     line-height: 1.5em;
     font-weight: 400;
 }
@@ -786,30 +790,24 @@ ul {
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
 
-.experiment-row {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1.125em;
-  max-width: 40em; /* May exceed size of p because of image on the left. JE22Oct2022 */
+.about-container {
+  /* display: flex;
+  flex-direction: row; */
+  /* column-gap: 1.125em; */
+
+  max-width: 36em; /* same width as <p> JE 24Oct2022 */
+
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Clear floats after the columns */
-.experiment-row:after {
+/* Clear floats after the about-container [That is what people write and it works.] */
+.about-container:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.experiment-column {
-  float: left;
-  flex: 50%;
-}
-
-.experiment-contact {
-    max-width: 600px; /* HACK: prevents the email address and envelope icon from being displayed in two lines on screens with a width of 667 px (e.g. iPhone 8 landscape mode). Remove it if you change font size or other width/height settings. JE 06Sep2022 */
-}
 
 .center { /* Original Source: w3schools.com */
     /* display: flex; */
@@ -1379,8 +1377,13 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
     }
 
     .me-box img {
+        width: 12em;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .me-box h4 {
+        font-size: 1em;
     }
 }
 
