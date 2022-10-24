@@ -1151,7 +1151,7 @@ span.small-caps {
      padding-right: 32px; */
 
      /* Use margin instead of padding because it looks better with the NEW close icon design. JE13Oct2022 */
-     margin-left: 48px; /* IMPORTANT: margin-left must be in px because overlay-button-close-icon width is measured in px (NO overlap). */
+     margin-left: 56px; /* IMPORTANT: margin-left must be in px because overlay-button-close-icon width is measured in px (NO overlap). */
      margin-right: 2.25em;
      margin-top: 2em;
      margin-bottom: 3em;
@@ -1174,8 +1174,8 @@ span.small-caps {
 /* This class replaces the previous classes .overlay-button-close and .overlay-button-close:before. JE 24Sep21-1655 */
 /* Idea with 'mask' based on https://css-tricks.com/change-color-of-svg-on-hover/ */
 .overlay-button-close-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 
     margin: 18px 8px 8px 8px; /* Keep more space to top. ?8
 
