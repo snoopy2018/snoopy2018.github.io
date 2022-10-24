@@ -1090,7 +1090,7 @@ span.small-caps {
 .overlay-canvas-container {
     position: relative;
 
-    width: 44em; /* Reasoning: p max-width is set to 36em, thus I added e.g. 4em to the right and left. This allows p to expand to 36em while there is still some white space left on the right and left to look good. */ /* 980px at Apple modal appearance https://www.apple.com/accessibility/ */
+    width: 42em; /* Reasoning: p max-width is set to 36em, thus I added e.g. 4em to the right and left. This allows p to expand to 36em while there is still some white space left on the right and left to look good. UPDATE I changed the size to 42em. Along with changing the max width to 100% (see below), it looks better for ALL screen sizes. JE 24Oct2022. */ /* 980px at Apple modal appearance https://www.apple.com/accessibility/ */
 
     height:100%; /* animated? was 100%; // JE 26Sep21-2024 TEST */ /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
     /*transition: height 0.5s;*/ /* animated?  // JE 26Sep21-2024 TEST */
@@ -1098,7 +1098,8 @@ span.small-caps {
     /*padding: 52px 0;*/ /* let's the modal at the top and bottom space when scrolling begins (top) and ends (bottom). looks nice and imitates the behavior of Apple modal appearance https://www.apple.com/accessibility/
     UPDATE The problem is that in my theme the close button does NOT move to the top of the screen like the Apple theme does. It looks bad if you miss this behavior. I found the solution: set the margin of overlay-canvas instead (margin-top: 52px). DO NOT forget to set it to margin-top: 0 if the overlay fills the entire screen (see max-width: 734px). JE13Oct2022 */
 
-    max-width: 66.6667%;
+    max-width: 100%; /* CHANGE from 66.667% to 100% because it looks better on ALL screen sizes with its 42em width. JE 24Oct2022. */
+
     margin: 0 auto;
 
     -webkit-overflow-scrolling: touch;
@@ -1151,8 +1152,8 @@ span.small-caps {
      padding-right: 32px; */
 
      /* Use margin instead of padding because it looks better with the NEW close icon design. JE13Oct2022 */
-     margin-left: 56px; /* IMPORTANT: margin-left must be in px because overlay-button-close-icon width is measured in px (NO overlap). */
-     margin-right: 2.25em;
+     margin-left: 48px; /* IMPORTANT: margin-left must be in px because overlay-button-close-icon width is measured in px (NO overlap). */
+     margin-right: 2em;
      margin-top: 2em;
      margin-bottom: 3em;
 }
@@ -1174,10 +1175,10 @@ span.small-caps {
 /* This class replaces the previous classes .overlay-button-close and .overlay-button-close:before. JE 24Sep21-1655 */
 /* Idea with 'mask' based on https://css-tricks.com/change-color-of-svg-on-hover/ */
 .overlay-button-close-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
 
-    margin: 18px 8px 8px 8px; /* Keep more space to top. ?8
+    margin: 12px;
 
     /* -webkit-mask: url("../media/images/crossPlain-min.svg"); */
     /* mask: url("../media/images/crossPlain-min.svg"); */
