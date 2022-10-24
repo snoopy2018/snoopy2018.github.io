@@ -350,7 +350,9 @@ ul {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("../media/images/kuehe-clipout-min.jpg");
+  /* background-image: url("../media/images/kuehe-clipout-min.jpg"); */
+  background-image: url("../media/images/view-on-st-george-min.jpg");
+
   min-height: 35%; /* CHANGE from 45% to 35% because image feels too dominant to me. 01Jul2022. */
 }
 
