@@ -784,7 +784,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 600px;
+    max-width: fit-content;
 
     font-size: 11px; /* before 07Sep2022: font-size of 0.8em that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
 
@@ -794,14 +794,13 @@ ul {
 }
 
 .border-right {
-    /* border-right-style: solid; */
+    border-right-style: solid;
     border-right-width: 1px;
     /* padding-right: 8px; */ /* padding: gap inside of border. UPDATE I inserted a white space to allow ...*/
     margin-left: 0.3em; /* value determined until it looked good to me. JE 05Oct21 */
     margin-right: 0.5em; /* value determined until it looked good to me. JE 05Oct21 */ /*margin: gap outside of border. In em to allow space grow/shrink if user changes font-size settings. State of mind on October 2, 2021. */
 
-    border-color: rgb(51, 51, 51); /* default supported fallback style */
-    border-color: var(--textColor);
+    border-color: #666;
 }
 
 .section-intro {
