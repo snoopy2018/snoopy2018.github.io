@@ -514,15 +514,36 @@ ul {
 
 }
 
+
+.about-container {
+  /* display: flex;
+  flex-direction: row; */
+  /* column-gap: 1.125em; */
+
+
+
+  max-width: fit-content; /*42em;*/ /* same width as <p> JE 24Oct2022 */
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clear floats after the about-container [That is what people write and it works.] */
+.about-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .me-box {
-    float:left;
+    float: left;
 
     width: 10em; /* IMPORTANT: Image in me-box should have the same width as me-box itself so that text is centered. */
 
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: 0;
-    margin-right: 1em;
+    margin-right: 1.2em;
 }
 
 .me-box img {
@@ -535,10 +556,8 @@ ul {
 .me-box h4 {
     font-size: 0.9em; /* IMPORTANT It gets increased on smaller screens when width of me-box is at 100%. */
 
-    line-height: 1.5em;
     font-weight: 400;
 }
-
 
 .box {
     display: flex;
@@ -789,26 +808,6 @@ ul {
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
-
-.about-container {
-  /* display: flex;
-  flex-direction: row; */
-  /* column-gap: 1.125em; */
-
-  max-width: 36em; /* same width as <p> JE 24Oct2022 */
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Clear floats after the about-container [That is what people write and it works.] */
-.about-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
 .center { /* Original Source: w3schools.com */
     /* display: flex; */
    /* justify-content: center; */
