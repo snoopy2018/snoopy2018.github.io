@@ -305,6 +305,7 @@ li {
 ul {
     margin-block-start: 0.5em; /* default: 1em */
     margin-block-end: 1em; /* default: 1em */
+    padding-inline-start: 3em; /* default: 40px (in pixels, does not look good if user changes font sizes. !). The value 3em seems to be similar to what the LaTex font uses as the default. JE 25Oct2020 */
 }
 
 /* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
@@ -317,6 +318,18 @@ ul {
 .list-container li {
     list-style-type: '>  ';
 }
+
+/* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
+.list-container ul {
+    font-weight: 200;
+}
+
+/* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
+.list-container li span {
+    font-weight: normal;
+}
+
+
 
 .list-headline {
     font-size: 1.3em;    /* same as <h3> */
