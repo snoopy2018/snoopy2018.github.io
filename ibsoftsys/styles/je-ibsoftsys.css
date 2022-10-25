@@ -314,6 +314,10 @@ ul {
     margin-right: auto;
 }
 
+.list-container li {
+    list-style-type: '>  ';
+}
+
 .list-headline {
     font-size: 1.3em;    /* same as <h3> */
     margin: 0.625em 0;   /* same as <h3> */
