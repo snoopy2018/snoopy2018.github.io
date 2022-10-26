@@ -194,7 +194,7 @@ body, html {
 
   height: 100%;
 
-  color: rgb(51, 51, 51); /* default supported fallback style */
+  color: rgb(51, 50, 47); /* default supported fallback style */
   color: var(--textColor); /* will not be used by any browser that doesn't support it, and will default to the previous fallback */
 }
 
@@ -296,7 +296,7 @@ h6 {
     cursor: pointer;
 }
 
-/* Introduced space (0.3em by experiment) between list items. It is standard in LaTex, I believe. JE 05Dec2022 */
+/* Introduced space (0.3em by experiment) between list items, distance between list sign (e.g., '>') and left border of text block, and distance between list sign and first character of text of list. It is all standard in LaTeX, I believe. JE 05Dec2022 */
 li {
     margin-bottom: 0.3em; /* 0.3em looks good (not too much but visible) in connection with a line-height of 1.5em and margin-bottom of 0.5em of paragraph. JE06Oct202 */
 }
@@ -305,7 +305,7 @@ li {
 ul {
     margin-block-start: 0.5em; /* default: 1em */
     margin-block-end: 1em; /* default: 1em */
-    padding-inline-start: 3em; /* default: 40px (in pixels, does not look good if user changes font sizes. !). The value 3em seems to be similar to what the LaTex font uses as the default. JE 25Oct2020 */
+    padding-inline-start: 2.5em; /* default: 40px (in pixels, does not look good if user changes font sizes. !). The value 3em seems to be similar to what the LaTeX font uses as the default. JE 25Oct2020 */
 }
 
 /* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
@@ -316,17 +316,22 @@ ul {
 }
 
 .list-container li {
-    list-style-type: '>  ';
+     /* none; '-'; '>' */
+    list-style-type: '>';
+    padding-left: 0.57em; /* distance between <lI> sign (e.g., '>') and first letter/character of text. */
 }
 
 /* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
 .list-container ul {
-    font-weight: 200;
+    /* font-weight: 300; */ /* Here you can choose a different weight ... */
+    /* color: #3d5280;
+    font-weight: bold; */
 }
 
-/* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
 .list-container li span {
-    font-weight: normal;
+    /* font-weight: 400; */ /* ... than here, if required. */
+    /* font-weight: normal;
+    color: var(--textColor); */
 }
 
 
@@ -556,7 +561,6 @@ ul {
     line-height: 1.2em;
     color: #3d5280; /* Color #3d5280; picked from T-shirt. JE23Oct2022  */
 }
-
 
 .about-container {
   max-width: fit-content; /*42em;*/ /* same width as <p> JE 24Oct2022 */
@@ -813,9 +817,9 @@ ul {
 .border-right {
     border-right-style: solid;
     border-right-width: 1px;
-    /* padding-right: 8px; */ /* padding: gap inside of border. UPDATE I inserted a white space to allow ...*/
-    margin-left: 0.3em; /* value determined until it looked good to me. JE 05Oct21 */
-    margin-right: 0.5em; /* value determined until it looked good to me. JE 05Oct21 */ /*margin: gap outside of border. In em to allow space grow/shrink if user changes font-size settings. State of mind on October 2, 2021. */
+
+    margin-left: 0.3em; /* value determined until it looked good to me at font size of 11px fixed. JE 26Oct2022 */
+    margin-right: 0.3em; /* value determined until it looked good to me  at font size of 11px fixed. JE 26Oct2022 */
 
     border-color: #666;
 }
