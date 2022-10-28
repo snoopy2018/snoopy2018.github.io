@@ -236,6 +236,11 @@ a {
   text-decoration: none; /* no underline */
 }
 
+a:hover {
+    /* text-decoration: underline; */ /* I do NOT like this underline thing too much. JE 28Oct2022 */
+    filter: contrast(70%); /* contrast(): "A value of 0% will create an image that is completely gray. A value of 100% leaves the input unchanged." (mdn docs) */
+}
+
 /* The following settings were inspired by Peterson's "Learning Responsive Web Design" section "Typography". */
 p {
   font-size: 1em; /* 1.25em;  1em x 1.25 ; Factor of 1/0.8 since w3.css seems to scale fontsize down to 80 %. State of mind on August 9, 2021.
@@ -710,6 +715,12 @@ ul {
     cursor: pointer;
 }
 
+.linked-style:hover {
+    /* text-decoration: underline; */
+    /* filter: grayscale(30%); */
+    filter: contrast(0%) ;
+}
+
 
 .project-tools-border {
     border-style: solid;
@@ -809,19 +820,53 @@ ul {
 
     font-size: 11px; /* before 07Sep2022: font-size of 0.8em that content fits iPhone 5s (width 320 px) nicely. JE 17May2022 */
 
+    color: #555;
+
     text-align: center;
 
     padding: 12px;
 }
 
-.border-right {
-    border-right-style: solid;
+
+.footer-linked-style {
+    color: #0070c9;
+    cursor: pointer;
+}
+
+.footer-linked-style:hover {
+    text-decoration: none;
+    /* color:#555; */
+    /* filter: grayscale(30%); */
+    filter: contrast(0%);
+}
+
+/* Source of logo: https://brand.linkedin.com/downloads
+
+Legal:
+"Logo for Use by LinkedIn Members
+
+The only use of LinkedIn brand features that is permitted without a separate agreement is that if you are  a LinkedIn member, you may use the “in” Logo to designate a link to your personal profile or to a Group or Company page or to promote you or your organization’s presence on LinkedIn." (LinkedIn branding policies. https://brand.linkedin.com/policies)
+
+*/
+#linkedin-logo {
+    width:15px;
+    vertical-align: text-bottom;
+}
+
+#linkedin-logo:hover {
+    /* filter: grayscale(30%); */
+    filter: contrast(0%);
+}
+
+
+.footer-text-vertical-line {
+    border-right-style: solid; /* CHANGED from solid to none because it seems more the standard and uses less ink. JE 28Oct2022 */
     border-right-width: 1px;
 
-    margin-left: 0.3em; /* value determined until it looked good to me at font size of 11px fixed. JE 26Oct2022 */
-    margin-right: 0.3em; /* value determined until it looked good to me  at font size of 11px fixed. JE 26Oct2022 */
+    margin-left: 0.5em; /*  value 0.3em (if border is solid, 1px) determined until it looked good to me at font size of 11px fixed. JE 26Oct2022 */
+    margin-right: 0.5em; /* value (if border is solid, 1px) determined until it looked good to me  at font size of 11px fixed. JE 26Oct2022 */
 
-    border-color: #666;
+    border-color: #ccc;
 }
 
 .section-intro {
@@ -993,13 +1038,6 @@ span.small-caps {
 .navbar-icon {
     width: auto;
     height: 1.5em; /* The value was 1.2em, now I've changed it to 1.5em, same as in the logo navigation bar before it was removed. JE JE09Oct2022 */
-}
-
-
-.linkedin-icon {
-    width: auto;
-    height: 1.1em;
-    margin-bottom: 0.2em; /* adjust image position, I don't know better. JE 02Oct21  */
 }
 
 /* logo-navbar necessary???? navbar-icon class specifies it already?! JE09Oct2022*/
