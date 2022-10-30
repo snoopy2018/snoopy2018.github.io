@@ -1070,7 +1070,7 @@ span.small-caps {
 
     width: 75%; /* The logo in focus, not the background image. JE 30Oct2022 */
     max-width: 600px; /* That image does not get too big on huge screens. */
-    max-height: 70%; /* That image fits screen on narrow screens (e.g., landscape orientation) without hiding behind navigation bar. */
+    max-height: 65%; /* That image fits screen on narrow screens (e.g., landscape 320 x 568) without hiding behind navigation bar. */
 
 
     -webkit-transform: translate(-50%,-50%);
