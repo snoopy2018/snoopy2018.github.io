@@ -1068,9 +1068,9 @@ span.small-caps {
     top: 50%;
     left: 50%;
 
-    width: 66%; /* Value of 55%-66% seems to look on most screens good with the restrictions of max-width and amx-height in place. JE 19Oct2022 */
-    max-width: 400px; /* That image does not get too big on huge screens. */
-    max-height: 66%; /* That image fits screen on narrow screens (e.g. landscape orientation) without hiding behind navigation bar. */
+    width: 75%; /* The logo in focus, not the background image. JE 30Oct2022 */
+    max-width: 600px; /* That image does not get too big on huge screens. */
+    max-height: 70%; /* That image fits screen on narrow screens (e.g., landscape orientation) without hiding behind navigation bar. */
 
 
     -webkit-transform: translate(-50%,-50%);
@@ -1301,8 +1301,10 @@ span.small-caps {
 
 .contact-container-logo {
     display: block;
-    height: 13.5em;
+    height: 10.5em;
     max-width: 90%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
 
