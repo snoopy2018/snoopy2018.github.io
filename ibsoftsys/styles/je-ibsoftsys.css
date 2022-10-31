@@ -236,6 +236,12 @@ a {
   text-decoration: none; /* no underline */
 }
 
+/* NOTE: "As of Safari for iOS 7.1.2, tapping a clickable element causes the element to enter the :hover state. The element will remain in the :hover state until a different element has entered the :hover state." (MDN docs)
+
+Even though it points to a very old Safari version, the behavior is still there (Safari 15). So I will be removing this hover thingy on devices that do NOT support hovering (see media query below).
+
+State of mind on October 31, 2022.
+*/
 a:hover {
     /* text-decoration: underline; */ /* I do NOT like this underline thing too much. JE 28Oct2022 */
     /* NOTE: In order to change the color of images <img> I use the filter technique because change of color does not work on <img>, at least to my knowledge. JE 29Oct2022 */
@@ -1376,6 +1382,25 @@ Here's the new spec, which no longer includes device-width. https://www.w3.org/T
 
 Source: https://stackoverflow.com/questions/38220485/safari-responsive-design-mode-css-media-query-device-not-applied#39401858
 */
+
+/* Source: "How to detect iPad/iPhone and other touch devices with CSS" (https://renatello.com/css-detect-ipad-iphone/)
+
+State of mind on October 31, 2022.
+*/
+@media (hover: none) {
+    /* If hovering is NOT supported, just do the same as if the object is NOT hovered. */
+   a:hover {
+       filter: none; /* Suppose the gets filtered when you hover it. So do NOT filter at all. */
+   }
+
+  .linked-style:hover {
+      color: #0070c9; /* Suppose the object gets a different color when you hover it. So use the color as if the object is NOT hovered.  */
+  }
+
+  .footer-linked-style:hover {
+      color: black; /* dito. */
+  }
+}
 
 /* Give overlay/modal full screen size (100%). I adapted this rule from
 Apple's website, because I love how they solved the problem ("Accessibility Apple" https://www.apple.com/accessibility/). */
