@@ -1383,10 +1383,6 @@ Here's the new spec, which no longer includes device-width. https://www.w3.org/T
 Source: https://stackoverflow.com/questions/38220485/safari-responsive-design-mode-css-media-query-device-not-applied#39401858
 */
 
-/* Source: "How to detect iPad/iPhone and other touch devices with CSS" (https://renatello.com/css-detect-ipad-iphone/)
-
-State of mind on October 31, 2022.
-*/
 @media (hover: none) {
     /* If hovering is NOT supported, just do the same as if the object is NOT hovered. */
    a:hover {
