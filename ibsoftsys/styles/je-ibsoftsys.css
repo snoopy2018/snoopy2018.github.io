@@ -639,12 +639,13 @@ ul {
 
 .box-image-container {
     height: 110px;
-    margin: 12px; /* new design with text  JE 02Aug2022 */
-    /* margin-top: 18px; */  /* previous design with NO text JE 02Aug2022 */
-    /* margin-left: 18px;   */  /* previous design with NO text JE 02Aug2022 */
+    margin-top: 12px;
 }
 
 .box-image-container-overlay {
+    /* Different height and margins of image than in the short desription. */
+    height: 90px;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
 }
