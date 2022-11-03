@@ -254,7 +254,7 @@ p {
 /*   line-height: 1.4;or 1.5 as htnl? */
   max-width: 36em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
   top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
-  margin: 0.5em auto;
+  margin: 0.5em 0;
 
 
   /* Source: `Silbentrennung — CSS' https://www.stichpunkt.de/html/umbruch.html  */
@@ -264,6 +264,12 @@ p {
    -ms-hyphens: auto;
    hyphens: auto; */
 }
+
+
+.extra-width p {
+    max-width: 38em; /* HACK: Used to fit German text because of it long compound nouns. */
+}
+
 
 
 /* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
@@ -317,7 +323,8 @@ li {
 ul {
     margin-block-start: 0.5em; /* default: 1em */
     margin-block-end: 1em; /* default: 1em */
-    padding-inline-start: 2.5em; /* default: 40px (in pixels, does not look good if user changes font sizes. !). The value 3em seems to be similar to what the LaTeX font uses as the default. JE 25Oct2020 */
+    padding-inline-start: 1.5em; /* default: 40px (in pixels, does not look good if user changes font sizes. !). The value 1.5em seems to be similar to what the LaTeX font uses as the default. JE 03Nov2022 */
+
 }
 
 /* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
@@ -331,6 +338,18 @@ ul {
      /* none; '-'; '>' */
     list-style-type: '-';
     padding-left: 0.57em; /* distance between <lI> sign (e.g., '>') and first letter/character of text. */
+}
+
+.li-item-container {
+    display: flex;
+    max-width: fit-content;
+    gap: 0.5em;
+}
+
+.li-image {
+    height: 3em;
+    width: 3em;
+    /* background-image: url("../media/images/logo-favicon.ico"); */
 }
 
 /* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
@@ -903,6 +922,13 @@ The only use of LinkedIn brand features that is permitted without a separate agr
 /* ----------------------------------------------------------------------- */
 /* ------------------------     EXPERIMENTAL      ------------------------ */
 /* ----------------------------------------------------------------------- */
+.text-container {
+    /* Makes text block <p> centered, until I know etter. JE 03Nov2022. */
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .center { /* Original Source: w3schools.com */
     /* display: flex; */
    /* justify-content: center; */
