@@ -332,6 +332,8 @@ ul {
     max-width: 36em;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .list-container li {
@@ -340,16 +342,27 @@ ul {
     padding-left: 0.57em; /* distance between <lI> sign (e.g., '>') and first letter/character of text. */
 }
 
-.li-item-container {
+.list-item {
     display: flex;
     max-width: fit-content;
-    gap: 0.5em;
+    gap: 1em;
+    padding: 0.625em;
 }
 
-.li-image {
-    height: 3em;
-    width: 3em;
-    /* background-image: url("../media/images/logo-favicon.ico"); */
+.list-item-start {
+    width: fit-content;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 2em;
+    color:#aaa;
+}
+
+.list-item-text {
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 /* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
