@@ -332,8 +332,8 @@ ul {
     max-width: 36em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
 }
 
 .list-container li {
@@ -346,12 +346,12 @@ ul {
     display: flex;
     max-width: fit-content;
     gap: 1em;
-    padding: 0.625em;
+    padding: 0.3em;
 }
 
 .list-item-start {
     height: fit-content;
-    width: auto;
+    min-width: 0.8em;
     margin-top: auto;
     margin-bottom: auto;
 
@@ -360,9 +360,10 @@ ul {
 }
 
 .list-item-text {
-    /* height: fit-content;
+    /* IMPORTANT These properties are necessary for text that is in one line only. JE 04Nov2022 */
+    height: fit-content;
     margin-bottom: auto;
-    margin-top: auto; */
+    margin-top: auto;
 }
 
 /* Source: https://stackoverflow.com/questions/25106161/html-css-how-to-use-another-font-for-list-item-bullets */
