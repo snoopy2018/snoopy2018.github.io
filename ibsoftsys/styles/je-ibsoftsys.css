@@ -266,12 +266,6 @@ p {
 }
 
 
-.extra-width p {
-    max-width: 38em; /* HACK: Used to fit German text because of it long compound nouns. */
-}
-
-
-
 /* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
 h1, h2, h3, h4, h5, h6 {
     /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
@@ -633,14 +627,14 @@ ul {
 
 
 .me-box img {
-    width: 10em; /* IMPORTANT: Image width = width me-box. It gets increased on smaller screens when width of me-box is at 100%. */
+    width: 9em; /* The width gets increased on smaller screens when width of me-box is at 100%. */
 
     margin-left: auto;
     margin-right: auto;
 }
 
 .me-box h4 {
-    font-size: 0.9em; /* IMPORTANT It gets increased on smaller screens when width of me-box is at 100%. */
+    font-size: 0.8em; /* IMPORTANT It gets increased on smaller screens when width of me-box is at 100%. */
 
     font-weight: 400;
 }
