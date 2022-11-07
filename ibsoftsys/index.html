@@ -1,140 +1,140 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <title>IBSoftSys - Ingenieurbüro Software Systems</title>
+<head>
+    <title>IBSoftSys - Ingenieurbüro Software Systems</title>
 
-        <!-- technique adopted from Wikipedia (https://en.wikipedia.org/wiki/Favicon). State of mind on March 20, 2020. -->
-        <!-- <link rel="shortcut icon" type="image/png" href="media/images/favicon192px192px-min.png">  -->
-        <link rel="shortcut icon" href="media/images/logo-favicon.ico">
-        <!-- Converted bwith: https://www.online-convert.com/ JE22Oct2022 -->
+    <!-- technique adopted from Wikipedia (https://en.wikipedia.org/wiki/Favicon). State of mind on March 20, 2020. -->
+    <!-- <link rel="shortcut icon" type="image/png" href="media/images/favicon192px192px-min.png">  -->
+    <link rel="shortcut icon" href="media/images/logo-favicon.ico">
+    <!-- Converted bwith: https://www.online-convert.com/ JE22Oct2022 -->
 
-        <!-- <link rel="shortcut icon" type="image/png" href="media/images/favicon256px256px.png"> -->
+    <!-- <link rel="shortcut icon" type="image/png" href="media/images/favicon256px256px.png"> -->
 
-            <!-- Reset CSS styles first (highly recommended (e.g., ``Learning Responsive Web Design by Clarissa Peterson)-->
-            <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <!-- Reset CSS styles first (highly recommended (e.g., ``Learning Responsive Web Design by Clarissa Peterson)-->
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
 
-                <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                    <meta name="Description" content="Das Ingenieurbüro Software Systems (IBSoftSys) bietet seinen Kunden die maßgeschneiderte Entwicklung leistungsfähiger und zuverlässiger Software.">
+    <meta name="Description" content="Das Ingenieurbüro Software Systems (IBSoftSys) bietet seinen Kunden die maßgeschneiderte Entwicklung leistungsfähiger und zuverlässiger Software.">
 
-                        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-                            <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
 
-                            <!-- Use of local font-awsome library instead of loading it from the web (time) -->
-                            <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Use of local font-awsome library instead of loading it from the web (time) -->
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-                            <!-- Local instead of loading it from the wen. JE 27Oct2022.
-                            w3schools stylesheet: "W3.CSS is Free W3.CSS is free to use. No license is necessary." (https://www.w3schools.com/w3css/w3css_downloads.asp) -->
-                            <link href="styles/w3.css" rel="stylesheet" type="text/css">
+    <!-- Local instead of loading it from the wen. JE 27Oct2022.
+    w3schools stylesheet: "W3.CSS is Free W3.CSS is free to use. No license is necessary." (https://www.w3schools.com/w3css/w3css_downloads.asp) -->
+    <link href="styles/w3.css" rel="stylesheet" type="text/css">
 
-                                <!-- My style sheets -->
-                                <link href="styles/je-ibsoftsys.css" rel="stylesheet" type="text/css">
+    <!-- My style sheets -->
+    <link href="styles/je-ibsoftsys.css" rel="stylesheet" type="text/css">
 
-                                    <!-- Prevent scrolling from background on iOS when modal is present.
-                                    Source: https://github.com/willmcpo/body-scroll-lock
-                                    State of mind on August 31, 2021. -->
-                                    <script src="lib/bodyScrollLock.js"></script>
+    <!-- Prevent scrolling from background on iOS when modal is present.
+    Source: https://github.com/willmcpo/body-scroll-lock
+    State of mind on August 31, 2021. -->
+    <script src="lib/bodyScrollLock.js"></script>
 
-                                    <script src = "js/javascript.js" ></script>
-    </head>
+    <script src = "js/javascript.js" ></script>
+</head>
 
-    <body>
-        <!-- Check if JavaScript is disabled/enabled   -->
-        <noscript>
-            <div class="noScriptingWarning">
-                <span><span style="font-size:1.17em">JavaScript ist deaktiviert!</span><br>Bitte aktivieren Sie JavaScript in Ihrem Browser, da sonst einige Schaltflächen auf dieser Seite nicht funktionieren. Laden Sie diese Seite anschließend neu.</span>
-            </div>
-        </noscript>
-        <!-- NOTE:
-        The following implements the idea to react in CSS when JavaScript is disabled.
-        In HTML:
-        document.body.className += ' javascript'; (1)
-
-        In CSS:
-        .javascript .someClass { statement if enabled }  (2)
-        .someClass { statement if disabled }  (3)
-
-        Rule (1) gets only executed if class "javascript" exists, which is true only if (1) got executed. Otherwise, (2) is ignored. You may can use (2)
-        as standalone or create a fallback (3) if JavaScript is disabled.
-
-        Source: "Define css if javascript is not enabled". https://stackoverflow.com/questions/4665748/define-css-if-javascript-is-not-enabled
-        -->
-
-
-        <!-- Navbar (sit on top) -->
-        <!-- NOTE I replaced in the nav bars 'w3-button' by 'text-color-not-selected w3-hover-text-white'. It removes this greyish hove behavior, which I personally dislike. State of mind on August 12, 2021. -->
-
-        <div class="w3-top">
-            <div class="w3-bar text-color-not-selected background-color-darkgrey" id="myNavbar">
-                <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="openNav()">
-                    <i id="sidenav-id-hamburger" ><img class="navbar-icon" src="media/images/hamburgerPlain-min.svg" alt="Navigation Button"/></i>
-                </a>
-                <!--<a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" alt="nav logo" id="navbar-logo"></a> -->
-
-                <a href="#home" class="w3-bar-item text-color-not-selected "><img id="logo-navbar" class="navbar-icon" src="media/images/logo-navbar-min.svg" alt="Logo" /></a>
-
-                <!-- <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">Das&nbsp;Büro</span></a> -->
-                <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">D<span class="textsc">as&nbsp;</span>B<span class="textsc">üro</span></span></a>
-                <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
-
-
-                <a href="#expertise" class="w3-bar-item text-color-not-selected  w3-hide-small" style="padding-left:40px; padding-right:40px;"><span class="navigation-title">E<span class="textsc">xpertise</span></span></a>
-
-
-                <!-- ODER Referenzprojekte ODER Leistungen ... -->
-
-                <!-- <a href="#technologies" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Technologien</span></a> -->
-
-                <a href="#contact" class="w3-bar-item text-color-not-selected  w3-hide-small"><span class="navigation-title">K<span class="textsc">ontakt<span></span></a>
-
-                <a href="en/index.html#about" class="w3-bar-item w3-right text-color-not-selected  w3-hide-small"><span class="navigation-title"><em>E<span class="textsc">nglish</em></span></span></a>
-
-                <!-- <a href="en/index.html#about" id="lang-selector" class="w3-bar-item w3-right text-color-not-selected  w3-hide-medium w3-hide-large" ><span class="navigation-title" ><em>English</em></span></a> -->
-                <!-- English language (ISO 639-1 language code en) -->
-            </div>
-
-            <!-- Navbar on small screens
-            The side navigation class is adopted from w3schools
-            with some modifications (https://www.w3schools.com/howto/howto_js_sidenav.asp). In particular the feature that
-            let the sidenav disappear when user taps/clicks on the
-            background (not the side navigation panel) is developed
-            by me.
-
-            State of mind on Septmeber 23, 2021.-->
-            <div id="sidenav-id" class="sidenav w3-hide-large w3-hide-medium">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                    <img class="navbar-icon" src="media/images/crossPlain-min.svg" alt="Navigation Button"/></a>
-                <!-- width value: so it matches approximately hamburger icon -->
-
-                <!-- <object type="image/svg+xml" data="media/images/crossPlain.svg" style="width: 20px; height:auto;"> -->
-                <!-- Your fall back here -->
-                <!-- <img src="media/images/crossPlain-bigger.svg" /> -->
-
-                <a href="#about" class="text-color-not-selected " onclick="closeNav()"  style="margin-top: 4px;"><nobr><span class="navigation-title" >D<span class="textsc">as&nbsp;</span>B<span class="textsc">üro</span></span></nobr></a>
-                <!-- NOTE The &nbsp; prevents a line break occurring DURING the animation, which uncomfortably enlarges the image and then reduces it again.   -->
-
-                <a href="#expertise" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">E<span class="textsc">xpertise</span></span></a>
-
-                <!-- <a href="#technologies" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Technologien</span></a> -->
-
-                <a href="#contact" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">K<span class="textsc">ontakt</span></span></a>
-
-                <a href="en/index.html#about" class="text-color-not-selected" style="padding-top: 1.1em;"><span class="navigation-title" ><em>E<span class="textsc">nglish</em></span></span></a>
-            </div>
+<body>
+    <!-- Check if JavaScript is disabled/enabled   -->
+    <noscript>
+        <div class="noScriptingWarning">
+            <span><span style="font-size:1.17em">JavaScript ist deaktiviert!</span><br>Bitte aktivieren Sie JavaScript in Ihrem Browser, da sonst einige Schaltflächen auf dieser Seite nicht funktionieren. Laden Sie diese Seite anschließend neu.</span>
         </div>
+    </noscript>
+    <!-- NOTE:
+    The following implements the idea to react in CSS when JavaScript is disabled.
+    In HTML:
+    document.body.className += ' javascript'; (1)
 
-        <!-- First Parallax Image with Logo Text -->
-        <!--<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">-->
-        <!-- NOTE 'w3-opacity-min' wash-out effect?! -->
+    In CSS:
+    .javascript .someClass { statement if enabled }  (2)
+    .someClass { statement if disabled }  (3)
 
-        <div class="bgimg-1 w3-display-container" id="home">
-            <!-- <div class="w3-display-middle"> -->
-            <div class="logo-ibsoftsys">
-                <img src="media/images/logo-ibsoftsys-min.svg"  alt="Company Logo"></img>
-            </div>
+    Rule (1) gets only executed if class "javascript" exists, which is true only if (1) got executed. Otherwise, (2) is ignored. You may can use (2)
+    as standalone or create a fallback (3) if JavaScript is disabled.
+
+    Source: "Define css if javascript is not enabled". https://stackoverflow.com/questions/4665748/define-css-if-javascript-is-not-enabled
+-->
+
+
+<!-- Navbar (sit on top) -->
+<!-- NOTE I replaced in the nav bars 'w3-button' by 'text-color-not-selected w3-hover-text-white'. It removes this greyish hove behavior, which I personally dislike. State of mind on August 12, 2021. -->
+
+<div class="w3-top">
+    <div class="w3-bar text-color-not-selected background-color-darkgrey" id="myNavbar">
+        <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="openNav()">
+            <i id="sidenav-id-hamburger" ><img class="navbar-icon" src="media/images/hamburgerPlain-min.svg" alt="Navigation Button"/></i>
+        </a>
+        <!--<a href="#home" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-margin-right"><img src="media/images/navbar-logo213x213px@300.png" alt="nav logo" id="navbar-logo"></a> -->
+
+        <a href="#home" class="w3-bar-item text-color-not-selected "><img id="logo-navbar" class="navbar-icon" src="media/images/logo-navbar-min.svg" alt="Logo" /></a>
+
+        <!-- <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">Das&nbsp;Büro</span></a> -->
+        <a href="#about" class="w3-bar-item text-color-not-selected  w3-hide-small w3-margin-left"><span class="navigation-title">D<span class="textsc">as&nbsp;</span>B<span class="textsc">üro</span></span></a>
+        <!-- added some space that logo can breath (margin-left:32px) instead of only 16px==w3-margin-left. State of mind on August 24, 2021. -->
+
+
+        <a href="#expertise" class="w3-bar-item text-color-not-selected  w3-hide-small" style="padding-left:40px; padding-right:40px;"><span class="navigation-title">E<span class="textsc">xpertise</span></span></a>
+
+
+        <!-- ODER Referenzprojekte ODER Leistungen ... -->
+
+        <!-- <a href="#technologies" class="w3-bar-item text-color-not-selected w3-hover-text-white w3-hide-small"><span class="navigation-title">Technologien</span></a> -->
+
+        <a href="#contact" class="w3-bar-item text-color-not-selected  w3-hide-small"><span class="navigation-title">K<span class="textsc">ontakt<span></span></a>
+
+        <a href="en/index.html#about" class="w3-bar-item w3-right text-color-not-selected  w3-hide-small"><span class="navigation-title"><em>E<span class="textsc">nglish</em></span></span></a>
+
+        <!-- <a href="en/index.html#about" id="lang-selector" class="w3-bar-item w3-right text-color-not-selected  w3-hide-medium w3-hide-large" ><span class="navigation-title" ><em>English</em></span></a> -->
+        <!-- English language (ISO 639-1 language code en) -->
+    </div>
+
+    <!-- Navbar on small screens
+    The side navigation class is adopted from w3schools
+    with some modifications (https://www.w3schools.com/howto/howto_js_sidenav.asp). In particular the feature that
+    let the sidenav disappear when user taps/clicks on the
+    background (not the side navigation panel) is developed
+    by me.
+
+    State of mind on Septmeber 23, 2021.-->
+    <div id="sidenav-id" class="sidenav w3-hide-large w3-hide-medium">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img class="navbar-icon" src="media/images/crossPlain-min.svg" alt="Navigation Button"/></a>
+            <!-- width value: so it matches approximately hamburger icon -->
+
+            <!-- <object type="image/svg+xml" data="media/images/crossPlain.svg" style="width: 20px; height:auto;"> -->
+            <!-- Your fall back here -->
+            <!-- <img src="media/images/crossPlain-bigger.svg" /> -->
+
+            <a href="#about" class="text-color-not-selected " onclick="closeNav()"  style="margin-top: 4px;"><nobr><span class="navigation-title" >D<span class="textsc">as&nbsp;</span>B<span class="textsc">üro</span></span></nobr></a>
+            <!-- NOTE The &nbsp; prevents a line break occurring DURING the animation, which uncomfortably enlarges the image and then reduces it again.   -->
+
+            <a href="#expertise" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">E<span class="textsc">xpertise</span></span></a>
+
+            <!-- <a href="#technologies" class="text-color-not-selected w3-hover-text-white"><span class="navigation-title">Technologien</span></a> -->
+
+            <a href="#contact" class="text-color-not-selected " onclick="closeNav()"><span class="navigation-title">K<span class="textsc">ontakt</span></span></a>
+
+            <a href="en/index.html#about" class="text-color-not-selected" style="padding-top: 1.1em;"><span class="navigation-title" ><em>E<span class="textsc">nglish</em></span></span></a>
         </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <!--<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">-->
+    <!-- NOTE 'w3-opacity-min' wash-out effect?! -->
+
+    <div class="bgimg-1 w3-display-container" id="home">
+        <!-- <div class="w3-display-middle"> -->
+        <div class="logo-ibsoftsys">
+            <img src="media/images/logo-ibsoftsys-min.svg"  alt="Company Logo"></img>
+        </div>
+    </div>
 
         <!-- Container (About Section) -->
         <div class="section-intro" >
