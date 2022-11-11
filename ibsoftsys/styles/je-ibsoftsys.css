@@ -252,7 +252,7 @@ a:hover {
 p {
   font-size: 1em; /* 1.25em;  1em x 1.25 ; Factor of 1/0.8 since w3.css seems to scale fontsize down to 80 %. State of mind on August 9, 2021.
 /*   line-height: 1.4;or 1.5 as htnl? */
-  max-width: 36em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
+  max-width: 42em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
   top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
   margin: 0.5em 0;
 
@@ -323,11 +323,15 @@ ul {
 
 /* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
 .list-container {
-    max-width: 36em;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 42em;
+    margin-left: 0.625em;
     margin-top: 0.625em;
     margin-bottom: 0.625em;
+    /*
+    margin-left: 0.625em;
+    margin-right: auto;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em; */
 }
 
 .list-container li {
@@ -345,7 +349,7 @@ ul {
 
 .list-item-start {
     height: fit-content;
-    min-width: 0.8em;
+    /* min-width: 0.8em; */
     margin-top: auto;
     margin-bottom: auto;
 
@@ -510,7 +514,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   width: 100%; /* before new design: 90% JE 03AUg2022 */
-  max-width: 45em; /* before new design: 700px; JE 03AUg2022; reduced from 950px. JE 12Feb2022 */
+  max-width: 50em; /* before new design: 700px; JE 03AUg2022; reduced from 950px. JE 12Feb2022 */
 
   margin-left: auto;  /* allign row ... */
   margin-right: auto; /* ... horizontally */
@@ -526,7 +530,7 @@ ul {
 
   flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
-  max-width: 22em; /* change from 280px for new design JE 04Aug2022 */
+  max-width: 24em; /* change from 280px for new design JE 04Aug2022 */
 
   margin-left: auto;   /* allign row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
@@ -1209,7 +1213,7 @@ span.small-caps {
 .overlay-canvas-container {
     position: relative;
 
-    width: 42em; /* Reasoning: p max-width is set to 36em, thus I added e.g. 4em to the right and left. This allows p to expand to 36em while there is still some white space left on the right and left to look good. UPDATE I changed the size to 42em. Along with changing the max width to 100% (see below), it looks better for ALL screen sizes. JE 24Oct2022. */ /* 980px at Apple modal appearance https://www.apple.com/accessibility/ */
+    width: 44em; /* Reasoning: p max-width is set to 36em, thus I added e.g. 4em to the right and left. This allows p to expand to 36em while there is still some white space left on the right and left to look good. UPDATE I changed the size to 42em. Along with changing the max width to 100% (see below), it looks better for ALL screen sizes. JE 24Oct2022. UPDATE I changed the size to 44em along with the change of p to 42em. JE 11Nov2022 */ /* 980px at Apple modal appearance https://www.apple.com/accessibility/ */
 
     height:100%; /* animated? was 100%; // JE 26Sep21-2024 TEST */ /* THIS (height:100%;) is needed to make overflow-y:scroll working, otherwise there is no scroll necessary. */ /* JE 07Sep21-0655 TEST */
     /*transition: height 0.5s;*/ /* animated?  // JE 26Sep21-2024 TEST */
@@ -1549,7 +1553,7 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 
 @media only screen and (min-width: 60em) {  /* value determined by experiment to expand the LAST project description to full width when two projects are in one row. JE 04Oct2022  */
     #last-project-description {
-        max-width: 99%;/* assuming max-width of flex-container is 720px AND  flex-item-new 350px the project card border matches approximately the border of the upper project cards. JE05Dec2022  */
+        max-width: 98%;/* assuming max-width of flex-container is 720px AND  flex-item-new 350px the project card border matches approximately the border of the upper project cards. JE05Dec2022  */
     }
 }
 
