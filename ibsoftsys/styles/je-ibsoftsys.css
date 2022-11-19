@@ -616,8 +616,8 @@ ul {
 .me-box {
     float: left;
 
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    /* margin-bottom: 0.5em; */
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -631,14 +631,14 @@ ul {
 
 
 .me-box img {
-    width: 9em; /* The width gets increased on smaller screens when width of me-box is at 100%. */
+    width: 11em;
 
     margin-left: auto;
     margin-right: auto;
 }
 
 .me-box h4 {
-    font-size: 0.8em; /* IMPORTANT It gets increased on smaller screens when width of me-box is at 100%. */
+    font-size: 0.8em;
 
     font-weight: 400;
 }
@@ -1518,15 +1518,6 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
         margin-right: auto;
     }
 
-    .me-box img {
-        width: 12em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .me-box h4 {
-        font-size: 1em;
-    }
 }
 
 @media only screen and (max-width: 480px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
