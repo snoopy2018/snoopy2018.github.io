@@ -1336,17 +1336,19 @@ span.small-caps {
 
 .contact-container {
     display: flex;
-    max-width: 28em;
+    max-width: 32em;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 2em; /* horizontal space between logo and text */
+    column-gap: 1em; /* horizontal space between logo and text */
     margin-left: auto;
     margin-right: auto;
 }
 
 .contact-container-logo {
     display: block;
-    width: 11em;
+    width: 15em;  /* MUST be the same width as the contact-text to be well centered. */
+    padding-left: 2em;   /* The padding is necessary that image does not become too bing and... */
+    padding-right: 2em; /* ... at the same time be centered with text. */
     max-width: 90%;
     margin-top: 1.5em;
     margin-bottom: 1em;
@@ -1357,7 +1359,7 @@ span.small-caps {
 }
 
 .contact-text {
-    width: 11em; /* MUST be the same width as the contact-container-logo to be well centered. */
+    width: 15em; /* MUST be the same width as the contact-container-logo to be well centered. */
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
