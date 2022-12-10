@@ -1336,20 +1336,20 @@ span.small-caps {
 
 .contact-container {
     display: flex;
-    max-width: 36em;
+    max-width: 28em;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0em;
+    column-gap: 2em; /* horizontal space between logo and text */
     margin-left: auto;
     margin-right: auto;
 }
 
 .contact-container-logo {
     display: block;
-    height: 10.5em;
+    width: 11em;
     max-width: 90%;
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
 
@@ -1357,7 +1357,7 @@ span.small-caps {
 }
 
 .contact-text {
-    width: 17em;
+    width: 11em; /* MUST be the same width as the contact-container-logo to be well centered. */
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
