@@ -1335,7 +1335,7 @@ span.small-caps {
 } */
 
 .contact-container {
-    /* display: flex; */ /* CHANGED No flex. Logo and text above each other always. JE 11Dec2022 */
+    /* display: flex; */ /* CHANGED No Flex. Logo and text are always on top of each other. JE 11Dec2022 */
     max-width: 32em;
     flex-wrap: wrap;
     align-items: center;
