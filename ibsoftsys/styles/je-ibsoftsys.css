@@ -1339,7 +1339,7 @@ span.small-caps {
     max-width: 32em;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 1em; /* horizontal space between logo and text */
+    gap: 1em; 
     margin-left: auto;
     margin-right: auto;
 }
