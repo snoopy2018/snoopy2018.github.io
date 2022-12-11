@@ -1335,11 +1335,11 @@ span.small-caps {
 } */
 
 .contact-container {
-    display: flex;
+    /* display: flex; */ /* CHANGED No flex. Logo and text above each other always. JE 11Dec2022 */
     max-width: 32em;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1em; 
+    gap: 1em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1347,8 +1347,8 @@ span.small-caps {
 .contact-container-logo {
     display: block;
     width: 15em;  /* MUST be the same width as the contact-text to be well centered. */
-    padding-left: 2em;   /* The padding is necessary that image does not become too bing and... */
-    padding-right: 2em; /* ... at the same time be centered with text. */
+    padding-left: 1.5em;   /* The padding is necessary that image does not become too big and... */
+    padding-right: 1.5em; /* ... at the same time be centered with text. */
     max-width: 90%;
     margin-top: 1.5em;
     margin-bottom: 1em;
