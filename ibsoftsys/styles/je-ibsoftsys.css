@@ -1022,7 +1022,7 @@ State of mind on Septmeber 23, 2021.
 
 */
 .sidenav {
-  height: 15em; /* CHANGE it was with language item 16.18em */
+  height: 18em; 
   width: 0; /* width e.g. 11em is set by openNav() dynamically */
   position: fixed;
   z-index: 1;
