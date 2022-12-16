@@ -1022,7 +1022,7 @@ State of mind on Septmeber 23, 2021.
 
 */
 .sidenav {
-  height: 18em; 
+  height: 18em;
   width: 0; /* width e.g. 11em is set by openNav() dynamically */
   position: fixed;
   z-index: 1;
@@ -1086,6 +1086,11 @@ span.small-caps {
 .navbar-icon {
     width: auto;
     height: 1.5em; /* The value was 1.2em, now I've changed it to 1.5em, same as in the logo navigation bar before it was removed. JE JE09Oct2022 */
+}
+
+.navbar-fontsize {
+    /* I chose to use a fixed font size for the navigation bar because it eliminates alignment issues in case a user increases the browser's font size too much. Note that Apple does not allow font size changes on their website (appl.com). State of mind on December 16, 2022 */
+    font-size: 16px; /* 16 px is the default setting of the Chrome browser */
 }
 
 /* logo-navbar necessary???? navbar-icon class specifies it already?! JE09Oct2022*/

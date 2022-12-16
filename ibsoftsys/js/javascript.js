@@ -54,7 +54,7 @@ function openNav() {
   // document.getElementById("lang-selector").style.color = "rgba(255, 255, 255, 0";
   // document.getElementById("lang-selector").style.visibility = "hidden";
 
-  document.getElementById("sidenav-id").style.width = "8em";
+  document.getElementById("sidenav-id").style.width = "8.5em";
   // document.getElementById("dummy-background").style.display = "block";
   document.getElementById("sidenav-id-hamburger").style.display = "none"; // hide 'hamburger'
   window.addEventListener("click", clickEventListener, true); // IMPORTANT I assume, the parameter 'true' makes sure that the click for this event gets consumed; otherwise, the click event listener invokes closeNav() immediately (i.e. navbar does not show at all).
