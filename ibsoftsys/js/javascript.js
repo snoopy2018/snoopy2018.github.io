@@ -244,10 +244,10 @@ function sendEmail(language)
     var subject = "";
     if(language === "de") {
         // subject = "Ingenieurbüro für Softwaresysteme";
-        subject = "Nachricht an IBSoftSys";
+        subject = "Nachricht an IB Software Systems";
     } else if (language === "en") {
         // subject = "Engineering Office for Software Systems";
-        subject = "Message to IBSoftSys";
+        subject = "Message to IB Software Systems";
     } // else nothing to do
     if (subject !== "") {
         // var message = "hallo my friend!";
