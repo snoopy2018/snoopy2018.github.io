@@ -323,7 +323,7 @@ ul {
 
 /* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
 .list-container {
-    max-width: 32em;
+    max-width: 34em;
     /* margin-left: 0.625em; */
     margin-top: 1.5em;
     margin-bottom: 1.5em;
