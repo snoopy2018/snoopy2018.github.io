@@ -532,7 +532,7 @@ ul {
 
   flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
-  max-width: 24em; /* change from 280px for new design JE 04Aug2022 */
+  max-width: 22em; /* CHANGED from 24em to 22em because of shadow JE 06Jan2023 */
 
   margin-left: auto;   /* allign row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
@@ -547,7 +547,7 @@ ul {
   border-radius: 8px;
   /* I use a smaller border radius for the new design because it looks better with the new "> Details" (before: plus sign). // JE 03AUg2022 */
 
-  /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); /* CHANGED enabled shadow JE 06Jan2023 */
   /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */ /* shadow replaced by a thin line (border) in light gray color. JE 06Aug2022. */
 
   border-style: solid; /* Instead of a shodow a thin line (border) in light gray color. JE 06Aug2022. */
@@ -1566,12 +1566,12 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 
 @media only screen and (min-width: 60em) {  /* value determined by experiment to expand the LAST project description to full width when two projects are in one row. JE 04Oct2022  */
     #last-project-description {
-        max-width: 98%;/* assuming max-width of flex-container is 720px AND  flex-item-new 350px the project card border matches approximately the border of the upper project cards. JE05Dec2022  */
+        max-width: 94%; /* CHANGED from 98% to 94% because of shadow JE 06Jan2023 */
     }
 }
 
 @media only screen and (max-width: 60em) {  /* value determined by experiment to expand all project description to full width of a row. JE 04Oct2022  */
     .flex-item-new {
-        max-width: 96%; /* assume that max-width of flex-container is 720px AND  flex-item-new 350px */
+        max-width: 94%; /* CHANGED from 98% to 94% because of shadow JE 06Jan2023 */
     }
 }
