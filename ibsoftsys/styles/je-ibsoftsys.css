@@ -769,7 +769,7 @@ ul {
     margin-top: 1em;
     background-color: rgb(254, 254, 254);
     border-radius: 8px;
-    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
     /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */
     border-style: solid;
     border-width: 2px;
