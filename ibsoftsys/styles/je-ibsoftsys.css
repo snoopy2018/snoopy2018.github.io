@@ -322,7 +322,7 @@ ul {
 }
 
 /* Makes lists <ul>... centered as the paragraphs assuming max-width as objects of <p>! */
-.list-container {
+.service-container {
     max-width: 34em;
     /* margin-left: 0.625em; */
     margin-top: 1.5em;
@@ -763,7 +763,7 @@ ul {
     color: rgb(85, 85, 85);
 }
 
-.list-item-container {
+.service-item {
     font-size: 1.1em;
     padding: 0.75em 1.125em 0.75em 1.125em;
     margin-top: 1em;
