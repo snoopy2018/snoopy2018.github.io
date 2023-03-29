@@ -252,10 +252,7 @@ a:hover {
 p {
   font-size: 1em; /* 1.25em;  1em x 1.25 ; Factor of 1/0.8 since w3.css seems to scale fontsize down to 80 %. State of mind on August 9, 2021.
 /*   line-height: 1.4;or 1.5 as htnl? */
-  max-width: 42em; /* I feel text need to be limited to a certain width. Decreased value from 44em to 36em (December 11, 2019). Note to center the text with margin: auto;
-  top and bottom will I set later. All ul, ol elements shall have the same restrictions. State of mind on November 26, 2019. */
-  margin: 0.5em 0;
-
+  max-width: 38em; 
 
   /* Source: `Silbentrennung — CSS' https://www.stichpunkt.de/html/umbruch.html  */
    /* -moz-hyphens: auto;
