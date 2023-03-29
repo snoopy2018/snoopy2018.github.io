@@ -529,9 +529,9 @@ ul {
 
   flex: auto; /* auto works better than 50%, because it initiates a wrap of two items instead of squeezing them into one row ... JE 23Sep21-1602 */
 
-  max-width: 22em; /* CHANGED from 24em to 22em because of shadow JE 06Jan2023 */
+  max-width: 23em;
 
-  margin-left: auto;   /* allign row item ... */
+  margin-left: auto;   /* align row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
 
   padding: 0.75em 1.125em 0.75em 1.125em;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
@@ -1563,7 +1563,7 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 
 @media only screen and (min-width: 60em) {  /* value determined by experiment to expand the LAST project description to full width when two projects are in one row. JE 04Oct2022  */
     #last-project-description {
-        max-width: 94%; /* CHANGED from 98% to 94% because of shadow JE 06Jan2023 */
+        max-width: 96%;
     }
 }
 
