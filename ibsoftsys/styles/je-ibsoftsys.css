@@ -534,7 +534,7 @@ ul {
   margin-left: auto;   /* align row item ... */
   margin-right: auto;  /* ... horizontally. JE 12Feb2022 */
 
-  padding: 0.75em 1.125em 0.75em 1.125em;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. */
+  padding: 0.75em 2em 0.75em 2em;   /* padding-bottom: 32px; to separate 'plus button' from any symbol below. JE 21Sep21 UPDATE Changed top and bottom to 12px because I think the items were too much apart. State of mind on January 12, 2022. UPDATE Changed the left and right padding to 2em for a better look. March 29, 2023. */
 
   /* SPECIAL to make project pop out a little */
   margin-top: 1.5em;
@@ -1561,14 +1561,14 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
     }
 }
 
-@media only screen and (min-width: 60em) {  /* value determined by experiment to expand the LAST project description to full width when two projects are in one row. JE 04Oct2022  */
+@media only screen and (min-width: 58em) {  /* value determined by experiment to expand the LAST project description to full width when two projects are in one row. JE 04Oct2022  */
     #last-project-description {
         max-width: 96%;
     }
 }
 
-@media only screen and (max-width: 60em) {  /* value determined by experiment to expand all project description to full width of a row. JE 04Oct2022  */
+@media only screen and (max-width: 58em) {  /* value determined by experiment to expand all project description to full width of a row. JE 04Oct2022  */
     .flex-item-new {
-        max-width: 94%; /* CHANGED from 98% to 94% because of shadow JE 06Jan2023 */
+        max-width: 92%;
     }
 }
