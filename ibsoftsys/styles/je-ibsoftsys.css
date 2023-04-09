@@ -1352,23 +1352,26 @@ span.small-caps {
 } */
 
 .contact-container {
-    /* display: flex; */ /* CHANGED No Flex. Logo and text are always on top of each other. JE 11Dec2022 */
-    max-width: 32em;
+    display: flex; /* CHANGED No Flex. Logo and text are always on top of each other. JE 11Dec2022 */
+    max-width: 28em;
     flex-wrap: wrap;
     align-items: center;
     gap: 1em;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em; /* Used for short logo JE 09Apr2023 */
 }
 
 .contact-container-logo {
     display: block;
-    width: 15em;  /* MUST be the same width as the contact-text to be well centered. */
+    width: 13em;  /* MUST be the same width as the contact-text to be well centered. */
     padding-left: 1.5em;   /* The padding is necessary that image does not become too big and... */
     padding-right: 1.5em; /* ... at the same time be centered with text. */
     max-width: 90%;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    
+/*    margin-top: 1.5em;*/ /* Not used for short logo JE 09Apr2023 */
+/*    margin-bottom: 1em;*/ /* Not used for short logo JE 09Apr2023 */
+    
     margin-left: auto;
     margin-right: auto;
 
@@ -1376,7 +1379,7 @@ span.small-caps {
 }
 
 .contact-text {
-    width: 15em; /* MUST be the same width as the contact-container-logo to be well centered. */
+    width: 13em; /* MUST be the same width as the contact-container-logo to be well centered. */
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
