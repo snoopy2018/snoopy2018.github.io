@@ -614,11 +614,15 @@ ul {
 
 .me-box {
     float: left;
+    
+    width: 11em;
 
     margin-top: 0.5em;
-    /* margin-bottom: 0.5em; */
-/*    margin-left: 1em;*/
-    margin-right: 1em;
+/*    margin-bottom: 8px;*/
+    margin-right: 1.5em;
+    
+/*    border-radius: 4px;*/
+/*    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);*/
 }
 
 /* Clear floats after the about-container [That is what people write and it works.] */
@@ -632,16 +636,24 @@ ul {
 .me-box img {
     width: 11em;
 
+/*    margin-top: 0.5em;*/
     margin-left: auto;
     margin-right: auto;
-    
     border-radius: 4px;
+    
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    
+    
 }
 
 .me-box h4 {
-    font-size: 0.9em;
-
+    font-size: 0.8em;
+    
     font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.9);       /* Color because text is within image. */
+    margin-top: -1.8em;
+    
 }
 
 .box {
