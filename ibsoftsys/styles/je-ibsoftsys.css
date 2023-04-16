@@ -651,10 +651,22 @@ ul {
     
     font-weight: 400;
 
-    color: rgba(255, 255, 255, 0.9);       /* Color because text is within image. */
-    margin-top: -1.8em;
+    color: rgb(240, 240, 240);
+    /* Color because text is within image. */
+    margin-top: -2em;
+}
+
+.me-box-text-container {
+      
+    display: inline;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 4px;
+    
+/*    background-color: rgb(240, 240, 240);*/
     
 }
+
 
 .box {
     display: flex;
