@@ -619,8 +619,8 @@ ul {
 
     margin-top: 0.5em;
     margin-bottom: 0.625em;
-    margin-right: 1.5em;
     
+    margin-right: 1.5em;
 /*    border-radius: 4px;*/
 /*    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);*/
 }
@@ -634,7 +634,7 @@ ul {
 
 
 .me-box img {
-    width: 11em;
+    width: 100%;
 
 /*    margin-top: 0.5em;*/
     margin-left: auto;
@@ -646,14 +646,11 @@ ul {
     
 }
 
-.me-box h4 {
-    font-size: 0.9em;
-    
-    font-weight: 400;
-
-    color: rgb(240, 240, 240);
-    /* Color because text is within image. */
-    margin-top: -2em;
+.me-box-caption {
+    position: absolute;
+    bottom: 0.4em;
+    left: 1.3em;
+    color: rgb(240, 240, 240);"
 }
 
 .me-box-text-container {
@@ -1560,10 +1557,10 @@ UPDATE Allow for example on tablets such as iPad and similar of width >= 1024 px
 
 @media only screen and (max-width: 460px) {  /* value determined by experiment to avoid words only on the right of the image (center image with no text around) */
 
-    .me-box {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+    .me-box {  /* Makes image centered and no text around it. JE-17Apr2023 */
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
 }
