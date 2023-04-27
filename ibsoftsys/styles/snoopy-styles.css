@@ -1,0 +1,127 @@
+/* General ----------------------------------- */
+
+/* whole website */
+*, *:after, *.before {
+  box-sizing: border-box;
+}
+
+/* Mimics the attempt to have a single source for the 'Updated on ,,,' label across multiple html/css files.
+Inspired by: "Constant text in CSS". https://www.sitepoint.com/community/t/constant-text-in-css/60344
+State of mind on August 25, 2021.
+*/
+span.updated-on:before {
+    content:'Date Is Not Used Anymore'; /* JE 19May2022 */
+    font-size: inherit;
+    white-space: nowrap; /* do not break date & time */
+    /* color: #777; */
+}
+
+/* VARIABLES ----------------------------------- */
+:root { /* global for all html */
+    --textColor: rgb(51, 50, 47); /* as tagesschau.de seen on March 13, 2022. BEFORE rgb(51, 51, 51);   saw #333 == rgb(51, 51, 51) at ndr.de NDR; SZ rgb(41, 41, 58); BZ rgb(51, 51, 51); NOTE #333 == #333333 (shorthand)*/
+    /* w3: #777; It seems light-gray instead of black is the standard for text (newspaper but also in Apple's tech specs). State of mind on August 9, 2021 */
+
+    /* Support of light color scheme only, at least for npw. JE23Oct2022 */
+    color-scheme: light; /* "Indicates that the element can be rendered using the operating system light color scheme." (MDN Web Docs) */
+}
+
+/* TYPOGRAPHY ----------------------------------- */
+
+/* EXPERIMENT with Lato type (a nice one). I stopped unfinished because I Will
+use that font only or maybe for the logo and will stay with PT Sans for the web. If you want to use it you need to lern more how-to-use it. For example, do I need to add all .ttf files or can I combine them? How to specify in the former case each font in css (weight, etc.) so I can use it in html? There is a simple example here https://www.digitalocean.com/community/tutorials/css-font-face.
+
+State of mind on August 15, 2021.
+
+*/
+
+body, html,
+h1, h2, h3, h4, h5, h6 {
+ font-family:  "Helvetica Neue", "PT Sans", Helvetica,  Arial,  sans-serif; /* REMOVED Lato because I think it is not as readable as PT Sans or Helvetica Neue. State of mind on February 1, 2022. Made 'Helvetica Neue' the first choice because it looks very nice and it supports different weights better than 'PT Sans'. BTW, Apple  used it as system font on iOS and macOS and replaced it by a 'similarly looking San Francisco in iOS 9 and OS X El Capitan'. IBM used it as 'its corporate typeface until 2017' (Source Wikipedia.) simalar State of mind on April 3, 2022. */
+}
+
+body, html {
+  font-size: 100%; /* recommended by "Learning Responsive Web Design" (\cite{Peterson:2014}, page 274), if you use em as relative measure (e.g., xyz: 1.5em); if you sue rem you shall set html { font-size: 100% }. Confused? ...me too. Also recommended by w3.css, CSS Fonts. */
+
+  line-height: 1.5;
+
+  letter-spacing: 0.022em; /* NOTE: I feel the font is more readable with a littler bit of letter-spacing instead of the default (normal). I got the value of 0.022em by experiment and looking at Apple websites which use letter-spacing a lot. I leave this topic by now until I know better. JE18Oct2022  */
+
+  height: 100%;
+
+  color: rgb(51, 50, 47); /* default supported fallback style */
+  color: var(--textColor); /* will not be used by any browser that doesn't support it, and will default to the previous fallback */
+}
+
+body {
+    min-width: 320px; /* seen at apple.com webpages ... cannot be too wrong :) */
+    
+}
+
+
+
+
+body { /* Added logo-ibsoftsys so I can set image property (logo) relative to viewport size in percentage.  State of mind on November 2021. */
+  width: 100%;  /* JE 06Sep21-1954 Needed for body-scroll-lock adjustments made by me. */
+
+  height: 100%; /* added height because of reason above (19Nov21) */
+}
+
+a {
+  color: #06c; /* Apple uses this colour for some of the linked text on its websites (e.g. apple.com). JE27Apr2023 */
+    
+  text-decoration: none; /* Apple (apple.com) does use 'underline' only when hovered but not everywhere (e. g. on navigation). JE27Apr2023  */
+}
+
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
+p {
+  font-size: 1em; 
+
+}
+
+
+/* Override some of the standards for h1 to h6 (similar what w3schools does). State of mind on February 27, 2022. */
+h1, h2, h3, h4, h5, h6 {
+    /* Note w3.css changes the font-family that is why I set it above to the sames as body and html  */
+    text-align: center;
+    font-weight: 400;
+    margin: 0.625em 0;
+}
+/* h_(i-1) = h_(i) * 1.125, i = 1..6, h1 = 2em */
+/* NOTE font-sizes after w3schools.com ``HTML <h1> to <h6> Tags'' https://www.w3schools.com/tags/tag_hn.asp. State of mind on April 6, 2020 */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em; /* changed from 1.5em to 1.7 em so it's bigger than project headlines. I know, it's a hack. JE 07Oct21 UPDATE changed back to initial 1.5em. JE 25Feb22 */
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+.textsc {
+    /* I got the idea about the numbers (i.e. letter-spacing) from this website: "Small Caps Typography: Real or Fake?" https://www.creativelive.com/blog/typography-small-caps-real-fake/ */
+    letter-spacing: 0.05em; /* 0.035em; */
+    font-weight: 500;  /* IMPORTANT: Font weight of capital letters + 100 (here: 400 + 100). Therefore it only works for fonts that support at least this granularity (e.g. 100, 200, 300, ... like 'Helvetica Neue'). JE17Oct2022 */
+    font-size: 73%;
+    text-transform: uppercase;
+}
+
