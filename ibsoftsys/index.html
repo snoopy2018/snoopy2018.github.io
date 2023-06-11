@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- NOTE
+        The references to subdirectories (i.e., styles, media/images)
+        MUST be the full paths because 'en/index.html' and 'de/index.html' are
+        symbolic link to '../index.html' and the browser executes the paths relative
+        to 'de' or 'en'. For example, a relativ link 'styles/normalize.css' of 'de/index.html'
+        would a browser interpret as   'de/styles/normalize.css' which does NOT exist.
+        State of mind on June 11, 2023.
+        -->
         <link href="https://snoopy2018.github.io/ibsoftsys/styles/normalize.css" rel="stylesheet" type="text/css">
             
         <meta charset="UTF-8">
