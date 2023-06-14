@@ -48,22 +48,20 @@ body, html {
 
   height: 100%;
 
-  color: rgb(51, 50, 47); /* default supported fallback style */
-  color: var(--textColor); /* will not be used by any browser that doesn't support it, and will default to the previous fallback */
+  color: #1d1d1f; /* default text color */
 }
 
 body {
-    min-width: 320px; /* seen at apple.com webpages ... cannot be too wrong :) */
-    
-}
-
-
-
-
-body { /* Added logo-ibsoftsys so I can set image property (logo) relative to viewport size in percentage.  State of mind on November 2021. */
-  width: 100%;  /* JE 06Sep21-1954 Needed for body-scroll-lock adjustments made by me. */
-
-  height: 100%; /* added height because of reason above (19Nov21) */
+  min-width: 320px; /* seen at apple.com webpages ... cannot be too wrong :) */
+  
+  max-width: 30em;
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding: 1em;
+  
+  background-color: #f5f5f7; /* seen at apple.com webpages ... cannot be too wrong :) */
 }
 
 a {
