@@ -54,13 +54,6 @@ body, html {
 body {
   min-width: 320px; /* seen at apple.com webpages ... cannot be too wrong :) */
   
-  max-width: 30em;
-  
-  margin-left: auto;
-  margin-right: auto;
-  
-  padding: 1em;
-  
   background-color: #f5f5f7; /* seen at apple.com webpages ... cannot be too wrong :) */
 }
 
@@ -113,6 +106,15 @@ h5 {
 
 h6 {
   font-size: 0.67em;
+}
+
+.container {
+    max-width: 30em;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 1em;
 }
 
 .textsc {
