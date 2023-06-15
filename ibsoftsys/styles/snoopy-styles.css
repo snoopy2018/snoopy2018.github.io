@@ -108,13 +108,16 @@ h6 {
   font-size: 0.67em;
 }
 
-.container {
+.global-width {
     max-width: 30em;
-    
+}
+
+.main-container {
     margin-left: auto;
     margin-right: auto;
     
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .textsc {
@@ -126,7 +129,10 @@ h6 {
 }
 
 .footer-container {
-    background-color: rgb(250, 250, 250);
+/*    background-color: rgb(250, 250, 250);*/
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-content {
