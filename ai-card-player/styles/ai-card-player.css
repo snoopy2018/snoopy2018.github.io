@@ -90,6 +90,12 @@ header, section, footer {
   width: 94%; /* Recommended for <article> by  Peterson, p. 285 */
 }
 
+/* Added padding to give text some space on narrow screens. JE-17Sep2023 */
+section {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 footer p {
   font-size: 0.7em; /* 1 / 1.618 (Golden Ratio), assume p: 1em */
   text-align: left;
@@ -194,7 +200,14 @@ margin-bottom: -3em;
   max-width: 180px; /* size of image */
   text-align: center;
   /*font-family: arial; */
-  margin: 1.6em 1.5em 0em 0.5em; /* looks good with those arbitrary values, March 16, 2020 */
+  
+  /* New margins because the container is an inline block and will be centered on narrow screens. JE-17Sep2023 */
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-right: 1.5em;
+  margin-left: 1em;
+  
+  /* margin: 1.6em 1.5em 0em 0.5em; */ /* looks good with those arbitrary values, March 16, 2020 */
 }
 
 .app-logo-image {
@@ -402,6 +415,16 @@ margin-bottom: -3em;
 /* ----------------------------------------------------------------------- */
 /* --------------------     MEDIA QUERIES (LAST)      -------------------- */
 /* ----------------------------------------------------------------------- */
+
+@media only screen and (max-width: 29em) {
+    /* Center the image on narrow screens. JE-17Sep2023 */
+    .app-logo-container {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
 
 /* The rules of responsive web typography. 2018. Section "Coding for responsive typography" https://www.creativebloq.com/how-to/the-rules-of-responsive-web-typography */
 @media only screen and (min-width: 900px) {  /* 38em apprximately 600px with em = 16px */
