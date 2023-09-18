@@ -203,7 +203,7 @@ margin-bottom: -3em;
   
   /* New margins because the container is an inline block and will be centered on narrow screens. JE-17Sep2023 */
   margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   margin-right: 1.5em;
   margin-left: 1em;
   
